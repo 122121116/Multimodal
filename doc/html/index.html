@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>镜头控制项目文档</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="topbar">
+        <div class="brand">
+          <h1>AI 图像生成的镜头控制</h1>
+          <p>可拓展静态文档主页（导航到各子页面）</p>
+        </div>
+        <nav class="nav" aria-label="主导航">
+          <a data-nav href="index.html">主页</a>
+          <a data-nav href="model.html">模型结构</a>
+          <a data-nav href="training.html">训练方法</a>
+          <a data-nav href="dataset.html">数据集</a>
+          <a data-nav href="install.html">安装使用</a>
+          <a data-nav href="results.html">结果展示</a>
+          <a data-nav href="usecases.html">项目用途</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <h2>文档导航</h2>
+        <p>主页负责跳转；各子页面已预留可扩展框架。当前仅“项目用途”页填充正文，其余页面保持框架占位。</p>
+      </section>
+
+      <section class="grid" aria-label="快速入口">
+        <a class="card" href="model.html">
+          <h3>模型结构实现技巧</h3>
+          <p>相机位姿条件注入、注意力设计、多尺度融合（框架页）。</p>
+        </a>
+        <a class="card" href="training.html">
+          <h3>训练方法</h3>
+          <p>损失函数、一致性约束、训练策略与评估（框架页）。</p>
+        </a>
+        <a class="card" href="dataset.html">
+          <h3>数据集</h3>
+          <p>多视角采集、渲染流水线、标注与清洗（框架页）。</p>
+        </a>
+        <a class="card" href="install.html">
+          <h3>安装与使用</h3>
+          <p>依赖、启动方式、推理接口与示例（框架页）。</p>
+        </a>
+        <a class="card" href="results.html">
+          <h3>结果展示</h3>
+          <p>定性对比、定量指标、消融实验（框架页）。</p>
+        </a>
+        <a class="card" href="usecases.html">
+          <h3>项目用途介绍</h3>
+          <p>影视分镜、虚拟摄影、游戏与 XR 的应用价值（已写内容）。</p>
+        </a>
+      </section>
+
+      <div class="footer">Multimodal · Camera-Control Docs</div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
+
