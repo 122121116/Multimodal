@@ -1,0 +1,5202 @@
+[
+  {
+    "view_id": "ref",
+    "image_path": "scene_0000/view_ref.png",
+    "azimuth_deg": 0.0,
+    "elevation_deg": 0.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      90.00000250447816,
+      -0.0,
+      90.00000250447816
+    ],
+    "camera_position_xyz": [
+      5.0,
+      0.0,
+      0.0
+    ],
+    "rotation_vector_relative_to_ref": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_ref.png",
+    "edge_path": "scene_0000/edge_ref.png"
+  },
+  {
+    "view_id": 0,
+    "image_path": "scene_0000/view_0.png",
+    "azimuth_deg": 1.003872948896763,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      -8.966128782116878e-06,
+      91.00387638792996
+    ],
+    "camera_position_xyz": [
+      4.329462401428078,
+      0.07586378991737386,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      1.0038729488967704,
+      -30.0,
+      1.0038738834518028
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_0.png",
+    "edge_path": "scene_0000/edge_0.png"
+  },
+  {
+    "view_id": 1,
+    "image_path": "scene_0000/view_1.png",
+    "azimuth_deg": 20.5800774376032,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      -1.1270352000417115e-06,
+      110.58007964358944
+    ],
+    "camera_position_xyz": [
+      4.0537861913489435,
+      1.5221095607178312,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      20.580077437603194,
+      -30.0,
+      20.580077139111268
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_1.png",
+    "edge_path": "scene_0000/edge_1.png"
+  },
+  {
+    "view_id": 2,
+    "image_path": "scene_0000/view_2.png",
+    "azimuth_deg": 46.38021109225766,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      -7.25640588843382e-06,
+      136.38020398796382
+    ],
+    "camera_position_xyz": [
+      2.9872230734389627,
+      3.1347245986711303,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      46.38021109225767,
+      -30.0,
+      46.38020148348568
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_2.png",
+    "edge_path": "scene_0000/edge_2.png"
+  },
+  {
+    "view_id": 3,
+    "image_path": "scene_0000/view_3.png",
+    "azimuth_deg": 70.00711731467152,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      -60.000001669652114,
+      179.999991348578,
+      -19.992873823334225
+    ],
+    "camera_position_xyz": [
+      1.4804852001257973,
+      4.069172344864307,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      70.00711731467152,
+      -30.0,
+      -109.99287632781238
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_3.png",
+    "edge_path": "scene_0000/edge_3.png"
+  },
+  {
+    "view_id": 4,
+    "image_path": "scene_0000/view_4.png",
+    "azimuth_deg": 97.7025927419809,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      -60.000001669652114,
+      179.999991348578,
+      7.7025921572255545
+    ],
+    "camera_position_xyz": [
+      -0.5803713806448847,
+      4.291056869878137,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      97.70259274198088,
+      -30.0,
+      -82.29741034725261
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_4.png",
+    "edge_path": "scene_0000/edge_4.png"
+  },
+  {
+    "view_id": 5,
+    "image_path": "scene_0000/view_5.png",
+    "azimuth_deg": 121.27223630944496,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      8.27233184567766e-06,
+      -148.72776532799952
+    ],
+    "camera_position_xyz": [
+      -2.247790619310224,
+      3.701004908364884,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      121.27223630944496,
+      -30.0,
+      121.2722321675223
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_5.png",
+    "edge_path": "scene_0000/edge_5.png"
+  },
+  {
+    "view_id": 6,
+    "image_path": "scene_0000/view_6.png",
+    "azimuth_deg": 146.8236928874749,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      -5.732683053855745e-06,
+      -123.17631451092696
+    ],
+    "camera_position_xyz": [
+      -3.6242759132354103,
+      2.369519804673858,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      146.82369288747486,
+      -30.0,
+      146.82368298459488
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_6.png",
+    "edge_path": "scene_0000/edge_6.png"
+  },
+  {
+    "view_id": 7,
+    "image_path": "scene_0000/view_7.png",
+    "azimuth_deg": 165.0259595949318,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      -2.3718936157028022e-06,
+      -104.97405161813973
+    ],
+    "camera_position_xyz": [
+      -4.183088865339116,
+      1.1188241795188003,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      165.0259595949318,
+      -30.0,
+      165.02594587738213
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_7.png",
+    "edge_path": "scene_0000/edge_7.png"
+  },
+  {
+    "view_id": 8,
+    "image_path": "scene_0000/view_8.png",
+    "azimuth_deg": 191.43783710173395,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      -7.2345847388752345e-06,
+      -78.56217455056398
+    ],
+    "camera_position_xyz": [
+      -4.244132564907226,
+      -0.8586843258695324,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -168.56216289826602,
+      -30.0,
+      -168.56217705504213
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_8.png",
+    "edge_path": "scene_0000/edge_8.png"
+  },
+  {
+    "view_id": 9,
+    "image_path": "scene_0000/view_9.png",
+    "azimuth_deg": 212.61453997995412,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      5.57814941810304e-07,
+      -57.38545989688459
+    ],
+    "camera_position_xyz": [
+      -3.6473337360700477,
+      -2.33387159409538,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -147.3854600200459,
+      -30.0,
+      -147.38546240136276
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_9.png",
+    "edge_path": "scene_0000/edge_9.png"
+  },
+  {
+    "view_id": 10,
+    "image_path": "scene_0000/view_10.png",
+    "azimuth_deg": 237.97419341858594,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      4.4605421963591846e-07,
+      -32.025814452084326
+    ],
+    "camera_position_xyz": [
+      -2.296271466185026,
+      -3.671122083721062,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -122.02580658141403,
+      -30.0,
+      -122.0258169565625
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_10.png",
+    "edge_path": "scene_0000/edge_10.png"
+  },
+  {
+    "view_id": 11,
+    "image_path": "scene_0000/view_11.png",
+    "azimuth_deg": 264.0385580743442,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      6.020595107619557e-07,
+      -5.96144246844002
+    ],
+    "camera_position_xyz": [
+      -0.4497233586574278,
+      -4.306709753475138,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -95.96144192565578,
+      -30.0,
+      -95.96144497291819
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_11.png",
+    "edge_path": "scene_0000/edge_11.png"
+  },
+  {
+    "view_id": 12,
+    "image_path": "scene_0000/view_12.png",
+    "azimuth_deg": 284.5910589817238,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      2.2511156902287808e-07,
+      14.591063331426025
+    ],
+    "camera_position_xyz": [
+      1.0908384277338685,
+      -4.1904739021474775,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -75.40894101827621,
+      -30.0,
+      -75.40893917305213
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_12.png",
+    "edge_path": "scene_0000/edge_12.png"
+  },
+  {
+    "view_id": 13,
+    "image_path": "scene_0000/view_13.png",
+    "azimuth_deg": 309.83163108494387,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      -1.0381637849101335e-06,
+      39.83163808842546
+    ],
+    "camera_position_xyz": [
+      2.7735924782409307,
+      -3.325234542802257,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -50.168368915056135,
+      -30.0,
+      -50.1683644160527
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_13.png",
+    "edge_path": "scene_0000/edge_13.png"
+  },
+  {
+    "view_id": 14,
+    "image_path": "scene_0000/view_14.png",
+    "azimuth_deg": 337.07916795201254,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      2.7699913809627387e-06,
+      67.07918538585767
+    ],
+    "camera_position_xyz": [
+      3.9882369208967132,
+      -1.6864063160449523,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -22.92083204798746,
+      -30.0,
+      -22.920817118620505
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_14.png",
+    "edge_path": "scene_0000/edge_14.png"
+  },
+  {
+    "view_id": 15,
+    "image_path": "scene_0000/view_15.png",
+    "azimuth_deg": 0.3235786603431601,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07692359657929,
+      1.3602266501773795e-06,
+      90.32357588621835
+    ],
+    "camera_position_xyz": [
+      4.599823863000758,
+      0.025977841303204418,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      0.3235786603431734,
+      -23.076923076923077,
+      0.32357338174017514
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_15.png",
+    "edge_path": "scene_0000/edge_15.png"
+  },
+  {
+    "view_id": 16,
+    "image_path": "scene_0000/view_16.png",
+    "azimuth_deg": 21.987172478693015,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07692359657929,
+      -3.369503241980405e-06,
+      111.98716691450376
+    ],
+    "camera_position_xyz": [
+      4.265336110086265,
+      1.72219693614411,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      21.987172478693026,
+      -23.076923076923077,
+      21.9871644100256
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_16.png",
+    "edge_path": "scene_0000/edge_16.png"
+  },
+  {
+    "view_id": 17,
+    "image_path": "scene_0000/view_17.png",
+    "azimuth_deg": 48.642712923906544,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07693042676847,
+      8.78604262094217e-07,
+      138.6427178109089
+    ],
+    "camera_position_xyz": [
+      3.039393531298474,
+      3.45270059240169,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      48.642712923906544,
+      -23.076923076923077,
+      48.642715306430716
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_17.png",
+    "edge_path": "scene_0000/edge_17.png"
+  },
+  {
+    "view_id": 18,
+    "image_path": "scene_0000/view_18.png",
+    "azimuth_deg": 74.22789928808035,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      -66.9230677519987,
+      179.999991348578,
+      -15.772100369116902
+    ],
+    "camera_position_xyz": [
+      1.2503057801687054,
+      4.426713213541929,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      74.22789928808035,
+      -23.076923076923077,
+      -105.77210287359506
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_18.png",
+    "edge_path": "scene_0000/edge_18.png"
+  },
+  {
+    "view_id": 19,
+    "image_path": "scene_0000/view_19.png",
+    "azimuth_deg": 92.44679106968204,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      -66.9230677519987,
+      179.999991348578,
+      2.4467918998651847
+    ],
+    "camera_position_xyz": [
+      -0.19637688722972235,
+      4.595703486630959,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      92.44679106968204,
+      -23.076923076923077,
+      -87.55321060461297
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_19.png",
+    "edge_path": "scene_0000/edge_19.png"
+  },
+  {
+    "view_id": 20,
+    "image_path": "scene_0000/view_20.png",
+    "azimuth_deg": 122.20189861319622,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07693042676847,
+      -6.754748652078932e-06,
+      -147.79810828006907
+    ],
+    "camera_position_xyz": [
+      -2.451305081358846,
+      3.892320364123987,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      122.20189861319625,
+      -23.076923076923077,
+      122.20188921545275
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_20.png",
+    "edge_path": "scene_0000/edge_20.png"
+  },
+  {
+    "view_id": 21,
+    "image_path": "scene_0000/view_21.png",
+    "azimuth_deg": 145.42660364391523,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07692359657929,
+      1.1648137776592602e-05,
+      -124.57340238489638
+    ],
+    "camera_position_xyz": [
+      -3.787555101234422,
+      2.610264502686097,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      145.4266036439152,
+      -23.076923076923077,
+      145.42659511062544
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_21.png",
+    "edge_path": "scene_0000/edge_21.png"
+  },
+  {
+    "view_id": 22,
+    "image_path": "scene_0000/view_22.png",
+    "azimuth_deg": 166.84980371892954,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07692359657929,
+      4.850857831313392e-06,
+      -103.1501930342604
+    ],
+    "camera_position_xyz": [
+      -4.479274235413561,
+      1.0464973687641321,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      166.84980371892954,
+      -23.076923076923077,
+      166.84980446126144
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_22.png",
+    "edge_path": "scene_0000/edge_22.png"
+  },
+  {
+    "view_id": 23,
+    "image_path": "scene_0000/view_23.png",
+    "azimuth_deg": 189.51945239864483,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07693042676847,
+      -1.6156655968655732e-06,
+      -80.4805629525563
+    ],
+    "camera_position_xyz": [
+      -4.5365543780226085,
+      -0.760742265234354,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -170.48054760135517,
+      -23.076923076923077,
+      -170.48056545703446
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_23.png",
+    "edge_path": "scene_0000/edge_23.png"
+  },
+  {
+    "view_id": 24,
+    "image_path": "scene_0000/view_24.png",
+    "azimuth_deg": 219.29193411988882,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07693042676847,
+      -6.519310661671778e-07,
+      -50.70807230388878
+    ],
+    "camera_position_xyz": [
+      -3.559995542366515,
+      -2.9129857804665873,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -140.70806588011118,
+      -23.076923076923077,
+      -140.70807480836694
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_24.png",
+    "edge_path": "scene_0000/edge_24.png"
+  },
+  {
+    "view_id": 25,
+    "image_path": "scene_0000/view_25.png",
+    "azimuth_deg": 238.8234807248109,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07693042676847,
+      -1.4127208655284988e-06,
+      -31.176517994833677
+    ],
+    "camera_position_xyz": [
+      -2.3812583425387035,
+      -3.9355638890710205,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -121.1765192751891,
+      -23.076923076923077,
+      -121.17652049931183
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_25.png",
+    "edge_path": "scene_0000/edge_25.png"
+  },
+  {
+    "view_id": 26,
+    "image_path": "scene_0000/view_26.png",
+    "azimuth_deg": 261.06777007233705,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07692359657929,
+      1.6688507813601313e-07,
+      -8.932229405955658
+    ],
+    "camera_position_xyz": [
+      -0.7142081353028468,
+      -4.544112802114096,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -98.93222992766295,
+      -23.076923076923077,
+      -98.93223191043381
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_26.png",
+    "edge_path": "scene_0000/edge_26.png"
+  },
+  {
+    "view_id": 27,
+    "image_path": "scene_0000/view_27.png",
+    "azimuth_deg": 285.09635791320096,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07693725695763,
+      -3.174519668010971e-06,
+      15.096359018676274
+    ],
+    "camera_position_xyz": [
+      1.1980116590681382,
+      -4.441151031388912,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -74.90364208679904,
+      -23.076923076923077,
+      -74.9036434858019
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_27.png",
+    "edge_path": "scene_0000/edge_27.png"
+  },
+  {
+    "view_id": 28,
+    "image_path": "scene_0000/view_28.png",
+    "azimuth_deg": 314.5019594377017,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07693042676847,
+      -1.6173056435259604e-06,
+      44.50196434852926
+    ],
+    "camera_position_xyz": [
+      3.224222774833537,
+      -3.280768494897913,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -45.498040562298286,
+      -23.076923076923077,
+      -45.498038155948905
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_28.png",
+    "edge_path": "scene_0000/edge_28.png"
+  },
+  {
+    "view_id": 29,
+    "image_path": "scene_0000/view_29.png",
+    "azimuth_deg": 336.7468274258416,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07692359657929,
+      6.179513430611691e-07,
+      66.74683521103402
+    ],
+    "camera_position_xyz": [
+      4.226244582088648,
+      -1.8160151847482828,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -23.253172574158384,
+      -23.076923076923077,
+      -23.253167293444136
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_29.png",
+    "edge_path": "scene_0000/edge_29.png"
+  },
+  {
+    "view_id": 30,
+    "image_path": "scene_0000/view_30.png",
+    "azimuth_deg": 2.2113235675755374,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385751423271,
+      6.448323123847507e-06,
+      92.21133088978316
+    ],
+    "camera_position_xyz": [
+      4.799014117844455,
+      0.18530937922037333,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      2.2113235675755334,
+      -16.153846153846153,
+      2.211328385304995
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_30.png",
+    "edge_path": "scene_0000/edge_30.png"
+  },
+  {
+    "view_id": 31,
+    "image_path": "scene_0000/view_31.png",
+    "azimuth_deg": 25.654068864195487,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15384385385437,
+      5.161882492503087e-07,
+      115.65406325345182
+    ],
+    "camera_position_xyz": [
+      4.329172189191242,
+      2.079217214634043,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      25.654068864195494,
+      -16.153846153846153,
+      25.654060748973677
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_31.png",
+    "edge_path": "scene_0000/edge_31.png"
+  },
+  {
+    "view_id": 32,
+    "image_path": "scene_0000/view_32.png",
+    "azimuth_deg": 48.26084225847384,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385068404355,
+      7.699380924027082e-07,
+      138.26084193441346
+    ],
+    "camera_position_xyz": [
+      3.197278920968982,
+      3.5836132005037675,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      48.26084225847384,
+      -16.153846153846153,
+      48.26083942993529
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_32.png",
+    "edge_path": "scene_0000/edge_32.png"
+  },
+  {
+    "view_id": 33,
+    "image_path": "scene_0000/view_33.png",
+    "azimuth_deg": 75.40643350065147,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      -73.84614749472362,
+      179.999991348578,
+      -14.59356318066225
+    ],
+    "camera_position_xyz": [
+      1.2100640629313126,
+      4.6476468274708225,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      75.40643350065147,
+      -16.153846153846153,
+      -104.5935656851404
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_33.png",
+    "edge_path": "scene_0000/edge_33.png"
+  },
+  {
+    "view_id": 34,
+    "image_path": "scene_0000/view_34.png",
+    "azimuth_deg": 95.12544751590015,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      -73.84615432491279,
+      -179.999991348578,
+      5.125447804597969
+    ],
+    "camera_position_xyz": [
+      -0.4290474607590539,
+      4.7833873296769145,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      95.12544751590013,
+      -16.153846153846153,
+      -84.87455469988019
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_34.png",
+    "edge_path": "scene_0000/edge_34.png"
+  },
+  {
+    "view_id": 35,
+    "image_path": "scene_0000/view_35.png",
+    "azimuth_deg": 120.37469254516724,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385068404355,
+      -1.1752909064465628e-07,
+      -149.62530682645254
+    ],
+    "camera_position_xyz": [
+      -2.4284430933319534,
+      4.143373047620232,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      120.37469254516725,
+      -16.153846153846153,
+      120.37469066906931
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_35.png",
+    "edge_path": "scene_0000/edge_35.png"
+  },
+  {
+    "view_id": 36,
+    "image_path": "scene_0000/view_36.png",
+    "azimuth_deg": 146.37171358262157,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385068404355,
+      -5.9474263708391765e-06,
+      -123.62828178868503
+    ],
+    "camera_position_xyz": [
+      -3.9988671095784727,
+      2.659687558573176,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      146.37171358262157,
+      -16.153846153846153,
+      146.37171570683682
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_36.png",
+    "edge_path": "scene_0000/edge_36.png"
+  },
+  {
+    "view_id": 37,
+    "image_path": "scene_0000/view_37.png",
+    "azimuth_deg": 168.85334221702257,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385068404355,
+      1.53903132770427e-06,
+      -101.14665266388553
+    ],
+    "camera_position_xyz": [
+      -4.711992385654223,
+      0.9284416119681739,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      168.8533422170226,
+      -16.153846153846153,
+      168.85334483163632
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_37.png",
+    "edge_path": "scene_0000/edge_37.png"
+  },
+  {
+    "view_id": 38,
+    "image_path": "scene_0000/view_38.png",
+    "azimuth_deg": 194.6042896822376,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.1538370236652,
+      7.4967406099396805e-06,
+      -75.39569885134607
+    ],
+    "camera_position_xyz": [
+      -4.647420276720314,
+      -1.2109338713680107,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -165.3957103177624,
+      -16.153846153846153,
+      -165.39570135582423
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_38.png",
+    "edge_path": "scene_0000/edge_38.png"
+  },
+  {
+    "view_id": 39,
+    "image_path": "scene_0000/view_39.png",
+    "azimuth_deg": 216.5569354458487,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15384385385437,
+      -2.1276154135029263e-06,
+      -53.44306104757489
+    ],
+    "camera_position_xyz": [
+      -3.857754738733642,
+      -2.8605252044118683,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -143.4430645541513,
+      -16.153846153846153,
+      -143.44306355205305
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_39.png",
+    "edge_path": "scene_0000/edge_39.png"
+  },
+  {
+    "view_id": 40,
+    "image_path": "scene_0000/view_40.png",
+    "azimuth_deg": 241.47291722074746,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15384385385437,
+      3.8010504682698565e-06,
+      -28.52707907804927
+    ],
+    "camera_position_xyz": [
+      -2.293592908793569,
+      -4.219515095129924,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -118.52708277925251,
+      -16.153846153846153,
+      -118.52708158252743
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_40.png",
+    "edge_path": "scene_0000/edge_40.png"
+  },
+  {
+    "view_id": 41,
+    "image_path": "scene_0000/view_41.png",
+    "azimuth_deg": 260.72993556232075,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385751423271,
+      2.8457939223526207e-07,
+      -9.270066784003767
+    ],
+    "camera_position_xyz": [
+      -0.7736406322913224,
+      -4.739868800016022,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -99.27006443767925,
+      -16.153846153846153,
+      -99.27006928848192
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_41.png",
+    "edge_path": "scene_0000/edge_41.png"
+  },
+  {
+    "view_id": 42,
+    "image_path": "scene_0000/view_42.png",
+    "azimuth_deg": 286.0408675846911,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385751423271,
+      -5.651641604572306e-07,
+      16.040870020504197
+    ],
+    "camera_position_xyz": [
+      1.327065887564579,
+      -4.615600957552534,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -73.95913241530889,
+      -16.153846153846153,
+      -73.95913248397396
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_42.png",
+    "edge_path": "scene_0000/edge_42.png"
+  },
+  {
+    "view_id": 43,
+    "image_path": "scene_0000/view_43.png",
+    "azimuth_deg": 310.4835933379352,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385751423271,
+      2.799134625397927e-06,
+      40.483596720176095
+    ],
+    "camera_position_xyz": [
+      3.117987209203423,
+      -3.6528114969898575,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -49.51640666206481,
+      -16.153846153846153,
+      -49.516405784302066
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_43.png",
+    "edge_path": "scene_0000/edge_43.png"
+  },
+  {
+    "view_id": 44,
+    "image_path": "scene_0000/view_44.png",
+    "azimuth_deg": 332.9745022338501,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385068404355,
+      3.539639203222998e-06,
+      62.974508072057645
+    ],
+    "camera_position_xyz": [
+      4.278168806018105,
+      -2.1822345741260394,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -27.025497766149897,
+      -16.153846153846153,
+      -27.025494432420516
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_44.png",
+    "edge_path": "scene_0000/edge_44.png"
+  },
+  {
+    "view_id": 45,
+    "image_path": "scene_0000/view_45.png",
+    "azimuth_deg": 357.93867255192794,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077094131862,
+      -1.522331532738215e-06,
+      87.93867190353583
+    ],
+    "camera_position_xyz": [
+      4.932057708623941,
+      -0.1775169939540395,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -2.0613274480720065,
+      -9.23076923076923,
+      -2.0613306009423127
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_45.png",
+    "edge_path": "scene_0000/edge_45.png"
+  },
+  {
+    "view_id": 46,
+    "image_path": "scene_0000/view_46.png",
+    "azimuth_deg": 22.63629674116077,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23076411112945,
+      -5.1822136158045e-07,
+      112.6363012630326
+    ],
+    "camera_position_xyz": [
+      4.555072034354631,
+      1.899480004153684,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      22.636296741160777,
+      -9.23076923076923,
+      22.63629875855446
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_46.png",
+    "edge_path": "scene_0000/edge_46.png"
+  },
+  {
+    "view_id": 47,
+    "image_path": "scene_0000/view_47.png",
+    "azimuth_deg": 49.71579636684928,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077094131862,
+      5.4748893771480205e-06,
+      139.7158088314096
+    ],
+    "camera_position_xyz": [
+      3.1910322688745643,
+      3.764839781895183,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      49.715796366849276,
+      -9.23076923076923,
+      49.71580632693144
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_47.png",
+    "edge_path": "scene_0000/edge_47.png"
+  },
+  {
+    "view_id": 48,
+    "image_path": "scene_0000/view_48.png",
+    "azimuth_deg": 78.1895657128968,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23075728094028,
+      -4.197289568262821e-06,
+      168.18956974525045
+    ],
+    "camera_position_xyz": [
+      1.0101191700286298,
+      4.830772690437834,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      78.18956571289681,
+      -9.23076923076923,
+      78.1895672407723
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_48.png",
+    "edge_path": "scene_0000/edge_48.png"
+  },
+  {
+    "view_id": 49,
+    "image_path": "scene_0000/view_49.png",
+    "azimuth_deg": 101.81441966634065,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077094131862,
+      -9.42818287113343e-07,
+      -168.18558091477516
+    ],
+    "camera_position_xyz": [
+      -1.010455186421448,
+      4.830702416892735,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      101.81441966634065,
+      -9.23076923076923,
+      101.8144165807467
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_49.png",
+    "edge_path": "scene_0000/edge_49.png"
+  },
+  {
+    "view_id": 50,
+    "image_path": "scene_0000/view_50.png",
+    "azimuth_deg": 127.56996746061597,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077094131862,
+      1.0039745014172725e-06,
+      -142.43003038492427
+    ],
+    "camera_position_xyz": [
+      -3.0091697381888403,
+      3.9117263466540986,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      127.569967460616,
+      -9.23076923076923,
+      127.56996711059759
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_50.png",
+    "edge_path": "scene_0000/edge_50.png"
+  },
+  {
+    "view_id": 51,
+    "image_path": "scene_0000/view_51.png",
+    "azimuth_deg": 152.04476852309432,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077094131862,
+      5.975685573739542e-06,
+      -117.95523594709917
+    ],
+    "camera_position_xyz": [
+      -4.359377312403814,
+      2.3135546184255564,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      152.04476852309432,
+      -9.23076923076923,
+      152.04476154842268
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_51.png",
+    "edge_path": "scene_0000/edge_51.png"
+  },
+  {
+    "view_id": 52,
+    "image_path": "scene_0000/view_52.png",
+    "azimuth_deg": 178.20240034152172,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077094131862,
+      -4.239491508664724e-06,
+      -91.79760584118797
+    ],
+    "camera_position_xyz": [
+      -4.932822554643957,
+      0.1548133351335717,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      178.20240034152175,
+      -9.23076923076923,
+      178.20239165433384
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_52.png",
+    "edge_path": "scene_0000/edge_52.png"
+  },
+  {
+    "view_id": 53,
+    "image_path": "scene_0000/view_53.png",
+    "azimuth_deg": 209.08276396235354,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077094131862,
+      5.413687159301179e-06,
+      -60.917241433671464
+    ],
+    "camera_position_xyz": [
+      -4.313007353839813,
+      -2.398889970395268,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -150.9172360376465,
+      -9.23076923076923,
+      -150.91724393814962
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_53.png",
+    "edge_path": "scene_0000/edge_53.png"
+  },
+  {
+    "view_id": 54,
+    "image_path": "scene_0000/view_54.png",
+    "azimuth_deg": 232.570558686188,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077777150779,
+      -2.3509544721240434e-06,
+      -37.4294537271428
+    ],
+    "camera_position_xyz": [
+      -2.9995666250926334,
+      -3.9190949957827903,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -127.42944131381199,
+      -9.23076923076923,
+      -127.42945623162096
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_54.png",
+    "edge_path": "scene_0000/edge_54.png"
+  },
+  {
+    "view_id": 55,
+    "image_path": "scene_0000/view_55.png",
+    "azimuth_deg": 257.98472490085965,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077094131862,
+      -5.448737991446154e-08,
+      -12.015276052009156
+    ],
+    "camera_position_xyz": [
+      -1.0273833983574772,
+      -4.8271305013557235,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -102.01527509914035,
+      -9.23076923076923,
+      -102.01527855648732
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_55.png",
+    "edge_path": "scene_0000/edge_55.png"
+  },
+  {
+    "view_id": 56,
+    "image_path": "scene_0000/view_56.png",
+    "azimuth_deg": 280.3202124289567,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077777150779,
+      -6.830148560690578e-07,
+      10.32021434530875
+    ],
+    "camera_position_xyz": [
+      0.8841467810076852,
+      -4.855408324124045,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -79.67978757104328,
+      -9.23076923076923,
+      -79.6797881591694
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_56.png",
+    "edge_path": "scene_0000/edge_56.png"
+  },
+  {
+    "view_id": 57,
+    "image_path": "scene_0000/view_57.png",
+    "azimuth_deg": 310.338978155617,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077777150779,
+      -2.9334480755965087e-06,
+      40.338984539974
+    ],
+    "camera_position_xyz": [
+      3.194629981020518,
+      -3.761787448634513,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -49.661021844383015,
+      -9.23076923076923,
+      -49.66101796450417
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_57.png",
+    "edge_path": "scene_0000/edge_57.png"
+  },
+  {
+    "view_id": 58,
+    "image_path": "scene_0000/view_58.png",
+    "azimuth_deg": 331.6891049518777,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077094131862,
+      -4.9274040627211115e-06,
+      61.68910745139627
+    ],
+    "camera_position_xyz": [
+      4.344932023732753,
+      -2.340570706789462,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -28.31089504812229,
+      -9.23076923076923,
+      -28.31089505308188
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_58.png",
+    "edge_path": "scene_0000/edge_58.png"
+  },
+  {
+    "view_id": 59,
+    "image_path": "scene_0000/view_59.png",
+    "azimuth_deg": 359.07008483641613,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30769802878287,
+      -4.54995232112049e-06,
+      89.07009273954844
+    ],
+    "camera_position_xyz": [
+      4.9952870005249,
+      -0.08108103393866806,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -0.929915163583928,
+      -2.3076923076923066,
+      -0.9299097649297323
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_59.png",
+    "edge_path": "scene_0000/edge_59.png"
+  },
+  {
+    "view_id": 60,
+    "image_path": "scene_0000/view_60.png",
+    "azimuth_deg": 29.49060870491088,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30769802878287,
+      -2.4176231729130106e-06,
+      119.49060783100467
+    ],
+    "camera_position_xyz": [
+      4.3486523570093745,
+      2.459408268172333,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      29.49060870491087,
+      -2.3076923076923066,
+      29.49060532652652
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_60.png",
+    "edge_path": "scene_0000/edge_60.png"
+  },
+  {
+    "view_id": 61,
+    "image_path": "scene_0000/view_61.png",
+    "azimuth_deg": 52.50856957601729,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30770485897203,
+      3.9074969670158285e-06,
+      142.50857756037942
+    ],
+    "camera_position_xyz": [
+      3.0407457603814243,
+      3.9640044869298543,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      52.508569576017294,
+      -2.3076923076923066,
+      52.50857505590125
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_61.png",
+    "edge_path": "scene_0000/edge_61.png"
+  },
+  {
+    "view_id": 62,
+    "image_path": "scene_0000/view_62.png",
+    "azimuth_deg": 77.58218373769013,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.3076911985937,
+      -3.966919295574049e-06,
+      167.58218834311788
+    ],
+    "camera_position_xyz": [
+      1.074323091858735,
+      4.879067149156354,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      77.58218373769012,
+      -2.3076923076923066,
+      77.5821858386397
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_62.png",
+    "edge_path": "scene_0000/edge_62.png"
+  },
+  {
+    "view_id": 63,
+    "image_path": "scene_0000/view_63.png",
+    "azimuth_deg": 104.2813099362076,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30769802878287,
+      5.756250709601016e-06,
+      -165.71869417148497
+    ],
+    "camera_position_xyz": [
+      -1.2324142165826835,
+      4.841551564368856,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      104.2813099362076,
+      -2.3076923076923066,
+      104.28130332403686
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_63.png",
+    "edge_path": "scene_0000/edge_63.png"
+  },
+  {
+    "view_id": 64,
+    "image_path": "scene_0000/view_64.png",
+    "azimuth_deg": 131.21628624146425,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.3076911985937,
+      5.496671749383929e-07,
+      -138.7837065757563
+    ],
+    "camera_position_xyz": [
+      -3.2918446727800985,
+      3.758087944948456,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      131.21628624146422,
+      -2.3076923076923066,
+      131.21629091976553
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_64.png",
+    "edge_path": "scene_0000/edge_64.png"
+  },
+  {
+    "view_id": 65,
+    "image_path": "scene_0000/view_65.png",
+    "azimuth_deg": 156.4148564604996,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.3076911985937,
+      -1.3380233251682698e-06,
+      -113.58514431234161
+    ],
+    "camera_position_xyz": [
+      -4.578616254528091,
+      1.9989346025942856,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      156.4148564604996,
+      -2.3076923076923066,
+      156.41485318318024
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_65.png",
+    "edge_path": "scene_0000/edge_65.png"
+  },
+  {
+    "view_id": 66,
+    "image_path": "scene_0000/view_66.png",
+    "azimuth_deg": 177.90979941229452,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30769802878287,
+      -4.634626116516785e-06,
+      -92.09021114523132
+    ],
+    "camera_position_xyz": [
+      -4.9926209209207535,
+      0.18221605764044843,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      177.90979941229455,
+      -2.3076923076923066,
+      177.90978635029052
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_66.png",
+    "edge_path": "scene_0000/edge_66.png"
+  },
+  {
+    "view_id": 67,
+    "image_path": "scene_0000/view_67.png",
+    "azimuth_deg": 202.10477331011688,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30769802878287,
+      -9.960742834773292e-08,
+      -67.89523589732329
+    ],
+    "camera_position_xyz": [
+      -4.628729467149336,
+      -1.8799813487428652,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -157.8952266898831,
+      -2.3076923076923066,
+      -157.89523840180146
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_67.png",
+    "edge_path": "scene_0000/edge_67.png"
+  },
+  {
+    "view_id": 68,
+    "image_path": "scene_0000/view_68.png",
+    "azimuth_deg": 230.0049235135986,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30768436840452,
+      -3.664408139600195e-06,
+      -39.99507426998011
+    ],
+    "camera_position_xyz": [
+      -3.211002657044677,
+      -3.82739183885445,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -129.9950764864014,
+      -2.3076923076923066,
+      -129.99507677445825
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_68.png",
+    "edge_path": "scene_0000/edge_68.png"
+  },
+  {
+    "view_id": 69,
+    "image_path": "scene_0000/view_69.png",
+    "azimuth_deg": 255.35114390038402,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30769802878287,
+      -9.28389967967477e-07,
+      -14.648856977088087
+    ],
+    "camera_position_xyz": [
+      -1.2634466703559144,
+      -4.833546199514822,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -104.64885609961595,
+      -2.3076923076923066,
+      -104.64885948156625
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_69.png",
+    "edge_path": "scene_0000/edge_69.png"
+  },
+  {
+    "view_id": 70,
+    "image_path": "scene_0000/view_70.png",
+    "azimuth_deg": 280.62758193623733,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30769802878287,
+      5.691248924798384e-07,
+      10.627581395695788
+    ],
+    "camera_position_xyz": [
+      0.9213747070927774,
+      -4.910247957161361,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -79.37241806376267,
+      -2.3076923076923066,
+      -79.37242110878238
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_70.png",
+    "edge_path": "scene_0000/edge_70.png"
+  },
+  {
+    "view_id": 71,
+    "image_path": "scene_0000/view_71.png",
+    "azimuth_deg": 311.9881606534418,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30769802878287,
+      3.575741806634478e-06,
+      41.98816445092485
+    ],
+    "camera_position_xyz": [
+      3.3421724515872264,
+      -3.713401359337427,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -48.01183934655819,
+      -2.3076923076923066,
+      -48.011838053553305
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_71.png",
+    "edge_path": "scene_0000/edge_71.png"
+  },
+  {
+    "view_id": 72,
+    "image_path": "scene_0000/view_72.png",
+    "azimuth_deg": 337.189121689932,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.3076911985937,
+      4.660053048195526e-06,
+      67.1891241107382
+    ],
+    "camera_position_xyz": [
+      4.6052099367162835,
+      -1.9368809437978431,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -22.810878310068006,
+      -2.3076923076923066,
+      -22.810878393739955
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_72.png",
+    "edge_path": "scene_0000/edge_72.png"
+  },
+  {
+    "view_id": 73,
+    "image_path": "scene_0000/view_73.png",
+    "azimuth_deg": 358.57037222330257,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      -1.0861094508446358e-05,
+      88.5703756093028
+    ],
+    "camera_position_xyz": [
+      4.982235198510716,
+      -0.1243411021939322,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -1.42962777669743,
+      4.615384615384613,
+      -1.4296268951753746
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_73.png",
+    "edge_path": "scene_0000/edge_73.png"
+  },
+  {
+    "view_id": 74,
+    "image_path": "scene_0000/view_74.png",
+    "azimuth_deg": 26.913383989417646,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461145586876,
+      -6.801762746269453e-07,
+      116.9133862118621
+    ],
+    "camera_position_xyz": [
+      4.444001685623912,
+      2.2558761715009408,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      26.91338398941764,
+      4.615384615384613,
+      26.913383707383957
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_74.png",
+    "edge_path": "scene_0000/edge_74.png"
+  },
+  {
+    "view_id": 75,
+    "image_path": "scene_0000/view_75.png",
+    "azimuth_deg": 50.623446093896554,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      3.360784349265453e-06,
+      140.6234453494559
+    ],
+    "camera_position_xyz": [
+      3.1617851932582934,
+      3.8524333446104597,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      50.62344609389655,
+      4.615384615384613,
+      50.62344284497772
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_75.png",
+    "edge_path": "scene_0000/edge_75.png"
+  },
+  {
+    "view_id": 76,
+    "image_path": "scene_0000/view_76.png",
+    "azimuth_deg": 80.34079569228419,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38462511624711,
+      4.714684901625839e-06,
+      170.34079246585932
+    ],
+    "camera_position_xyz": [
+      0.8362170700761734,
+      4.9131323302641805,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      80.34079569228419,
+      4.615384615384613,
+      80.34078996138118
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_76.png",
+    "edge_path": "scene_0000/edge_76.png"
+  },
+  {
+    "view_id": 77,
+    "image_path": "scene_0000/view_77.png",
+    "azimuth_deg": 102.5397142913885,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      -4.06585744616127e-06,
+      -167.4602831268115
+    ],
+    "camera_position_xyz": [
+      -1.0820611777123252,
+      4.864902043275047,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      102.53971429138852,
+      4.615384615384613,
+      102.53971436871035
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_77.png",
+    "edge_path": "scene_0000/edge_77.png"
+  },
+  {
+    "view_id": 78,
+    "image_path": "scene_0000/view_78.png",
+    "azimuth_deg": 126.75764699869927,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      7.065773720379627e-06,
+      -143.24235844329223
+    ],
+    "camera_position_xyz": [
+      -2.9824550287790323,
+      3.9928799486441586,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      126.75764699869927,
+      4.615384615384613,
+      126.75763905222959
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_78.png",
+    "edge_path": "scene_0000/edge_78.png"
+  },
+  {
+    "view_id": 79,
+    "image_path": "scene_0000/view_79.png",
+    "azimuth_deg": 152.33112648792502,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      7.18970156543242e-06,
+      -117.66887343595721
+    ],
+    "camera_position_xyz": [
+      -4.413870739384119,
+      2.314275994556961,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      152.33112648792502,
+      4.615384615384613,
+      152.33112405956462
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_79.png",
+    "edge_path": "scene_0000/edge_79.png"
+  },
+  {
+    "view_id": 80,
+    "image_path": "scene_0000/view_80.png",
+    "azimuth_deg": 180.47341132068718,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38463194643629,
+      -7.3798598562835124e-06,
+      -89.52659526291541
+    ],
+    "camera_position_xyz": [
+      -4.98361641925868,
+      -0.04117849765603452,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -179.5265886793128,
+      4.615384615384613,
+      -179.52659776739358
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_80.png",
+    "edge_path": "scene_0000/edge_80.png"
+  },
+  {
+    "view_id": 81,
+    "image_path": "scene_0000/view_81.png",
+    "azimuth_deg": 203.8840066943198,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      4.0889096993815185e-06,
+      -66.11599210910248
+    ],
+    "camera_position_xyz": [
+      -4.557009993450523,
+      -2.0178672410656713,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -156.1159933056802,
+      4.615384615384613,
+      -156.11599461358065
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_81.png",
+    "edge_path": "scene_0000/edge_81.png"
+  },
+  {
+    "view_id": 82,
+    "image_path": "scene_0000/view_82.png",
+    "azimuth_deg": 232.08109192458159,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      -8.969887841528244e-07,
+      -37.91891191325509
+    ],
+    "camera_position_xyz": [
+      -3.062763944584109,
+      -3.931616118433933,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -127.91890807541841,
+      4.615384615384613,
+      -127.91891441773325
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_82.png",
+    "edge_path": "scene_0000/edge_82.png"
+  },
+  {
+    "view_id": 83,
+    "image_path": "scene_0000/view_83.png",
+    "azimuth_deg": 260.2117765306477,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      -1.3919735730081258e-08,
+      -9.788222863687505
+    ],
+    "camera_position_xyz": [
+      -0.8472783770759432,
+      -4.911236874221551,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -99.78822346935232,
+      4.615384615384613,
+      -99.78822536816567
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_83.png",
+    "edge_path": "scene_0000/edge_83.png"
+  },
+  {
+    "view_id": 84,
+    "image_path": "scene_0000/view_84.png",
+    "azimuth_deg": 282.08108961108303,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      5.032570299152263e-07,
+      12.081090047304107
+    ],
+    "camera_position_xyz": [
+      1.0430857682507264,
+      -4.873407469424931,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -77.91891038891697,
+      4.615384615384613,
+      -77.91891245717406
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_84.png",
+    "edge_path": "scene_0000/edge_84.png"
+  },
+  {
+    "view_id": 85,
+    "image_path": "scene_0000/view_85.png",
+    "azimuth_deg": 306.40618871349903,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38462511624711,
+      8.684078617853191e-07,
+      36.40619576682651
+    ],
+    "camera_position_xyz": [
+      2.9579063298822015,
+      -4.0110994037316905,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -53.593811286500966,
+      4.615384615384613,
+      -53.59380673765165
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_85.png",
+    "edge_path": "scene_0000/edge_85.png"
+  },
+  {
+    "view_id": 86,
+    "image_path": "scene_0000/view_86.png",
+    "azimuth_deg": 338.1238615358194,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461145586876,
+      2.9092219178099886e-06,
+      68.1238696496003
+    ],
+    "camera_position_xyz": [
+      4.624911591444179,
+      -1.856965550111039,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -21.8761384641806,
+      4.615384615384613,
+      -21.87613285487788
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_86.png",
+    "edge_path": "scene_0000/edge_86.png"
+  },
+  {
+    "view_id": 87,
+    "image_path": "scene_0000/view_87.png",
+    "azimuth_deg": 0.07348855121844054,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      1.9770114166702625e-06,
+      90.07348850975833
+    ],
+    "camera_position_xyz": [
+      4.898949230561147,
+      0.006283479899012942,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      0.07348855121844622,
+      11.53846153846154,
+      0.07348600528018778
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_87.png",
+    "edge_path": "scene_0000/edge_87.png"
+  },
+  {
+    "view_id": 88,
+    "image_path": "scene_0000/view_88.png",
+    "azimuth_deg": 22.558444036769266,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46154537352218,
+      1.8515624013688565e-06,
+      112.55845759706197
+    ],
+    "camera_position_xyz": [
+      4.5241279737003195,
+      1.879364020970269,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      22.55844403676926,
+      11.53846153846154,
+      22.558455092583813
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_88.png",
+    "edge_path": "scene_0000/edge_88.png"
+  },
+  {
+    "view_id": 89,
+    "image_path": "scene_0000/view_89.png",
+    "azimuth_deg": 47.93489775327652,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46154537352218,
+      -6.362208155513948e-06,
+      137.93490530722048
+    ],
+    "camera_position_xyz": [
+      3.2821741111506064,
+      3.6369047485228467,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      47.934897753276516,
+      11.53846153846154,
+      47.93490280274233
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_89.png",
+    "edge_path": "scene_0000/edge_89.png"
+  },
+  {
+    "view_id": 90,
+    "image_path": "scene_0000/view_90.png",
+    "azimuth_deg": 74.13157900556223,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      -5.992374682041868e-07,
+      164.13157677442746
+    ],
+    "camera_position_xyz": [
+      1.3395164105477246,
+      4.7122647242709785,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      74.13157900556223,
+      11.53846153846154,
+      74.13157426994928
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_90.png",
+    "edge_path": "scene_0000/edge_90.png"
+  },
+  {
+    "view_id": 91,
+    "image_path": "scene_0000/view_91.png",
+    "azimuth_deg": 103.84029803599527,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      5.539146555933065e-06,
+      -166.15970582581434
+    ],
+    "camera_position_xyz": [
+      -1.1719101082166323,
+      4.75671837972304,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      103.84029803599526,
+      11.53846153846154,
+      103.84029166970748
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_91.png",
+    "edge_path": "scene_0000/edge_91.png"
+  },
+  {
+    "view_id": 92,
+    "image_path": "scene_0000/view_92.png",
+    "azimuth_deg": 130.82461223937145,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153171314384,
+      1.809525951588139e-06,
+      -139.1753769435215
+    ],
+    "camera_position_xyz": [
+      -3.2026697360529663,
+      3.707107984333033,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      130.82461223937145,
+      11.53846153846154,
+      130.82462055200034
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_92.png",
+    "edge_path": "scene_0000/edge_92.png"
+  },
+  {
+    "view_id": 93,
+    "image_path": "scene_0000/view_93.png",
+    "azimuth_deg": 153.68523402959755,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46154537352218,
+      1.9779982537323894e-06,
+      -116.31477477262385
+    ],
+    "camera_position_xyz": [
+      -4.391285583127003,
+      2.1717168261898787,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      153.68523402959755,
+      11.53846153846154,
+      153.685222722898
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_93.png",
+    "edge_path": "scene_0000/edge_93.png"
+  },
+  {
+    "view_id": 94,
+    "image_path": "scene_0000/view_94.png",
+    "azimuth_deg": 176.63292801888653,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46154537352218,
+      -7.075865187828474e-06,
+      -93.36707402943019
+    ],
+    "camera_position_xyz": [
+      -4.890496425407099,
+      0.28772862008442623,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      176.63292801888656,
+      11.53846153846154,
+      176.63292346609165
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_94.png",
+    "edge_path": "scene_0000/edge_94.png"
+  },
+  {
+    "view_id": 95,
+    "image_path": "scene_0000/view_95.png",
+    "azimuth_deg": 204.80106306733614,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46154537352218,
+      -1.2242176844447654e-06,
+      -65.19894359037988
+    ],
+    "camera_position_xyz": [
+      -4.44712131101597,
+      -2.0549586591566515,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      -155.19893693266386,
+      11.53846153846154,
+      -155.19894609485806
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_95.png",
+    "edge_path": "scene_0000/edge_95.png"
+  },
+  {
+    "view_id": 96,
+    "image_path": "scene_0000/view_96.png",
+    "azimuth_deg": 235.25579350470932,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46154537352218,
+      -1.1644810661951417e-06,
+      -34.74420242099272
+    ],
+    "camera_position_xyz": [
+      -2.791980472104811,
+      -4.025492279103352,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      -124.74420649529065,
+      11.53846153846154,
+      -124.74420492547088
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_96.png",
+    "edge_path": "scene_0000/edge_96.png"
+  },
+  {
+    "view_id": 97,
+    "image_path": "scene_0000/view_97.png",
+    "azimuth_deg": 257.3674535193362,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46154537352218,
+      1.0556067610052778e-06,
+      -12.632546714286242
+    ],
+    "camera_position_xyz": [
+      -1.0713891691378874,
+      -4.780362778491747,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      -102.63254648066379,
+      11.53846153846154,
+      -102.63254921876441
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_97.png",
+    "edge_path": "scene_0000/edge_97.png"
+  },
+  {
+    "view_id": 98,
+    "image_path": "scene_0000/view_98.png",
+    "azimuth_deg": 286.49117605587645,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      1.799557329883309e-07,
+      16.491180977388552
+    ],
+    "camera_position_xyz": [
+      1.3906544792702966,
+      -4.6974272921484115,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      -73.50882394412355,
+      11.53846153846154,
+      -73.50882152708961
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_98.png",
+    "edge_path": "scene_0000/edge_98.png"
+  },
+  {
+    "view_id": 99,
+    "image_path": "scene_0000/view_99.png",
+    "azimuth_deg": 311.3545862743804,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      8.11236246386327e-07,
+      41.35459268841988
+    ],
+    "camera_position_xyz": [
+      3.2368222172771683,
+      -3.6773257918596522,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      -48.64541372561962,
+      11.53846153846154,
+      -48.645409816058276
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_99.png",
+    "edge_path": "scene_0000/edge_99.png"
+  },
+  {
+    "view_id": 100,
+    "image_path": "scene_0000/view_100.png",
+    "azimuth_deg": 330.5171393121303,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      -1.0615729523434045e-05,
+      60.51713578228129
+    ],
+    "camera_position_xyz": [
+      4.2645533105546996,
+      -2.411084425558809,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      -29.482860687869675,
+      11.53846153846154,
+      -29.48286672219689
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_100.png",
+    "edge_path": "scene_0000/edge_100.png"
+  },
+  {
+    "view_id": 101,
+    "image_path": "scene_0000/view_101.png",
+    "azimuth_deg": 1.7027111779215016,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53846563079726,
+      -2.857800897941707e-07,
+      91.70271402304898
+    ],
+    "camera_position_xyz": [
+      4.740588103181241,
+      0.14092188800980052,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      1.7027111779215147,
+      18.46153846153846,
+      1.7027115185708226
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_101.png",
+    "edge_path": "scene_0000/edge_101.png"
+  },
+  {
+    "view_id": 102,
+    "image_path": "scene_0000/view_102.png",
+    "azimuth_deg": 27.116051418205007,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53846563079726,
+      2.56586877572715e-06,
+      117.11606524529306
+    ],
+    "camera_position_xyz": [
+      4.221391000026764,
+      2.161687435185023,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      27.116051418205018,
+      18.46153846153846,
+      27.116062740814897
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_102.png",
+    "edge_path": "scene_0000/edge_102.png"
+  },
+  {
+    "view_id": 103,
+    "image_path": "scene_0000/view_103.png",
+    "azimuth_deg": 51.71377112029642,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53845197041892,
+      -4.172087361855653e-06,
+      141.7137757674217
+    ],
+    "camera_position_xyz": [
+      2.9385203285265247,
+      3.722651316115993,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      51.71377112029643,
+      18.46153846153846,
+      51.71377326294356
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_103.png",
+    "edge_path": "scene_0000/edge_103.png"
+  },
+  {
+    "view_id": 104,
+    "image_path": "scene_0000/view_104.png",
+    "azimuth_deg": 75.34408003677676,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53846563079726,
+      -3.167361231756057e-06,
+      165.34408561626645
+    ],
+    "camera_position_xyz": [
+      1.1999636215648855,
+      4.588368103091191,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      75.34408003677675,
+      18.46153846153846,
+      75.34408311178828
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_104.png",
+    "edge_path": "scene_0000/edge_104.png"
+  },
+  {
+    "view_id": 105,
+    "image_path": "scene_0000/view_105.png",
+    "azimuth_deg": 103.94456244618709,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.5384588006081,
+      -2.3273896661557676e-06,
+      -166.05543615794494
+    ],
+    "camera_position_xyz": [
+      -1.1429055761877824,
+      4.602912272297033,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      103.94456244618709,
+      18.46153846153846,
+      103.94456133757689
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_105.png",
+    "edge_path": "scene_0000/edge_105.png"
+  },
+  {
+    "view_id": 106,
+    "image_path": "scene_0000/view_106.png",
+    "azimuth_deg": 125.57483105345392,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53845197041892,
+      1.2480297085673218e-06,
+      -144.42516962262002
+    ],
+    "camera_position_xyz": [
+      -2.7591299982930506,
+      3.8574909196345692,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      125.57483105345392,
+      18.46153846153846,
+      125.57482787290184
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_106.png",
+    "edge_path": "scene_0000/edge_106.png"
+  },
+  {
+    "view_id": 107,
+    "image_path": "scene_0000/view_107.png",
+    "azimuth_deg": 153.78247479087594,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53846563079726,
+      9.762802668060843e-06,
+      -116.2175265392212
+    ],
+    "camera_position_xyz": [
+      -4.2547706349820436,
+      2.0952234692839484,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      153.78247479087594,
+      18.46153846153846,
+      153.78247095630064
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_107.png",
+    "edge_path": "scene_0000/edge_107.png"
+  },
+  {
+    "view_id": 108,
+    "image_path": "scene_0000/view_108.png",
+    "azimuth_deg": 179.64301144882532,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53847246098643,
+      -1.0844866249795158e-05,
+      -90.35699600182723
+    ],
+    "camera_position_xyz": [
+      -4.7425901529226,
+      0.029549686044943912,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      179.6430114488253,
+      18.46153846153846,
+      179.6430014936946
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_108.png",
+    "edge_path": "scene_0000/edge_108.png"
+  },
+  {
+    "view_id": 109,
+    "image_path": "scene_0000/view_109.png",
+    "azimuth_deg": 209.21515144087692,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53847246098643,
+      8.033159018963593e-06,
+      -60.784872367556616
+    ],
+    "camera_position_xyz": [
+      -4.139380004178528,
+      -2.3148580352908774,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -150.78484855912308,
+      18.46153846153846,
+      -150.78487487203478
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_109.png",
+    "edge_path": "scene_0000/edge_109.png"
+  },
+  {
+    "view_id": 110,
+    "image_path": "scene_0000/view_110.png",
+    "azimuth_deg": 234.3280083972032,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53847246098643,
+      1.6264772436720535e-06,
+      -35.67199824237433
+    ],
+    "camera_position_xyz": [
+      -2.7656674511461743,
+      -3.852806521513167,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -125.67199160279677,
+      18.46153846153846,
+      -125.67200074685249
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_110.png",
+    "edge_path": "scene_0000/edge_110.png"
+  },
+  {
+    "view_id": 111,
+    "image_path": "scene_0000/view_111.png",
+    "azimuth_deg": 255.31757267722273,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.5384792911756,
+      -2.694511475039745e-07,
+      -14.682429064405992
+    ],
+    "camera_position_xyz": [
+      -1.2020862589033219,
+      -4.587812460061939,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -104.68242732277724,
+      18.46153846153846,
+      -104.68243156888416
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_111.png",
+    "edge_path": "scene_0000/edge_111.png"
+  },
+  {
+    "view_id": 112,
+    "image_path": "scene_0000/view_112.png",
+    "azimuth_deg": 282.8616643006737,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.5384792911756,
+      9.515155011675862e-07,
+      12.861664556220674
+    ],
+    "camera_position_xyz": [
+      1.0557109522793664,
+      -4.623689968821565,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -77.13833569932632,
+      18.46153846153846,
+      -77.13833794825749
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_112.png",
+    "edge_path": "scene_0000/edge_112.png"
+  },
+  {
+    "view_id": 113,
+    "image_path": "scene_0000/view_113.png",
+    "azimuth_deg": 306.09245736408957,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53846563079726,
+      -7.710289463251378e-07,
+      36.09246127258573
+    ],
+    "camera_position_xyz": [
+      2.7938665935220537,
+      -3.8324070765179994,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -53.90754263591043,
+      18.46153846153846,
+      -53.907541231892424
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_113.png",
+    "edge_path": "scene_0000/edge_113.png"
+  },
+  {
+    "view_id": 114,
+    "image_path": "scene_0000/view_114.png",
+    "azimuth_deg": 337.4688433320886,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.5384588006081,
+      3.978629029244824e-06,
+      67.46884084781773
+    ],
+    "camera_position_xyz": [
+      4.380679432019785,
+      -1.8173283292852114,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -22.53115666791132,
+      18.46153846153846,
+      -22.53116165666043
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_114.png",
+    "edge_path": "scene_0000/edge_114.png"
+  },
+  {
+    "view_id": 115,
+    "image_path": "scene_0000/view_115.png",
+    "azimuth_deg": 2.858286110169345,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61537905788316,
+      -9.287472892914988e-06,
+      92.8582795777776
+    ],
+    "camera_position_xyz": [
+      4.511632378963567,
+      0.22525645835306454,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      2.858286110169331,
+      25.384615384615387,
+      2.8582770732994334
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_115.png",
+    "edge_path": "scene_0000/edge_115.png"
+  },
+  {
+    "view_id": 116,
+    "image_path": "scene_0000/view_116.png",
+    "azimuth_deg": 24.159431248318025,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      -1.039341679164198e-05,
+      114.15942661775628
+    ],
+    "camera_position_xyz": [
+      4.121586673654949,
+      1.848807855482053,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      24.159431248318015,
+      25.384615384615387,
+      24.159424113278135
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_116.png",
+    "edge_path": "scene_0000/edge_116.png"
+  },
+  {
+    "view_id": 117,
+    "image_path": "scene_0000/view_117.png",
+    "azimuth_deg": 52.50046753182347,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      6.067277813456707e-06,
+      142.5004769560238
+    ],
+    "camera_position_xyz": [
+      2.7498996444558084,
+      3.583799539645603,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      52.50046753182346,
+      25.384615384615387,
+      52.50047445154564
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_117.png",
+    "edge_path": "scene_0000/edge_117.png"
+  },
+  {
+    "view_id": 118,
+    "image_path": "scene_0000/view_118.png",
+    "azimuth_deg": 77.98348448823732,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.615372227694,
+      -3.5858125114223643e-06,
+      167.98348927761282
+    ],
+    "camera_position_xyz": [
+      0.9404631423447665,
+      4.418268469981563,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      77.98348448823731,
+      25.384615384615387,
+      77.98348677313464
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_118.png",
+    "edge_path": "scene_0000/edge_118.png"
+  },
+  {
+    "view_id": 119,
+    "image_path": "scene_0000/view_119.png",
+    "azimuth_deg": 100.17904578595433,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.6153927182615,
+      7.24965110273464e-06,
+      -169.820960428508
+    ],
+    "camera_position_xyz": [
+      -0.7983104346144642,
+      4.446152004253553,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      100.17904578595432,
+      25.384615384615387,
+      100.17903706701384
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_119.png",
+    "edge_path": "scene_0000/edge_119.png"
+  },
+  {
+    "view_id": 120,
+    "image_path": "scene_0000/view_120.png",
+    "azimuth_deg": 130.59651188629402,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      -1.7951541190934158e-06,
+      -139.4034916014216
+    ],
+    "camera_position_xyz": [
+      -2.9395024374171004,
+      3.4299989235218638,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      130.59651188629402,
+      25.384615384615387,
+      130.59650589410023
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_120.png",
+    "edge_path": "scene_0000/edge_120.png"
+  },
+  {
+    "view_id": 121,
+    "image_path": "scene_0000/view_121.png",
+    "azimuth_deg": 154.58949537520854,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      3.3251358781736113e-06,
+      -115.41051236802751
+    ],
+    "camera_position_xyz": [
+      -4.080238004460145,
+      1.9383562680532478,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      154.58949537520857,
+      25.384615384615387,
+      154.5894851274943
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_121.png",
+    "edge_path": "scene_0000/edge_121.png"
+  },
+  {
+    "view_id": 122,
+    "image_path": "scene_0000/view_122.png",
+    "azimuth_deg": 182.14940426372144,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      1.4840964819127826e-06,
+      -87.85060344437768
+    ],
+    "camera_position_xyz": [
+      -4.514073950140534,
+      -0.16942127258656237,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -177.8505957362786,
+      25.384615384615387,
+      -177.85060594885584
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_122.png",
+    "edge_path": "scene_0000/edge_122.png"
+  },
+  {
+    "view_id": 123,
+    "image_path": "scene_0000/view_123.png",
+    "azimuth_deg": 205.9484426140771,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.6153927182615,
+      3.5857807567644245e-06,
+      -64.05156060227695
+    ],
+    "camera_position_xyz": [
+      -4.061859619792133,
+      -1.9765787674778665,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -154.05155738592293,
+      25.384615384615387,
+      -154.0515631067551
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_123.png",
+    "edge_path": "scene_0000/edge_123.png"
+  },
+  {
+    "view_id": 124,
+    "image_path": "scene_0000/view_124.png",
+    "azimuth_deg": 227.5758403415584,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      -1.2381385397300945e-07,
+      -42.42416274640344
+    ],
+    "camera_position_xyz": [
+      -3.0474002421933086,
+      -3.3345043048138927,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -132.42415965844157,
+      25.384615384615387,
+      -132.4241652508816
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_124.png",
+    "edge_path": "scene_0000/edge_124.png"
+  },
+  {
+    "view_id": 125,
+    "image_path": "scene_0000/view_125.png",
+    "azimuth_deg": 255.78634672546465,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61540637863985,
+      -2.8304748443404453e-08,
+      -14.213661228836969
+    ],
+    "camera_position_xyz": [
+      -1.1091588370800765,
+      -4.378964931244528,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -104.21365327453532,
+      25.384615384615387,
+      -104.21366373331513
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_125.png",
+    "edge_path": "scene_0000/edge_125.png"
+  },
+  {
+    "view_id": 126,
+    "image_path": "scene_0000/view_126.png",
+    "azimuth_deg": 279.15024915554784,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61539954845068,
+      3.288218238541678e-07,
+      9.150251605583403
+    ],
+    "camera_position_xyz": [
+      0.7183514249708872,
+      -4.459768875758531,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -80.84975084445216,
+      25.384615384615387,
+      -80.84975089889475
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_126.png",
+    "edge_path": "scene_0000/edge_126.png"
+  },
+  {
+    "view_id": 127,
+    "image_path": "scene_0000/view_127.png",
+    "azimuth_deg": 311.88161789689843,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.6153927182615,
+      7.972741304012262e-06,
+      41.881620330061814
+    ],
+    "camera_position_xyz": [
+      3.015689204766447,
+      -3.3632106409199722,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -48.11838210310157,
+      25.384615384615387,
+      -48.118382174416354
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_127.png",
+    "edge_path": "scene_0000/edge_127.png"
+  },
+  {
+    "view_id": 128,
+    "image_path": "scene_0000/view_128.png",
+    "azimuth_deg": 337.2072830574931,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      7.498075119795147e-06,
+      67.20728558374127
+    ],
+    "camera_position_xyz": [
+      4.164510803730365,
+      -1.7499762742835365,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -22.7927169425069,
+      25.384615384615387,
+      -22.792716920736893
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_128.png",
+    "edge_path": "scene_0000/edge_128.png"
+  },
+  {
+    "view_id": 129,
+    "image_path": "scene_0000/view_129.png",
+    "azimuth_deg": 2.5585626550719556,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.692306145347416,
+      6.782722877279839e-06,
+      92.55855721661909
+    ],
+    "camera_position_xyz": [
+      4.2217376447994495,
+      0.18864855160158672,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      2.5585626550719667,
+      32.30769230769231,
+      2.558554712140932
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_129.png",
+    "edge_path": "scene_0000/edge_129.png"
+  },
+  {
+    "view_id": 130,
+    "image_path": "scene_0000/view_130.png",
+    "azimuth_deg": 24.229394681677675,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231297553658,
+      -6.829168542737688e-06,
+      114.2293950756139
+    ],
+    "camera_position_xyz": [
+      3.85368515168098,
+      1.7342917197668124,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      24.22939468167766,
+      32.30769230769231,
+      24.229392571135747
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_130.png",
+    "edge_path": "scene_0000/edge_130.png"
+  },
+  {
+    "view_id": 131,
+    "image_path": "scene_0000/view_131.png",
+    "azimuth_deg": 48.01827985581231,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231297553658,
+      2.803961333404766e-06,
+      138.01827459622965
+    ],
+    "camera_position_xyz": [
+      2.826710673768062,
+      3.1413951970969665,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      48.018279855812295,
+      32.30769230769231,
+      48.0182720917515
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_131.png",
+    "edge_path": "scene_0000/edge_131.png"
+  },
+  {
+    "view_id": 132,
+    "image_path": "scene_0000/view_132.png",
+    "azimuth_deg": 80.05893119385973,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231980572575,
+      7.030531749620514e-06,
+      170.05892421919123
+    ],
+    "camera_position_xyz": [
+      0.7295476642213214,
+      4.162501318097977,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      80.05893119385973,
+      32.30769230769231,
+      80.05892171471305
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_132.png",
+    "edge_path": "scene_0000/edge_132.png"
+  },
+  {
+    "view_id": 133,
+    "image_path": "scene_0000/view_133.png",
+    "azimuth_deg": 106.3050385780131,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.692306145347416,
+      1.5457209756435733e-06,
+      -163.69496376192356
+    ],
+    "camera_position_xyz": [
+      -1.1864402856328393,
+      4.055985264540004,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      106.30503857801307,
+      32.30769230769231,
+      106.3050337335983
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_133.png",
+    "edge_path": "scene_0000/edge_133.png"
+  },
+  {
+    "view_id": 134,
+    "image_path": "scene_0000/view_134.png",
+    "azimuth_deg": 125.37504091595223,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231980572575,
+      4.0121481062552075e-06,
+      -144.62496631622125
+    ],
+    "camera_position_xyz": [
+      -2.4465127163166724,
+      3.4457557293631536,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      125.37504091595224,
+      32.30769230769231,
+      125.3750311793006
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_134.png",
+    "edge_path": "scene_0000/edge_134.png"
+  },
+  {
+    "view_id": 135,
+    "image_path": "scene_0000/view_135.png",
+    "azimuth_deg": 154.17764071701387,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231980572575,
+      6.526803946723556e-06,
+      -115.82235911460094
+    ],
+    "camera_position_xyz": [
+      -3.803984446893285,
+      1.8407496693826046,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      154.1776407170139,
+      32.30769230769231,
+      154.17763838092088
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_135.png",
+    "edge_path": "scene_0000/edge_135.png"
+  },
+  {
+    "view_id": 136,
+    "image_path": "scene_0000/view_136.png",
+    "azimuth_deg": 176.67678228532753,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.692306145347416,
+      -4.008875748043418e-06,
+      -93.32321738476953
+    ],
+    "camera_position_xyz": [
+      -4.218844104265784,
+      0.24497232790667137,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      176.67678228532753,
+      32.30769230769231,
+      176.6767801107523
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_136.png",
+    "edge_path": "scene_0000/edge_136.png"
+  },
+  {
+    "view_id": 137,
+    "image_path": "scene_0000/view_137.png",
+    "azimuth_deg": 207.72464527484152,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.692306145347416,
+      3.1292338617899204e-06,
+      -62.2753562482368
+    ],
+    "camera_position_xyz": [
+      -3.740784256226089,
+      -1.9660086891743909,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -152.27535472515848,
+      32.30769230769231,
+      -152.27535875271496
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_137.png",
+    "edge_path": "scene_0000/edge_137.png"
+  },
+  {
+    "view_id": 138,
+    "image_path": "scene_0000/view_138.png",
+    "azimuth_deg": 233.47929416893962,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231297553658,
+      1.3877483715026451e-06,
+      -36.52070388826177
+    ],
+    "camera_position_xyz": [
+      -2.5149190919239515,
+      -3.3961506118861378,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -126.52070583106035,
+      32.30769230769231,
+      -126.52070639273992
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_138.png",
+    "edge_path": "scene_0000/edge_138.png"
+  },
+  {
+    "view_id": 139,
+    "image_path": "scene_0000/view_139.png",
+    "azimuth_deg": 254.27616272614105,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.692306145347416,
+      1.461327374392497e-06,
+      -15.723839959988885
+    ],
+    "camera_position_xyz": [
+      -1.145236537348783,
+      -4.067811486666946,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -105.72383727385898,
+      32.30769230769231,
+      -105.72384246446704
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_139.png",
+    "edge_path": "scene_0000/edge_139.png"
+  },
+  {
+    "view_id": 140,
+    "image_path": "scene_0000/view_140.png",
+    "azimuth_deg": 282.66646405961876,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.692306145347416,
+      5.276759038710059e-07,
+      12.666462872383587
+    ],
+    "camera_position_xyz": [
+      0.9266460157275814,
+      -4.1231037070481715,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -77.33353594038124,
+      32.30769230769231,
+      -77.33353963209457
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_140.png",
+    "edge_path": "scene_0000/edge_140.png"
+  },
+  {
+    "view_id": 141,
+    "image_path": "scene_0000/view_141.png",
+    "azimuth_deg": 308.9556277212467,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.692306145347416,
+      -3.69654018943621e-06,
+      38.955628761330885
+    ],
+    "camera_position_xyz": [
+      2.6569325701070463,
+      -3.286238934624588,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -51.044372278753315,
+      32.30769230769231,
+      -51.044373743147275
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_141.png",
+    "edge_path": "scene_0000/edge_141.png"
+  },
+  {
+    "view_id": 142,
+    "image_path": "scene_0000/view_142.png",
+    "azimuth_deg": 332.47329399468043,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.692306145347416,
+      -4.899394418863272e-06,
+      62.47329513038377
+    ],
+    "camera_position_xyz": [
+      3.7475538742370635,
+      -1.9530737254975694,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -27.52670600531951,
+      32.30769230769231,
+      -27.5267073740944
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_142.png",
+    "edge_path": "scene_0000/edge_142.png"
+  },
+  {
+    "view_id": 143,
+    "image_path": "scene_0000/view_143.png",
+    "azimuth_deg": 2.873054888371986,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.769229817717076,
+      -1.6063077434373337e-06,
+      92.87305327695233
+    ],
+    "camera_position_xyz": [
+      3.868156570468353,
+      0.19412861340635587,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      2.873054888371996,
+      39.230769230769226,
+      2.873050772474187
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_143.png",
+    "edge_path": "scene_0000/edge_143.png"
+  },
+  {
+    "view_id": 144,
+    "image_path": "scene_0000/view_144.png",
+    "azimuth_deg": 25.121349824406842,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923664790625,
+      -1.7658344174845e-07,
+      115.1213631397042
+    ],
+    "camera_position_xyz": [
+      3.50667798330346,
+      1.64424167737451,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      25.12134982440685,
+      39.230769230769226,
+      25.12136063522604
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_144.png",
+    "edge_path": "scene_0000/edge_144.png"
+  },
+  {
+    "view_id": 145,
+    "image_path": "scene_0000/view_145.png",
+    "azimuth_deg": 49.20530044198178,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76924006300083,
+      -1.347777602932007e-06,
+      139.2053068324645
+    ],
+    "camera_position_xyz": [
+      2.5304429723181445,
+      2.932094735175908,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      49.20530044198176,
+      39.230769230769226,
+      49.20530432798631
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_145.png",
+    "edge_path": "scene_0000/edge_145.png"
+  },
+  {
+    "view_id": 146,
+    "image_path": "scene_0000/view_146.png",
+    "azimuth_deg": 77.44599839915581,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76924347809541,
+      3.378442992412438e-06,
+      167.44599437106783
+    ],
+    "camera_position_xyz": [
+      0.8418394418807916,
+      3.7804268973615134,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      77.44599839915583,
+      39.230769230769226,
+      77.44599186658968
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_146.png",
+    "edge_path": "scene_0000/edge_146.png"
+  },
+  {
+    "view_id": 147,
+    "image_path": "scene_0000/view_147.png",
+    "azimuth_deg": 104.63089681869411,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923323281166,
+      -3.19354600055986e-06,
+      -165.36909776900703
+    ],
+    "camera_position_xyz": [
+      -0.9782918289141104,
+      3.747434625137635,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      104.63089681869411,
+      39.230769230769226,
+      104.63089972651483
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_147.png",
+    "edge_path": "scene_0000/edge_147.png"
+  },
+  {
+    "view_id": 148,
+    "image_path": "scene_0000/view_148.png",
+    "azimuth_deg": 126.26602248900623,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.769226402622486,
+      3.6263412256174432e-06,
+      -143.7339817993714
+    ],
+    "camera_position_xyz": [
+      -2.291030286611313,
+      3.122739406039231,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      126.26602248900622,
+      39.230769230769226,
+      126.26601569615042
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_148.png",
+    "edge_path": "scene_0000/edge_148.png"
+  },
+  {
+    "view_id": 149,
+    "image_path": "scene_0000/view_149.png",
+    "azimuth_deg": 152.83323996146405,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923323281166,
+      -1.066583287766445e-06,
+      -117.16675890931289
+    ],
+    "camera_position_xyz": [
+      -3.4457581634269223,
+      1.7683528639322204,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      152.83323996146407,
+      39.230769230769226,
+      152.83323858620895
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_149.png",
+    "edge_path": "scene_0000/edge_149.png"
+  },
+  {
+    "view_id": 150,
+    "image_path": "scene_0000/view_150.png",
+    "azimuth_deg": 183.8197236085269,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923664790625,
+      1.4490159306648633e-06,
+      -86.1802738526619
+    ],
+    "camera_position_xyz": [
+      -3.8644212521426793,
+      -0.25801077145841605,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -176.18027639147306,
+      39.230769230769226,
+      -176.18027635714006
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_150.png",
+    "edge_path": "scene_0000/edge_150.png"
+  },
+  {
+    "view_id": 151,
+    "image_path": "scene_0000/view_151.png",
+    "azimuth_deg": 206.87048787321865,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923323281166,
+      1.0176790789842622e-06,
+      -63.12951238508192
+    ],
+    "camera_position_xyz": [
+      -3.454856075262184,
+      -1.7505115456415987,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -153.12951212678138,
+      39.230769230769226,
+      -153.12951488956008
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_151.png",
+    "edge_path": "scene_0000/edge_151.png"
+  },
+  {
+    "view_id": 152,
+    "image_path": "scene_0000/view_152.png",
+    "azimuth_deg": 230.95105779019758,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.769229817717076,
+      7.449398486061532e-08,
+      -39.048942805771595
+    ],
+    "camera_position_xyz": [
+      -2.439943667383994,
+      -3.0078224801662263,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -129.04894220980242,
+      39.230769230769226,
+      -129.04894531024976
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_152.png",
+    "edge_path": "scene_0000/edge_152.png"
+  },
+  {
+    "view_id": 153,
+    "image_path": "scene_0000/view_153.png",
+    "azimuth_deg": 257.27844220227456,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923664790625,
+      8.043139345109651e-08,
+      -12.721561154644434
+    ],
+    "camera_position_xyz": [
+      -0.8528913344359287,
+      -3.7779488540535673,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -102.72155779772544,
+      39.230769230769226,
+      -102.7215636591226
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_153.png",
+    "edge_path": "scene_0000/edge_153.png"
+  },
+  {
+    "view_id": 154,
+    "image_path": "scene_0000/view_154.png",
+    "azimuth_deg": 279.9334609395552,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923664790625,
+      -6.877860952022523e-07,
+      9.933461713745949
+    ],
+    "camera_position_xyz": [
+      0.668113736790704,
+      -3.8149633296942875,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -80.06653906044482,
+      39.230769230769226,
+      -80.0665407907322
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_154.png",
+    "edge_path": "scene_0000/edge_154.png"
+  },
+  {
+    "view_id": 155,
+    "image_path": "scene_0000/view_155.png",
+    "azimuth_deg": 306.4476651713863,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923323281166,
+      1.7817186418969153e-06,
+      36.44766526037224
+    ],
+    "camera_position_xyz": [
+      2.300918661752048,
+      -3.1154605573176055,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -53.55233482861371,
+      39.230769230769226,
+      -53.55233724410593
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_155.png",
+    "edge_path": "scene_0000/edge_155.png"
+  },
+  {
+    "view_id": 156,
+    "image_path": "scene_0000/view_156.png",
+    "azimuth_deg": 333.03666005085176,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923323281166,
+      -1.3291996013710168e-06,
+      63.0366764538831
+    ],
+    "camera_position_xyz": [
+      3.4520147055553108,
+      -1.7561080959982058,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -26.963339949148235,
+      39.230769230769226,
+      -26.96332605059507
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_156.png",
+    "edge_path": "scene_0000/edge_156.png"
+  },
+  {
+    "view_id": 157,
+    "image_path": "scene_0000/view_157.png",
+    "azimuth_deg": 0.6812386852415141,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615007499215,
+      -1.3352193481610917e-06,
+      90.68123874210607
+    ],
+    "camera_position_xyz": [
+      3.463376946536584,
+      0.041181000852769434,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      0.6812386852415102,
+      46.15384615384616,
+      0.6812362376278998
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_157.png",
+    "edge_path": "scene_0000/edge_157.png"
+  },
+  {
+    "view_id": 158,
+    "image_path": "scene_0000/view_158.png",
+    "azimuth_deg": 23.63231365145931,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615690518132,
+      -4.343300742357701e-06,
+      113.63233408931723
+    ],
+    "camera_position_xyz": [
+      3.1731513457239258,
+      1.3884474371623683,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      23.6323136514593,
+      46.15384615384616,
+      23.63233158483905
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_158.png",
+    "edge_path": "scene_0000/edge_158.png"
+  },
+  {
+    "view_id": 159,
+    "image_path": "scene_0000/view_159.png",
+    "azimuth_deg": 49.270248394340605,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615690518132,
+      4.0805061141354684e-07,
+      139.27024827109298
+    ],
+    "camera_position_xyz": [
+      2.2599854506041623,
+      2.6247174155877824,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      49.2702483943406,
+      46.15384615384616,
+      49.270245766614835
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_159.png",
+    "edge_path": "scene_0000/edge_159.png"
+  },
+  {
+    "view_id": 160,
+    "image_path": "scene_0000/view_160.png",
+    "azimuth_deg": 73.83337523492682,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.846153490086735,
+      1.6040949933787834e-06,
+      163.8333707152647
+    ],
+    "camera_position_xyz": [
+      0.9643820284373918,
+      3.326656437304473,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      73.83337523492682,
+      46.15384615384616,
+      73.83336821078655
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_160.png",
+    "edge_path": "scene_0000/edge_160.png"
+  },
+  {
+    "view_id": 161,
+    "image_path": "scene_0000/view_161.png",
+    "azimuth_deg": 103.86850852751219,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.846153490086735,
+      3.847796581645136e-06,
+      -166.1314971445422
+    ],
+    "camera_position_xyz": [
+      -0.830210988819921,
+      3.3626515523727636,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      103.86850852751218,
+      46.15384615384616,
+      103.86850035097962
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_161.png",
+    "edge_path": "scene_0000/edge_161.png"
+  },
+  {
+    "view_id": 162,
+    "image_path": "scene_0000/view_162.png",
+    "azimuth_deg": 126.4804080465432,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.846153490086735,
+      8.444701421417513e-07,
+      -143.5196094820814
+    ],
+    "camera_position_xyz": [
+      -2.059288971657861,
+      2.784960444932857,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      126.48040804654318,
+      46.15384615384616,
+      126.48038801344046
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_162.png",
+    "edge_path": "scene_0000/edge_162.png"
+  },
+  {
+    "view_id": 163,
+    "image_path": "scene_0000/view_163.png",
+    "azimuth_deg": 157.41324010033298,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.846153490086735,
+      2.870650593299194e-06,
+      -112.58675507079333
+    ],
+    "camera_position_xyz": [
+      -3.1979585029634015,
+      1.3303146853118581,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      157.41324010033298,
+      46.15384615384616,
+      157.41324242472854
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_163.png",
+    "edge_path": "scene_0000/edge_163.png"
+  },
+  {
+    "view_id": 164,
+    "image_path": "scene_0000/view_164.png",
+    "azimuth_deg": 182.7743302305289,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615690518132,
+      -1.528726432314078e-06,
+      -87.22567528626736
+    ],
+    "camera_position_xyz": [
+      -3.459562135687322,
+      -0.1676471829494461,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -177.2256697694711,
+      46.15384615384616,
+      -177.22567779074552
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_164.png",
+    "edge_path": "scene_0000/edge_164.png"
+  },
+  {
+    "view_id": 165,
+    "image_path": "scene_0000/view_165.png",
+    "azimuth_deg": 202.40375669914104,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615690518132,
+      2.916679580649334e-06,
+      -67.59624436640598
+    ],
+    "camera_position_xyz": [
+      -3.2021912197300906,
+      -1.320093610663964,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -157.596243300859,
+      46.15384615384616,
+      -157.59624687088416
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_165.png",
+    "edge_path": "scene_0000/edge_165.png"
+  },
+  {
+    "view_id": 166,
+    "image_path": "scene_0000/view_166.png",
+    "azimuth_deg": 229.4074643222751,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615690518132,
+      -2.5800529300512296e-06,
+      -40.59254165253238
+    ],
+    "camera_position_xyz": [
+      -2.253693119369668,
+      -2.6301222542570377,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -130.59253567772487,
+      46.15384615384616,
+      -130.59254415701054
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_166.png",
+    "edge_path": "scene_0000/edge_166.png"
+  },
+  {
+    "view_id": 167,
+    "image_path": "scene_0000/view_167.png",
+    "azimuth_deg": 258.4464000039999,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615690518132,
+      -2.822082251091374e-07,
+      -11.553601367893192
+    ],
+    "camera_position_xyz": [
+      -0.6937099724127779,
+      -3.39344105928,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -101.55359999600012,
+      46.15384615384616,
+      -101.55360387237135
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_167.png",
+    "edge_path": "scene_0000/edge_167.png"
+  },
+  {
+    "view_id": 168,
+    "image_path": "scene_0000/view_168.png",
+    "azimuth_deg": 280.6526839425719,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615007499215,
+      -9.105030373276752e-07,
+      10.652684048442877
+    ],
+    "camera_position_xyz": [
+      0.6402681131979856,
+      -3.4039289786736444,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -79.34731605742809,
+      46.15384615384616,
+      -79.34731845603528
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_168.png",
+    "edge_path": "scene_0000/edge_168.png"
+  },
+  {
+    "view_id": 169,
+    "image_path": "scene_0000/view_169.png",
+    "azimuth_deg": 305.7349771187359,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615690518132,
+      1.262426374832998e-06,
+      35.73497941671102
+    ],
+    "camera_position_xyz": [
+      2.022882753223037,
+      -2.81151580385832,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -54.26502288126409,
+      46.15384615384616,
+      -54.26502308776713
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_169.png",
+    "edge_path": "scene_0000/edge_169.png"
+  },
+  {
+    "view_id": 170,
+    "image_path": "scene_0000/view_170.png",
+    "azimuth_deg": 337.6453955701937,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615007499215,
+      7.965137895435193e-07,
+      67.64540806805174
+    ],
+    "camera_position_xyz": [
+      3.203322508581891,
+      -1.3173460648762465,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -22.354604429806272,
+      46.15384615384616,
+      -22.354594436426424
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_170.png",
+    "edge_path": "scene_0000/edge_170.png"
+  },
+  {
+    "view_id": 171,
+    "image_path": "scene_0000/view_171.png",
+    "azimuth_deg": 0.5480467199379088,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      -1.5799174853566707e-06,
+      90.54804322310164
+    ],
+    "camera_position_xyz": [
+      3.0035739123144465,
+      0.028730720638941706,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      0.5480467199379007,
+      53.07692307692308,
+      0.548040718623497
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_171.png",
+    "edge_path": "scene_0000/edge_171.png"
+  },
+  {
+    "view_id": 172,
+    "image_path": "scene_0000/view_172.png",
+    "azimuth_deg": 25.5034622029767,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923083992645566,
+      4.844417335305615e-06,
+      115.50347124263139
+    ],
+    "camera_position_xyz": [
+      2.7110274921663704,
+      1.2932948765700973,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      25.503462202976692,
+      53.07692307692308,
+      25.50346873815323
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_172.png",
+    "edge_path": "scene_0000/edge_172.png"
+  },
+  {
+    "view_id": 173,
+    "image_path": "scene_0000/view_173.png",
+    "azimuth_deg": 53.62420698738581,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923083992645566,
+      3.095561100377329e-06,
+      143.6242206594093
+    ],
+    "camera_position_xyz": [
+      1.7814374240891089,
+      2.418421469698593,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      53.624206987385804,
+      53.07692307692308,
+      53.62421815493116
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_173.png",
+    "edge_path": "scene_0000/edge_173.png"
+  },
+  {
+    "view_id": 174,
+    "image_path": "scene_0000/view_174.png",
+    "azimuth_deg": 79.5149768399141,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.92307033226722,
+      -3.950454505432298e-06,
+      169.51498161406977
+    ],
+    "camera_position_xyz": [
+      0.5466108842298752,
+      2.953556879812166,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      79.51497683991408,
+      53.07692307692308,
+      79.5149791095916
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_174.png",
+    "edge_path": "scene_0000/edge_174.png"
+  },
+  {
+    "view_id": 175,
+    "image_path": "scene_0000/view_175.png",
+    "azimuth_deg": 100.46887648222021,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.92307374736181,
+      3.2512480815908454e-06,
+      -169.53112818126766
+    ],
+    "camera_position_xyz": [
+      -0.5457785127200934,
+      2.9537108044115263,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      100.4688764822202,
+      53.07692307692308,
+      100.46886931425416
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_175.png",
+    "edge_path": "scene_0000/edge_175.png"
+  },
+  {
+    "view_id": 176,
+    "image_path": "scene_0000/view_176.png",
+    "azimuth_deg": 125.46203770976523,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.92308057755098,
+      4.1640935083858874e-08,
+      -144.53796336657362
+    ],
+    "camera_position_xyz": [
+      -1.7426434395423367,
+      2.4465231541239087,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      125.46203770976524,
+      53.07692307692308,
+      125.46203412894823
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_176.png",
+    "edge_path": "scene_0000/edge_176.png"
+  },
+  {
+    "view_id": 177,
+    "image_path": "scene_0000/view_177.png",
+    "azimuth_deg": 153.75382340713492,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      1.8700519071763898e-07,
+      -116.24617235260024
+    ],
+    "camera_position_xyz": [
+      -2.694035454104551,
+      1.3283277732066094,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      153.75382340713492,
+      53.07692307692308,
+      153.75382514292158
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_177.png",
+    "edge_path": "scene_0000/edge_177.png"
+  },
+  {
+    "view_id": 178,
+    "image_path": "scene_0000/view_178.png",
+    "azimuth_deg": 179.41046366329653,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.92308740774015,
+      1.0010465591108296e-06,
+      -90.58953662230948
+    ],
+    "camera_position_xyz": [
+      -3.0035523200432444,
+      0.030905692148639273,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      179.41046366329653,
+      53.07692307692308,
+      179.41046087321234
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_178.png",
+    "edge_path": "scene_0000/edge_178.png"
+  },
+  {
+    "view_id": 179,
+    "image_path": "scene_0000/view_179.png",
+    "azimuth_deg": 205.45990458199722,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      4.525401085201087e-07,
+      -64.54009671285128
+    ],
+    "camera_position_xyz": [
+      -2.712009902341045,
+      -1.2912335151507102,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -154.5400954180028,
+      53.07692307692308,
+      -154.54009921732944
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_179.png",
+    "edge_path": "scene_0000/edge_179.png"
+  },
+  {
+    "view_id": 180,
+    "image_path": "scene_0000/view_180.png",
+    "azimuth_deg": 233.1957279815474,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923083992645566,
+      -3.0522754304954825e-06,
+      -36.80427285203319
+    ],
+    "camera_position_xyz": [
+      -1.7994732905824733,
+      -2.4050317206899017,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -126.8042720184526,
+      53.07692307692308,
+      -126.80427535651135
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_180.png",
+    "edge_path": "scene_0000/edge_180.png"
+  },
+  {
+    "view_id": 181,
+    "image_path": "scene_0000/view_181.png",
+    "azimuth_deg": 258.48024079340547,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.92308057755098,
+      3.4553856481556556e-07,
+      -11.519760341876717
+    ],
+    "camera_position_xyz": [
+      -0.599858760209833,
+      -2.943204234986737,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -101.51975920659453,
+      53.07692307692308,
+      -101.51976284635488
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_181.png",
+    "edge_path": "scene_0000/edge_181.png"
+  },
+  {
+    "view_id": 182,
+    "image_path": "scene_0000/view_182.png",
+    "azimuth_deg": 286.59213163053744,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.92307374736181,
+      -5.582709570183135e-07,
+      16.592132880868633
+    ],
+    "camera_position_xyz": [
+      0.8577300706760687,
+      -2.8786421845902224,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -73.40786836946256,
+      53.07692307692308,
+      -73.40786962360953
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_182.png",
+    "edge_path": "scene_0000/edge_182.png"
+  },
+  {
+    "view_id": 183,
+    "image_path": "scene_0000/view_183.png",
+    "azimuth_deg": 305.47350929174365,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      -1.1685596059631508e-06,
+      35.47350952999918
+    ],
+    "camera_position_xyz": [
+      1.743133239833391,
+      -2.4461741984642646,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -54.52649070825635,
+      53.07692307692308,
+      -54.526492974478984
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_183.png",
+    "edge_path": "scene_0000/edge_183.png"
+  },
+  {
+    "view_id": 184,
+    "image_path": "scene_0000/view_184.png",
+    "azimuth_deg": 333.53450703336034,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923083992645566,
+      -2.887456746013797e-06,
+      63.53451528210699
+    ],
+    "camera_position_xyz": [
+      2.688931166523485,
+      -1.3386302262921577,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -26.46549296663966,
+      53.07692307692308,
+      -26.465487222371166
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_184.png",
+    "edge_path": "scene_0000/edge_184.png"
+  },
+  {
+    "view_id": 185,
+    "image_path": "scene_0000/view_185.png",
+    "azimuth_deg": 358.7603343844754,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      29.99999741973147,
+      -2.0176866908250634e-06,
+      88.76033000031002
+    ],
+    "camera_position_xyz": [
+      2.4994148638675813,
+      -0.054086396420926934,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -1.2396656155245864,
+      60.0,
+      -1.2396725041681407
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_185.png",
+    "edge_path": "scene_0000/edge_185.png"
+  },
+  {
+    "view_id": 186,
+    "image_path": "scene_0000/view_186.png",
+    "azimuth_deg": 28.50433099472153,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.00000424992064,
+      -4.714373868822429e-06,
+      118.50432851485483
+    ],
+    "camera_position_xyz": [
+      2.19695260416098,
+      1.1930629719634636,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      28.504330994721528,
+      60.0,
+      28.504326010376673
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_186.png",
+    "edge_path": "scene_0000/edge_186.png"
+  },
+  {
+    "view_id": 187,
+    "image_path": "scene_0000/view_187.png",
+    "azimuth_deg": 49.489634575956494,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.00001108010981,
+      -3.081429768705399e-07,
+      139.4896476076121
+    ],
+    "camera_position_xyz": [
+      1.6239640083410258,
+      1.9007211525136851,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      49.4896345759565,
+      60.0,
+      49.48964510313397
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_187.png",
+    "edge_path": "scene_0000/edge_187.png"
+  },
+  {
+    "view_id": 188,
+    "image_path": "scene_0000/view_188.png",
+    "azimuth_deg": 74.75304015082911,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.000007665015225,
+      -2.52318033768117e-06,
+      164.75304202662858
+    ],
+    "camera_position_xyz": [
+      0.6574500546329876,
+      2.412003197689233,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      74.75304015082912,
+      60.0,
+      74.7530395221504
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_188.png",
+    "edge_path": "scene_0000/edge_188.png"
+  },
+  {
+    "view_id": 189,
+    "image_path": "scene_0000/view_189.png",
+    "azimuth_deg": 102.46073308328417,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.00000424992064,
+      1.9802190442331748e-06,
+      -167.53926743437353
+    ],
+    "camera_position_xyz": [
+      -0.5394261785006401,
+      2.441110279759642,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      102.46073308328414,
+      60.0,
+      102.4607300611483
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_189.png",
+    "edge_path": "scene_0000/edge_189.png"
+  },
+  {
+    "view_id": 190,
+    "image_path": "scene_0000/view_190.png",
+    "azimuth_deg": 127.9688012215797,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.00000424992064,
+      7.208613499790526e-06,
+      -142.03120197890888
+    ],
+    "camera_position_xyz": [
+      -1.5380807383760766,
+      1.970864694045866,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      127.96880122157972,
+      60.0,
+      127.96879551661294
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_190.png",
+    "edge_path": "scene_0000/edge_190.png"
+  },
+  {
+    "view_id": 191,
+    "image_path": "scene_0000/view_191.png",
+    "azimuth_deg": 152.57734825885925,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.00000424992064,
+      4.468666096348767e-06,
+      -117.42264511637825
+    ],
+    "camera_position_xyz": [
+      -2.2190834423514807,
+      1.151376860928473,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      152.57734825885927,
+      60.0,
+      152.57735237914358
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_191.png",
+    "edge_path": "scene_0000/edge_191.png"
+  },
+  {
+    "view_id": 192,
+    "image_path": "scene_0000/view_192.png",
+    "azimuth_deg": 178.0699354550905,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      29.99999741973147,
+      6.903204527724173e-06,
+      -91.9300705299512
+    ],
+    "camera_position_xyz": [
+      -2.498581702472771,
+      0.08419902652806037,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      178.0699354550905,
+      60.0,
+      178.06992696557063
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_192.png",
+    "edge_path": "scene_0000/edge_192.png"
+  },
+  {
+    "view_id": 193,
+    "image_path": "scene_0000/view_193.png",
+    "azimuth_deg": 208.97947748012925,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.00000424992064,
+      6.625586173798074e-06,
+      -61.020534384489565
+    ],
+    "camera_position_xyz": [
+      -2.186983257067635,
+      -1.2112407825473186,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -151.02052251987072,
+      60.0,
+      -151.02053688896774
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_193.png",
+    "edge_path": "scene_0000/edge_193.png"
+  },
+  {
+    "view_id": 194,
+    "image_path": "scene_0000/view_194.png",
+    "azimuth_deg": 230.98986574755523,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      29.999994004636886,
+      1.5695342210991275e-06,
+      -39.010137086002175
+    ],
+    "camera_position_xyz": [
+      -1.5736445993256682,
+      -1.942586593954864,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -129.0101342524448,
+      60.0,
+      -129.01013959048032
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_194.png",
+    "edge_path": "scene_0000/edge_194.png"
+  },
+  {
+    "view_id": 195,
+    "image_path": "scene_0000/view_195.png",
+    "azimuth_deg": 259.9304073795913,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      29.99999741973147,
+      -2.5751671400606273e-07,
+      -10.069591652772536
+    ],
+    "camera_position_xyz": [
+      -0.4371105420742999,
+      -2.4614902750178627,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -100.06959262040868,
+      60.0,
+      -100.06959415725069
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_195.png",
+    "edge_path": "scene_0000/edge_195.png"
+  },
+  {
+    "view_id": 196,
+    "image_path": "scene_0000/view_196.png",
+    "azimuth_deg": 283.2453666960417,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      29.99999741973147,
+      -7.953986107388859e-07,
+      13.245364946998126
+    ],
+    "camera_position_xyz": [
+      0.5728041912188735,
+      -2.4334944747260256,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -76.75463330395831,
+      60.0,
+      -76.75463755748004
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_196.png",
+    "edge_path": "scene_0000/edge_196.png"
+  },
+  {
+    "view_id": 197,
+    "image_path": "scene_0000/view_197.png",
+    "azimuth_deg": 305.10453854204906,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.00000424992064,
+      -2.4823035435817513e-06,
+      35.10454271103509
+    ],
+    "camera_position_xyz": [
+      1.4376751448134137,
+      -2.0452604181340166,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -54.895461457950944,
+      60.0,
+      -54.89545979344308
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_197.png",
+    "edge_path": "scene_0000/edge_197.png"
+  },
+  {
+    "view_id": 198,
+    "image_path": "scene_0000/view_198.png",
+    "azimuth_deg": 338.13732189918386,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.00000424992064,
+      -6.301064154539995e-06,
+      68.13733195245439
+    ],
+    "camera_position_xyz": [
+      2.32019754389429,
+      -0.9309583005199036,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -21.862678100816083,
+      60.0,
+      -21.862670552023758
+    ],
+    "scene_id": 0,
+    "object_source": "e:\\Multimodal\\assets\\models\\Camera_01\\Camera_01.gltf",
+    "depth_path": "scene_0000/depth_198.png",
+    "edge_path": "scene_0000/edge_198.png"
+  }
+]

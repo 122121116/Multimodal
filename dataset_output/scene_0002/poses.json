@@ -1,0 +1,5202 @@
+[
+  {
+    "view_id": "ref",
+    "image_path": "scene_0002/view_ref.png",
+    "azimuth_deg": 0.0,
+    "elevation_deg": 0.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      90.00000250447816,
+      -0.0,
+      90.00000250447816
+    ],
+    "camera_position_xyz": [
+      5.0,
+      0.0,
+      0.0
+    ],
+    "rotation_vector_relative_to_ref": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_ref.png",
+    "edge_path": "scene_0002/edge_ref.png"
+  },
+  {
+    "view_id": 0,
+    "image_path": "scene_0002/view_0.png",
+    "azimuth_deg": 359.34145833063235,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      1.0478828475724375e-06,
+      89.3414698156514
+    ],
+    "camera_position_xyz": [
+      4.329841005038633,
+      -0.04976817342483954,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -0.6585416693676507,
+      -30.0,
+      -0.6585326888267673
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_0.png",
+    "edge_path": "scene_0002/edge_0.png"
+  },
+  {
+    "view_id": 1,
+    "image_path": "scene_0002/view_1.png",
+    "azimuth_deg": 24.302198465553094,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      -1.1633873624957174e-06,
+      114.30220489216623
+    ],
+    "camera_position_xyz": [
+      3.946423577698916,
+      1.782060870279714,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      24.30219846555309,
+      -30.0,
+      24.302202387688055
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_1.png",
+    "edge_path": "scene_0002/edge_1.png"
+  },
+  {
+    "view_id": 2,
+    "image_path": "scene_0002/view_2.png",
+    "azimuth_deg": 50.606663638650765,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      -1.0665135700078275e-05,
+      140.60667040485436
+    ],
+    "camera_position_xyz": [
+      2.7480745744025734,
+      3.3463541554237977,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      50.60666363865076,
+      -30.0,
+      50.60666790037618
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_2.png",
+    "edge_path": "scene_0002/edge_2.png"
+  },
+  {
+    "view_id": 3,
+    "image_path": "scene_0002/view_3.png",
+    "azimuth_deg": 69.6719926382072,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      -60.000001669652114,
+      -179.999991348578,
+      -20.328005592697366
+    ],
+    "camera_position_xyz": [
+      1.5042604470341865,
+      4.060443388041325,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      69.6719926382072,
+      -30.0,
+      -110.32800809717553
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_3.png",
+    "edge_path": "scene_0002/edge_3.png"
+  },
+  {
+    "view_id": 4,
+    "image_path": "scene_0002/view_4.png",
+    "azimuth_deg": 94.02114854816266,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      -59.99998800927377,
+      179.999991348578,
+      4.021149222892654
+    ],
+    "camera_position_xyz": [
+      -0.30364877867782947,
+      4.319467261041281,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      94.02114854816267,
+      -30.0,
+      -85.9788532815855
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_4.png",
+    "edge_path": "scene_0002/edge_4.png"
+  },
+  {
+    "view_id": 5,
+    "image_path": "scene_0002/view_5.png",
+    "azimuth_deg": 116.6095002235304,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      -60.00000849984128,
+      180.00000500895632,
+      26.609501761020898
+    ],
+    "camera_position_xyz": [
+      -1.9394956816546687,
+      3.8714798851140753,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      116.6095002235304,
+      -30.0,
+      -63.39050074345727
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_5.png",
+    "edge_path": "scene_0002/edge_5.png"
+  },
+  {
+    "view_id": 6,
+    "image_path": "scene_0002/view_6.png",
+    "azimuth_deg": 141.23988384078862,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      1.7086479170895988e-06,
+      -128.76013076119577
+    ],
+    "camera_position_xyz": [
+      -3.3765202829336136,
+      2.7109243403197207,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      141.2398838407886,
+      -30.0,
+      141.23986673432609
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_6.png",
+    "edge_path": "scene_0002/edge_6.png"
+  },
+  {
+    "view_id": 7,
+    "image_path": "scene_0002/view_7.png",
+    "azimuth_deg": 164.46340050638688,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      -2.7688323359479384e-06,
+      -105.53659965856032
+    ],
+    "camera_position_xyz": [
+      -4.171902227550907,
+      1.1598412838642118,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      164.46340050638685,
+      -30.0,
+      164.46339783696152
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_7.png",
+    "edge_path": "scene_0002/edge_7.png"
+  },
+  {
+    "view_id": 8,
+    "image_path": "scene_0002/view_8.png",
+    "azimuth_deg": 189.52817041260022,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      119.99998967892589,
+      -4.4756403148765295e-06,
+      -80.47184080098619
+    ],
+    "camera_position_xyz": [
+      -4.270390032656109,
+      -0.7167767916104467,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -170.47182958739978,
+      -30.0,
+      -170.47184330546435
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_8.png",
+    "edge_path": "scene_0002/edge_8.png"
+  },
+  {
+    "view_id": 9,
+    "image_path": "scene_0002/view_9.png",
+    "azimuth_deg": 216.09873510121926,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      119.99998967892589,
+      -3.6102920958059034e-06,
+      -53.90126770313978
+    ],
+    "camera_position_xyz": [
+      -3.498755150474287,
+      -2.5512178262605594,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -143.9012648987807,
+      -30.0,
+      -143.90127020761793
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_9.png",
+    "edge_path": "scene_0002/edge_9.png"
+  },
+  {
+    "view_id": 10,
+    "image_path": "scene_0002/view_10.png",
+    "azimuth_deg": 243.52434895471836,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      -2.479892225133328e-07,
+      -26.475659081592617
+    ],
+    "camera_position_xyz": [
+      -1.9304461991101938,
+      -3.876000189930466,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -116.47565104528167,
+      -30.0,
+      -116.47566158607077
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_10.png",
+    "edge_path": "scene_0002/edge_10.png"
+  },
+  {
+    "view_id": 11,
+    "image_path": "scene_0002/view_11.png",
+    "azimuth_deg": 265.39327388230635,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00001699968256,
+      -5.8368012847971355e-08,
+      -4.606727380534058
+    ],
+    "camera_position_xyz": [
+      -0.3477782155169899,
+      -4.316138356541854,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -94.60672611769365,
+      -30.0,
+      -94.60672988501221
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_11.png",
+    "edge_path": "scene_0002/edge_11.png"
+  },
+  {
+    "view_id": 12,
+    "image_path": "scene_0002/view_12.png",
+    "azimuth_deg": 287.1246713120876,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00001699968256,
+      1.8251783517309317e-06,
+      17.124675900265355
+    ],
+    "camera_position_xyz": [
+      1.2750139471906297,
+      -4.1381565260958135,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -72.87532868791237,
+      -30.0,
+      -72.8753266042128
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_12.png",
+    "edge_path": "scene_0002/edge_12.png"
+  },
+  {
+    "view_id": 13,
+    "image_path": "scene_0002/view_13.png",
+    "azimuth_deg": 311.31634369429867,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      6.591223766352792e-07,
+      41.31634704416239
+    ],
+    "camera_position_xyz": [
+      2.858818880810852,
+      -3.252253773419194,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -48.683656305701334,
+      -30.0,
+      -48.68365546031578
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_13.png",
+    "edge_path": "scene_0002/edge_13.png"
+  },
+  {
+    "view_id": 14,
+    "image_path": "scene_0002/view_14.png",
+    "azimuth_deg": 337.3774293245691,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      -1.6857412060515743e-06,
+      67.37743242615545
+    ],
+    "camera_position_xyz": [
+      3.99696167251907,
+      -1.6656222225983783,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -22.622570675430893,
+      -30.0,
+      -22.622570078322724
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_14.png",
+    "edge_path": "scene_0002/edge_14.png"
+  },
+  {
+    "view_id": 15,
+    "image_path": "scene_0002/view_15.png",
+    "azimuth_deg": 358.7480630828414,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07692359657929,
+      -1.8071500517966483e-06,
+      88.74807664093902
+    ],
+    "camera_position_xyz": [
+      4.598799172430523,
+      -0.10050169412668432,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -1.2519369171586732,
+      -23.076923076923077,
+      -1.2519258635391566
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_15.png",
+    "edge_path": "scene_0002/edge_15.png"
+  },
+  {
+    "view_id": 16,
+    "image_path": "scene_0002/view_16.png",
+    "azimuth_deg": 20.92958470016353,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07692359657929,
+      -2.7632854485834664e-06,
+      110.92958042341898
+    ],
+    "camera_position_xyz": [
+      4.29639668049406,
+      1.643176795938164,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      20.92958470016353,
+      -23.076923076923077,
+      20.929577918940822
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_16.png",
+    "edge_path": "scene_0002/edge_16.png"
+  },
+  {
+    "view_id": 17,
+    "image_path": "scene_0002/view_17.png",
+    "azimuth_deg": 50.4589648577247,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07693042676847,
+      2.498087237021795e-06,
+      140.458974394242
+    ],
+    "camera_position_xyz": [
+      2.928435755387207,
+      3.5472973438153943,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      50.45896485772471,
+      -23.076923076923077,
+      50.45897188976386
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_17.png",
+    "edge_path": "scene_0002/edge_17.png"
+  },
+  {
+    "view_id": 18,
+    "image_path": "scene_0002/view_18.png",
+    "azimuth_deg": 72.8439836825814,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      -66.92307458218787,
+      179.999991348578,
+      -17.156014515724667
+    ],
+    "camera_position_xyz": [
+      1.3568529980508257,
+      4.395225177456837,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      72.84398368258138,
+      -23.076923076923077,
+      -107.15601702020282
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_18.png",
+    "edge_path": "scene_0002/edge_18.png"
+  },
+  {
+    "view_id": 19,
+    "image_path": "scene_0002/view_19.png",
+    "azimuth_deg": 93.20647075533347,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      -66.92306092180952,
+      179.999991348578,
+      3.206470939119979
+    ],
+    "camera_position_xyz": [
+      -0.25729186781317703,
+      4.592695865570373,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      93.2064707553335,
+      -23.076923076923077,
+      -86.79353156535818
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_19.png",
+    "edge_path": "scene_0002/edge_19.png"
+  },
+  {
+    "view_id": 20,
+    "image_path": "scene_0002/view_20.png",
+    "azimuth_deg": 116.90448014913541,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07692359657929,
+      2.1860333992260525e-07,
+      -153.09552103806092
+    ],
+    "camera_position_xyz": [
+      -2.081473917434301,
+      4.1020142308274234,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      116.9044801491354,
+      -23.076923076923077,
+      116.90447645746093
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_20.png",
+    "edge_path": "scene_0002/edge_20.png"
+  },
+  {
+    "view_id": 21,
+    "image_path": "scene_0002/view_21.png",
+    "azimuth_deg": 141.08131833332786,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07692359657929,
+      -8.251000857762144e-06,
+      -128.91867311221012
+    ],
+    "camera_position_xyz": [
+      -3.578896467953152,
+      2.889732598449629,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      141.08131833332789,
+      -23.076923076923077,
+      141.0813243833117
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_21.png",
+    "edge_path": "scene_0002/edge_21.png"
+  },
+  {
+    "view_id": 22,
+    "image_path": "scene_0002/view_22.png",
+    "azimuth_deg": 171.30424736642155,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07692359657929,
+      7.108520375298497e-06,
+      -98.69574856325318
+    ],
+    "camera_position_xyz": [
+      -4.547021846590879,
+      0.6954471550702175,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      171.30424736642158,
+      -23.076923076923077,
+      171.30424893226865
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_22.png",
+    "edge_path": "scene_0002/edge_22.png"
+  },
+  {
+    "view_id": 23,
+    "image_path": "scene_0002/view_23.png",
+    "azimuth_deg": 189.17556143097914,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07692359657929,
+      -5.476307344758329e-06,
+      -80.82443565650976
+    ],
+    "camera_position_xyz": [
+      -4.541038635254196,
+      -0.7335001922281232,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -170.82443856902086,
+      -23.076923076923077,
+      -170.82443816098794
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_23.png",
+    "edge_path": "scene_0002/edge_23.png"
+  },
+  {
+    "view_id": 24,
+    "image_path": "scene_0002/view_24.png",
+    "azimuth_deg": 216.90228217480444,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07693042676847,
+      -6.315500717683596e-06,
+      -53.09773009823363
+    ],
+    "camera_position_xyz": [
+      -3.6783572237898023,
+      -2.7620178408300275,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -143.09771782519556,
+      -23.076923076923077,
+      -143.0977326027118
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_24.png",
+    "edge_path": "scene_0002/edge_24.png"
+  },
+  {
+    "view_id": 25,
+    "image_path": "scene_0002/view_25.png",
+    "azimuth_deg": 243.38088585500338,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07693725695763,
+      1.908470819506848e-06,
+      -26.619116959824982
+    ],
+    "camera_position_xyz": [
+      -2.061017790239756,
+      -4.112330250257781,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -116.61911414499662,
+      -23.076923076923077,
+      -116.61911946430314
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_25.png",
+    "edge_path": "scene_0002/edge_25.png"
+  },
+  {
+    "view_id": 26,
+    "image_path": "scene_0002/view_26.png",
+    "azimuth_deg": 260.6520239716825,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07693042676847,
+      4.519965135583904e-07,
+      -9.34797704431881
+    ],
+    "camera_position_xyz": [
+      -0.7471617549445548,
+      -4.538810827829043,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -99.34797602831748,
+      -23.076923076923077,
+      -99.34797954879697
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_26.png",
+    "edge_path": "scene_0002/edge_26.png"
+  },
+  {
+    "view_id": 27,
+    "image_path": "scene_0002/view_27.png",
+    "azimuth_deg": 287.17832769669485,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07692359657929,
+      7.191742005760548e-07,
+      17.178327036195807
+    ],
+    "camera_position_xyz": [
+      1.3585644267107264,
+      -4.394696476134176,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -72.82167230330515,
+      -23.076923076923077,
+      -72.82167546828235
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_27.png",
+    "edge_path": "scene_0002/edge_27.png"
+  },
+  {
+    "view_id": 28,
+    "image_path": "scene_0002/view_28.png",
+    "azimuth_deg": 311.83642298749066,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07693042676847,
+      -2.061311891280266e-06,
+      41.83642155322926
+    ],
+    "camera_position_xyz": [
+      3.068160126888441,
+      -3.427163237233076,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -48.163577012509336,
+      -23.076923076923077,
+      -48.16358095124889
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_28.png",
+    "edge_path": "scene_0002/edge_28.png"
+  },
+  {
+    "view_id": 29,
+    "image_path": "scene_0002/view_29.png",
+    "azimuth_deg": 339.0016041142656,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07693042676847,
+      2.9178406612191306e-06,
+      69.0016035994603
+    ],
+    "camera_position_xyz": [
+      4.2944201571549385,
+      -1.6483355036798006,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -20.998395885734453,
+      -23.076923076923077,
+      -20.998398905017865
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_29.png",
+    "edge_path": "scene_0002/edge_29.png"
+  },
+  {
+    "view_id": 30,
+    "image_path": "scene_0002/view_30.png",
+    "azimuth_deg": 357.75787078839767,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385068404355,
+      1.6535336371252021e-06,
+      87.7578767962056
+    ],
+    "camera_position_xyz": [
+      4.798913790778773,
+      -0.18788958984132292,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -2.2421292116023324,
+      -16.153846153846153,
+      -2.2421257082725674
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_30.png",
+    "edge_path": "scene_0002/edge_30.png"
+  },
+  {
+    "view_id": 31,
+    "image_path": "scene_0002/view_31.png",
+    "azimuth_deg": 22.26009745433358,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15384385385437,
+      -2.4015915488744373e-06,
+      112.26008761335913
+    ],
+    "camera_position_xyz": [
+      4.444671536560808,
+      1.81927760426594,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      22.26009745433359,
+      -16.153846153846153,
+      22.260085108880958
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_31.png",
+    "edge_path": "scene_0002/edge_31.png"
+  },
+  {
+    "view_id": 32,
+    "image_path": "scene_0002/view_32.png",
+    "azimuth_deg": 46.185345417195826,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15384385385437,
+      3.3882999639257297e-06,
+      136.18533869094335
+    ],
+    "camera_position_xyz": [
+      3.324966745855886,
+      3.465468540940742,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      46.18534541719583,
+      -16.153846153846153,
+      46.18533618646518
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_32.png",
+    "edge_path": "scene_0002/edge_32.png"
+  },
+  {
+    "view_id": 33,
+    "image_path": "scene_0002/view_33.png",
+    "azimuth_deg": 68.75427410835626,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15384385385437,
+      -2.935457575488695e-06,
+      158.7542644635248
+    ],
+    "camera_position_xyz": [
+      1.7403075944909308,
+      4.476182027783793,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      68.75427410835624,
+      -16.153846153846153,
+      68.75426195904663
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_33.png",
+    "edge_path": "scene_0002/edge_33.png"
+  },
+  {
+    "view_id": 34,
+    "image_path": "scene_0002/view_34.png",
+    "azimuth_deg": 97.25076110747543,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      -73.84614749472362,
+      179.999991348578,
+      7.250761483250871
+    ],
+    "camera_position_xyz": [
+      -0.6061452643120313,
+      4.764185553465516,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      97.25076110747545,
+      -16.153846153846153,
+      -82.74924102122729
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_34.png",
+    "edge_path": "scene_0002/edge_34.png"
+  },
+  {
+    "view_id": 35,
+    "image_path": "scene_0002/view_35.png",
+    "azimuth_deg": 122.28027917217463,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385068404355,
+      -1.303945182978198e-06,
+      -147.719725029154
+    ],
+    "camera_position_xyz": [
+      -2.5648781613255007,
+      4.060329553971322,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      122.28027917217463,
+      -16.153846153846153,
+      122.28027246636782
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_35.png",
+    "edge_path": "scene_0002/edge_35.png"
+  },
+  {
+    "view_id": 36,
+    "image_path": "scene_0002/view_36.png",
+    "azimuth_deg": 143.541828366451,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385068404355,
+      -4.562130639551377e-06,
+      -126.45816576560472
+    ],
+    "camera_position_xyz": [
+      -3.8626798458916065,
+      2.8538711388989215,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      143.541828366451,
+      -16.153846153846153,
+      143.54183172991713
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_36.png",
+    "edge_path": "scene_0002/edge_36.png"
+  },
+  {
+    "view_id": 37,
+    "image_path": "scene_0002/view_37.png",
+    "azimuth_deg": 164.67240137843754,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15384385385437,
+      -8.65656483519241e-06,
+      -105.32758903976877
+    ],
+    "camera_position_xyz": [
+      -4.631763384020075,
+      1.2695054248597522,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      164.67240137843754,
+      -16.153846153846153,
+      164.67240845575304
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_37.png",
+    "edge_path": "scene_0002/edge_37.png"
+  },
+  {
+    "view_id": 38,
+    "image_path": "scene_0002/view_38.png",
+    "azimuth_deg": 193.53777585776123,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15384385385437,
+      -2.1966940078518196e-06,
+      -76.46221922986523
+    ],
+    "camera_position_xyz": [
+      -4.669154399871602,
+      -1.1242211790644636,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -166.46222414223877,
+      -16.153846153846153,
+      -166.4622217343434
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_38.png",
+    "edge_path": "scene_0002/edge_38.png"
+  },
+  {
+    "view_id": 39,
+    "image_path": "scene_0002/view_39.png",
+    "azimuth_deg": 217.70673132300436,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.1538370236652,
+      -6.428108434291873e-06,
+      -52.29327041778953
+    ],
+    "camera_position_xyz": [
+      -3.7995776029306465,
+      -2.9373603981475,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -142.29326867699564,
+      -16.153846153846153,
+      -142.2932729222677
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_39.png",
+    "edge_path": "scene_0002/edge_39.png"
+  },
+  {
+    "view_id": 40,
+    "image_path": "scene_0002/view_40.png",
+    "azimuth_deg": 241.10481153907466,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385751423271,
+      2.3936583803879943e-06,
+      -28.895193830914398
+    ],
+    "camera_position_xyz": [
+      -2.320654320622968,
+      -4.20469256824698,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -118.89518846092534,
+      -16.153846153846153,
+      -118.89519633539255
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_40.png",
+    "edge_path": "scene_0002/edge_40.png"
+  },
+  {
+    "view_id": 41,
+    "image_path": "scene_0002/view_41.png",
+    "azimuth_deg": 262.76630044177546,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15384385385437,
+      2.016200684789009e-07,
+      -7.233699670704179
+    ],
+    "camera_position_xyz": [
+      -0.6047265572844189,
+      -4.764365840299459,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -97.23369955822454,
+      -16.153846153846153,
+      -97.23370217518234
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_41.png",
+    "edge_path": "scene_0002/edge_41.png"
+  },
+  {
+    "view_id": 42,
+    "image_path": "scene_0002/view_42.png",
+    "azimuth_deg": 290.3794681622857,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385068404355,
+      -4.473580943886938e-07,
+      20.379469360546118
+    ],
+    "camera_position_xyz": [
+      1.6724356539856446,
+      -4.501981236364168,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -69.62053183771428,
+      -16.153846153846153,
+      -69.62053314393205
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_42.png",
+    "edge_path": "scene_0002/edge_42.png"
+  },
+  {
+    "view_id": 43,
+    "image_path": "scene_0002/view_43.png",
+    "azimuth_deg": 312.94001906563443,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15384385385437,
+      3.385305255415414e-06,
+      42.94002302875241
+    ],
+    "camera_position_xyz": [
+      3.271680090686748,
+      -3.515819314683476,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -47.05998093436557,
+      -16.153846153846153,
+      -47.059979475725754
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_43.png",
+    "edge_path": "scene_0002/edge_43.png"
+  },
+  {
+    "view_id": 44,
+    "image_path": "scene_0002/view_44.png",
+    "azimuth_deg": 336.64781000743903,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15384385385437,
+      3.372799212630149e-06,
+      66.64780429825801
+    ],
+    "camera_position_xyz": [
+      4.409189728952376,
+      -1.9036601596393996,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -23.352189992560966,
+      -16.153846153846153,
+      -23.35219820622015
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_44.png",
+    "edge_path": "scene_0002/edge_44.png"
+  },
+  {
+    "view_id": 45,
+    "image_path": "scene_0002/view_45.png",
+    "azimuth_deg": 0.31265526598233234,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23076411112945,
+      -6.340130933136849e-06,
+      90.31266124392467
+    ],
+    "camera_position_xyz": [
+      4.935177833987724,
+      0.026930860653855904,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      0.31265526598232896,
+      -9.23076923076923,
+      0.3126587394465048
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_45.png",
+    "edge_path": "scene_0002/edge_45.png"
+  },
+  {
+    "view_id": 46,
+    "image_path": "scene_0002/view_46.png",
+    "azimuth_deg": 23.656588652417426,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23076411112945,
+      4.4218854803163027e-07,
+      113.65659492124911
+    ],
+    "camera_position_xyz": [
+      4.520526720897273,
+      1.9802887895438543,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      23.65658865241744,
+      -9.23076923076923,
+      23.656592416770934
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_46.png",
+    "edge_path": "scene_0002/edge_46.png"
+  },
+  {
+    "view_id": 47,
+    "image_path": "scene_0002/view_47.png",
+    "azimuth_deg": 51.085845005990734,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23076411112945,
+      -4.556761252582567e-06,
+      141.08584915626577
+    ],
+    "camera_position_xyz": [
+      3.1001042910613616,
+      3.8400597532958067,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      51.085845005990734,
+      -9.23076923076923,
+      51.08584665178762
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_47.png",
+    "edge_path": "scene_0002/edge_47.png"
+  },
+  {
+    "view_id": 48,
+    "image_path": "scene_0002/view_48.png",
+    "azimuth_deg": 79.41131745042293,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23076411112945,
+      6.987227352632703e-06,
+      169.4113130028473
+    ],
+    "camera_position_xyz": [
+      0.906887918082122,
+      4.851212201952826,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      79.41131745042293,
+      -9.23076923076923,
+      79.41131049836912
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_48.png",
+    "edge_path": "scene_0002/edge_48.png"
+  },
+  {
+    "view_id": 49,
+    "image_path": "scene_0002/view_49.png",
+    "azimuth_deg": 104.2746839797189,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23078460169695,
+      1.5061419496319417e-06,
+      -165.72531945497988
+    ],
+    "camera_position_xyz": [
+      -1.2168890177473384,
+      4.78287430765489,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      104.27468397971893,
+      -9.23076923076923,
+      104.27467804054197
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_49.png",
+    "edge_path": "scene_0002/edge_49.png"
+  },
+  {
+    "view_id": 50,
+    "image_path": "scene_0002/view_50.png",
+    "azimuth_deg": 127.38271395785216,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077094131862,
+      -1.7861602228984856e-06,
+      -142.61728685120934
+    ],
+    "camera_position_xyz": [
+      -2.9963694248384223,
+      3.921539977385514,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      127.38271395785216,
+      -9.23076923076923,
+      127.38271064431251
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_50.png",
+    "edge_path": "scene_0002/edge_50.png"
+  },
+  {
+    "view_id": 51,
+    "image_path": "scene_0002/view_51.png",
+    "azimuth_deg": 156.7513076583836,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23078460169695,
+      -1.5296214912903168e-07,
+      -113.24869602401594
+    ],
+    "camera_position_xyz": [
+      -4.534509988003637,
+      1.9480566452325172,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      156.7513076583836,
+      -9.23076923076923,
+      156.75130147150588
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_51.png",
+    "edge_path": "scene_0002/edge_51.png"
+  },
+  {
+    "view_id": 52,
+    "image_path": "scene_0002/view_52.png",
+    "azimuth_deg": 182.6183535156837,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077777150779,
+      1.2816991723808195e-05,
+      -87.38165631634295
+    ],
+    "camera_position_xyz": [
+      -4.930098848857109,
+      -0.2254570132799694,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -177.38164648431632,
+      -9.23076923076923,
+      -177.38165882082112
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_52.png",
+    "edge_path": "scene_0002/edge_52.png"
+  },
+  {
+    "view_id": 53,
+    "image_path": "scene_0002/view_53.png",
+    "azimuth_deg": 202.19366459868888,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077777150779,
+      -2.9879101637401432e-06,
+      -67.80634098527557
+    ],
+    "camera_position_xyz": [
+      -4.569610182546449,
+      -1.8642339724152461,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -157.80633540131112,
+      -9.23076923076923,
+      -157.80634348975371
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_53.png",
+    "edge_path": "scene_0002/edge_53.png"
+  },
+  {
+    "view_id": 54,
+    "image_path": "scene_0002/view_54.png",
+    "azimuth_deg": 228.78464853391228,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077094131862,
+      1.8204853796873386e-06,
+      -41.21535928218917
+    ],
+    "camera_position_xyz": [
+      -3.2517928394628837,
+      -3.712485535804447,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -131.21535146608772,
+      -9.23076923076923,
+      -131.21536178666733
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_54.png",
+    "edge_path": "scene_0002/edge_54.png"
+  },
+  {
+    "view_id": 55,
+    "image_path": "scene_0002/view_55.png",
+    "azimuth_deg": 255.0071301797567,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077777150779,
+      -2.7807584491148035e-06,
+      -14.99287311501412
+    ],
+    "camera_position_xyz": [
+      -1.2767437816879652,
+      -4.7672456240748105,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -104.9928698202433,
+      -9.23076923076923,
+      -104.99287561949228
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_55.png",
+    "edge_path": "scene_0002/edge_55.png"
+  },
+  {
+    "view_id": 56,
+    "image_path": "scene_0002/view_56.png",
+    "azimuth_deg": 279.11253935452237,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077777150779,
+      -5.215478146662616e-07,
+      9.112539569854825
+    ],
+    "camera_position_xyz": [
+      0.7816162907942784,
+      -4.872964344041962,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -80.88746064547763,
+      -9.23076923076923,
+      -80.88746293462333
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_56.png",
+    "edge_path": "scene_0002/edge_56.png"
+  },
+  {
+    "view_id": 57,
+    "image_path": "scene_0002/view_57.png",
+    "azimuth_deg": 310.5266546592189,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077094131862,
+      1.5822043296170804e-06,
+      40.526657647798444
+    ],
+    "camera_position_xyz": [
+      3.2069348298893816,
+      -3.7513030431013807,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -49.47334534078112,
+      -9.23076923076923,
+      -49.47334485667972
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_57.png",
+    "edge_path": "scene_0002/edge_57.png"
+  },
+  {
+    "view_id": 58,
+    "image_path": "scene_0002/view_58.png",
+    "azimuth_deg": 335.4180972895706,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077777150779,
+      -1.5230920160847716e-06,
+      65.41810387027809
+    ],
+    "camera_position_xyz": [
+      4.48795739043303,
+      -2.053032875040453,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -24.581902710429404,
+      -9.23076923076923,
+      -24.58189863420006
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_58.png",
+    "edge_path": "scene_0002/edge_58.png"
+  },
+  {
+    "view_id": 59,
+    "image_path": "scene_0002/view_59.png",
+    "azimuth_deg": 0.3332701572497494,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30770485897203,
+      2.954583243121396e-06,
+      90.33327475483976
+    ],
+    "camera_position_xyz": [
+      4.9958604758150615,
+      0.029059557232186794,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      0.33327015724975695,
+      -2.3076923076923066,
+      0.3332722503616026
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_59.png",
+    "edge_path": "scene_0002/edge_59.png"
+  },
+  {
+    "view_id": 60,
+    "image_path": "scene_0002/view_60.png",
+    "azimuth_deg": 29.530276565676814,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.3076911985937,
+      -2.966038735973154e-06,
+      119.53027756970411
+    ],
+    "camera_position_xyz": [
+      4.34694858105489,
+      2.462418401763295,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      29.530276565676814,
+      -2.3076923076923066,
+      29.530275065225965
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_60.png",
+    "edge_path": "scene_0002/edge_60.png"
+  },
+  {
+    "view_id": 61,
+    "image_path": "scene_0002/view_61.png",
+    "azimuth_deg": 50.32294427116836,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30769802878287,
+      -2.1644473562695215e-06,
+      140.32294434673202
+    ],
+    "camera_position_xyz": [
+      3.1897093296894234,
+      3.8451554901941054,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      50.32294427116835,
+      -2.3076923076923066,
+      50.32294184225384
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_61.png",
+    "edge_path": "scene_0002/edge_61.png"
+  },
+  {
+    "view_id": 62,
+    "image_path": "scene_0002/view_62.png",
+    "azimuth_deg": 74.82121932915777,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30769802878287,
+      -1.9357981453299825e-06,
+      164.82122097492365
+    ],
+    "camera_position_xyz": [
+      1.3080971175382814,
+      4.821654102355919,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      74.82121932915777,
+      -2.3076923076923066,
+      74.8212184704455
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_62.png",
+    "edge_path": "scene_0002/edge_62.png"
+  },
+  {
+    "view_id": 63,
+    "image_path": "scene_0002/view_63.png",
+    "azimuth_deg": 99.8602908397263,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30770485897203,
+      3.2750738457096257e-06,
+      -170.13971169669415
+    ],
+    "camera_position_xyz": [
+      -0.8555372121816907,
+      4.922146120367619,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      99.8602908397263,
+      -2.3076923076923066,
+      99.8602857988277
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_63.png",
+    "edge_path": "scene_0002/edge_63.png"
+  },
+  {
+    "view_id": 64,
+    "image_path": "scene_0002/view_64.png",
+    "azimuth_deg": 127.33814946675557,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30770485897203,
+      -1.3517574182827034e-06,
+      -142.66186066573286
+    ],
+    "camera_position_xyz": [
+      -3.0301301594509877,
+      3.9721250695897226,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      127.33814946675557,
+      -2.3076923076923066,
+      127.338136829789
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_64.png",
+    "edge_path": "scene_0002/edge_64.png"
+  },
+  {
+    "view_id": 65,
+    "image_path": "scene_0002/view_65.png",
+    "azimuth_deg": 156.89357882108533,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30769802878287,
+      -1.3741991067818607e-07,
+      -113.10641635341541
+    ],
+    "camera_position_xyz": [
+      -4.595157903962696,
+      1.9606096473614474,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      156.89357882108533,
+      -2.3076923076923066,
+      156.89358114210643
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_65.png",
+    "edge_path": "scene_0002/edge_65.png"
+  },
+  {
+    "view_id": 66,
+    "image_path": "scene_0002/view_66.png",
+    "azimuth_deg": 180.82332270134984,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.3076911985937,
+      1.0953728545210546e-06,
+      -89.17667784154649
+    ],
+    "camera_position_xyz": [
+      -4.995429198272332,
+      -0.07178771988211077,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -179.17667729865013,
+      -2.3076923076923066,
+      -179.17668034602465
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_66.png",
+    "edge_path": "scene_0002/edge_66.png"
+  },
+  {
+    "view_id": 67,
+    "image_path": "scene_0002/view_67.png",
+    "azimuth_deg": 202.31438807072556,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30768436840452,
+      -1.6435400798716691e-06,
+      -67.6856173916956
+    ],
+    "camera_position_xyz": [
+      -4.621820655071439,
+      -1.8969027871856352,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -157.68561192927444,
+      -2.3076923076923066,
+      -157.68561989617376
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_67.png",
+    "edge_path": "scene_0002/edge_67.png"
+  },
+  {
+    "view_id": 68,
+    "image_path": "scene_0002/view_68.png",
+    "azimuth_deg": 230.9135214165689,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30769802878287,
+      4.953035364121465e-06,
+      -39.08648152544999
+    ],
+    "camera_position_xyz": [
+      -3.1499065873775174,
+      -3.8778286246910585,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -129.08647858343113,
+      -2.3076923076923066,
+      -129.08648402992816
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_68.png",
+    "edge_path": "scene_0002/edge_68.png"
+  },
+  {
+    "view_id": 69,
+    "image_path": "scene_0002/view_69.png",
+    "azimuth_deg": 253.65585847890466,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.3076911985937,
+      5.365688365381277e-07,
+      -16.34414237248381
+    ],
+    "camera_position_xyz": [
+      -1.4058892649634833,
+      -4.794052745468917,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -106.34414152109537,
+      -2.3076923076923066,
+      -106.34414487696196
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_69.png",
+    "edge_path": "scene_0002/edge_69.png"
+  },
+  {
+    "view_id": 70,
+    "image_path": "scene_0002/view_70.png",
+    "azimuth_deg": 283.8066775219707,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.3076911985937,
+      1.9795772337428928e-07,
+      13.80668013827353
+    ],
+    "camera_position_xyz": [
+      1.1922654684803293,
+      -4.851594521839908,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -76.1933224780293,
+      -2.3076923076923066,
+      -76.19332236620463
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_70.png",
+    "edge_path": "scene_0002/edge_70.png"
+  },
+  {
+    "view_id": 71,
+    "image_path": "scene_0002/view_71.png",
+    "azimuth_deg": 305.6592052746083,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30769802878287,
+      1.7646670012497782e-06,
+      35.65920529805889
+    ],
+    "camera_position_xyz": [
+      2.9124503711485956,
+      -4.059199328349623,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -54.340794725391675,
+      -2.3076923076923066,
+      -54.34079720641927
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_71.png",
+    "edge_path": "scene_0002/edge_71.png"
+  },
+  {
+    "view_id": 72,
+    "image_path": "scene_0002/view_72.png",
+    "azimuth_deg": 331.8128245136095,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30769802878287,
+      4.404543264193467e-06,
+      61.812822667832705
+    ],
+    "camera_position_xyz": [
+      4.4034718827283355,
+      -2.3598520567396997,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -28.187175486390515,
+      -2.3076923076923066,
+      -28.18717983664544
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_72.png",
+    "edge_path": "scene_0002/edge_72.png"
+  },
+  {
+    "view_id": 73,
+    "image_path": "scene_0002/view_73.png",
+    "azimuth_deg": 1.0988886991765647,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38462511624711,
+      -3.931729435022837e-06,
+      91.09889797966318
+    ],
+    "camera_position_xyz": [
+      4.982869944003288,
+      0.0955793080252599,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      1.0988886991765696,
+      4.615384615384613,
+      1.0988954751850315
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_73.png",
+    "edge_path": "scene_0002/edge_73.png"
+  },
+  {
+    "view_id": 74,
+    "image_path": "scene_0002/view_74.png",
+    "azimuth_deg": 28.302852011462864,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      1.1050945837604033e-05,
+      118.3028515947178
+    ],
+    "camera_position_xyz": [
+      4.387993567543674,
+      2.3629728593805845,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      28.302852011462875,
+      4.615384615384613,
+      28.302849090239647
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_74.png",
+    "edge_path": "scene_0002/edge_74.png"
+  },
+  {
+    "view_id": 75,
+    "image_path": "scene_0002/view_75.png",
+    "azimuth_deg": 52.35148602199258,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      -1.9060971588258532e-06,
+      142.35148320946914
+    ],
+    "camera_position_xyz": [
+      3.0441755600744114,
+      3.946026285064452,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      52.35148602199257,
+      4.615384615384613,
+      52.35148070499099
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_75.png",
+    "edge_path": "scene_0002/edge_75.png"
+  },
+  {
+    "view_id": 76,
+    "image_path": "scene_0002/view_76.png",
+    "azimuth_deg": 75.55138880412132,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461145586876,
+      4.962990449385571e-06,
+      165.5513955179547
+    ],
+    "camera_position_xyz": [
+      1.2435123950191305,
+      4.826158431548606,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      75.5513888041213,
+      4.615384615384613,
+      75.55139301347651
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_76.png",
+    "edge_path": "scene_0002/edge_76.png"
+  },
+  {
+    "view_id": 77,
+    "image_path": "scene_0002/view_77.png",
+    "azimuth_deg": 103.97815227019494,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461145586876,
+      -1.0588390187836433e-06,
+      -166.02184528760682
+    ],
+    "camera_position_xyz": [
+      -1.2038430576644374,
+      4.83620617586627,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      103.97815227019493,
+      4.615384615384613,
+      103.978152207915
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_77.png",
+    "edge_path": "scene_0002/edge_77.png"
+  },
+  {
+    "view_id": 78,
+    "image_path": "scene_0002/view_78.png",
+    "azimuth_deg": 126.81295014068424,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      -3.88436044181874e-06,
+      -143.18704757139346
+    ],
+    "camera_position_xyz": [
+      -2.9863076541013482,
+      3.989999358149023,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      126.81295014068422,
+      4.615384615384613,
+      126.81294992412836
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_78.png",
+    "edge_path": "scene_0002/edge_78.png"
+  },
+  {
+    "view_id": 79,
+    "image_path": "scene_0002/view_79.png",
+    "azimuth_deg": 150.48055990626074,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38462511624711,
+      2.0627917397624573e-06,
+      -119.5194585500588
+    ],
+    "camera_position_xyz": [
+      -4.336834081326884,
+      2.455605512702624,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      150.48055990626074,
+      4.615384615384613,
+      150.48053894546302
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_79.png",
+    "edge_path": "scene_0002/edge_79.png"
+  },
+  {
+    "view_id": 80,
+    "image_path": "scene_0002/view_80.png",
+    "azimuth_deg": 178.25589555250042,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461145586876,
+      -2.583111351432925e-06,
+      -91.74411179960843
+    ],
+    "camera_position_xyz": [
+      -4.981477691218333,
+      0.15168485378568833,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      178.25589555250042,
+      4.615384615384613,
+      178.25588569591343
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_80.png",
+    "edge_path": "scene_0002/edge_80.png"
+  },
+  {
+    "view_id": 81,
+    "image_path": "scene_0002/view_81.png",
+    "azimuth_deg": 207.1663906364354,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38462511624711,
+      4.51410294075053e-06,
+      -62.83362176004779
+    ],
+    "camera_position_xyz": [
+      -4.433996894862062,
+      -2.2754779320677896,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -152.83360936356462,
+      4.615384615384613,
+      -152.83362426452595
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_81.png",
+    "edge_path": "scene_0002/edge_81.png"
+  },
+  {
+    "view_id": 82,
+    "image_path": "scene_0002/view_82.png",
+    "azimuth_deg": 232.4042381012275,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      -2.72312394850969e-06,
+      -37.59576883343261
+    ],
+    "camera_position_xyz": [
+      -3.0405411739216825,
+      -3.9488273769134135,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -127.59576189877248,
+      4.615384615384613,
+      -127.59577133791078
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_82.png",
+    "edge_path": "scene_0002/edge_82.png"
+  },
+  {
+    "view_id": 83,
+    "image_path": "scene_0002/view_83.png",
+    "azimuth_deg": 254.7717077118316,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461145586876,
+      -2.8073686489127993e-06,
+      -15.228296075326119
+    ],
+    "camera_position_xyz": [
+      -1.3090696089505958,
+      -4.808790392801068,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -105.2282922881684,
+      4.615384615384613,
+      -105.22829857980427
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_83.png",
+    "edge_path": "scene_0002/edge_83.png"
+  },
+  {
+    "view_id": 84,
+    "image_path": "scene_0002/view_84.png",
+    "azimuth_deg": 285.48481679480886,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      8.444683101422548e-07,
+      15.484817489984287
+    ],
+    "camera_position_xyz": [
+      1.330586319836869,
+      -4.802881252793671,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -74.51518320519114,
+      4.615384615384613,
+      -74.51518501449388
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_84.png",
+    "edge_path": "scene_0002/edge_84.png"
+  },
+  {
+    "view_id": 85,
+    "image_path": "scene_0002/view_85.png",
+    "azimuth_deg": 311.1223464281243,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      4.095432838922138e-06,
+      41.12234235097735
+    ],
+    "camera_position_xyz": [
+      3.2776824069929718,
+      -3.7543210200864117,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -48.877653571875726,
+      4.615384615384613,
+      -48.87766015350081
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_85.png",
+    "edge_path": "scene_0002/edge_85.png"
+  },
+  {
+    "view_id": 86,
+    "image_path": "scene_0002/view_86.png",
+    "azimuth_deg": 332.5837413627014,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38462511624711,
+      -2.1726541033474457e-06,
+      62.583752949641216
+    ],
+    "camera_position_xyz": [
+      4.424031359219793,
+      -2.294792978813947,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -27.416258637298597,
+      4.615384615384613,
+      -27.416249554836952
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_86.png",
+    "edge_path": "scene_0002/edge_86.png"
+  },
+  {
+    "view_id": 87,
+    "image_path": "scene_0002/view_87.png",
+    "azimuth_deg": 3.5557526465149856,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      -5.242026872699728e-07,
+      93.55574434487345
+    ],
+    "camera_position_xyz": [
+      4.889522390862563,
+      0.30383191897651196,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      3.555752646514975,
+      11.53846153846154,
+      3.555741840395285
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_87.png",
+    "edge_path": "scene_0002/edge_87.png"
+  },
+  {
+    "view_id": 88,
+    "image_path": "scene_0002/view_88.png",
+    "azimuth_deg": 23.88263797608165,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46154537352218,
+      -9.019593041201407e-07,
+      113.88263320164151
+    ],
+    "camera_position_xyz": [
+      4.479488622822304,
+      1.9834123937650583,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      23.88263797608164,
+      11.53846153846154,
+      23.882630697163336
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_88.png",
+    "edge_path": "scene_0002/edge_88.png"
+  },
+  {
+    "view_id": 89,
+    "image_path": "scene_0002/view_89.png",
+    "azimuth_deg": 48.07190302420435,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46154537352218,
+      -2.740951898943479e-07,
+      138.0719052415926
+    ],
+    "camera_position_xyz": [
+      3.273468194596046,
+      3.6447426554838414,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      48.071903024204346,
+      11.53846153846154,
+      48.07190273711444
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_89.png",
+    "edge_path": "scene_0002/edge_89.png"
+  },
+  {
+    "view_id": 90,
+    "image_path": "scene_0002/view_90.png",
+    "azimuth_deg": 77.23723785638582,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46155220371135,
+      -6.519151761159892e-08,
+      167.23723646927556
+    ],
+    "camera_position_xyz": [
+      1.0822506853669724,
+      4.7779154973437965,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      77.23723785638583,
+      11.53846153846154,
+      77.23723396479738
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_90.png",
+    "edge_path": "scene_0002/edge_90.png"
+  },
+  {
+    "view_id": 91,
+    "image_path": "scene_0002/view_91.png",
+    "azimuth_deg": 105.67239733952759,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      -6.343006917902015e-08,
+      -164.32760320360683
+    ],
+    "camera_position_xyz": [
+      -1.323386728200332,
+      4.71681996830052,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      105.6723973395276,
+      11.53846153846154,
+      105.672394291915
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_91.png",
+    "edge_path": "scene_0002/edge_91.png"
+  },
+  {
+    "view_id": 92,
+    "image_path": "scene_0002/view_92.png",
+    "azimuth_deg": 129.3405082479277,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46154537352218,
+      7.517235391862782e-07,
+      -140.65949508789524
+    ],
+    "camera_position_xyz": [
+      -3.105582765877747,
+      3.7888123112683245,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      129.3405082479277,
+      11.53846153846154,
+      129.34050240762662
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_92.png",
+    "edge_path": "scene_0002/edge_92.png"
+  },
+  {
+    "view_id": 93,
+    "image_path": "scene_0002/view_93.png",
+    "azimuth_deg": 154.6432151656844,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46154537352218,
+      1.80266531702916e-06,
+      -115.3567861000162
+    ],
+    "camera_position_xyz": [
+      -4.426981043196044,
+      2.0979947304314597,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      154.6432151656844,
+      11.53846153846154,
+      154.64321139550566
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_93.png",
+    "edge_path": "scene_0002/edge_93.png"
+  },
+  {
+    "view_id": 94,
+    "image_path": "scene_0002/view_94.png",
+    "azimuth_deg": 179.90473702074414,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      -7.105492283686244e-06,
+      -90.09526315283233
+    ],
+    "camera_position_xyz": [
+      -4.89894648884587,
+      0.008145253834555376,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      179.90473702074416,
+      11.53846153846154,
+      179.9047343426895
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_94.png",
+    "edge_path": "scene_0002/edge_94.png"
+  },
+  {
+    "view_id": 95,
+    "image_path": "scene_0002/view_95.png",
+    "azimuth_deg": 204.04906949669277,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      -5.327255865721219e-06,
+      -65.95093375761995
+    ],
+    "camera_position_xyz": [
+      -4.473708359854449,
+      -1.9964159277825153,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      -155.95093050330723,
+      11.53846153846154,
+      -155.9509362620981
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_95.png",
+    "edge_path": "scene_0002/edge_95.png"
+  },
+  {
+    "view_id": 96,
+    "image_path": "scene_0002/view_96.png",
+    "azimuth_deg": 229.884783291032,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      2.7158262802930406e-07,
+      -40.115217297480626
+    ],
+    "camera_position_xyz": [
+      -3.1565266626728112,
+      -3.746476007339557,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      -130.11521670896798,
+      11.53846153846154,
+      -130.1152198019588
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_96.png",
+    "edge_path": "scene_0002/edge_96.png"
+  },
+  {
+    "view_id": 97,
+    "image_path": "scene_0002/view_97.png",
+    "azimuth_deg": 256.39523808691746,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      1.1255935182156976e-06,
+      -13.604762670935028
+    ],
+    "camera_position_xyz": [
+      -1.1523459585452882,
+      -4.7614957563311595,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      -103.60476191308254,
+      11.53846153846154,
+      -103.60476517541319
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_97.png",
+    "edge_path": "scene_0002/edge_97.png"
+  },
+  {
+    "view_id": 98,
+    "image_path": "scene_0002/view_98.png",
+    "azimuth_deg": 283.22052456189743,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46155220371135,
+      4.743690949654287e-07,
+      13.220526964081374
+    ],
+    "camera_position_xyz": [
+      1.1203887100021839,
+      -4.769116499335589,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      -76.77947543810257,
+      11.53846153846154,
+      -76.77947554039679
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_98.png",
+    "edge_path": "scene_0002/edge_98.png"
+  },
+  {
+    "view_id": 99,
+    "image_path": "scene_0002/view_99.png",
+    "azimuth_deg": 311.98774135994944,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      -1.0024660533873856e-06,
+      41.9877409791963
+    ],
+    "camera_position_xyz": [
+      3.277260564122552,
+      -3.6413330307158716,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      -48.01225864005056,
+      11.53846153846154,
+      -48.01226152528187
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_99.png",
+    "edge_path": "scene_0002/edge_99.png"
+  },
+  {
+    "view_id": 100,
+    "image_path": "scene_0002/view_100.png",
+    "azimuth_deg": 330.9899651888645,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46155220371135,
+      -8.633761733903689e-07,
+      60.98996928795376
+    ],
+    "camera_position_xyz": [
+      4.284305030898437,
+      -2.375810061421922,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      -29.010034811135483,
+      11.53846153846154,
+      -29.01003321652439
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_100.png",
+    "edge_path": "scene_0002/edge_100.png"
+  },
+  {
+    "view_id": 101,
+    "image_path": "scene_0002/view_101.png",
+    "azimuth_deg": 358.0879949747583,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53847246098643,
+      -6.186702374747109e-08,
+      88.08801398973816
+    ],
+    "camera_position_xyz": [
+      4.740041707617968,
+      -0.1582376459187179,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -1.9120050252416831,
+      18.46153846153846,
+      -1.9119885147400169
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_101.png",
+    "edge_path": "scene_0002/edge_101.png"
+  },
+  {
+    "view_id": 102,
+    "image_path": "scene_0002/view_102.png",
+    "azimuth_deg": 29.13546910791063,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.5384588006081,
+      4.51204295909444e-06,
+      119.1354653149207
+    ],
+    "camera_position_xyz": [
+      4.142595317359591,
+      2.309099083871056,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      29.135469107910637,
+      18.46153846153846,
+      29.135462810442533
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_102.png",
+    "edge_path": "scene_0002/edge_102.png"
+  },
+  {
+    "view_id": 103,
+    "image_path": "scene_0002/view_103.png",
+    "azimuth_deg": 52.642048947673004,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.5384588006081,
+      -1.3043844557463641e-06,
+      142.64206677751815
+    ],
+    "camera_position_xyz": [
+      2.8778247593249238,
+      3.76976911722193,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      52.642048947673004,
+      18.46153846153846,
+      52.64206427303998
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_103.png",
+    "edge_path": "scene_0002/edge_103.png"
+  },
+  {
+    "view_id": 104,
+    "image_path": "scene_0002/view_104.png",
+    "azimuth_deg": 73.85934941469633,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.5384588006081,
+      -2.0250004399261828e-06,
+      163.85935275486742
+    ],
+    "camera_position_xyz": [
+      1.318447837674537,
+      4.555735927583501,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      73.85934941469634,
+      18.46153846153846,
+      73.85935025038924
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_104.png",
+    "edge_path": "scene_0002/edge_104.png"
+  },
+  {
+    "view_id": 105,
+    "image_path": "scene_0002/view_105.png",
+    "azimuth_deg": 102.40682380048419,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53846563079726,
+      -6.7229410697093006e-06,
+      -167.59317128730328
+    ],
+    "camera_position_xyz": [
+      -1.0189730751844173,
+      4.6319249146108765,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      102.40682380048418,
+      18.46153846153846,
+      102.40682620821855
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_105.png",
+    "edge_path": "scene_0002/edge_105.png"
+  },
+  {
+    "view_id": 106,
+    "image_path": "scene_0002/view_106.png",
+    "azimuth_deg": 129.73626315023304,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53846563079726,
+      2.6531281330795376e-06,
+      -140.26374026700634
+    ],
+    "camera_position_xyz": [
+      -3.031781662072734,
+      3.6470994634179164,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      129.73626315023307,
+      18.46153846153846,
+      129.7362572285155
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_106.png",
+    "edge_path": "scene_0002/edge_106.png"
+  },
+  {
+    "view_id": 107,
+    "image_path": "scene_0002/view_107.png",
+    "azimuth_deg": 157.4637151785699,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53846563079726,
+      -1.9025221135861384e-06,
+      -112.53630046339445
+    ],
+    "camera_position_xyz": [
+      -4.3805167578390956,
+      1.8177204066727701,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      157.46371517856994,
+      18.46153846153846,
+      157.46369703212736
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_107.png",
+    "edge_path": "scene_0002/edge_107.png"
+  },
+  {
+    "view_id": 108,
+    "image_path": "scene_0002/view_108.png",
+    "azimuth_deg": 176.79260993514566,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.5384588006081,
+      2.227019909739763e-06,
+      -93.20739786701363
+    ],
+    "camera_position_xyz": [
+      -4.735253063480379,
+      0.26535441836051427,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      176.79260993514566,
+      18.46153846153846,
+      176.79259962850824
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_108.png",
+    "edge_path": "scene_0002/edge_108.png"
+  },
+  {
+    "view_id": 109,
+    "image_path": "scene_0002/view_109.png",
+    "azimuth_deg": 208.81768955408697,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53846563079726,
+      9.485604859796946e-07,
+      -61.18230741498132
+    ],
+    "camera_position_xyz": [
+      -4.155338490884756,
+      -2.2860876117759275,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -151.182310445913,
+      18.46153846153846,
+      -151.18230991945947
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_109.png",
+    "edge_path": "scene_0002/edge_109.png"
+  },
+  {
+    "view_id": 110,
+    "image_path": "scene_0002/view_110.png",
+    "azimuth_deg": 233.51679449763486,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53847246098643,
+      -6.0506729771312216e-06,
+      -36.48321297990758
+    ],
+    "camera_position_xyz": [
+      -2.8199378285224714,
+      -3.813264373973005,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -126.48320550236514,
+      18.46153846153846,
+      -126.48321548438574
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_110.png",
+    "edge_path": "scene_0002/edge_110.png"
+  },
+  {
+    "view_id": 111,
+    "image_path": "scene_0002/view_111.png",
+    "azimuth_deg": 255.43487323210584,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53847246098643,
+      -1.1167038424365697e-06,
+      -14.565129103147486
+    ],
+    "camera_position_xyz": [
+      -1.1926912054687968,
+      -4.590263851996,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -104.56512676789418,
+      18.46153846153846,
+      -104.56513160762564
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_111.png",
+    "edge_path": "scene_0002/edge_111.png"
+  },
+  {
+    "view_id": 112,
+    "image_path": "scene_0002/view_112.png",
+    "azimuth_deg": 283.1149070999139,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53847246098643,
+      8.029397822219482e-07,
+      13.114909187624528
+    ],
+    "camera_position_xyz": [
+      1.0761369165205776,
+      -4.618978661938735,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -76.88509290008608,
+      18.46153846153846,
+      -76.88509331685363
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_112.png",
+    "edge_path": "scene_0002/edge_112.png"
+  },
+  {
+    "view_id": 113,
+    "image_path": "scene_0002/view_113.png",
+    "azimuth_deg": 311.08185788728093,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53847246098643,
+      4.6201179018373205e-06,
+      41.081866649955856
+    ],
+    "camera_position_xyz": [
+      3.1165900851046535,
+      -3.574898709609985,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -48.91814211271907,
+      18.46153846153846,
+      -48.91813585452229
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_113.png",
+    "edge_path": "scene_0002/edge_113.png"
+  },
+  {
+    "view_id": 114,
+    "image_path": "scene_0002/view_114.png",
+    "azimuth_deg": 332.3041633493899,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53846563079726,
+      -6.667226301021044e-07,
+      62.30417281634508
+    ],
+    "camera_position_xyz": [
+      4.199300781650418,
+      -2.2042929677731022,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -27.69583665061009,
+      18.46153846153846,
+      -27.695829688133074
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_114.png",
+    "edge_path": "scene_0002/edge_114.png"
+  },
+  {
+    "view_id": 115,
+    "image_path": "scene_0002/view_115.png",
+    "azimuth_deg": 1.5532086477198124,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.6153927182615,
+      -3.315820160733792e-06,
+      91.55321484249575
+    ],
+    "camera_position_xyz": [
+      4.515592463556971,
+      0.12244140643466506,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      1.5532086477197993,
+      25.384615384615387,
+      1.5532123380176017
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_115.png",
+    "edge_path": "scene_0002/edge_115.png"
+  },
+  {
+    "view_id": 116,
+    "image_path": "scene_0002/view_116.png",
+    "azimuth_deg": 26.17757759385561,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.6153927182615,
+      -1.053072881790537e-05,
+      116.17758359295496
+    ],
+    "camera_position_xyz": [
+      4.05392250527286,
+      1.992806944032571,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      26.177577593855602,
+      25.384615384615387,
+      26.177581088476813
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_116.png",
+    "edge_path": "scene_0002/edge_116.png"
+  },
+  {
+    "view_id": 117,
+    "image_path": "scene_0002/view_117.png",
+    "azimuth_deg": 48.13464950156697,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61537905788316,
+      -4.3342662241183795e-08,
+      138.13466101968666
+    ],
+    "camera_position_xyz": [
+      3.0147342015963763,
+      3.3640667188192444,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      48.13464950156697,
+      25.384615384615387,
+      48.134658515208514
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_117.png",
+    "edge_path": "scene_0002/edge_117.png"
+  },
+  {
+    "view_id": 118,
+    "image_path": "scene_0002/view_118.png",
+    "azimuth_deg": 75.38185550769117,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.6153927182615,
+      -9.635812534071864e-07,
+      165.3818565623766
+    ],
+    "camera_position_xyz": [
+      1.1400451347422433,
+      4.371025541642688,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      75.38185550769117,
+      25.384615384615387,
+      75.38185405789847
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_118.png",
+    "edge_path": "scene_0002/edge_118.png"
+  },
+  {
+    "view_id": 119,
+    "image_path": "scene_0002/view_119.png",
+    "azimuth_deg": 102.18169040058851,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      -1.8163943212561033e-06,
+      -167.81830798272523
+    ],
+    "camera_position_xyz": [
+      -0.9531964027510894,
+      4.415538903998537,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      102.18169040058854,
+      25.384615384615387,
+      102.1816895127966
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_119.png",
+    "edge_path": "scene_0002/edge_119.png"
+  },
+  {
+    "view_id": 120,
+    "image_path": "scene_0002/view_120.png",
+    "azimuth_deg": 125.79089573176381,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      -7.185475040816192e-07,
+      -144.20911707879418
+    ],
+    "camera_position_xyz": [
+      -2.641819122503275,
+      3.6641996286935896,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      125.79089573176384,
+      25.384615384615387,
+      125.79088041672765
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_120.png",
+    "edge_path": "scene_0002/edge_120.png"
+  },
+  {
+    "view_id": 121,
+    "image_path": "scene_0002/view_121.png",
+    "azimuth_deg": 157.70959297295343,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.6153927182615,
+      3.966478394361886e-06,
+      -112.29042048346317
+    ],
+    "camera_position_xyz": [
+      -4.179692542171273,
+      1.7133993836406187,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      157.70959297295343,
+      25.384615384615387,
+      157.70957701205867
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_121.png",
+    "edge_path": "scene_0002/edge_121.png"
+  },
+  {
+    "view_id": 122,
+    "image_path": "scene_0002/view_122.png",
+    "azimuth_deg": 178.0720605265997,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      3.0637649171156762e-06,
+      -91.92793951093016
+    ],
+    "camera_position_xyz": [
+      -4.514695089681416,
+      0.1519718465661691,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      178.07206052659967,
+      25.384615384615387,
+      178.07205798459165
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_122.png",
+    "edge_path": "scene_0002/edge_122.png"
+  },
+  {
+    "view_id": 123,
+    "image_path": "scene_0002/view_123.png",
+    "azimuth_deg": 203.64491882704934,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      -5.750487137407205e-07,
+      -66.35508971118794
+    ],
+    "camera_position_xyz": [
+      -4.138022446655637,
+      -1.8117222264785273,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -156.3550811729507,
+      25.384615384615387,
+      -156.3550922156661
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_123.png",
+    "edge_path": "scene_0002/edge_123.png"
+  },
+  {
+    "view_id": 124,
+    "image_path": "scene_0002/view_124.png",
+    "azimuth_deg": 232.1782230434154,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.6153927182615,
+      3.1215828212259415e-06,
+      -37.82177637797375
+    ],
+    "camera_position_xyz": [
+      -2.7700121492644487,
+      -3.568276879373231,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -127.82177695658459,
+      25.384615384615387,
+      -127.82177888245191
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_124.png",
+    "edge_path": "scene_0002/edge_124.png"
+  },
+  {
+    "view_id": 125,
+    "image_path": "scene_0002/view_125.png",
+    "azimuth_deg": 257.35555525134123,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.6153927182615,
+      -1.8899771917004478e-06,
+      -12.644446611367696
+    ],
+    "camera_position_xyz": [
+      -0.988827410220931,
+      -4.407696399224655,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -102.64444474865877,
+      25.384615384615387,
+      -102.64444911584586
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_125.png",
+    "edge_path": "scene_0002/edge_125.png"
+  },
+  {
+    "view_id": 126,
+    "image_path": "scene_0002/view_126.png",
+    "azimuth_deg": 281.461667997744,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      2.879943410745307e-07,
+      11.461670436759405
+    ],
+    "camera_position_xyz": [
+      0.8976335733581766,
+      -4.427168526600545,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -78.53833200225603,
+      25.384615384615387,
+      -78.53833206771876
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_126.png",
+    "edge_path": "scene_0002/edge_126.png"
+  },
+  {
+    "view_id": 127,
+    "image_path": "scene_0002/view_127.png",
+    "azimuth_deg": 307.2247511566963,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61537905788316,
+      2.2990478197225588e-06,
+      37.2247563728121
+    ],
+    "camera_position_xyz": [
+      2.7326807622653733,
+      -3.5969463502375114,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -52.7752488433037,
+      25.384615384615387,
+      -52.77524613166605
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_127.png",
+    "edge_path": "scene_0002/edge_127.png"
+  },
+  {
+    "view_id": 128,
+    "image_path": "scene_0002/view_128.png",
+    "azimuth_deg": 334.2589774215389,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      4.228486891244611e-06,
+      64.2589797869919
+    ],
+    "camera_position_xyz": [
+      4.068988524127983,
+      -1.9618612554044177,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -25.74102257846107,
+      25.384615384615387,
+      -25.74102271748626
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_128.png",
+    "edge_path": "scene_0002/edge_128.png"
+  },
+  {
+    "view_id": 129,
+    "image_path": "scene_0002/view_129.png",
+    "azimuth_deg": 3.157096190387258,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.692306145347416,
+      -4.25723951267604e-06,
+      93.15708669358732
+    ],
+    "camera_position_xyz": [
+      4.219536635600446,
+      0.23273933566084903,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      3.15709619038725,
+      32.30769230769231,
+      3.157084189109156
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_129.png",
+    "edge_path": "scene_0002/edge_129.png"
+  },
+  {
+    "view_id": 130,
+    "image_path": "scene_0002/view_130.png",
+    "azimuth_deg": 22.46634924986633,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231980572575,
+      5.526257828808527e-06,
+      112.46635249610435
+    ],
+    "camera_position_xyz": [
+      3.905218240924146,
+      1.614907894677433,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      22.46634924986634,
+      32.30769230769231,
+      22.466349991626203
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_130.png",
+    "edge_path": "scene_0002/edge_130.png"
+  },
+  {
+    "view_id": 131,
+    "image_path": "scene_0002/view_131.png",
+    "azimuth_deg": 54.607203577149136,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.692306145347416,
+      -8.775600223811989e-07,
+      144.6072078243792
+    ],
+    "camera_position_xyz": [
+      2.4475804111530555,
+      3.444997409066953,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      54.607203577149136,
+      32.30769230769231,
+      54.60720531990103
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_131.png",
+    "edge_path": "scene_0002/edge_131.png"
+  },
+  {
+    "view_id": 132,
+    "image_path": "scene_0002/view_132.png",
+    "azimuth_deg": 80.52172139956083,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231980572575,
+      -3.0347800388591874e-06,
+      170.52172417697295
+    ],
+    "camera_position_xyz": [
+      0.695902822516257,
+      4.168258182880721,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      80.52172139956082,
+      32.30769230769231,
+      80.52172167249478
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_132.png",
+    "edge_path": "scene_0002/edge_132.png"
+  },
+  {
+    "view_id": 133,
+    "image_path": "scene_0002/view_133.png",
+    "azimuth_deg": 104.27125954761246,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231980572575,
+      -4.678666977302198e-06,
+      -165.7287345495649
+    ],
+    "camera_position_xyz": [
+      -1.041751330420017,
+      4.0955355184769555,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      104.27125954761243,
+      32.30769230769231,
+      104.27126294595695
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_133.png",
+    "edge_path": "scene_0002/edge_133.png"
+  },
+  {
+    "view_id": 134,
+    "image_path": "scene_0002/view_134.png",
+    "azimuth_deg": 130.90639825562755,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231297553658,
+      7.598760183680054e-06,
+      -139.0936059187781
+    ],
+    "camera_position_xyz": [
+      -2.767258902758925,
+      3.1938902896999526,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      130.90639825562755,
+      32.30769230769231,
+      130.90639157674372
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_134.png",
+    "edge_path": "scene_0002/edge_134.png"
+  },
+  {
+    "view_id": 135,
+    "image_path": "scene_0002/view_135.png",
+    "azimuth_deg": 153.37613750681257,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231297553658,
+      3.7451476142999565e-06,
+      -116.6238681533236
+    ],
+    "camera_position_xyz": [
+      -3.7778630870141043,
+      1.8937812738841944,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      153.3761375068126,
+      32.30769230769231,
+      153.37612934219823
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_135.png",
+    "edge_path": "scene_0002/edge_135.png"
+  },
+  {
+    "view_id": 136,
+    "image_path": "scene_0002/view_136.png",
+    "azimuth_deg": 183.5688994932892,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.692306145347416,
+      -7.67662586183627e-06,
+      -86.43109888955227
+    ],
+    "camera_position_xyz": [
+      -4.217754891965136,
+      -0.2630602380489086,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -176.43110050671078,
+      32.30769230769231,
+      -176.43110139403043
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_136.png",
+    "edge_path": "scene_0002/edge_136.png"
+  },
+  {
+    "view_id": 137,
+    "image_path": "scene_0002/view_137.png",
+    "azimuth_deg": 207.58430827240622,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.692299315158245,
+      3.920687770501793e-06,
+      -62.41568931492388
+    ],
+    "camera_position_xyz": [
+      -3.7455884595497437,
+      -1.9568403382049235,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -152.41569172759375,
+      32.30769230769231,
+      -152.41569181940204
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_137.png",
+    "edge_path": "scene_0002/edge_137.png"
+  },
+  {
+    "view_id": 138,
+    "image_path": "scene_0002/view_138.png",
+    "azimuth_deg": 232.86907305612243,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.692306145347416,
+      2.7144327393426855e-06,
+      -37.13093006418364
+    ],
+    "camera_position_xyz": [
+      -2.5509460278113036,
+      -3.3691736940579236,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -127.13092694387757,
+      32.30769230769231,
+      -127.13093256866179
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_138.png",
+    "edge_path": "scene_0002/edge_138.png"
+  },
+  {
+    "view_id": 139,
+    "image_path": "scene_0002/view_139.png",
+    "azimuth_deg": 256.7493284109072,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.692306145347416,
+      -1.298365421400538e-06,
+      -13.250672003983226
+    ],
+    "camera_position_xyz": [
+      -0.9686377055756502,
+      -4.113441140076678,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -103.2506715890928,
+      32.30769230769231,
+      -103.25067450846139
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_139.png",
+    "edge_path": "scene_0002/edge_139.png"
+  },
+  {
+    "view_id": 140,
+    "image_path": "scene_0002/view_140.png",
+    "azimuth_deg": 280.70238534940563,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69229248496907,
+      -1.1170473423421677e-06,
+      10.702385627485768
+    ],
+    "camera_position_xyz": [
+      0.7847907886107888,
+      -4.152440298866419,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -79.29761465059437,
+      32.30769230769231,
+      -79.2976168769924
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_140.png",
+    "edge_path": "scene_0002/edge_140.png"
+  },
+  {
+    "view_id": 141,
+    "image_path": "scene_0002/view_141.png",
+    "azimuth_deg": 310.04871200021887,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231297553658,
+      1.2096106435702387e-06,
+      40.0487151606268
+    ],
+    "camera_position_xyz": [
+      2.719139866210726,
+      -3.2349552401110118,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -49.95128799978113,
+      32.30769230769231,
+      -49.95128734385136
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_141.png",
+    "edge_path": "scene_0002/edge_141.png"
+  },
+  {
+    "view_id": 142,
+    "image_path": "scene_0002/view_142.png",
+    "azimuth_deg": 336.10463277554464,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.692299315158245,
+      -4.025079172923665e-06,
+      66.10463350451275
+    ],
+    "camera_position_xyz": [
+      3.8637303167934784,
+      -1.7117958571713936,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -23.895367224455413,
+      32.30769230769231,
+      -23.8953689999654
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_142.png",
+    "edge_path": "scene_0002/edge_142.png"
+  },
+  {
+    "view_id": 143,
+    "image_path": "scene_0002/view_143.png",
+    "azimuth_deg": 356.1822113182107,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923664790625,
+      -4.767491269335616e-06,
+      86.18220679619701
+    ],
+    "camera_position_xyz": [
+      3.864429963180139,
+      -0.25788026655040924,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -3.8177886817893523,
+      39.230769230769226,
+      -3.817795708281153
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_143.png",
+    "edge_path": "scene_0002/edge_143.png"
+  },
+  {
+    "view_id": 144,
+    "image_path": "scene_0002/view_144.png",
+    "azimuth_deg": 24.25811440257794,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.769226402622486,
+      -1.6781581530244663e-06,
+      114.25812285126297
+    ],
+    "camera_position_xyz": [
+      3.531051696176992,
+      1.5912243999908213,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      24.258114402577945,
+      39.230769230769226,
+      24.258120346784807
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_144.png",
+    "edge_path": "scene_0002/edge_144.png"
+  },
+  {
+    "view_id": 145,
+    "image_path": "scene_0002/view_145.png",
+    "azimuth_deg": 51.70390233147249,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.769229817717076,
+      3.260188035578378e-06,
+      141.7038993138819
+    ],
+    "camera_position_xyz": [
+      2.4002125477103347,
+      3.0396218347048416,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      51.70390233147248,
+      39.230769230769226,
+      51.703896809403716
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_145.png",
+    "edge_path": "scene_0002/edge_145.png"
+  },
+  {
+    "view_id": 146,
+    "image_path": "scene_0002/view_146.png",
+    "azimuth_deg": 74.92013417058902,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923664790625,
+      -2.1988421290392425e-07,
+      164.92013577448375
+    ],
+    "camera_position_xyz": [
+      1.0076263444668112,
+      3.7396537703558885,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      74.92013417058902,
+      39.230769230769226,
+      74.92013327000558
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_146.png",
+    "edge_path": "scene_0002/edge_146.png"
+  },
+  {
+    "view_id": 147,
+    "image_path": "scene_0002/view_147.png",
+    "azimuth_deg": 99.99790131300034,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76924006300083,
+      -2.024894998177383e-06,
+      -170.00209704529672
+    ],
+    "camera_position_xyz": [
+      -0.6724039899445065,
+      3.8142094916912033,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      99.99790131300034,
+      39.230769230769226,
+      99.99790045022513
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_147.png",
+    "edge_path": "scene_0002/edge_147.png"
+  },
+  {
+    "view_id": 148,
+    "image_path": "scene_0002/view_148.png",
+    "azimuth_deg": 126.16422345101394,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.769229817717076,
+      -3.70780006545284e-06,
+      -143.83577893876128
+    ],
+    "camera_position_xyz": [
+      -2.2854784136585957,
+      3.1268050135723446,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      126.16422345101392,
+      39.230769230769226,
+      126.16421855676055
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_148.png",
+    "edge_path": "scene_0002/edge_148.png"
+  },
+  {
+    "view_id": 149,
+    "image_path": "scene_0002/view_149.png",
+    "azimuth_deg": 150.5492760115111,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923664790625,
+      -5.925282789369204e-06,
+      -119.45073318663013
+    ],
+    "camera_position_xyz": [
+      -3.372548175981718,
+      1.9042688814563313,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      150.5492760115111,
+      39.230769230769226,
+      150.54926430889168
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_149.png",
+    "edge_path": "scene_0002/edge_149.png"
+  },
+  {
+    "view_id": 150,
+    "image_path": "scene_0002/view_150.png",
+    "azimuth_deg": 177.07341237912303,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923664790625,
+      -3.6611019911754698e-06,
+      -92.92659512985605
+    ],
+    "camera_position_xyz": [
+      -3.8679735034052247,
+      0.19774263363188402,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      177.07341237912306,
+      39.230769230769226,
+      177.0734023656658
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_150.png",
+    "edge_path": "scene_0002/edge_150.png"
+  },
+  {
+    "view_id": 151,
+    "image_path": "scene_0002/view_151.png",
+    "azimuth_deg": 204.8763305234181,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.769229817717076,
+      4.747915744048769e-06,
+      -65.12368173591551
+    ],
+    "camera_position_xyz": [
+      -3.5136773221373856,
+      -1.6292307534839918,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -155.12366947658188,
+      39.230769230769226,
+      -155.1236842403937
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_151.png",
+    "edge_path": "scene_0002/edge_151.png"
+  },
+  {
+    "view_id": 152,
+    "image_path": "scene_0002/view_152.png",
+    "azimuth_deg": 231.4396277844506,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.769229817717076,
+      9.475656084753329e-07,
+      -38.560379374440586
+    ],
+    "camera_position_xyz": [
+      -2.414207103117182,
+      -3.0285186536422564,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -128.56037221554936,
+      39.230769230769226,
+      -128.56038187891875
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_152.png",
+    "edge_path": "scene_0002/edge_152.png"
+  },
+  {
+    "view_id": 153,
+    "image_path": "scene_0002/view_153.png",
+    "azimuth_deg": 258.2094411142951,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.769222987527904,
+      1.333941426734517e-06,
+      -11.790558559447504
+    ],
+    "camera_position_xyz": [
+      -0.7913935667210207,
+      -3.7913081376687314,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -101.79055888570491,
+      39.230769230769226,
+      -101.79056106392567
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_153.png",
+    "edge_path": "scene_0002/edge_153.png"
+  },
+  {
+    "view_id": 154,
+    "image_path": "scene_0002/view_154.png",
+    "azimuth_deg": 281.3769939986219,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76924006300083,
+      1.0613327772094103e-07,
+      11.376995727845111
+    ],
+    "camera_position_xyz": [
+      0.7640072648825016,
+      -3.7969216572649116,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -78.62300600137809,
+      39.230769230769226,
+      -78.62300677663305
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_154.png",
+    "edge_path": "scene_0002/edge_154.png"
+  },
+  {
+    "view_id": 155,
+    "image_path": "scene_0002/view_155.png",
+    "azimuth_deg": 305.70334631967734,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923664790625,
+      1.7496694391492427e-07,
+      35.703348810664686
+    ],
+    "camera_position_xyz": [
+      2.260253279221965,
+      -3.1450876436066,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -54.29665368032266,
+      39.230769230769226,
+      -54.29665369381348
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_155.png",
+    "edge_path": "scene_0002/edge_155.png"
+  },
+  {
+    "view_id": 156,
+    "image_path": "scene_0002/view_156.png",
+    "azimuth_deg": 337.52707968639686,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.769222987527904,
+      -5.896760592763337e-07,
+      67.52708187087043
+    ],
+    "camera_position_xyz": [
+      3.5789084549104038,
+      -1.4804510946233207,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -22.47292031360314,
+      39.230769230769226,
+      -22.472920633607714
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_156.png",
+    "edge_path": "scene_0002/edge_156.png"
+  },
+  {
+    "view_id": 157,
+    "image_path": "scene_0002/view_157.png",
+    "azimuth_deg": 1.0173535737939123,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615007499215,
+      -6.935107374067623e-07,
+      91.0173523511624
+    ],
+    "camera_position_xyz": [
+      3.463075773863216,
+      0.061497423637042685,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      1.017353573793912,
+      46.15384615384616,
+      1.0173498466842261
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_157.png",
+    "edge_path": "scene_0002/edge_157.png"
+  },
+  {
+    "view_id": 158,
+    "image_path": "scene_0002/view_158.png",
+    "azimuth_deg": 27.094111699543415,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615690518132,
+      -2.1423628058944364e-06,
+      117.09411301730064
+    ],
+    "camera_position_xyz": [
+      3.0835225860107065,
+      1.577518370794506,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      27.09411169954342,
+      46.15384615384616,
+      27.094110512822482
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_158.png",
+    "edge_path": "scene_0002/edge_158.png"
+  },
+  {
+    "view_id": 159,
+    "image_path": "scene_0002/view_159.png",
+    "azimuth_deg": 52.886964361151506,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84616032027591,
+      2.3390521749506333e-06,
+      142.8869563800198
+    ],
+    "camera_position_xyz": [
+      2.089912778929876,
+      2.762053642690147,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      52.88696436115151,
+      46.15384615384616,
+      52.88695387554162
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_159.png",
+    "edge_path": "scene_0002/edge_159.png"
+  },
+  {
+    "view_id": 160,
+    "image_path": "scene_0002/view_160.png",
+    "azimuth_deg": 75.76840815295346,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615690518132,
+      2.9277279625018653e-06,
+      165.76840428826432
+    ],
+    "camera_position_xyz": [
+      0.8515032974504775,
+      3.3573230233421496,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      75.76840815295344,
+      46.15384615384616,
+      75.76840178378615
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_160.png",
+    "edge_path": "scene_0002/edge_160.png"
+  },
+  {
+    "view_id": 161,
+    "image_path": "scene_0002/view_161.png",
+    "azimuth_deg": 103.58007999041546,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615690518132,
+      1.8997655650103701e-06,
+      -166.4199223728135
+    ],
+    "camera_position_xyz": [
+      -0.8132728601472621,
+      3.3667882326603498,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      103.58007999041547,
+      46.15384615384616,
+      103.58007512270837
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_161.png",
+    "edge_path": "scene_0002/edge_161.png"
+  },
+  {
+    "view_id": 162,
+    "image_path": "scene_0002/view_162.png",
+    "azimuth_deg": 127.17349673254569,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84616032027591,
+      -3.976901250164103e-06,
+      -142.82649554548684
+    ],
+    "camera_position_xyz": [
+      -2.0928262585084423,
+      2.759846734934725,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      127.17349673254569,
+      46.15384615384616,
+      127.17350195003502
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_162.png",
+    "edge_path": "scene_0002/edge_162.png"
+  },
+  {
+    "view_id": 163,
+    "image_path": "scene_0002/view_163.png",
+    "azimuth_deg": 155.4651091945539,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615690518132,
+      -1.5595996949404825e-06,
+      -114.5349026069994
+    ],
+    "camera_position_xyz": [
+      -3.1508864079781733,
+      1.4382595706793373,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      155.46510919455386,
+      46.15384615384616,
+      155.46509488852246
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_163.png",
+    "edge_path": "scene_0002/edge_163.png"
+  },
+  {
+    "view_id": 164,
+    "image_path": "scene_0002/view_164.png",
+    "azimuth_deg": 182.45202792711623,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615007499215,
+      -2.0453785845480062e-07,
+      -87.54797825282193
+    ],
+    "camera_position_xyz": [
+      -3.4604504499366717,
+      -0.14818377834768556,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -177.5479720728838,
+      46.15384615384616,
+      -177.54798075730008
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_164.png",
+    "edge_path": "scene_0002/edge_164.png"
+  },
+  {
+    "view_id": 165,
+    "image_path": "scene_0002/view_165.png",
+    "azimuth_deg": 201.98294106748077,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84616032027591,
+      5.707695191389671e-07,
+      -68.01706598154881
+    ],
+    "camera_position_xyz": [
+      -3.211800348091829,
+      -1.2965393448058233,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -158.01705893251926,
+      46.15384615384616,
+      -158.01706848602697
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_165.png",
+    "edge_path": "scene_0002/edge_165.png"
+  },
+  {
+    "view_id": 166,
+    "image_path": "scene_0002/view_166.png",
+    "azimuth_deg": 233.70953903783843,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84616032027591,
+      -2.680732090826647e-06,
+      -36.29046162643523
+    ],
+    "camera_position_xyz": [
+      -2.050044965693993,
+      -2.791772087270919,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -126.29046096216155,
+      46.15384615384616,
+      -126.29046413091339
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_166.png",
+    "edge_path": "scene_0002/edge_166.png"
+  },
+  {
+    "view_id": 167,
+    "image_path": "scene_0002/view_167.png",
+    "azimuth_deg": 254.18945943087397,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615690518132,
+      3.6604207418071376e-07,
+      -15.810544088860318
+    ],
+    "camera_position_xyz": [
+      -0.9436888943908792,
+      -3.332585635694247,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -105.81054056912603,
+      46.15384615384616,
+      -105.81054659333847
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_167.png",
+    "edge_path": "scene_0002/edge_167.png"
+  },
+  {
+    "view_id": 168,
+    "image_path": "scene_0002/view_168.png",
+    "azimuth_deg": 279.12420751468835,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615007499215,
+      7.644433915794493e-08,
+      9.124208094278146
+    ],
+    "camera_position_xyz": [
+      0.5492446401866139,
+      -3.4197962035563734,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -80.87579248531165,
+      46.15384615384616,
+      -80.87579441020002
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_168.png",
+    "edge_path": "scene_0002/edge_168.png"
+  },
+  {
+    "view_id": 169,
+    "image_path": "scene_0002/view_169.png",
+    "azimuth_deg": 305.2949415970761,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84616032027591,
+      -1.0946484004979295e-06,
+      35.29494447943294
+    ],
+    "camera_position_xyz": [
+      2.0012306730119804,
+      -2.826968613555574,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -54.705058402923896,
+      46.15384615384616,
+      -54.70505802504522
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_169.png",
+    "edge_path": "scene_0002/edge_169.png"
+  },
+  {
+    "view_id": 170,
+    "image_path": "scene_0002/view_170.png",
+    "azimuth_deg": 334.76702461098705,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615690518132,
+      2.352847131159451e-08,
+      64.76702974802497
+    ],
+    "camera_position_xyz": [
+      3.1331294009023636,
+      -1.4765418740535274,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -25.23297538901295,
+      46.15384615384616,
+      -25.232972756453194
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_170.png",
+    "edge_path": "scene_0002/edge_170.png"
+  },
+  {
+    "view_id": 171,
+    "image_path": "scene_0002/view_171.png",
+    "azimuth_deg": 2.7598469660483897,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      -1.952303239460657e-06,
+      92.75984972164854
+    ],
+    "camera_position_xyz": [
+      3.000227394878232,
+      0.14462807495959598,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      2.7598469660484,
+      53.07692307692308,
+      2.7598472171703747
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_171.png",
+    "edge_path": "scene_0002/edge_171.png"
+  },
+  {
+    "view_id": 172,
+    "image_path": "scene_0002/view_172.png",
+    "azimuth_deg": 28.995726822183315,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      -2.536543349119808e-06,
+      118.99573330488057
+    ],
+    "camera_position_xyz": [
+      2.6272137157478155,
+      1.456032208720295,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      28.995726822183315,
+      53.07692307692308,
+      28.995730800402413
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_172.png",
+    "edge_path": "scene_0002/edge_172.png"
+  },
+  {
+    "view_id": 173,
+    "image_path": "scene_0002/view_173.png",
+    "azimuth_deg": 48.78786918988501,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      -2.1087779804576784e-06,
+      138.78787299115
+    ],
+    "camera_position_xyz": [
+      1.978991445055388,
+      2.259618233561132,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      48.787869189885015,
+      53.07692307692308,
+      48.78787048667186
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_173.png",
+    "edge_path": "scene_0002/edge_173.png"
+  },
+  {
+    "view_id": 174,
+    "image_path": "scene_0002/view_174.png",
+    "azimuth_deg": 76.59508626555973,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.92308057755098,
+      -2.269689824235278e-06,
+      166.59508940426764
+    ],
+    "camera_position_xyz": [
+      0.6963543866908267,
+      2.921878209162864,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      76.59508626555976,
+      53.07692307692308,
+      76.59508689978946
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_174.png",
+    "edge_path": "scene_0002/edge_174.png"
+  },
+  {
+    "view_id": 175,
+    "image_path": "scene_0002/view_175.png",
+    "azimuth_deg": 106.26607147576959,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923083992645566,
+      3.1222478370431793e-06,
+      -163.73393682132766
+    ],
+    "camera_position_xyz": [
+      -0.8413344262381892,
+      2.8834767355175246,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      106.26607147576959,
+      53.07692307692308,
+      106.2660606741942
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_175.png",
+    "edge_path": "scene_0002/edge_175.png"
+  },
+  {
+    "view_id": 176,
+    "image_path": "scene_0002/view_176.png",
+    "azimuth_deg": 131.56079088833098,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      -2.4568580883525454e-06,
+      -138.43920549439918
+    ],
+    "camera_position_xyz": [
+      -1.9927050975836527,
+      2.247533780637895,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      131.56079088833098,
+      53.07692307692308,
+      131.56079200112265
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_176.png",
+    "edge_path": "scene_0002/edge_176.png"
+  },
+  {
+    "view_id": 177,
+    "image_path": "scene_0002/view_177.png",
+    "azimuth_deg": 156.80273039876397,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      -1.9055284247599325e-06,
+      -113.19727152975493
+    ],
+    "camera_position_xyz": [
+      -2.7608736100178723,
+      1.1831562071642212,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      156.80273039876397,
+      53.07692307692308,
+      156.8027259657669
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_177.png",
+    "edge_path": "scene_0002/edge_177.png"
+  },
+  {
+    "view_id": 178,
+    "image_path": "scene_0002/view_178.png",
+    "azimuth_deg": 178.05812896746323,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      -1.4921257285950436e-06,
+      -91.94187309683699
+    ],
+    "camera_position_xyz": [
+      -3.0019863488903367,
+      0.10178242540050847,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      178.05812896746323,
+      53.07692307692308,
+      178.05812439868487
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_178.png",
+    "edge_path": "scene_0002/edge_178.png"
+  },
+  {
+    "view_id": 179,
+    "image_path": "scene_0002/view_179.png",
+    "azimuth_deg": 203.9759312016639,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.92307374736181,
+      -1.4761063178864474e-06,
+      -66.02406459306327
+    ],
+    "camera_position_xyz": [
+      -2.744539811051775,
+      -1.2205666416039023,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -156.0240687983361,
+      53.07692307692308,
+      -156.02406709754143
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_179.png",
+    "edge_path": "scene_0002/edge_179.png"
+  },
+  {
+    "view_id": 180,
+    "image_path": "scene_0002/view_180.png",
+    "azimuth_deg": 228.72115054745407,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      2.3096740274688908e-06,
+      -41.27884930561902
+    ],
+    "camera_position_xyz": [
+      -1.9816213377468666,
+      -2.2573122457539325,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -131.27884945254596,
+      53.07692307692308,
+      -131.2788518100972
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_180.png",
+    "edge_path": "scene_0002/edge_180.png"
+  },
+  {
+    "view_id": 181,
+    "image_path": "scene_0002/view_181.png",
+    "azimuth_deg": 255.3174058707133,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923083992645566,
+      1.5483028736006732e-06,
+      -14.68259811158795
+    ],
+    "camera_position_xyz": [
+      -0.7613329471806132,
+      -2.905624518856768,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -104.68259412928671,
+      53.07692307692308,
+      -104.68260061606611
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_181.png",
+    "edge_path": "scene_0002/edge_181.png"
+  },
+  {
+    "view_id": 182,
+    "image_path": "scene_0002/view_182.png",
+    "azimuth_deg": 282.12114131822,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.92307374736181,
+      6.689592470429844e-07,
+      12.121143130370708
+    ],
+    "camera_position_xyz": [
+      0.6307173104742555,
+      -2.936746052234082,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -77.87885868178,
+      53.07692307692308,
+      -77.87885937410745
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_182.png",
+    "edge_path": "scene_0002/edge_182.png"
+  },
+  {
+    "view_id": 183,
+    "image_path": "scene_0002/view_183.png",
+    "azimuth_deg": 310.8616257169657,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      -5.55458176235777e-08,
+      40.86163403035796
+    ],
+    "camera_position_xyz": [
+      1.9651313590247612,
+      -2.271682293548514,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -49.138374283034295,
+      53.07692307692308,
+      -49.1383684741202
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_183.png",
+    "edge_path": "scene_0002/edge_183.png"
+  },
+  {
+    "view_id": 184,
+    "image_path": "scene_0002/view_184.png",
+    "azimuth_deg": 335.5197459259024,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.92307374736181,
+      1.8483356395889807e-06,
+      65.51974391531705
+    ],
+    "camera_position_xyz": [
+      2.733690088224577,
+      -1.2446767462225061,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -24.480254074097616,
+      53.07692307692308,
+      -24.48025858916111
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_184.png",
+    "edge_path": "scene_0002/edge_184.png"
+  },
+  {
+    "view_id": 185,
+    "image_path": "scene_0002/view_185.png",
+    "azimuth_deg": 357.4696081428971,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.000000834826057,
+      -6.4467272487305365e-06,
+      87.4696086622852
+    ],
+    "camera_position_xyz": [
+      2.497562359138097,
+      -0.11037328579210282,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -2.530391857102927,
+      60.0,
+      -2.53039384219295
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_185.png",
+    "edge_path": "scene_0002/edge_185.png"
+  },
+  {
+    "view_id": 186,
+    "image_path": "scene_0002/view_186.png",
+    "azimuth_deg": 23.235834880978388,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.000000834826057,
+      -1.7862839846422507e-06,
+      113.23583477780882
+    ],
+    "camera_position_xyz": [
+      2.2972219344738263,
+      0.986291733602353,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      23.235834880978388,
+      60.0,
+      23.235832273330658
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_186.png",
+    "edge_path": "scene_0002/edge_186.png"
+  },
+  {
+    "view_id": 187,
+    "image_path": "scene_0002/view_187.png",
+    "azimuth_deg": 51.04725866587759,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.00000424992064,
+      -2.1303965922941477e-06,
+      141.0472585874552
+    ],
+    "camera_position_xyz": [
+      1.5716979301188123,
+      1.9441619316456755,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      51.04725866587759,
+      60.0,
+      51.047256082977015
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_187.png",
+    "edge_path": "scene_0002/edge_187.png"
+  },
+  {
+    "view_id": 188,
+    "image_path": "scene_0002/view_188.png",
+    "azimuth_deg": 80.15499906489683,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.000007665015225,
+      -5.2219708037671684e-08,
+      170.15499766005664
+    ],
+    "camera_position_xyz": [
+      0.427458500558841,
+      2.4631847738852217,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      80.15499906489686,
+      60.0,
+      80.15499515557849
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_188.png",
+    "edge_path": "scene_0002/edge_188.png"
+  },
+  {
+    "view_id": 189,
+    "image_path": "scene_0002/view_189.png",
+    "azimuth_deg": 102.64391380897226,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.000007665015225,
+      -1.9027093337569082e-07,
+      -167.3560817608338
+    ],
+    "camera_position_xyz": [
+      -0.5472278985864848,
+      2.4393732037161966,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      102.64391380897223,
+      60.0,
+      102.64391573468805
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_189.png",
+    "edge_path": "scene_0002/edge_189.png"
+  },
+  {
+    "view_id": 190,
+    "image_path": "scene_0002/view_190.png",
+    "azimuth_deg": 130.80083133071034,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.00001108010981,
+      5.911761411751866e-06,
+      -139.19917332258981
+    ],
+    "camera_position_xyz": [
+      -1.6335789687733566,
+      1.8924639369830483,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      130.80083133071037,
+      60.0,
+      130.80082417293204
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_190.png",
+    "edge_path": "scene_0002/edge_190.png"
+  },
+  {
+    "view_id": 191,
+    "image_path": "scene_0002/view_191.png",
+    "azimuth_deg": 155.74170906543384,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.00000424992064,
+      2.2485640202633738e-06,
+      -114.25828677580304
+    ],
+    "camera_position_xyz": [
+      -2.279256503317476,
+      1.0271269600614108,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      155.74170906543384,
+      60.0,
+      155.7417107197188
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_191.png",
+    "edge_path": "scene_0002/edge_191.png"
+  },
+  {
+    "view_id": 192,
+    "image_path": "scene_0002/view_192.png",
+    "azimuth_deg": 182.91575281112233,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.000000834826057,
+      6.590944691762821e-06,
+      -87.08425621950225
+    ],
+    "camera_position_xyz": [
+      -2.4967635237354058,
+      -0.12716881120920315,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -177.08424718887767,
+      60.0,
+      -177.0842587239804
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_192.png",
+    "edge_path": "scene_0002/edge_192.png"
+  },
+  {
+    "view_id": 193,
+    "image_path": "scene_0002/view_193.png",
+    "azimuth_deg": 205.6859547471284,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      29.99999741973147,
+      3.7843507750815515e-06,
+      -64.31404477208055
+    ],
+    "camera_position_xyz": [
+      -2.252958249151052,
+      -1.083595463068312,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -154.3140452528716,
+      60.0,
+      -154.3140472765587
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_193.png",
+    "edge_path": "scene_0002/edge_193.png"
+  },
+  {
+    "view_id": 194,
+    "image_path": "scene_0002/view_194.png",
+    "azimuth_deg": 230.4868267582434,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.000007665015225,
+      2.607840851081115e-07,
+      -39.51317368818444
+    ],
+    "camera_position_xyz": [
+      -1.5906390316069576,
+      -1.928695795383109,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -129.5131732417566,
+      60.0,
+      -129.5131761926626
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_194.png",
+    "edge_path": "scene_0002/edge_194.png"
+  },
+  {
+    "view_id": 195,
+    "image_path": "scene_0002/view_195.png",
+    "azimuth_deg": 256.81584199630674,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      29.999994004636886,
+      1.4099933236114255e-06,
+      -13.18415791429835
+    ],
+    "camera_position_xyz": [
+      -0.5702041792273163,
+      -2.434105008825976,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -103.18415800369326,
+      60.0,
+      -103.18416041877651
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_195.png",
+    "edge_path": "scene_0002/edge_195.png"
+  },
+  {
+    "view_id": 196,
+    "image_path": "scene_0002/view_196.png",
+    "azimuth_deg": 285.1871721587777,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      29.99999741973147,
+      -8.400944113443061e-07,
+      15.187171506333472
+    ],
+    "camera_position_xyz": [
+      0.6549327909888899,
+      -2.412687928284034,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -74.81282784122232,
+      60.0,
+      -74.81283099814469
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_196.png",
+    "edge_path": "scene_0002/edge_196.png"
+  },
+  {
+    "view_id": 197,
+    "image_path": "scene_0002/view_197.png",
+    "azimuth_deg": 306.8635778230484,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      29.99999741973147,
+      -3.723376539394277e-06,
+      36.863586214785585
+    ],
+    "camera_position_xyz": [
+      1.4997793874437428,
+      -2.0001654404070863,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -53.13642217695161,
+      60.0,
+      -53.136416289692576
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_197.png",
+    "edge_path": "scene_0002/edge_197.png"
+  },
+  {
+    "view_id": 198,
+    "image_path": "scene_0002/view_198.png",
+    "azimuth_deg": 331.9197075341382,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      29.999994004636886,
+      -1.8456263158891229e-06,
+      61.919708298154234
+    ],
+    "camera_position_xyz": [
+      2.2057220592972264,
+      -1.1767710895197947,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -28.080292465861817,
+      60.0,
+      -28.080294206323913
+    ],
+    "scene_id": 2,
+    "object_source": "e:\\Multimodal\\assets\\models\\Lantern_01\\Lantern_01.gltf",
+    "depth_path": "scene_0002/depth_198.png",
+    "edge_path": "scene_0002/edge_198.png"
+  }
+]

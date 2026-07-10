@@ -1,0 +1,5202 @@
+[
+  {
+    "view_id": "ref",
+    "image_path": "scene_0001/view_ref.png",
+    "azimuth_deg": 0.0,
+    "elevation_deg": 0.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      90.00000250447816,
+      -0.0,
+      90.00000250447816
+    ],
+    "camera_position_xyz": [
+      5.0,
+      0.0,
+      0.0
+    ],
+    "rotation_vector_relative_to_ref": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_ref.png",
+    "edge_path": "scene_0001/edge_ref.png"
+  },
+  {
+    "view_id": 0,
+    "image_path": "scene_0001/view_0.png",
+    "azimuth_deg": 356.6775732432291,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      -1.2185411322270391e-06,
+      86.6775867563197
+    ],
+    "camera_position_xyz": [
+      4.322848977724534,
+      -0.2509516204091082,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -3.3224267567709376,
+      -30.0,
+      -3.3224157481584484
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_0.png",
+    "edge_path": "scene_0001/edge_0.png"
+  },
+  {
+    "view_id": 1,
+    "image_path": "scene_0001/view_1.png",
+    "azimuth_deg": 25.412815122986782,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      119.99998967892589,
+      -8.23181371636856e-06,
+      115.41282097196698
+    ],
+    "camera_position_xyz": [
+      3.911141036152594,
+      1.8582184466104137,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      25.412815122986785,
+      -30.0,
+      25.41281846748882
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_1.png",
+    "edge_path": "scene_0001/edge_1.png"
+  },
+  {
+    "view_id": 2,
+    "image_path": "scene_0001/view_2.png",
+    "azimuth_deg": 45.4363191940466,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      -5.6887407139321446e-06,
+      135.43632648618143
+    ],
+    "camera_position_xyz": [
+      3.038456910634284,
+      3.085089885597949,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      45.436319194046604,
+      -30.0,
+      45.436323981703254
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_2.png",
+    "edge_path": "scene_0001/edge_2.png"
+  },
+  {
+    "view_id": 3,
+    "image_path": "scene_0001/view_3.png",
+    "azimuth_deg": 71.73023223476943,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      -59.99998800927377,
+      -180.00000500895632,
+      -18.269758822165286
+    ],
+    "camera_position_xyz": [
+      1.3574577804955503,
+      4.111849750923798,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      71.73023223476943,
+      -30.0,
+      -108.26976132664345
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_3.png",
+    "edge_path": "scene_0001/edge_3.png"
+  },
+  {
+    "view_id": 4,
+    "image_path": "scene_0001/view_4.png",
+    "azimuth_deg": 97.23585670164792,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      -60.00000849984128,
+      180.00000500895632,
+      7.235856302934611
+    ],
+    "camera_position_xyz": [
+      -0.5453972157234422,
+      4.295642196119355,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      97.23585670164789,
+      -30.0,
+      -82.76414620154355
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_4.png",
+    "edge_path": "scene_0001/edge_4.png"
+  },
+  {
+    "view_id": 5,
+    "image_path": "scene_0001/view_5.png",
+    "azimuth_deg": 122.10924915591812,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00001699968256,
+      9.913480555539867e-07,
+      -147.89075296597113
+    ],
+    "camera_position_xyz": [
+      -2.301615459220241,
+      3.6677740221936252,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      122.10924915591812,
+      -30.0,
+      122.10924452955072
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_5.png",
+    "edge_path": "scene_0001/edge_5.png"
+  },
+  {
+    "view_id": 6,
+    "image_path": "scene_0001/view_6.png",
+    "azimuth_deg": 143.66296244495672,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      -1.7192753461689286e-06,
+      -126.3370391908637
+    ],
+    "camera_position_xyz": [
+      -3.4881139899251274,
+      2.5657476090388567,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      143.66296244495675,
+      -30.0,
+      143.6629583046581
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_6.png",
+    "edge_path": "scene_0001/edge_6.png"
+  },
+  {
+    "view_id": 7,
+    "image_path": "scene_0001/view_7.png",
+    "azimuth_deg": 167.98756005454598,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      2.449409585510682e-06,
+      -102.01244744307635
+    ],
+    "camera_position_xyz": [
+      -4.235307786727341,
+      0.9012036127794614,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      167.98756005454595,
+      -30.0,
+      167.9875500524455
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_7.png",
+    "edge_path": "scene_0001/edge_7.png"
+  },
+  {
+    "view_id": 8,
+    "image_path": "scene_0001/view_8.png",
+    "azimuth_deg": 188.5379311777753,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      2.002146246207058e-06,
+      -81.46208162685464
+    ],
+    "camera_position_xyz": [
+      -4.282139656128482,
+      -0.6428685444255661,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -171.4620688222247,
+      -30.0,
+      -171.4620841313328
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_8.png",
+    "edge_path": "scene_0001/edge_8.png"
+  },
+  {
+    "view_id": 9,
+    "image_path": "scene_0001/view_9.png",
+    "azimuth_deg": 215.51319964045038,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      -6.351475590019068e-07,
+      -54.48681299049581
+    ],
+    "camera_position_xyz": [
+      -3.5246442215363127,
+      -2.515329622850787,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -144.48680035954965,
+      -30.0,
+      -144.48681549497397
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_9.png",
+    "edge_path": "scene_0001/edge_9.png"
+  },
+  {
+    "view_id": 10,
+    "image_path": "scene_0001/view_10.png",
+    "azimuth_deg": 239.08109770191066,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      6.178608626415908e-07,
+      -30.918903749908306
+    ],
+    "camera_position_xyz": [
+      -2.2249245104552196,
+      -3.714796215511102,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -120.91890229808934,
+      -30.0,
+      -120.91890625438647
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_10.png",
+    "edge_path": "scene_0001/edge_10.png"
+  },
+  {
+    "view_id": 11,
+    "image_path": "scene_0001/view_11.png",
+    "azimuth_deg": 266.53647815897415,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      -2.2612092441214988e-07,
+      -3.4635216934388238
+    ],
+    "camera_position_xyz": [
+      -0.2615961832725012,
+      -4.322217884014787,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -93.46352184102585,
+      -30.0,
+      -93.46352419791698
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_11.png",
+    "edge_path": "scene_0001/edge_11.png"
+  },
+  {
+    "view_id": 12,
+    "image_path": "scene_0001/view_12.png",
+    "azimuth_deg": 288.33828411089524,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00001699968256,
+      6.902581240784356e-07,
+      18.33828952520261
+    ],
+    "camera_position_xyz": [
+      1.3623739059577131,
+      -4.110223514648021,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -71.66171588910476,
+      -30.0,
+      -71.66171297927555
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_12.png",
+    "edge_path": "scene_0001/edge_12.png"
+  },
+  {
+    "view_id": 13,
+    "image_path": "scene_0001/view_13.png",
+    "azimuth_deg": 313.8382812354358,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00001699968256,
+      -4.710853580012111e-06,
+      43.83828511216288
+    ],
+    "camera_position_xyz": [
+      2.9991553159708535,
+      -3.1233103257095305,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -46.16171876456423,
+      -30.0,
+      -46.16171739231527
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_13.png",
+    "edge_path": "scene_0001/edge_13.png"
+  },
+  {
+    "view_id": 14,
+    "image_path": "scene_0001/view_14.png",
+    "azimuth_deg": 335.5252905997361,
+    "elevation_deg": -30.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      120.00000333930423,
+      6.489350141905641e-06,
+      65.52530368930144
+    ],
+    "camera_position_xyz": [
+      3.941040119606786,
+      -1.7939349976099277,
+      -2.4999999999999996
+    ],
+    "rotation_vector_relative_to_ref": [
+      -24.47470940026392,
+      -30.0,
+      -24.474698815176737
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_14.png",
+    "edge_path": "scene_0001/edge_14.png"
+  },
+  {
+    "view_id": 15,
+    "image_path": "scene_0001/view_15.png",
+    "azimuth_deg": 357.6685543508498,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07692359657929,
+      2.1713560299264094e-06,
+      87.66855841242933
+    ],
+    "camera_position_xyz": [
+      4.596089511204514,
+      -0.1871246212176143,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -2.3314456491502824,
+      -23.076923076923077,
+      -2.3314440920488266
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_15.png",
+    "edge_path": "scene_0001/edge_15.png"
+  },
+  {
+    "view_id": 16,
+    "image_path": "scene_0001/view_16.png",
+    "azimuth_deg": 26.5263018129214,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07692359657929,
+      -5.621862961645074e-06,
+      116.52630573121914
+    ],
+    "camera_position_xyz": [
+      4.115663456501373,
+      2.0543536043459407,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      26.52630181292139,
+      -23.076923076923077,
+      26.526303226740993
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_16.png",
+    "edge_path": "scene_0001/edge_16.png"
+  },
+  {
+    "view_id": 17,
+    "image_path": "scene_0001/view_17.png",
+    "azimuth_deg": 50.30558390689472,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07691676639013,
+      1.3045364353712634e-07,
+      140.30558200586185
+    ],
+    "camera_position_xyz": [
+      2.9379213751827935,
+      3.53944521247526,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      50.305583906894725,
+      -23.076923076923077,
+      50.305579501383704
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_17.png",
+    "edge_path": "scene_0001/edge_17.png"
+  },
+  {
+    "view_id": 18,
+    "image_path": "scene_0001/view_18.png",
+    "azimuth_deg": 71.10617965687044,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      -66.92307458218787,
+      -179.999991348578,
+      -18.893821253798304
+    ],
+    "camera_position_xyz": [
+      1.4895174470192931,
+      4.3520560880915955,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      71.10617965687044,
+      -23.076923076923077,
+      -108.89382375827647
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_18.png",
+    "edge_path": "scene_0001/edge_18.png"
+  },
+  {
+    "view_id": 19,
+    "image_path": "scene_0001/view_19.png",
+    "azimuth_deg": 93.08935041693175,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      -66.9230677519987,
+      179.999991348578,
+      3.089352404761301
+    ],
+    "camera_position_xyz": [
+      -0.24790324402595626,
+      4.593212209388044,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      93.08935041693178,
+      -23.076923076923077,
+      -86.91065009971686
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_19.png",
+    "edge_path": "scene_0001/edge_19.png"
+  },
+  {
+    "view_id": 20,
+    "image_path": "scene_0001/view_20.png",
+    "azimuth_deg": 120.08949849313842,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07693042676847,
+      9.512320297788243e-06,
+      -149.9105082054356
+    ],
+    "camera_position_xyz": [
+      -2.306168400211693,
+      3.9800303678156816,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      120.08949849313842,
+      -23.076923076923077,
+      120.08948929008625
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_20.png",
+    "edge_path": "scene_0001/edge_20.png"
+  },
+  {
+    "view_id": 21,
+    "image_path": "scene_0001/view_21.png",
+    "azimuth_deg": 143.97103611921273,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07693725695763,
+      -6.8866375527216154e-06,
+      -126.02897033853945
+    ],
+    "camera_position_xyz": [
+      -3.7200277592521407,
+      2.7056326227452776,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      143.97103611921273,
+      -23.076923076923077,
+      143.97102715698236
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_21.png",
+    "edge_path": "scene_0001/edge_21.png"
+  },
+  {
+    "view_id": 22,
+    "image_path": "scene_0001/view_22.png",
+    "azimuth_deg": 169.9605671374897,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07691676639013,
+      -6.43715159091771e-06,
+      -100.03943118810228
+    ],
+    "camera_position_xyz": [
+      -4.529463635011618,
+      0.8018812867110265,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      169.9605671374897,
+      -23.076923076923077,
+      169.96056630741953
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_22.png",
+    "edge_path": "scene_0001/edge_22.png"
+  },
+  {
+    "view_id": 23,
+    "image_path": "scene_0001/view_23.png",
+    "azimuth_deg": 192.69996181609514,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07691676639013,
+      -9.568742625393157e-06,
+      -77.30004438440484
+    ],
+    "camera_position_xyz": [
+      -4.487359308990918,
+      -1.0112669533226846,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -167.30003818390486,
+      -23.076923076923077,
+      -167.300046888883
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_23.png",
+    "edge_path": "scene_0001/edge_23.png"
+  },
+  {
+    "view_id": 24,
+    "image_path": "scene_0001/view_24.png",
+    "azimuth_deg": 216.04806729225768,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07692359657929,
+      -1.9398387219973137e-06,
+      -53.95193746149752
+    ],
+    "camera_position_xyz": [
+      -3.7191254474247546,
+      -2.7068727944230426,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -143.95193270774234,
+      -23.076923076923077,
+      -143.95193996597567
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_24.png",
+    "edge_path": "scene_0001/edge_24.png"
+  },
+  {
+    "view_id": 25,
+    "image_path": "scene_0001/view_25.png",
+    "azimuth_deg": 240.54114426157807,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07693725695763,
+      1.9225672414105942e-06,
+      -29.458862022358872
+    ],
+    "camera_position_xyz": [
+      -2.262222222307399,
+      -4.005172285404033,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -119.4588557384219,
+      -23.076923076923077,
+      -119.45886452683703
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_25.png",
+    "edge_path": "scene_0001/edge_25.png"
+  },
+  {
+    "view_id": 26,
+    "image_path": "scene_0001/view_26.png",
+    "azimuth_deg": 263.113861337732,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07691676639013,
+      -9.90270941627781e-07,
+      -6.88613866459891
+    ],
+    "camera_position_xyz": [
+      -0.5515123198376138,
+      -4.566715294381436,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -96.88613866226802,
+      -23.076923076923077,
+      -96.88614116907706
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_26.png",
+    "edge_path": "scene_0001/edge_26.png"
+  },
+  {
+    "view_id": 27,
+    "image_path": "scene_0001/view_27.png",
+    "azimuth_deg": 284.7522221399153,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07693725695763,
+      -4.0239059808016414e-07,
+      14.75222505998706
+    ],
+    "camera_position_xyz": [
+      1.1713153142502113,
+      -4.44826649982585,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -75.24777786008468,
+      -23.076923076923077,
+      -75.2477774444911
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_27.png",
+    "edge_path": "scene_0001/edge_27.png"
+  },
+  {
+    "view_id": 28,
+    "image_path": "scene_0001/view_28.png",
+    "azimuth_deg": 308.8407168846105,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07692359657929,
+      3.941226927523811e-06,
+      38.84072448892376
+    ],
+    "camera_position_xyz": [
+      2.8848599693450034,
+      -3.582825334305419,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -51.159283115389485,
+      -23.076923076923077,
+      -51.159278015554406
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_28.png",
+    "edge_path": "scene_0001/edge_28.png"
+  },
+  {
+    "view_id": 29,
+    "image_path": "scene_0001/view_29.png",
+    "azimuth_deg": 339.18170602055,
+    "elevation_deg": -23.076923076923077,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      113.07693725695763,
+      -2.621385688469783e-06,
+      69.18171568787353
+    ],
+    "camera_position_xyz": [
+      4.29958026296217,
+      -1.6348284256203003,
+      -1.9598330493003755
+    ],
+    "rotation_vector_relative_to_ref": [
+      -20.818293979450004,
+      -23.076923076923077,
+      -20.818286816604626
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_29.png",
+    "edge_path": "scene_0001/edge_29.png"
+  },
+  {
+    "view_id": 30,
+    "image_path": "scene_0001/view_30.png",
+    "azimuth_deg": 2.441507050344556,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385068404355,
+      6.5724728443948795e-06,
+      92.44151509500176
+    ],
+    "camera_position_xyz": [
+      4.798230918942911,
+      0.20458767753140938,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      2.441507050344569,
+      -16.153846153846153,
+      2.441512590523587
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_30.png",
+    "edge_path": "scene_0001/edge_30.png"
+  },
+  {
+    "view_id": 31,
+    "image_path": "scene_0001/view_31.png",
+    "azimuth_deg": 22.532350441679444,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15384385385437,
+      9.849912208565515e-07,
+      112.53235261405418
+    ],
+    "camera_position_xyz": [
+      4.435976710150983,
+      1.8403767810683496,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      22.532350441679455,
+      -16.153846153846153,
+      22.532350109576015
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_31.png",
+    "edge_path": "scene_0001/edge_31.png"
+  },
+  {
+    "view_id": 32,
+    "image_path": "scene_0001/view_32.png",
+    "azimuth_deg": 50.799016378482605,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385068404355,
+      -3.550695930851013e-06,
+      140.79902219226025
+    ],
+    "camera_position_xyz": [
+      3.0354418537540826,
+      3.721688974346918,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      50.799016378482605,
+      -16.153846153846153,
+      50.799019687782106
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_32.png",
+    "edge_path": "scene_0001/edge_32.png"
+  },
+  {
+    "view_id": 33,
+    "image_path": "scene_0001/view_33.png",
+    "azimuth_deg": 72.16021964318573,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385751423271,
+      1.5378435813640242e-06,
+      162.16022025542168
+    ],
+    "camera_position_xyz": [
+      1.471303839988042,
+      4.571667210081446,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      72.16021964318571,
+      -16.153846153846153,
+      72.1602177509435
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_33.png",
+    "edge_path": "scene_0001/edge_33.png"
+  },
+  {
+    "view_id": 34,
+    "image_path": "scene_0001/view_34.png",
+    "azimuth_deg": 93.14189311202814,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      -73.84615432491279,
+      -179.999991348578,
+      3.1418927811779778
+    ],
+    "camera_position_xyz": [
+      -0.263224711675598,
+      4.795371604001168,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      93.14189311202813,
+      -16.153846153846153,
+      -86.85810972330019
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_34.png",
+    "edge_path": "scene_0001/edge_34.png"
+  },
+  {
+    "view_id": 35,
+    "image_path": "scene_0001/view_35.png",
+    "azimuth_deg": 122.5609536309373,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385751423271,
+      -6.5743610252092956e-06,
+      -147.4390452354015
+    ],
+    "camera_position_xyz": [
+      -2.58473761660792,
+      4.047716334254346,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      122.56095363093732,
+      -16.153846153846153,
+      122.56095226012036
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_35.png",
+    "edge_path": "scene_0001/edge_35.png"
+  },
+  {
+    "view_id": 36,
+    "image_path": "scene_0001/view_36.png",
+    "azimuth_deg": 144.60751485160523,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15384385385437,
+      -2.641541550486028e-06,
+      -125.39247867016431
+    ],
+    "camera_position_xyz": [
+      -3.9150899124491185,
+      2.781536813838096,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      144.60751485160523,
+      -16.153846153846153,
+      144.60751882535754
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_36.png",
+    "edge_path": "scene_0001/edge_36.png"
+  },
+  {
+    "view_id": 37,
+    "image_path": "scene_0001/view_37.png",
+    "azimuth_deg": 171.11606826691485,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385068404355,
+      6.523156639281479e-06,
+      -98.88394076545454
+    ],
+    "camera_position_xyz": [
+      -4.744974909590839,
+      0.7416799691584297,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      171.11606826691485,
+      -16.153846153846153,
+      171.11605673006727
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_37.png",
+    "edge_path": "scene_0001/edge_37.png"
+  },
+  {
+    "view_id": 38,
+    "image_path": "scene_0001/view_38.png",
+    "azimuth_deg": 193.29061208694787,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385068404355,
+      3.397360219213534e-06,
+      -76.70939011554964
+    ],
+    "camera_position_xyz": [
+      -4.673960630214886,
+      -1.104068882134944,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -166.70938791305213,
+      -16.153846153846153,
+      -166.7093926200278
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_38.png",
+    "edge_path": "scene_0001/edge_38.png"
+  },
+  {
+    "view_id": 39,
+    "image_path": "scene_0001/view_39.png",
+    "azimuth_deg": 213.07751070024466,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15384385385437,
+      3.7376885265721135e-06,
+      -56.92248576927903
+    ],
+    "camera_position_xyz": [
+      -4.024249132583999,
+      -2.62112475632015,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -146.92248929975534,
+      -16.153846153846153,
+      -146.92248827375718
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_39.png",
+    "edge_path": "scene_0001/edge_39.png"
+  },
+  {
+    "view_id": 40,
+    "image_path": "scene_0001/view_40.png",
+    "azimuth_deg": 240.88378317425722,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15386434442189,
+      5.080633721943292e-06,
+      -29.116222167550596
+    ],
+    "camera_position_xyz": [
+      -2.336857340603164,
+      -4.195708979298558,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -119.11621682574275,
+      -16.153846153846153,
+      -119.11622467202875
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_40.png",
+    "edge_path": "scene_0001/edge_40.png"
+  },
+  {
+    "view_id": 41,
+    "image_path": "scene_0001/view_41.png",
+    "azimuth_deg": 266.0655801404971,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15384385385437,
+      5.383470464938778e-08,
+      -3.9344199076986555
+    ],
+    "camera_position_xyz": [
+      -0.32952796019749797,
+      -4.791272001540459,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -93.9344198595029,
+      -16.153846153846153,
+      -93.93442241217681
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_41.png",
+    "edge_path": "scene_0001/edge_41.png"
+  },
+  {
+    "view_id": 42,
+    "image_path": "scene_0001/view_42.png",
+    "azimuth_deg": 290.87217538065056,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385751423271,
+      -6.3509320968351e-07,
+      20.87217359406145
+    ],
+    "camera_position_xyz": [
+      1.7110875115213031,
+      -4.487433074399357,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -69.12782461934944,
+      -16.153846153846153,
+      -69.12782891041671
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_42.png",
+    "edge_path": "scene_0001/edge_42.png"
+  },
+  {
+    "view_id": 43,
+    "image_path": "scene_0001/view_43.png",
+    "azimuth_deg": 310.7851799188354,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385068404355,
+      9.941003294642632e-07,
+      40.78518372297801
+    ],
+    "camera_position_xyz": [
+      3.1371711530474675,
+      -3.6363488866972404,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -49.21482008116459,
+      -16.153846153846153,
+      -49.214818781500156
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_43.png",
+    "edge_path": "scene_0001/edge_43.png"
+  },
+  {
+    "view_id": 44,
+    "image_path": "scene_0001/view_44.png",
+    "azimuth_deg": 336.20801821933384,
+    "elevation_deg": -16.153846153846153,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      106.15385068404355,
+      4.797143198964338e-06,
+      66.20802207797924
+    ],
+    "camera_position_xyz": [
+      4.39444783977978,
+      -1.9374478709767287,
+      -1.391087319582263
+    ],
+    "rotation_vector_relative_to_ref": [
+      -23.79198178066622,
+      -16.153846153846153,
+      -23.791980426498924
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_44.png",
+    "edge_path": "scene_0001/edge_44.png"
+  },
+  {
+    "view_id": 45,
+    "image_path": "scene_0001/view_45.png",
+    "azimuth_deg": 1.551768255760222,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077094131862,
+      2.3393422415375826e-06,
+      91.55178050277004
+    ],
+    "camera_position_xyz": [
+      4.933441385634267,
+      0.13364736753996373,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      1.5517682557602086,
+      -9.23076923076923,
+      1.5517779982918682
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_45.png",
+    "edge_path": "scene_0001/edge_45.png"
+  },
+  {
+    "view_id": 46,
+    "image_path": "scene_0001/view_46.png",
+    "azimuth_deg": 23.144026995580383,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077094131862,
+      -6.321256860101671e-06,
+      113.14403020517467
+    ],
+    "camera_position_xyz": [
+      4.538061042144974,
+      1.9397699611308021,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      23.14402699558039,
+      -9.23076923076923,
+      23.144027700696512
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_46.png",
+    "edge_path": "scene_0001/edge_46.png"
+  },
+  {
+    "view_id": 47,
+    "image_path": "scene_0001/view_47.png",
+    "azimuth_deg": 54.11591777879019,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23076411112945,
+      1.2326394879080314e-06,
+      144.11591231738018
+    ],
+    "camera_position_xyz": [
+      2.8927841839054196,
+      3.9985628905503,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      54.11591777879019,
+      -9.23076923076923,
+      54.11590981290203
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_47.png",
+    "edge_path": "scene_0001/edge_47.png"
+  },
+  {
+    "view_id": 48,
+    "image_path": "scene_0001/view_48.png",
+    "azimuth_deg": 79.30953213493235,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23075728094028,
+      -4.999603977101081e-07,
+      169.30952952383578
+    ],
+    "camera_position_xyz": [
+      0.9155046070778451,
+      4.8495934714941376,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      79.30953213493234,
+      -9.23076923076923,
+      79.30952701935763
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_48.png",
+    "edge_path": "scene_0001/edge_48.png"
+  },
+  {
+    "view_id": 49,
+    "image_path": "scene_0001/view_49.png",
+    "azimuth_deg": 99.38646448863922,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23076411112945,
+      4.5451342642223846e-07,
+      -170.61353557979626
+    ],
+    "camera_position_xyz": [
+      -0.8049044026506376,
+      4.869171842000746,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      99.3864644886392,
+      -9.23076923076923,
+      99.38646191572559
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_49.png",
+    "edge_path": "scene_0001/edge_49.png"
+  },
+  {
+    "view_id": 50,
+    "image_path": "scene_0001/view_50.png",
+    "azimuth_deg": 129.27657859716976,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23076411112945,
+      1.1900689899185275e-05,
+      -140.72342565852654
+    ],
+    "camera_position_xyz": [
+      -3.1243323499585745,
+      3.8203733968477023,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      129.27657859716976,
+      -9.23076923076923,
+      129.2765718369953
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_50.png",
+    "edge_path": "scene_0001/edge_50.png"
+  },
+  {
+    "view_id": 51,
+    "image_path": "scene_0001/view_51.png",
+    "azimuth_deg": 153.26783066277798,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077094131862,
+      2.650331280514846e-06,
+      -116.73218129318167
+    ],
+    "camera_position_xyz": [
+      -4.4077665818679055,
+      2.2199773161246115,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      153.267830662778,
+      -9.23076923076923,
+      153.26781620234016
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_51.png",
+    "edge_path": "scene_0001/edge_51.png"
+  },
+  {
+    "view_id": 52,
+    "image_path": "scene_0001/view_52.png",
+    "azimuth_deg": 177.57777591505393,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077094131862,
+      8.374193460350333e-06,
+      -92.42224030116398
+    ],
+    "camera_position_xyz": [
+      -4.930841725685992,
+      0.20857948262784748,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      177.57777591505396,
+      -9.23076923076923,
+      177.57775719435784
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_52.png",
+    "edge_path": "scene_0001/edge_52.png"
+  },
+  {
+    "view_id": 53,
+    "image_path": "scene_0001/view_53.png",
+    "azimuth_deg": 206.5202770933498,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23078460169695,
+      4.800310929649326e-07,
+      -63.47973716496349
+    ],
+    "camera_position_xyz": [
+      -4.415946379641433,
+      -2.2036612935002142,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -153.47972290665018,
+      -9.23076923076923,
+      -153.47973966944164
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_53.png",
+    "edge_path": "scene_0001/edge_53.png"
+  },
+  {
+    "view_id": 54,
+    "image_path": "scene_0001/view_54.png",
+    "azimuth_deg": 235.0479171442568,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23078460169695,
+      -8.634795795841727e-07,
+      -34.952089473665815
+    ],
+    "camera_position_xyz": [
+      -2.827361895181055,
+      -4.045087173104865,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -124.95208285574324,
+      -9.23076923076923,
+      -124.95209197814398
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_54.png",
+    "edge_path": "scene_0001/edge_54.png"
+  },
+  {
+    "view_id": 55,
+    "image_path": "scene_0001/view_55.png",
+    "azimuth_deg": 257.5437672114622,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23079143188613,
+      4.536784926516981e-07,
+      -12.456234772372472
+    ],
+    "camera_position_xyz": [
+      -1.0645029911048645,
+      -4.819080711740375,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -102.45623278853782,
+      -9.23076923076923,
+      -102.45623727685063
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_55.png",
+    "edge_path": "scene_0001/edge_55.png"
+  },
+  {
+    "view_id": 56,
+    "image_path": "scene_0001/view_56.png",
+    "azimuth_deg": 279.87404298147806,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23078460169695,
+      2.5955913900031137e-07,
+      9.874045898156009
+    ],
+    "camera_position_xyz": [
+      0.8463106804133329,
+      -4.862146003212742,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -80.12595701852194,
+      -9.23076923076923,
+      -80.12595660632215
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_56.png",
+    "edge_path": "scene_0001/edge_56.png"
+  },
+  {
+    "view_id": 57,
+    "image_path": "scene_0001/view_57.png",
+    "azimuth_deg": 308.5323025888266,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077094131862,
+      -6.001205733837107e-06,
+      38.532303881857246
+    ],
+    "camera_position_xyz": [
+      3.074443240584711,
+      -3.8606352177798797,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -51.46769741117339,
+      -9.23076923076923,
+      -51.4676986226209
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_57.png",
+    "edge_path": "scene_0001/edge_57.png"
+  },
+  {
+    "view_id": 58,
+    "image_path": "scene_0001/view_58.png",
+    "azimuth_deg": 336.43902138231385,
+    "elevation_deg": -9.23076923076923,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      99.23077094131862,
+      2.1691256723171423e-06,
+      66.4390327360874
+    ],
+    "camera_position_xyz": [
+      4.52382495296806,
+      -1.9727425881860114,
+      -0.8020564042888011
+    ],
+    "rotation_vector_relative_to_ref": [
+      -23.560978617686146,
+      -9.23076923076923,
+      -23.56096976839075
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_58.png",
+    "edge_path": "scene_0001/edge_58.png"
+  },
+  {
+    "view_id": 59,
+    "image_path": "scene_0001/view_59.png",
+    "azimuth_deg": 3.511765322009244,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30770485897203,
+      -4.612767512746271e-06,
+      93.51176475680774
+    ],
+    "camera_position_xyz": [
+      4.986563812440901,
+      0.3060191107308406,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      3.5117653220092393,
+      -2.3076923076923066,
+      3.511762252329561
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_59.png",
+    "edge_path": "scene_0001/edge_59.png"
+  },
+  {
+    "view_id": 60,
+    "image_path": "scene_0001/view_60.png",
+    "azimuth_deg": 27.374231156957624,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30770485897203,
+      3.1425474092421522e-06,
+      117.3742327355412
+    ],
+    "camera_position_xyz": [
+      4.436510415186204,
+      2.297137716294336,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      27.37423115695762,
+      -2.3076923076923066,
+      27.374230231063052
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_60.png",
+    "edge_path": "scene_0001/edge_60.png"
+  },
+  {
+    "view_id": 61,
+    "image_path": "scene_0001/view_61.png",
+    "azimuth_deg": 47.89036039746807,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.3076911985937,
+      1.620996308289456e-06,
+      137.89035881345364
+    ],
+    "camera_position_xyz": [
+      3.350038115598436,
+      3.706306918715084,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      47.89036039746807,
+      -2.3076923076923066,
+      47.89035630897547
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_61.png",
+    "edge_path": "scene_0001/edge_61.png"
+  },
+  {
+    "view_id": 62,
+    "image_path": "scene_0001/view_62.png",
+    "azimuth_deg": 80.7419952733239,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30770485897203,
+      -2.7267798052827517e-06,
+      170.74199777770588
+    ],
+    "camera_position_xyz": [
+      0.8037499090213832,
+      4.9308673106691625,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      80.74199527332388,
+      -2.3076923076923066,
+      80.7419952732277
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_62.png",
+    "edge_path": "scene_0001/edge_62.png"
+  },
+  {
+    "view_id": 63,
+    "image_path": "scene_0001/view_63.png",
+    "azimuth_deg": 103.64293000078348,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.3076911985937,
+      2.258262829153466e-06,
+      -166.35707097207106
+    ],
+    "camera_position_xyz": [
+      -1.1783950843131117,
+      4.854982119116848,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      103.64293000078351,
+      -2.3076923076923066,
+      103.6429265234508
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_63.png",
+    "edge_path": "scene_0001/edge_63.png"
+  },
+  {
+    "view_id": 64,
+    "image_path": "scene_0001/view_64.png",
+    "azimuth_deg": 125.35957108154739,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30769802878287,
+      -2.682313309947646e-06,
+      -144.64042986450215
+    ],
+    "camera_position_xyz": [
+      -2.891182640180732,
+      4.074374711878523,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      125.35957108154741,
+      -2.3076923076923066,
+      125.35956763101967
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_64.png",
+    "edge_path": "scene_0001/edge_64.png"
+  },
+  {
+    "view_id": 65,
+    "image_path": "scene_0001/view_65.png",
+    "azimuth_deg": 151.40949478833602,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30769802878287,
+      -1.9534423360364953e-06,
+      -118.59049818142371
+    ],
+    "camera_position_xyz": [
+      -4.3867508991159045,
+      2.3907912708522727,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      151.40949478833602,
+      -2.3076923076923066,
+      151.40949931409813
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_65.png",
+    "edge_path": "scene_0001/edge_65.png"
+  },
+  {
+    "view_id": 66,
+    "image_path": "scene_0001/view_66.png",
+    "azimuth_deg": 176.8080429979411,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30770485897203,
+      1.3184504461029179e-06,
+      -93.19196846967857
+    ],
+    "camera_position_xyz": [
+      -4.988194233780524,
+      0.2781809442725277,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      176.80804299794113,
+      -2.3076923076923066,
+      176.80802902584327
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_66.png",
+    "edge_path": "scene_0001/edge_66.png"
+  },
+  {
+    "view_id": 67,
+    "image_path": "scene_0001/view_67.png",
+    "azimuth_deg": 206.9856275399672,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.3076911985937,
+      -1.5749015725129406e-06,
+      -63.01437588624301
+    ],
+    "camera_position_xyz": [
+      -4.451988389696187,
+      -2.266994867591889,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -153.0143724600328,
+      -2.3076923076923066,
+      -153.01437839072116
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_67.png",
+    "edge_path": "scene_0001/edge_67.png"
+  },
+  {
+    "view_id": 68,
+    "image_path": "scene_0001/view_68.png",
+    "azimuth_deg": 228.7602348700175,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30771168916121,
+      1.893132709055459e-06,
+      -41.23977379337738
+    ],
+    "camera_position_xyz": [
+      -3.2933844003187986,
+      -3.756738684472798,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -131.23976512998252,
+      -2.3076923076923066,
+      -131.23977629785554
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_68.png",
+    "edge_path": "scene_0001/edge_68.png"
+  },
+  {
+    "view_id": 69,
+    "image_path": "scene_0001/view_69.png",
+    "azimuth_deg": 259.51476181682335,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.3076911985937,
+      -2.3408196473537785e-06,
+      -10.485240253392721
+    ],
+    "camera_position_xyz": [
+      -0.9091730174687217,
+      -4.912521834657271,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -100.48523818317665,
+      -2.3076923076923066,
+      -100.48524275787088
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_69.png",
+    "edge_path": "scene_0001/edge_69.png"
+  },
+  {
+    "view_id": 70,
+    "image_path": "scene_0001/view_70.png",
+    "azimuth_deg": 279.84040022882357,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30770485897203,
+      -4.441236992775825e-07,
+      9.840401240078172
+    ],
+    "camera_position_xyz": [
+      0.8538284049019579,
+      -4.92244282919164,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -80.15959977117643,
+      -2.3076923076923066,
+      -80.15960126439998
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_70.png",
+    "edge_path": "scene_0001/edge_70.png"
+  },
+  {
+    "view_id": 71,
+    "image_path": "scene_0001/view_71.png",
+    "azimuth_deg": 308.84288495027187,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.30768436840452,
+      8.35027406070173e-08,
+      38.842886243796066
+    ],
+    "camera_position_xyz": [
+      3.133391538458801,
+      -3.8911854001566684,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -51.157115049728134,
+      -2.3076923076923066,
+      -51.1571162606821
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_71.png",
+    "edge_path": "scene_0001/edge_71.png"
+  },
+  {
+    "view_id": 72,
+    "image_path": "scene_0001/view_72.png",
+    "azimuth_deg": 333.84659131691456,
+    "elevation_deg": -2.3076923076923066,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      92.3076911985937,
+      -2.2249725485246486e-06,
+      63.84659345547404
+    ],
+    "camera_position_xyz": [
+      4.484445620106562,
+      -2.202093057067458,
+      -0.2013297005470756
+    ],
+    "rotation_vector_relative_to_ref": [
+      -26.153408683085445,
+      -2.3076923076923066,
+      -26.153409049004125
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_72.png",
+    "edge_path": "scene_0001/edge_72.png"
+  },
+  {
+    "view_id": 73,
+    "image_path": "scene_0001/view_73.png",
+    "azimuth_deg": 356.43579955177074,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      9.437107762013991e-07,
+      86.43580488989042
+    ],
+    "camera_position_xyz": [
+      4.974146733220871,
+      -0.30982666018606775,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -3.5642004482292577,
+      4.615384615384613,
+      -3.5641976145877265
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_73.png",
+    "edge_path": "scene_0001/edge_73.png"
+  },
+  {
+    "view_id": 74,
+    "image_path": "scene_0001/view_74.png",
+    "azimuth_deg": 21.876578743660904,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38462511624711,
+      -1.5069608534068876e-06,
+      111.87658615184125
+    ],
+    "camera_position_xyz": [
+      4.624897321777933,
+      1.857001089387193,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      21.8765787436609,
+      4.615384615384613,
+      21.876583647363077
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_74.png",
+    "edge_path": "scene_0001/edge_74.png"
+  },
+  {
+    "view_id": 75,
+    "image_path": "scene_0001/view_75.png",
+    "azimuth_deg": 54.541519040229126,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461145586876,
+      9.024394915437293e-07,
+      144.54151506494202
+    ],
+    "camera_position_xyz": [
+      2.8911586607877497,
+      4.059474089229528,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      54.54151904022913,
+      4.615384615384613,
+      54.54151256046384
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_75.png",
+    "edge_path": "scene_0001/edge_75.png"
+  },
+  {
+    "view_id": 76,
+    "image_path": "scene_0001/view_76.png",
+    "azimuth_deg": 80.81954478016594,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.3846046256796,
+      -3.8136053643750283e-06,
+      170.8195477455422
+    ],
+    "camera_position_xyz": [
+      0.7951354612073895,
+      4.919947955141845,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      80.81954478016593,
+      4.615384615384613,
+      80.81954524106402
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_76.png",
+    "edge_path": "scene_0001/edge_76.png"
+  },
+  {
+    "view_id": 77,
+    "image_path": "scene_0001/view_77.png",
+    "azimuth_deg": 99.95903863098562,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.3846046256796,
+      -5.917846398079567e-07,
+      -170.0409608216741
+    ],
+    "camera_position_xyz": [
+      -0.8619163966162283,
+      4.9086890722695005,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      99.95903863098562,
+      4.615384615384613,
+      99.95903667384772
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_77.png",
+    "edge_path": "scene_0001/edge_77.png"
+  },
+  {
+    "view_id": 78,
+    "image_path": "scene_0001/view_78.png",
+    "azimuth_deg": 130.38112838664313,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.3846046256796,
+      7.279348730573025e-07,
+      -139.61887478670877
+    ],
+    "camera_position_xyz": [
+      -3.2288409851113635,
+      3.7964080623451157,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      130.38112838664313,
+      4.615384615384613,
+      130.38112270881305
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_78.png",
+    "edge_path": "scene_0001/edge_78.png"
+  },
+  {
+    "view_id": 79,
+    "image_path": "scene_0001/view_79.png",
+    "azimuth_deg": 158.05941119336296,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461145586876,
+      -4.6401917309872215e-06,
+      -111.94059185455345
+    ],
+    "camera_position_xyz": [
+      -4.622819819755043,
+      1.8621668016195185,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      158.05941119336296,
+      4.615384615384613,
+      158.0594056409684
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_79.png",
+    "edge_path": "scene_0001/edge_79.png"
+  },
+  {
+    "view_id": 80,
+    "image_path": "scene_0001/view_80.png",
+    "azimuth_deg": 183.11516785022656,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      1.0443125858869635e-05,
+      -86.88482835611622
+    ],
+    "camera_position_xyz": [
+      -4.976422094544165,
+      -0.27083467264474204,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -176.88483214977344,
+      4.615384615384613,
+      -176.88483086059438
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_80.png",
+    "edge_path": "scene_0001/edge_80.png"
+  },
+  {
+    "view_id": 81,
+    "image_path": "scene_0001/view_81.png",
+    "azimuth_deg": 208.684586514484,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461145586876,
+      -5.808017010485517e-07,
+      -61.315414141526524
+    ],
+    "camera_position_xyz": [
+      -4.372152931298866,
+      -2.392155310239836,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -151.315413485516,
+      4.615384615384613,
+      -151.31541664600468
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_81.png",
+    "edge_path": "scene_0001/edge_81.png"
+  },
+  {
+    "view_id": 82,
+    "image_path": "scene_0001/view_82.png",
+    "azimuth_deg": 230.17608789929452,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      2.16638174418235e-06,
+      -39.82391314447417
+    ],
+    "camera_position_xyz": [
+      -3.1917678243093253,
+      -3.8276293496990577,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -129.82391210070546,
+      4.615384615384613,
+      -129.82391564895232
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_82.png",
+    "edge_path": "scene_0001/edge_82.png"
+  },
+  {
+    "view_id": 83,
+    "image_path": "scene_0001/view_83.png",
+    "azimuth_deg": 258.8190095326161,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      -6.209094624704298e-07,
+      -11.1809906430069
+    ],
+    "camera_position_xyz": [
+      -0.9664004676579501,
+      -4.889192000636139,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -101.18099046738388,
+      4.615384615384613,
+      -101.18099314748505
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_83.png",
+    "edge_path": "scene_0001/edge_83.png"
+  },
+  {
+    "view_id": 84,
+    "image_path": "scene_0001/view_84.png",
+    "azimuth_deg": 282.8425733042458,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38462511624711,
+      -6.435557751355735e-07,
+      12.842574177490487
+    ],
+    "camera_position_xyz": [
+      1.1077612634706608,
+      -4.859114452873878,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -77.15742669575422,
+      4.615384615384613,
+      -77.15742832698767
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_84.png",
+    "edge_path": "scene_0001/edge_84.png"
+  },
+  {
+    "view_id": 85,
+    "image_path": "scene_0001/view_85.png",
+    "azimuth_deg": 311.94522673607815,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38461828605794,
+      -2.5489543314867527e-06,
+      41.94522988180215
+    ],
+    "camera_position_xyz": [
+      3.331261970220948,
+      -3.7068614714787445,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -48.054773263921845,
+      4.615384615384613,
+      -48.05477262267601
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_85.png",
+    "edge_path": "scene_0001/edge_85.png"
+  },
+  {
+    "view_id": 86,
+    "image_path": "scene_0001/view_86.png",
+    "azimuth_deg": 335.8518642789941,
+    "elevation_deg": 4.615384615384613,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      85.38462511624711,
+      4.337392340425915e-06,
+      65.85186869389808
+    ],
+    "camera_position_xyz": [
+      4.547659396219489,
+      -2.0388531822940332,
+      0.40233284358362925
+    ],
+    "rotation_vector_relative_to_ref": [
+      -24.14813572100593,
+      4.615384615384613,
+      -24.148133810580077
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_86.png",
+    "edge_path": "scene_0001/edge_86.png"
+  },
+  {
+    "view_id": 87,
+    "image_path": "scene_0001/view_87.png",
+    "azimuth_deg": 2.651283107017424,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46154537352218,
+      -5.480897114163619e-06,
+      92.65128386479118
+    ],
+    "camera_position_xyz": [
+      4.893709259413469,
+      0.22661140762588072,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      2.6512831070174343,
+      11.53846153846154,
+      2.651281360313021
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_87.png",
+    "edge_path": "scene_0001/edge_87.png"
+  },
+  {
+    "view_id": 88,
+    "image_path": "scene_0001/view_88.png",
+    "azimuth_deg": 28.46991682618038,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46154537352218,
+      -7.966460395516183e-06,
+      118.46991802181631
+    ],
+    "camera_position_xyz": [
+      4.306510712296405,
+      2.335317650901395,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      28.469916826180395,
+      11.53846153846154,
+      28.469915517338166
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_88.png",
+    "edge_path": "scene_0001/edge_88.png"
+  },
+  {
+    "view_id": 89,
+    "image_path": "scene_0001/view_89.png",
+    "azimuth_deg": 50.54601795407908,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      1.0476713534083388e-06,
+      140.54601832502465
+    ],
+    "camera_position_xyz": [
+      3.113080380548836,
+      3.7826543048469565,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      50.546017954079076,
+      11.53846153846154,
+      50.54601582054647
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_89.png",
+    "edge_path": "scene_0001/edge_89.png"
+  },
+  {
+    "view_id": 90,
+    "image_path": "scene_0001/view_90.png",
+    "azimuth_deg": 78.78109575148575,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      3.2720402580988834e-06,
+      168.78109144813024
+    ],
+    "camera_position_xyz": [
+      0.9531305402614434,
+      4.805339240777516,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      78.78109575148574,
+      11.53846153846154,
+      78.7810889436521
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_90.png",
+    "edge_path": "scene_0001/edge_90.png"
+  },
+  {
+    "view_id": 91,
+    "image_path": "scene_0001/view_91.png",
+    "azimuth_deg": 99.71706578429014,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46154537352218,
+      -5.639211589766148e-06,
+      -170.28292710321097
+    ],
+    "camera_position_xyz": [
+      -0.8268598710152241,
+      4.828669154067193,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      99.71706578429013,
+      11.53846153846154,
+      99.71707039231086
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_91.png",
+    "edge_path": "scene_0001/edge_91.png"
+  },
+  {
+    "view_id": 92,
+    "image_path": "scene_0001/view_92.png",
+    "azimuth_deg": 126.3041521286994,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46155220371135,
+      8.325010380533678e-06,
+      -143.6958556834244
+    ],
+    "camera_position_xyz": [
+      -2.9005310045203077,
+      3.9479947995851914,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      126.3041521286994,
+      11.53846153846154,
+      126.30414181209744
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_92.png",
+    "edge_path": "scene_0001/edge_92.png"
+  },
+  {
+    "view_id": 93,
+    "image_path": "scene_0001/view_93.png",
+    "azimuth_deg": 157.65355242395444,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46154537352218,
+      -3.1448844299332168e-06,
+      -112.34644169503561
+    ],
+    "camera_position_xyz": [
+      -4.531050704596523,
+      1.862611757213686,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      157.65355242395447,
+      11.53846153846154,
+      157.65355580048623
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_93.png",
+    "edge_path": "scene_0001/edge_93.png"
+  },
+  {
+    "view_id": 94,
+    "image_path": "scene_0001/view_94.png",
+    "azimuth_deg": 179.2645220910602,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      2.7033680730501854e-06,
+      -90.73547727430514
+    ],
+    "camera_position_xyz": [
+      -4.898549650750935,
+      0.06288374084925229,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      179.2645220910602,
+      11.53846153846154,
+      179.26452022121669
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_94.png",
+    "edge_path": "scene_0001/edge_94.png"
+  },
+  {
+    "view_id": 95,
+    "image_path": "scene_0001/view_95.png",
+    "azimuth_deg": 207.14179183383195,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      -6.76628332802004e-06,
+      -62.858224101438175
+    ],
+    "camera_position_xyz": [
+      -4.359481953041395,
+      -2.23487363106769,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      -152.85820816616808,
+      11.53846153846154,
+      -152.85822660591634
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_95.png",
+    "edge_path": "scene_0001/edge_95.png"
+  },
+  {
+    "view_id": 96,
+    "image_path": "scene_0001/view_96.png",
+    "azimuth_deg": 232.01200961831103,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      4.4847286608232807e-07,
+      -37.98798903142601
+    ],
+    "camera_position_xyz": [
+      -3.015287551309637,
+      -3.8610599618048456,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      -127.98799038168897,
+      11.53846153846154,
+      -127.98799153590417
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_96.png",
+    "edge_path": "scene_0001/edge_96.png"
+  },
+  {
+    "view_id": 97,
+    "image_path": "scene_0001/view_97.png",
+    "azimuth_deg": 255.29390292730673,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46154537352218,
+      2.518568584281923e-06,
+      -14.70609908497467
+    ],
+    "camera_position_xyz": [
+      -1.2436525561849252,
+      -4.738467195753286,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      -104.7060970726933,
+      11.53846153846154,
+      -104.70610158945283
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_97.png",
+    "edge_path": "scene_0001/edge_97.png"
+  },
+  {
+    "view_id": 98,
+    "image_path": "scene_0001/view_98.png",
+    "azimuth_deg": 283.52306943500673,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46154537352218,
+      5.943489811032148e-07,
+      13.52307019336709
+    ],
+    "camera_position_xyz": [
+      1.1455558359517957,
+      -4.763133933919146,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      -76.47693056499327,
+      11.53846153846154,
+      -76.47693231111107
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_98.png",
+    "edge_path": "scene_0001/edge_98.png"
+  },
+  {
+    "view_id": 99,
+    "image_path": "scene_0001/view_99.png",
+    "azimuth_deg": 311.75321473311647,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46154537352218,
+      -1.1692783604322867e-06,
+      41.75321618876016
+    ],
+    "camera_position_xyz": [
+      3.2623282213970435,
+      -3.654717173956379,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      -48.246785266883535,
+      11.53846153846154,
+      -48.246786315718
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_99.png",
+    "edge_path": "scene_0001/edge_99.png"
+  },
+  {
+    "view_id": 100,
+    "image_path": "scene_0001/view_100.png",
+    "azimuth_deg": 332.9538417729812,
+    "elevation_deg": 11.53846153846154,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      78.46153854333302,
+      2.798883234355904e-06,
+      62.953846749818354
+    ],
+    "camera_position_xyz": [
+      4.363206153839278,
+      -2.227594017058394,
+      1.0001284688802223
+    ],
+    "rotation_vector_relative_to_ref": [
+      -27.04615822701885,
+      11.53846153846154,
+      -27.04615575465982
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_100.png",
+    "edge_path": "scene_0001/edge_100.png"
+  },
+  {
+    "view_id": 101,
+    "image_path": "scene_0001/view_101.png",
+    "azimuth_deg": 358.8196906881667,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53846563079726,
+      -5.820840498072428e-07,
+      88.81970483476495
+    ],
+    "camera_position_xyz": [
+      4.741675915296276,
+      -0.0976936888595694,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -1.1803093118332981,
+      18.46153846153846,
+      -1.1802976697132124
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_101.png",
+    "edge_path": "scene_0001/edge_101.png"
+  },
+  {
+    "view_id": 102,
+    "image_path": "scene_0001/view_102.png",
+    "azimuth_deg": 23.290491609732467,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53847246098643,
+      -2.937007243507254e-06,
+      113.2905036119256
+    ],
+    "camera_position_xyz": [
+      4.356210571846918,
+      1.8752237189927263,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      23.29049160973247,
+      18.46153846153846,
+      23.290501107447426
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_102.png",
+    "edge_path": "scene_0001/edge_102.png"
+  },
+  {
+    "view_id": 103,
+    "image_path": "scene_0001/view_103.png",
+    "azimuth_deg": 48.943263690700455,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53845197041892,
+      6.047260979846697e-06,
+      138.94325979476778
+    ],
+    "camera_position_xyz": [
+      3.1150223560556936,
+      3.576264848108568,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      48.94326369070046,
+      18.46153846153846,
+      48.94325729028964
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_103.png",
+    "edge_path": "scene_0001/edge_103.png"
+  },
+  {
+    "view_id": 104,
+    "image_path": "scene_0001/view_104.png",
+    "azimuth_deg": 79.66826168143182,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53845197041892,
+      -3.3672236239402315e-06,
+      169.66826471942318
+    ],
+    "camera_position_xyz": [
+      0.850586770640087,
+      4.665783609229626,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      79.66826168143183,
+      18.46153846153846,
+      79.668262214945
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_104.png",
+    "edge_path": "scene_0001/edge_104.png"
+  },
+  {
+    "view_id": 105,
+    "image_path": "scene_0001/view_105.png",
+    "azimuth_deg": 104.44791129213728,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53845197041892,
+      5.632807326637303e-06,
+      -165.55209219725003
+    ],
+    "camera_position_xyz": [
+      -1.18329797278186,
+      4.592694247405776,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      104.44791129213729,
+      18.46153846153846,
+      104.44790529827179
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_105.png",
+    "edge_path": "scene_0001/edge_105.png"
+  },
+  {
+    "view_id": 106,
+    "image_path": "scene_0001/view_106.png",
+    "azimuth_deg": 132.158556400409,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.5384588006081,
+      -4.033938315377851e-06,
+      -137.84145465899635
+    ],
+    "camera_position_xyz": [
+      -3.1832151171362137,
+      3.5157042055012595,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      132.158556400409,
+      18.46153846153846,
+      132.1585428365255
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_106.png",
+    "edge_path": "scene_0001/edge_106.png"
+  },
+  {
+    "view_id": 107,
+    "image_path": "scene_0001/view_107.png",
+    "azimuth_deg": 155.59446054122807,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53846563079726,
+      4.233859942212413e-06,
+      -114.40554565430851
+    ],
+    "camera_position_xyz": [
+      -4.318893755418646,
+      1.9596405976478415,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      155.59446054122805,
+      18.46153846153846,
+      155.5944518412133
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_107.png",
+    "edge_path": "scene_0001/edge_107.png"
+  },
+  {
+    "view_id": 108,
+    "image_path": "scene_0001/view_108.png",
+    "azimuth_deg": 183.5394677287717,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53846563079726,
+      -1.0231754642292804e-05,
+      -86.4605438350642
+    ],
+    "camera_position_xyz": [
+      -4.733635585295709,
+      -0.29279461772019083,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -176.46053227122832,
+      18.46153846153846,
+      -176.46054633954236
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_108.png",
+    "edge_path": "scene_0001/edge_108.png"
+  },
+  {
+    "view_id": 109,
+    "image_path": "scene_0001/view_109.png",
+    "azimuth_deg": 203.56921451714592,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53846563079726,
+      -3.5890987114081273e-06,
+      -66.4307886977592
+    ],
+    "camera_position_xyz": [
+      -4.3470367897048,
+      -1.8963928104421703,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -156.43078548285405,
+      18.46153846153846,
+      -156.43079120223734
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_109.png",
+    "edge_path": "scene_0001/edge_109.png"
+  },
+  {
+    "view_id": 110,
+    "image_path": "scene_0001/view_110.png",
+    "azimuth_deg": 229.02005259473,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53847246098643,
+      -3.010966080959385e-06,
+      -40.97995681244468
+    ],
+    "camera_position_xyz": [
+      -3.1102265810796803,
+      -3.580436447821574,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -130.97994740526997,
+      18.46153846153846,
+      -130.97995931692284
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_110.png",
+    "edge_path": "scene_0001/edge_110.png"
+  },
+  {
+    "view_id": 111,
+    "image_path": "scene_0001/view_111.png",
+    "azimuth_deg": 254.9560337012653,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53847246098643,
+      -4.2626618240747487e-07,
+      -15.04397317528957
+    ],
+    "camera_position_xyz": [
+      -1.2310114407239883,
+      -4.58013595598978,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -105.04396629873469,
+      18.46153846153846,
+      -105.04397567976773
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_111.png",
+    "edge_path": "scene_0001/edge_111.png"
+  },
+  {
+    "view_id": 112,
+    "image_path": "scene_0001/view_112.png",
+    "azimuth_deg": 281.9605690969182,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53846563079726,
+      8.190320657994061e-07,
+      11.960568798078292
+    ],
+    "camera_position_xyz": [
+      0.9828662586756871,
+      -4.639720730830749,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -78.03943090308178,
+      18.46153846153846,
+      -78.03943370639988
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_112.png",
+    "edge_path": "scene_0001/edge_112.png"
+  },
+  {
+    "view_id": 113,
+    "image_path": "scene_0001/view_113.png",
+    "azimuth_deg": 312.3482699064422,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53847246098643,
+      4.282492200847112e-06,
+      42.34827592963001
+    ],
+    "camera_position_xyz": [
+      3.19483858340839,
+      -3.5051449283173493,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -47.651730093557774,
+      18.46153846153846,
+      -47.65172657484814
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_113.png",
+    "edge_path": "scene_0001/edge_113.png"
+  },
+  {
+    "view_id": 114,
+    "image_path": "scene_0001/view_114.png",
+    "azimuth_deg": 332.163236219199,
+    "elevation_deg": 18.46153846153846,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      71.53847246098643,
+      -2.0662124899334647e-06,
+      62.16324552320021
+    ],
+    "camera_position_xyz": [
+      4.193866312067331,
+      -2.2146150679182446,
+      1.5833399690073624
+    ],
+    "rotation_vector_relative_to_ref": [
+      -27.836763780800993,
+      18.46153846153846,
+      -27.836756981277944
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_114.png",
+    "edge_path": "scene_0001/edge_114.png"
+  },
+  {
+    "view_id": 115,
+    "image_path": "scene_0001/view_115.png",
+    "azimuth_deg": 359.67845071966735,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      -3.450469273951237e-08,
+      89.67845768892148
+    ],
+    "camera_position_xyz": [
+      4.517181036465853,
+      -0.025351109157122843,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -0.32154928033264696,
+      25.384615384615387,
+      -0.3215448155566776
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_115.png",
+    "edge_path": "scene_0001/edge_115.png"
+  },
+  {
+    "view_id": 116,
+    "image_path": "scene_0001/view_116.png",
+    "azimuth_deg": 22.329417853678276,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      -3.064982993225364e-06,
+      112.32942086362394
+    ],
+    "camera_position_xyz": [
+      4.178524975719949,
+      1.716244802534539,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      22.32941785367828,
+      25.384615384615387,
+      22.32941835914579
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_116.png",
+    "edge_path": "scene_0001/edge_116.png"
+  },
+  {
+    "view_id": 117,
+    "image_path": "scene_0001/view_117.png",
+    "azimuth_deg": 47.78130087180027,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      5.043762900076271e-06,
+      137.78130801316522
+    ],
+    "camera_position_xyz": [
+      3.0354232662064353,
+      3.3454107057153495,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      47.78130087180028,
+      25.384615384615387,
+      47.78130550868707
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_117.png",
+    "edge_path": "scene_0001/edge_117.png"
+  },
+  {
+    "view_id": 118,
+    "image_path": "scene_0001/view_118.png",
+    "azimuth_deg": 77.49626740865409,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61537905788316,
+      3.881133272927865e-06,
+      167.49626456335912
+    ],
+    "camera_position_xyz": [
+      0.9779996196369761,
+      4.410111556291081,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      77.49626740865409,
+      25.384615384615387,
+      77.49626205888097
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_118.png",
+    "edge_path": "scene_0001/edge_118.png"
+  },
+  {
+    "view_id": 119,
+    "image_path": "scene_0001/view_119.png",
+    "azimuth_deg": 103.73077905575157,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      1.3852487354118266e-07,
+      -166.26922107896635
+    ],
+    "camera_position_xyz": [
+      -1.0722150843708376,
+      4.38815701722145,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      103.73077905575155,
+      25.384615384615387,
+      103.7307764165555
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_119.png",
+    "edge_path": "scene_0001/edge_119.png"
+  },
+  {
+    "view_id": 120,
+    "image_path": "scene_0001/view_120.png",
+    "azimuth_deg": 128.65502727239337,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      -1.4612708877413542e-06,
+      -141.34497287299772
+    ],
+    "camera_position_xyz": [
+      -2.821610712879849,
+      3.5276167847293003,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      128.65502727239334,
+      25.384615384615387,
+      128.65502462252414
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_120.png",
+    "edge_path": "scene_0001/edge_120.png"
+  },
+  {
+    "view_id": 121,
+    "image_path": "scene_0001/view_121.png",
+    "azimuth_deg": 157.48464279217126,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.615372227694,
+      -3.824918571932556e-06,
+      -112.51535227321001
+    ],
+    "camera_position_xyz": [
+      -4.1729333318803015,
+      1.7297961159120985,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      157.48464279217126,
+      25.384615384615387,
+      157.48464522231183
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_121.png",
+    "edge_path": "scene_0001/edge_121.png"
+  },
+  {
+    "view_id": 122,
+    "image_path": "scene_0001/view_122.png",
+    "azimuth_deg": 182.78479809771318,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      5.097719356358865e-06,
+      -87.2152114364589
+    ],
+    "camera_position_xyz": [
+      -4.511917583566197,
+      -0.21946961987570704,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -177.21520190228682,
+      25.384615384615387,
+      -177.21521394093708
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_122.png",
+    "edge_path": "scene_0001/edge_122.png"
+  },
+  {
+    "view_id": 123,
+    "image_path": "scene_0001/view_123.png",
+    "azimuth_deg": 209.19435501313953,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.6153927182615,
+      -7.433500801541705e-07,
+      -60.80565663320097
+    ],
+    "camera_position_xyz": [
+      -3.943426256171033,
+      -2.2033965955050228,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -150.80564498686044,
+      25.384615384615387,
+      -150.80565913767913
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_123.png",
+    "edge_path": "scene_0001/edge_123.png"
+  },
+  {
+    "view_id": 124,
+    "image_path": "scene_0001/view_124.png",
+    "azimuth_deg": 232.0375278258536,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.6153927182615,
+      -7.299540927245952e-07,
+      -37.96247485978142
+    ],
+    "camera_position_xyz": [
+      -2.7787660310592273,
+      -3.561464100559427,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -127.9624721741464,
+      25.384615384615387,
+      -127.96247736425958
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_124.png",
+    "edge_path": "scene_0001/edge_124.png"
+  },
+  {
+    "view_id": 125,
+    "image_path": "scene_0001/view_125.png",
+    "azimuth_deg": 255.31837022715325,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.6153927182615,
+      3.4288338687860495e-07,
+      -14.681633347367686
+    ],
+    "camera_position_xyz": [
+      -1.1448876489901647,
+      -4.36975965770796,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -104.68162977284675,
+      25.384615384615387,
+      -104.68163585184584
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_125.png",
+    "edge_path": "scene_0001/edge_125.png"
+  },
+  {
+    "view_id": 126,
+    "image_path": "scene_0001/view_126.png",
+    "azimuth_deg": 280.00242134954146,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61539954845068,
+      -3.242972939865051e-07,
+      10.002425280021923
+    ],
+    "camera_position_xyz": [
+      0.7846006084243059,
+      -4.448591808674114,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -79.99757865045854,
+      25.384615384615387,
+      -79.99757722445624
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_126.png",
+    "edge_path": "scene_0001/edge_126.png"
+  },
+  {
+    "view_id": 127,
+    "image_path": "scene_0001/view_127.png",
+    "azimuth_deg": 310.60968083688124,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.6153927182615,
+      7.817263984963348e-08,
+      40.60968542734912
+    ],
+    "camera_position_xyz": [
+      2.9402907160254466,
+      -3.429323213142323,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -49.39031916311876,
+      25.384615384615387,
+      -49.390317077129055
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_127.png",
+    "edge_path": "scene_0001/edge_127.png"
+  },
+  {
+    "view_id": 128,
+    "image_path": "scene_0001/view_128.png",
+    "azimuth_deg": 331.6212756095791,
+    "elevation_deg": 25.384615384615387,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      64.61538588807234,
+      1.3818326415728727e-06,
+      61.62127684274887
+    ],
+    "camera_position_xyz": [
+      3.974391960012593,
+      -2.147038831304519,
+      2.143462807015271
+    ],
+    "rotation_vector_relative_to_ref": [
+      -28.378724390420928,
+      25.384615384615387,
+      -28.378725661729277
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_128.png",
+    "edge_path": "scene_0001/edge_128.png"
+  },
+  {
+    "view_id": 129,
+    "image_path": "scene_0001/view_129.png",
+    "azimuth_deg": 356.1900351556856,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231297553658,
+      -5.208329379293934e-06,
+      86.19003419298585
+    ],
+    "camera_position_xyz": [
+      4.216610768306838,
+      -0.28080357215854285,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -3.809964844314436,
+      32.30769230769231,
+      -3.809968311492298
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_129.png",
+    "edge_path": "scene_0001/edge_129.png"
+  },
+  {
+    "view_id": 130,
+    "image_path": "scene_0001/view_130.png",
+    "azimuth_deg": 27.251355126345636,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231297553658,
+      -5.486437996640853e-07,
+      117.25135763237267
+    ],
+    "camera_position_xyz": [
+      3.756896603893617,
+      1.935041323897448,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      27.25135512634563,
+      32.30769230769231,
+      27.2513551278945
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_130.png",
+    "edge_path": "scene_0001/edge_130.png"
+  },
+  {
+    "view_id": 131,
+    "image_path": "scene_0001/view_131.png",
+    "azimuth_deg": 48.53198913226915,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231297553658,
+      4.215598978342071e-06,
+      138.53200044446297
+    ],
+    "camera_position_xyz": [
+      2.7984319429182527,
+      3.16661265051363,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      48.53198913226916,
+      32.30769230769231,
+      48.53199793998482
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_131.png",
+    "edge_path": "scene_0001/edge_131.png"
+  },
+  {
+    "view_id": 132,
+    "image_path": "scene_0001/view_132.png",
+    "azimuth_deg": 78.08743715119866,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231297553658,
+      2.5300295731321705e-06,
+      168.08743109640207
+    ],
+    "camera_position_xyz": [
+      0.8723153259411598,
+      4.134939296974787,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      78.08743715119863,
+      32.30769230769231,
+      78.08742859192392
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_132.png",
+    "edge_path": "scene_0001/edge_132.png"
+  },
+  {
+    "view_id": 133,
+    "image_path": "scene_0001/view_133.png",
+    "azimuth_deg": 100.55068477386195,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231297553658,
+      -1.3190269152778237e-06,
+      -169.44931617538927
+    ],
+    "camera_position_xyz": [
+      -0.7737937403184284,
+      4.154503612344343,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      100.55068477386192,
+      32.30769230769231,
+      100.55068132013258
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_133.png",
+    "edge_path": "scene_0001/edge_133.png"
+  },
+  {
+    "view_id": 134,
+    "image_path": "scene_0001/view_134.png",
+    "azimuth_deg": 127.99360862342066,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231980572575,
+      5.334791490316917e-06,
+      -142.00639473184341
+    ],
+    "camera_position_xyz": [
+      -2.601383384885946,
+      3.3303845877582243,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      127.99360862342064,
+      32.30769230769231,
+      127.99360276367844
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_134.png",
+    "edge_path": "scene_0001/edge_134.png"
+  },
+  {
+    "view_id": 135,
+    "image_path": "scene_0001/view_135.png",
+    "azimuth_deg": 150.54225866931827,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231297553658,
+      3.22857362737788e-06,
+      -119.45772730034022
+    ],
+    "camera_position_xyz": [
+      -3.6796138412915216,
+      2.07824421002779,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      150.54225866931824,
+      32.30769230769231,
+      150.54227019518163
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_135.png",
+    "edge_path": "scene_0001/edge_135.png"
+  },
+  {
+    "view_id": 136,
+    "image_path": "scene_0001/view_136.png",
+    "azimuth_deg": 179.04447609216538,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231980572575,
+      6.36593199982388e-06,
+      -90.95552547879544
+    ],
+    "camera_position_xyz": [
+      -4.225362773054264,
+      0.07047307021380637,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      179.04447609216538,
+      32.30769230769231,
+      179.0444720167264
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_136.png",
+    "edge_path": "scene_0001/edge_136.png"
+  },
+  {
+    "view_id": 137,
+    "image_path": "scene_0001/view_137.png",
+    "azimuth_deg": 204.39037154070073,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.692326635914924,
+      1.0104100917375082e-05,
+      -65.60964286517276
+    ],
+    "camera_position_xyz": [
+      -3.848797323392521,
+      -1.7451120826424715,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -155.6096284592993,
+      32.30769230769231,
+      -155.60964536965093
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_137.png",
+    "edge_path": "scene_0001/edge_137.png"
+  },
+  {
+    "view_id": 138,
+    "image_path": "scene_0001/view_138.png",
+    "azimuth_deg": 229.5859257079271,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.692299315158245,
+      1.709314357795334e-06,
+      -40.41406197933078
+    ],
+    "camera_position_xyz": [
+      -2.739713023607287,
+      -3.217550242935578,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -130.41407429207288,
+      32.30769230769231,
+      -130.41406448380894
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_138.png",
+    "edge_path": "scene_0001/edge_138.png"
+  },
+  {
+    "view_id": 139,
+    "image_path": "scene_0001/view_139.png",
+    "azimuth_deg": 254.31836877253446,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231297553658,
+      1.2854670253897683e-06,
+      -15.681632806012791
+    ],
+    "camera_position_xyz": [
+      -1.1422397367256862,
+      -4.068654003645802,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -105.68163122746557,
+      32.30769230769231,
+      -105.68163531049095
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_139.png",
+    "edge_path": "scene_0001/edge_139.png"
+  },
+  {
+    "view_id": 140,
+    "image_path": "scene_0001/view_140.png",
+    "azimuth_deg": 283.44069977761995,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231980572575,
+      6.709254913915026e-07,
+      13.44070152707132
+    ],
+    "camera_position_xyz": [
+      0.9822750642078214,
+      -4.110205921334563,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -76.55930022238005,
+      32.30769230769231,
+      -76.55930097740683
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_140.png",
+    "edge_path": "scene_0001/edge_140.png"
+  },
+  {
+    "view_id": 141,
+    "image_path": "scene_0001/view_141.png",
+    "azimuth_deg": 310.0569507172034,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231297553658,
+      -5.065408584794188e-06,
+      40.056955783860424
+    ],
+    "camera_position_xyz": [
+      2.7196050011679063,
+      -3.2345642141037625,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -49.94304928279661,
+      32.30769230769231,
+      -49.94304672061773
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_141.png",
+    "edge_path": "scene_0001/edge_141.png"
+  },
+  {
+    "view_id": 142,
+    "image_path": "scene_0001/view_142.png",
+    "azimuth_deg": 331.9690553703169,
+    "elevation_deg": 32.30769230769231,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      57.69231980572575,
+      -5.569698607981079e-06,
+      61.96906324509675
+    ],
+    "camera_position_xyz": [
+      3.730220703261105,
+      -1.985978479868402,
+      2.672329130639005
+    ],
+    "rotation_vector_relative_to_ref": [
+      -28.03094462968312,
+      32.30769230769231,
+      -28.030939259381398
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_142.png",
+    "edge_path": "scene_0001/edge_142.png"
+  },
+  {
+    "view_id": 143,
+    "image_path": "scene_0001/view_143.png",
+    "azimuth_deg": 356.48112516413823,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.769229817717076,
+      4.955502456776783e-06,
+      86.48113002522261
+    ],
+    "camera_position_xyz": [
+      3.8657227365996647,
+      -0.23771599848761096,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -3.518874835861766,
+      39.230769230769226,
+      -3.518872479255549
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_143.png",
+    "edge_path": "scene_0001/edge_143.png"
+  },
+  {
+    "view_id": 144,
+    "image_path": "scene_0001/view_144.png",
+    "azimuth_deg": 23.926376653419265,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923664790625,
+      1.685024283581935e-06,
+      113.92638056327544
+    ],
+    "camera_position_xyz": [
+      3.5402055144949713,
+      1.570753350255844,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      23.926376653419254,
+      39.230769230769226,
+      23.926378058797297
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_144.png",
+    "edge_path": "scene_0001/edge_144.png"
+  },
+  {
+    "view_id": 145,
+    "image_path": "scene_0001/view_145.png",
+    "azimuth_deg": 52.9663865167562,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.769226402622486,
+      -3.979319896610513e-06,
+      142.96639148006705
+    ],
+    "camera_position_xyz": [
+      2.3326587510496464,
+      3.0917671845325074,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      52.96638651675619,
+      39.230769230769226,
+      52.96638897558887
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_145.png",
+    "edge_path": "scene_0001/edge_145.png"
+  },
+  {
+    "view_id": 146,
+    "image_path": "scene_0001/view_146.png",
+    "azimuth_deg": 75.39388647804236,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.769222987527904,
+      -4.787940047715805e-06,
+      165.3938913556942
+    ],
+    "camera_position_xyz": [
+      0.9766707841205586,
+      3.747857434808039,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      75.39388647804236,
+      39.230769230769226,
+      75.39388885121605
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_146.png",
+    "edge_path": "scene_0001/edge_146.png"
+  },
+  {
+    "view_id": 147,
+    "image_path": "scene_0001/view_147.png",
+    "azimuth_deg": 103.99511672864459,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76924347809541,
+      -4.114346808835241e-06,
+      -166.0048790977085
+    ],
+    "camera_position_xyz": [
+      -0.9366492106864591,
+      3.758059263545613,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      103.99511672864458,
+      39.230769230769226,
+      103.99511839781331
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_147.png",
+    "edge_path": "scene_0001/edge_147.png"
+  },
+  {
+    "view_id": 148,
+    "image_path": "scene_0001/view_148.png",
+    "azimuth_deg": 125.28171548887461,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.769229817717076,
+      -5.7418222886773995e-06,
+      -144.71828036066194
+    ],
+    "camera_position_xyz": [
+      -2.237048072733487,
+      3.1616351928203152,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      125.28171548887462,
+      39.230769230769226,
+      125.28171713485989
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_148.png",
+    "edge_path": "scene_0001/edge_148.png"
+  },
+  {
+    "view_id": 149,
+    "image_path": "scene_0001/view_149.png",
+    "azimuth_deg": 155.85432372384963,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.769229817717076,
+      4.52592625839009e-07,
+      -114.14568427714622
+    ],
+    "camera_position_xyz": [
+      -3.534167538447023,
+      1.5842919498589487,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      155.85432372384963,
+      39.230769230769226,
+      155.85431321837564
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_149.png",
+    "edge_path": "scene_0001/edge_149.png"
+  },
+  {
+    "view_id": 150,
+    "image_path": "scene_0001/view_150.png",
+    "azimuth_deg": 177.23996199590803,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923664790625,
+      2.9627437831009076e-06,
+      -92.7600409669453
+    ],
+    "camera_position_xyz": [
+      -3.8685319670074265,
+      0.18649823710215901,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      177.23996199590806,
+      39.230769230769226,
+      177.23995652857656
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_150.png",
+    "edge_path": "scene_0001/edge_150.png"
+  },
+  {
+    "view_id": 151,
+    "image_path": "scene_0001/view_151.png",
+    "azimuth_deg": 203.57965522636212,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923323281166,
+      -1.1875305714161453e-06,
+      -66.42035899889659
+    ],
+    "camera_position_xyz": [
+      -3.549645940565784,
+      -1.5493014131618847,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -156.4203447736379,
+      39.230769230769226,
+      -156.42036150337475
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_151.png",
+    "edge_path": "scene_0001/edge_151.png"
+  },
+  {
+    "view_id": 152,
+    "image_path": "scene_0001/view_152.png",
+    "azimuth_deg": 233.19984338028618,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923664790625,
+      -2.9240902221682694e-06,
+      -36.800154247963675
+    ],
+    "camera_position_xyz": [
+      -2.32004173566714,
+      -3.1012461232483894,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -126.80015661971379,
+      39.230769230769226,
+      -126.80015675244184
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_152.png",
+    "edge_path": "scene_0001/edge_152.png"
+  },
+  {
+    "view_id": 153,
+    "image_path": "scene_0001/view_153.png",
+    "azimuth_deg": 256.95039274266895,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.769229817717076,
+      -8.42936046118913e-07,
+      -13.049607456517329
+    ],
+    "camera_position_xyz": [
+      -0.8745080459095528,
+      -3.773003690674052,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -103.04960725733105,
+      39.230769230769226,
+      -103.0496099609955
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_153.png",
+    "edge_path": "scene_0001/edge_153.png"
+  },
+  {
+    "view_id": 154,
+    "image_path": "scene_0001/view_154.png",
+    "azimuth_deg": 283.9400279310321,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923664790625,
+      1.9841885291422658e-07,
+      13.940031044081564
+    ],
+    "camera_position_xyz": [
+      0.9330354761022784,
+      -3.75895809667189,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -76.05997206896791,
+      39.230769230769226,
+      -76.0599714603966
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_154.png",
+    "edge_path": "scene_0001/edge_154.png"
+  },
+  {
+    "view_id": 155,
+    "image_path": "scene_0001/view_155.png",
+    "azimuth_deg": 306.9210990207031,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923323281166,
+      -4.7443199361480936e-07,
+      36.92109982269167
+    ],
+    "camera_position_xyz": [
+      2.3265828061393012,
+      -3.0963419737453965,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -53.07890097929692,
+      39.230769230769226,
+      -53.07890268178649
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_155.png",
+    "edge_path": "scene_0001/edge_155.png"
+  },
+  {
+    "view_id": 156,
+    "image_path": "scene_0001/view_156.png",
+    "azimuth_deg": 335.5852134270244,
+    "elevation_deg": 39.230769230769226,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      50.76923323281166,
+      1.1688998489807551e-06,
+      65.58523176907913
+    ],
+    "camera_position_xyz": [
+      3.52668738448019,
+      -1.6008739064488624,
+      3.162226877976886
+    ],
+    "rotation_vector_relative_to_ref": [
+      -24.414786572975572,
+      39.230769230769226,
+      -24.41477073539903
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_156.png",
+    "edge_path": "scene_0001/edge_156.png"
+  },
+  {
+    "view_id": 157,
+    "image_path": "scene_0001/view_157.png",
+    "azimuth_deg": 358.4496375567408,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.846153490086735,
+      -3.7830362136650466e-06,
+      88.44963152515531
+    ],
+    "camera_position_xyz": [
+      3.4623538378342964,
+      -0.09371045974930675,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -1.550362443259246,
+      46.15384615384616,
+      -1.5503709793228495
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_157.png",
+    "edge_path": "scene_0001/edge_157.png"
+  },
+  {
+    "view_id": 158,
+    "image_path": "scene_0001/view_158.png",
+    "azimuth_deg": 25.56726262906336,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84616032027591,
+      -3.440749091733685e-06,
+      115.5672652094793
+    ],
+    "camera_position_xyz": [
+      3.1244613683939964,
+      1.4947966102603476,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      25.56726262906335,
+      46.15384615384616,
+      25.567262705001156
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_158.png",
+    "edge_path": "scene_0001/edge_158.png"
+  },
+  {
+    "view_id": 159,
+    "image_path": "scene_0001/view_159.png",
+    "azimuth_deg": 50.997006180704844,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615690518132,
+      5.470048827367208e-06,
+      140.99701571592058
+    ],
+    "camera_position_xyz": [
+      2.179868451018038,
+      2.691625769844041,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      50.99700618070483,
+      46.15384615384616,
+      50.997013211442436
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_159.png",
+    "edge_path": "scene_0001/edge_159.png"
+  },
+  {
+    "view_id": 160,
+    "image_path": "scene_0001/view_160.png",
+    "azimuth_deg": 80.32291196717311,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84616715046507,
+      1.3643772485922519e-06,
+      170.32291103061223
+    ],
+    "camera_position_xyz": [
+      0.5822181725006512,
+      3.4143370876705057,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      80.32291196717313,
+      46.15384615384616,
+      80.32290852613409
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_160.png",
+    "edge_path": "scene_0001/edge_160.png"
+  },
+  {
+    "view_id": 161,
+    "image_path": "scene_0001/view_161.png",
+    "azimuth_deg": 104.80285375918534,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.846153490086735,
+      -4.079844151650725e-06,
+      -165.1971409264628
+    ],
+    "camera_position_xyz": [
+      -0.8849342773959838,
+      3.3486664619400295,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      104.80285375918533,
+      46.15384615384616,
+      104.80285656905903
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_161.png",
+    "edge_path": "scene_0001/edge_161.png"
+  },
+  {
+    "view_id": 162,
+    "image_path": "scene_0001/view_162.png",
+    "azimuth_deg": 128.9456517039548,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615007499215,
+      -4.933485486827569e-06,
+      -141.05434832381366
+    ],
+    "camera_position_xyz": [
+      -2.1771735572480817,
+      2.693806052827865,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      128.9456517039548,
+      46.15384615384616,
+      128.94564917170817
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_162.png",
+    "edge_path": "scene_0001/edge_162.png"
+  },
+  {
+    "view_id": 163,
+    "image_path": "scene_0001/view_163.png",
+    "azimuth_deg": 156.9500121917669,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615690518132,
+      8.528160194036614e-07,
+      -113.04998533049277
+    ],
+    "camera_position_xyz": [
+      -3.1870987060891807,
+      1.3561259477928216,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      156.95001219176686,
+      46.15384615384616,
+      156.95001216502908
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_163.png",
+    "edge_path": "scene_0001/edge_163.png"
+  },
+  {
+    "view_id": 164,
+    "image_path": "scene_0001/view_164.png",
+    "azimuth_deg": 180.8490162546079,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615690518132,
+      1.1569045269440214e-06,
+      -89.15098950007807
+    ],
+    "camera_position_xyz": [
+      -3.4632415087569792,
+      -0.051322516062543996,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -179.15098374539207,
+      46.15384615384616,
+      -179.15099200455623
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_164.png",
+    "edge_path": "scene_0001/edge_164.png"
+  },
+  {
+    "view_id": 165,
+    "image_path": "scene_0001/view_165.png",
+    "azimuth_deg": 207.4407583703062,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615007499215,
+      -5.241796346096416e-07,
+      -62.559246230899205
+    ],
+    "camera_position_xyz": [
+      -3.0739220252353325,
+      -1.5961450846979486,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -152.55924162969382,
+      46.15384615384616,
+      -152.55924873537737
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_165.png",
+    "edge_path": "scene_0001/edge_165.png"
+  },
+  {
+    "view_id": 166,
+    "image_path": "scene_0001/view_166.png",
+    "azimuth_deg": 231.56772426837534,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615690518132,
+      4.200860338837044e-07,
+      -38.432282591651585
+    ],
+    "camera_position_xyz": [
+      -2.1529497109806353,
+      -2.713205353566277,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -128.43227573162466,
+      46.15384615384616,
+      -128.43228509612976
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_166.png",
+    "edge_path": "scene_0001/edge_166.png"
+  },
+  {
+    "view_id": 167,
+    "image_path": "scene_0001/view_167.png",
+    "azimuth_deg": 257.7221963041663,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.846153490086735,
+      -1.7717144997574027e-07,
+      -12.277803764268704
+    ],
+    "camera_position_xyz": [
+      -0.736545625827258,
+      -3.384401910191377,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -102.27780369583371,
+      46.15384615384616,
+      -102.27780626874687
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_167.png",
+    "edge_path": "scene_0001/edge_167.png"
+  },
+  {
+    "view_id": 168,
+    "image_path": "scene_0001/view_168.png",
+    "azimuth_deg": 280.64852964574914,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615007499215,
+      3.9476983639675285e-07,
+      10.648529585880217
+    ],
+    "camera_position_xyz": [
+      0.640021305704011,
+      -3.403975393106895,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -79.35147035425086,
+      46.15384615384616,
+      -79.35147291859795
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_168.png",
+    "edge_path": "scene_0001/edge_168.png"
+  },
+  {
+    "view_id": 169,
+    "image_path": "scene_0001/view_169.png",
+    "azimuth_deg": 311.89410472956536,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84615007499215,
+      -1.1192661990657066e-07,
+      41.89410933095918
+    ],
+    "camera_position_xyz": [
+      2.3128541072910758,
+      -2.5782516609165813,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -48.105895270434644,
+      46.15384615384616,
+      -48.10589317351898
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_169.png",
+    "edge_path": "scene_0001/edge_169.png"
+  },
+  {
+    "view_id": 170,
+    "image_path": "scene_0001/view_170.png",
+    "azimuth_deg": 335.3597686218567,
+    "elevation_deg": 46.15384615384616,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      43.84616032027591,
+      -2.475199253089735e-07,
+      65.35977405476618
+    ],
+    "camera_position_xyz": [
+      3.1482367866051977,
+      -1.4440501667525572,
+      3.6060122367190734
+    ],
+    "rotation_vector_relative_to_ref": [
+      -24.640231378143312,
+      46.15384615384616,
+      -24.64022844971197
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_170.png",
+    "edge_path": "scene_0001/edge_170.png"
+  },
+  {
+    "view_id": 171,
+    "image_path": "scene_0001/view_171.png",
+    "azimuth_deg": 2.4653198552123987,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      2.979739445985651e-06,
+      92.46531830425926
+    ],
+    "camera_position_xyz": [
+      3.000931208038053,
+      0.12920365965256542,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      2.4653198552123854,
+      53.07692307692308,
+      2.465315799781081
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_171.png",
+    "edge_path": "scene_0001/edge_171.png"
+  },
+  {
+    "view_id": 172,
+    "image_path": "scene_0001/view_172.png",
+    "azimuth_deg": 26.534848826550224,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.92307374736181,
+      1.1819754400539386e-06,
+      116.53484346768165
+    ],
+    "camera_position_xyz": [
+      2.6873088009250057,
+      1.341884163970702,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      26.534848826550217,
+      53.07692307692308,
+      26.534840963203493
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_172.png",
+    "edge_path": "scene_0001/edge_172.png"
+  },
+  {
+    "view_id": 173,
+    "image_path": "scene_0001/view_173.png",
+    "azimuth_deg": 47.76289298375029,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      2.8396769778114803e-06,
+      137.76289382316287
+    ],
+    "camera_position_xyz": [
+      2.019095419379975,
+      2.223855972962985,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      47.762892983750305,
+      53.07692307692308,
+      47.762891318684694
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_173.png",
+    "edge_path": "scene_0001/edge_173.png"
+  },
+  {
+    "view_id": 174,
+    "image_path": "scene_0001/view_174.png",
+    "azimuth_deg": 74.12015478647494,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      -1.64345540078383e-06,
+      164.1201566981352
+    ],
+    "camera_position_xyz": [
+      0.8218781725912597,
+      2.8890825482257156,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      74.12015478647493,
+      53.07692307692308,
+      74.12015419365702
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_174.png",
+    "edge_path": "scene_0001/edge_174.png"
+  },
+  {
+    "view_id": 175,
+    "image_path": "scene_0001/view_175.png",
+    "azimuth_deg": 105.80239495894976,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      2.1956676810227674e-06,
+      -164.19761104332312
+    ],
+    "camera_position_xyz": [
+      -0.8179720710322491,
+      2.890190891975054,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      105.80239495894978,
+      53.07692307692308,
+      105.80238645219873
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_175.png",
+    "edge_path": "scene_0001/edge_175.png"
+  },
+  {
+    "view_id": 176,
+    "image_path": "scene_0001/view_176.png",
+    "azimuth_deg": 130.11155029148205,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923083992645566,
+      -2.4499614244701347e-06,
+      -139.88846235324917
+    ],
+    "camera_position_xyz": [
+      -1.9352245748622903,
+      2.2972129953257294,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      130.11155029148205,
+      53.07692307692308,
+      130.11153514227266
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_176.png",
+    "edge_path": "scene_0001/edge_176.png"
+  },
+  {
+    "view_id": 177,
+    "image_path": "scene_0001/view_177.png",
+    "azimuth_deg": 157.40534634417816,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      4.476687404366542e-06,
+      -112.59465759966304
+    ],
+    "camera_position_xyz": [
+      -2.7731646792910483,
+      1.1540534487522325,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      157.40534634417816,
+      53.07692307692308,
+      157.4053398958588
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_177.png",
+    "edge_path": "scene_0001/edge_177.png"
+  },
+  {
+    "view_id": 178,
+    "image_path": "scene_0001/view_178.png",
+    "azimuth_deg": 183.03557399685758,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      3.762945692964177e-06,
+      -86.96442738070355
+    ],
+    "camera_position_xyz": [
+      -2.999496656884266,
+      -0.159064472414351,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -176.96442600314242,
+      53.07692307692308,
+      -176.96442988518172
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_178.png",
+    "edge_path": "scene_0001/edge_178.png"
+  },
+  {
+    "view_id": 179,
+    "image_path": "scene_0001/view_179.png",
+    "azimuth_deg": 203.64198831804222,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.92307374736181,
+      -1.867966328416223e-06,
+      -66.35800620196355
+    ],
+    "camera_position_xyz": [
+      -2.7516071085858367,
+      -1.2045497171243016,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -156.3580116819578,
+      53.07692307692308,
+      -156.3580087064417
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_179.png",
+    "edge_path": "scene_0001/edge_179.png"
+  },
+  {
+    "view_id": 180,
+    "image_path": "scene_0001/view_180.png",
+    "azimuth_deg": 235.17128206434197,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.92308057755098,
+      -3.724117074301871e-06,
+      -34.828729427066214
+    ],
+    "camera_position_xyz": [
+      -1.7154948519833906,
+      -2.4656356409378146,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -124.828717935658,
+      53.07692307692308,
+      -124.82873193154438
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_180.png",
+    "edge_path": "scene_0001/edge_180.png"
+  },
+  {
+    "view_id": 181,
+    "image_path": "scene_0001/view_181.png",
+    "azimuth_deg": 257.99675829587085,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923083992645566,
+      -1.5088754964362536e-08,
+      -12.003242112465239
+    ],
+    "camera_position_xyz": [
+      -0.6246729300187052,
+      -2.9380376838199656,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -102.00324170412915,
+      53.07692307692308,
+      -102.0032446169434
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_181.png",
+    "edge_path": "scene_0001/edge_181.png"
+  },
+  {
+    "view_id": 182,
+    "image_path": "scene_0001/view_182.png",
+    "azimuth_deg": 284.6316982121787,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923077162456394,
+      -5.683257844772301e-07,
+      14.631697834345722
+    ],
+    "camera_position_xyz": [
+      0.7587515770213484,
+      -2.906299665452955,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -75.36830178782128,
+      53.07692307692308,
+      -75.36830467013243
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_182.png",
+    "edge_path": "scene_0001/edge_182.png"
+  },
+  {
+    "view_id": 183,
+    "image_path": "scene_0001/view_183.png",
+    "azimuth_deg": 308.69940201646176,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923083992645566,
+      4.006928129023114e-06,
+      38.6994078749962
+    ],
+    "camera_position_xyz": [
+      1.8780239794495486,
+      -2.344207250576797,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -51.30059798353824,
+      53.07692307692308,
+      -51.300594629481964
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_183.png",
+    "edge_path": "scene_0001/edge_183.png"
+  },
+  {
+    "view_id": 184,
+    "image_path": "scene_0001/view_184.png",
+    "azimuth_deg": 332.40523290120393,
+    "elevation_deg": 53.07692307692308,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      36.923083992645566,
+      -2.9776098483486928e-06,
+      62.40523229530459
+    ],
+    "camera_position_xyz": [
+      2.6620268101170157,
+      -1.3913644250384476,
+      3.997213817017506
+    ],
+    "rotation_vector_relative_to_ref": [
+      -27.59476709879607,
+      53.07692307692308,
+      -27.59477020917356
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_184.png",
+    "edge_path": "scene_0001/edge_184.png"
+  },
+  {
+    "view_id": 185,
+    "image_path": "scene_0001/view_185.png",
+    "azimuth_deg": 359.892205199912,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      29.99999741973147,
+      -7.24044062348812e-06,
+      89.89220845899703
+    ],
+    "camera_position_xyz": [
+      2.499995575540308,
+      -0.004703432670473599,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -0.10779480008795872,
+      60.0,
+      -0.10779404548111415
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_185.png",
+    "edge_path": "scene_0001/edge_185.png"
+  },
+  {
+    "view_id": 186,
+    "image_path": "scene_0001/view_186.png",
+    "azimuth_deg": 25.42161048590543,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.000000834826057,
+      -2.1226950699662645e-06,
+      115.42160459523961
+    ],
+    "camera_position_xyz": [
+      2.2579336134403074,
+      1.0731895439745944,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      25.421610485905433,
+      60.0,
+      25.42160209076144
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_186.png",
+    "edge_path": "scene_0001/edge_186.png"
+  },
+  {
+    "view_id": 187,
+    "image_path": "scene_0001/view_187.png",
+    "azimuth_deg": 49.86430610020872,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.00000424992064,
+      -4.505421298692007e-06,
+      139.864310804344
+    ],
+    "camera_position_xyz": [
+      1.611500081175201,
+      1.9112999472537855,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      49.86430610020872,
+      60.0,
+      49.864308299865854
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_187.png",
+    "edge_path": "scene_0001/edge_187.png"
+  },
+  {
+    "view_id": 188,
+    "image_path": "scene_0001/view_188.png",
+    "azimuth_deg": 75.92256939491513,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.000007665015225,
+      -4.045144045631583e-06,
+      165.92257531820985
+    ],
+    "camera_position_xyz": [
+      0.6080823759154734,
+      2.4249197562189546,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      75.92256939491512,
+      60.0,
+      75.92257281373168
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_188.png",
+    "edge_path": "scene_0001/edge_188.png"
+  },
+  {
+    "view_id": 189,
+    "image_path": "scene_0001/view_189.png",
+    "azimuth_deg": 102.41613112121452,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.00000424992064,
+      1.4399429531583331e-06,
+      -167.5838685696537
+    ],
+    "camera_position_xyz": [
+      -0.5375257302897447,
+      2.4415294569749673,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      102.4161311212145,
+      60.0,
+      102.41612892586812
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_189.png",
+    "edge_path": "scene_0001/edge_189.png"
+  },
+  {
+    "view_id": 190,
+    "image_path": "scene_0001/view_190.png",
+    "azimuth_deg": 126.77191644793078,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      29.99999741973147,
+      2.844838534615184e-06,
+      -143.2280833479269
+    ],
+    "camera_position_xyz": [
+      -1.4965776193328575,
+      2.0025622160901766,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      126.77191644793078,
+      60.0,
+      126.77191414759494
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_190.png",
+    "edge_path": "scene_0001/edge_190.png"
+  },
+  {
+    "view_id": 191,
+    "image_path": "scene_0001/view_191.png",
+    "azimuth_deg": 151.50351672106655,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      29.99999741973147,
+      5.801937520156305e-06,
+      -118.49648745768765
+    ],
+    "camera_position_xyz": [
+      -2.1971159955735877,
+      1.192762047516052,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      151.50351672106655,
+      60.0,
+      151.5035100378342
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_191.png",
+    "edge_path": "scene_0001/edge_191.png"
+  },
+  {
+    "view_id": 192,
+    "image_path": "scene_0001/view_192.png",
+    "azimuth_deg": 182.34784221367488,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      29.99999741973147,
+      7.420193971420961e-06,
+      -87.6521659584213
+    ],
+    "camera_position_xyz": [
+      -2.497901341424819,
+      -0.10241527477917399,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -177.65215778632512,
+      60.0,
+      -177.65216846289945
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_192.png",
+    "edge_path": "scene_0001/edge_192.png"
+  },
+  {
+    "view_id": 193,
+    "image_path": "scene_0001/view_193.png",
+    "azimuth_deg": 204.6201713127445,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      29.999994004636886,
+      2.6487687884998115e-06,
+      -65.37982749016933
+    ],
+    "camera_position_xyz": [
+      -2.2727237465669954,
+      -1.0415021708044983,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -155.3798286872555,
+      60.0,
+      -155.37982999464748
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_193.png",
+    "edge_path": "scene_0001/edge_193.png"
+  },
+  {
+    "view_id": 194,
+    "image_path": "scene_0001/view_194.png",
+    "azimuth_deg": 230.38580328805708,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      29.99999741973147,
+      -3.91083649854249e-07,
+      -39.61419218600893
+    ],
+    "camera_position_xyz": [
+      -1.5940372186565108,
+      -1.925888196531101,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -129.6141967119429,
+      60.0,
+      -129.6141946904871
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_194.png",
+    "edge_path": "scene_0001/edge_194.png"
+  },
+  {
+    "view_id": 195,
+    "image_path": "scene_0001/view_195.png",
+    "azimuth_deg": 259.32925787028796,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.00000424992064,
+      1.4108468318213056e-06,
+      -10.670744776155683
+    ],
+    "camera_position_xyz": [
+      -0.4629120593509985,
+      -2.456768695931186,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -100.67074212971204,
+      60.0,
+      -100.67074728063385
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_195.png",
+    "edge_path": "scene_0001/edge_195.png"
+  },
+  {
+    "view_id": 196,
+    "image_path": "scene_0001/view_196.png",
+    "azimuth_deg": 284.38651824369134,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      30.00000424992064,
+      -2.3808264452478484e-06,
+      14.386519656351652
+    ],
+    "camera_position_xyz": [
+      0.6211549291515435,
+      -2.4216041282568757,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -75.61348175630866,
+      60.0,
+      -75.61348284812651
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_196.png",
+    "edge_path": "scene_0001/edge_196.png"
+  },
+  {
+    "view_id": 197,
+    "image_path": "scene_0001/view_197.png",
+    "azimuth_deg": 308.16633080758396,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      29.99999741973147,
+      -1.6226198669543745e-06,
+      38.1663355159388
+    ],
+    "camera_position_xyz": [
+      1.5448662225739016,
+      -1.9655503947623032,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -51.83366919241604,
+      60.0,
+      -51.83366698853936
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_197.png",
+    "edge_path": "scene_0001/edge_197.png"
+  },
+  {
+    "view_id": 198,
+    "image_path": "scene_0001/view_198.png",
+    "azimuth_deg": 332.8171873104905,
+    "elevation_deg": 60.0,
+    "distance": 5.0,
+    "euler_xyz_deg": [
+      29.99999741973147,
+      -5.815089240986344e-06,
+      62.81718832490474
+    ],
+    "camera_position_xyz": [
+      2.223883628237128,
+      -1.1420777591998141,
+      4.330127018922193
+    ],
+    "rotation_vector_relative_to_ref": [
+      -27.182812689509547,
+      60.0,
+      -27.182814179573427
+    ],
+    "scene_id": 1,
+    "object_source": "e:\\Multimodal\\assets\\models\\CoffeeTable_01\\CoffeeTable_01.gltf",
+    "depth_path": "scene_0001/depth_198.png",
+    "edge_path": "scene_0001/edge_198.png"
+  }
+]
