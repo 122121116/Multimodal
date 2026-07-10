@@ -10,6 +10,9 @@ LoRA 训练脚本：训练 canny 或 depth 分支的 LoRA 模块。
 命令行示例：
     python train_lora.py --condition_type canny
     python train_lora.py --condition_type depth --num_epochs 20 --lora_rank 8
+    # 断点续训（从中断前保存的 checkpoint 继续，恢复 LoRA/conv_in/RotationEncoder/
+    # 优化器状态与训练进度）：
+    python train_lora.py --condition_type canny --resume_from e:/Multimodal/training/output/lora_canny/step_500
 
 核心技术方案：
 1) condition_image 注入方式（参考 diffusers 官方 train_instruct_pix2pix.py 的做法）：
@@ -78,6 +81,13 @@ def parse_args():
     parser.add_argument("--lora_rank", type=int, default=4)
     parser.add_argument("--mixed_precision", type=str, default="fp16", choices=["no", "fp16", "bf16"])
     parser.add_argument("--save_steps", type=int, default=500)
+    parser.add_argument(
+        "--resume_from", type=str, default=None,
+        help="断点续训：指定此前保存的 checkpoint 目录（如 "
+             "e:/Multimodal/training/output/lora_canny/step_500），将恢复 LoRA/"
+             "conv_in/RotationEncoder/优化器权重与训练进度（epoch、global_step），"
+             "从中断处继续训练，不再从零开始。默认 None 表示从头训练。",
+    )
     parser.add_argument(
         "--num_workers", type=int, default=4,
         help="DataLoader 子进程数。condition_image 现已直接从磁盘读取 export_conditions.py "
@@ -160,16 +170,29 @@ def main():
     # ------------------------------------------------------------------
     unet = expand_unet_conv_in(unet)
 
+    # 断点续训：conv_in 权重需要在扩展通道之后、挂载 LoRA 之前恢复，
+    # 因为 expand_unet_conv_in 会用零初始化覆盖后4通道，必须用 checkpoint
+    # 中训练过的 conv_in 权重覆盖回去。
+    if args.resume_from is not None:
+        conv_in_path = os.path.join(args.resume_from, "conv_in.pt")
+        unet.conv_in.load_state_dict(torch.load(conv_in_path, map_location="cpu"))
+        print(f"[train_lora] 断点续训：已从 {conv_in_path} 恢复 conv_in 权重。")
+
     # ------------------------------------------------------------------
     # 4) 给 UNet attention 层挂载 LoRA
     # ------------------------------------------------------------------
-    lora_config = LoraConfig(
-        r=args.lora_rank,
-        lora_alpha=args.lora_rank,
-        target_modules=["to_q", "to_k", "to_v", "to_out.0"],
-        init_lora_weights="gaussian",
-    )
-    unet = get_peft_model(unet, lora_config)
+    if args.resume_from is not None:
+        from peft import PeftModel
+        unet = PeftModel.from_pretrained(unet, os.path.join(args.resume_from, "unet_lora"), is_trainable=True)
+        print(f"[train_lora] 断点续训：已从 {args.resume_from}/unet_lora 恢复 LoRA adapter 权重。")
+    else:
+        lora_config = LoraConfig(
+            r=args.lora_rank,
+            lora_alpha=args.lora_rank,
+            target_modules=["to_q", "to_k", "to_v", "to_out.0"],
+            init_lora_weights="gaussian",
+        )
+        unet = get_peft_model(unet, lora_config)
     unet.print_trainable_parameters()
 
     # get_peft_model 默认冻结所有非-LoRA参数，但 conv_in 是本任务新扩展的、
@@ -184,6 +207,10 @@ def main():
     # 5) 旋转向量编码器（与LoRA一起训练）
     # ------------------------------------------------------------------
     rotation_encoder = RotationEncoder(cross_attention_dim=text_encoder.config.hidden_size)
+    if args.resume_from is not None:
+        rotation_encoder_path = os.path.join(args.resume_from, "rotation_encoder.pt")
+        rotation_encoder.load_pretrained(rotation_encoder_path, map_location="cpu")
+        print(f"[train_lora] 断点续训：已从 {rotation_encoder_path} 恢复 RotationEncoder 权重。")
 
     # ------------------------------------------------------------------
     # 6) 数据集 / DataLoader
@@ -214,6 +241,29 @@ def main():
     vae.to(accelerator.device)
     text_encoder.to(accelerator.device)
 
+    # 断点续训：恢复优化器状态（动量等）与训练进度（global_step / 起始 epoch）。
+    # optimizer 必须在 accelerator.prepare() 之后加载 state_dict，
+    # 确保参数张量已经搬到目标设备，与保存时的参数顺序一一对应。
+    start_epoch = 0
+    global_step = 0
+    loss_history = []
+    if args.resume_from is not None:
+        optimizer_path = os.path.join(args.resume_from, "optimizer.pt")
+        training_state_path = os.path.join(args.resume_from, "training_state.json")
+        if os.path.isfile(optimizer_path):
+            optimizer.load_state_dict(torch.load(optimizer_path, map_location=accelerator.device))
+            print(f"[train_lora] 断点续训：已从 {optimizer_path} 恢复优化器状态。")
+        if os.path.isfile(training_state_path):
+            with open(training_state_path, "r", encoding="utf-8") as f:
+                training_state = json.load(f)
+            global_step = training_state["global_step"]
+            start_epoch = training_state["epoch"]
+            print(f"[train_lora] 断点续训：从 epoch={start_epoch} global_step={global_step} 继续训练。")
+        loss_history_path = os.path.join(os.path.dirname(args.resume_from), "loss_history.json")
+        if os.path.isfile(loss_history_path):
+            with open(loss_history_path, "r", encoding="utf-8") as f:
+                loss_history = json.load(f)
+
     # 注：文本条件不再使用固定空字符串编码，而是逐样本使用该场景物品名称
     # （dataset.py 中 object_prompt 字段，从 object_source 解析得到）动态
     # tokenize + CLIP 编码，让文本条件携带物品语义信息，具体编码逻辑见
@@ -222,9 +272,7 @@ def main():
     # ------------------------------------------------------------------
     # 8) 训练循环
     # ------------------------------------------------------------------
-    global_step = 0
-    loss_history = []
-    for epoch in range(args.num_epochs):
+    for epoch in range(start_epoch, args.num_epochs):
         unet.train()
         rotation_encoder.train()
         for step, batch in enumerate(train_dataloader):
@@ -278,10 +326,12 @@ def main():
                         loss_history.append({"step": global_step, "epoch": epoch, "loss": loss.item()})
 
                 if global_step % args.save_steps == 0:
-                    save_checkpoint(accelerator, unet, rotation_encoder, args.output_dir, global_step)
+                    save_checkpoint(accelerator, unet, rotation_encoder, optimizer,
+                                     args.output_dir, global_step, epoch)
                     _save_loss_history(args.output_dir, loss_history)
 
-    save_checkpoint(accelerator, unet, rotation_encoder, args.output_dir, global_step, final=True)
+    save_checkpoint(accelerator, unet, rotation_encoder, optimizer,
+                     args.output_dir, global_step, args.num_epochs - 1, final=True)
     _save_loss_history(args.output_dir, loss_history)
     print("[train_lora] 训练完成。")
 
@@ -295,7 +345,7 @@ def _save_loss_history(output_dir, loss_history):
         json.dump(loss_history, f, ensure_ascii=False, indent=2)
 
 
-def save_checkpoint(accelerator, unet, rotation_encoder, output_dir, step, final=False):
+def save_checkpoint(accelerator, unet, rotation_encoder, optimizer, output_dir, step, epoch, final=False):
     if not accelerator.is_main_process:
         return
     tag = "final" if final else f"step_{step}"
@@ -314,6 +364,13 @@ def save_checkpoint(accelerator, unet, rotation_encoder, output_dir, step, final
 
     unwrapped_rotation_encoder = accelerator.unwrap_model(rotation_encoder)
     unwrapped_rotation_encoder.save_pretrained(os.path.join(save_dir, "rotation_encoder.pt"))
+
+    # 断点续训所需：优化器状态（动量等）与当前训练进度（epoch / global_step）。
+    # accelerator.prepare() 返回的 optimizer 是 AcceleratedOptimizer 包装，
+    # state_dict()/load_state_dict() 已经透传到底层 torch optimizer，无需 unwrap。
+    torch.save(optimizer.state_dict(), os.path.join(save_dir, "optimizer.pt"))
+    with open(os.path.join(save_dir, "training_state.json"), "w", encoding="utf-8") as f:
+        json.dump({"epoch": epoch, "global_step": step}, f, ensure_ascii=False, indent=2)
 
     print(f"[train_lora] 已保存 checkpoint 到：{save_dir}（含 LoRA adapter + 扩展后的 conv_in 权重 + RotationEncoder）")
 
