@@ -1,0 +1,133 @@
+\documentclass[12pt,a4paper,openany]{ctexbook}
+
+% 页面设置
+\usepackage{textcomp} 
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cases}
+\usepackage[sort&compress]{gbt7714}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{url}
+\usepackage[margin=1in]{geometry}
+\geometry{a4paper}
+\usepackage{fancyhdr}
+\usepackage{subcaption} % 子图
+\usepackage{longtable} % 表格跨页
+\usepackage{booktabs}
+% \usepackage{tikz}
+% \usetikzlibrary{arrows.meta,positioning,fit,calc,backgrounds}
+% \usepackage{graphicx}
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{15pt}
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+  {1.25ex \@plus .2ex \@minus .2ex}%
+  {0.8ex}%
+  {\normalfont\normalsize\bfseries}}
+\newcommand\subsubsubsection[1]{%
+  \par\addvspace{1.25ex \@plus .2ex \@minus .2ex}%
+  \noindent{\normalfont\normalsize\bfseries #1}\par\nobreak\vspace{0.8ex}%
+  \noindent\ignorespaces}
+\makeatother
+\usepackage[hidelinks]{hyperref}
+
+
+% 数学支持
+\usepackage{amsmath,amssymb,amsthm}
+
+% 图表支持
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{seqsplit}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,calc,backgrounds}
+
+% 链接与引用
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=green,
+    urlcolor=magenta
+}
+
+% 列表设置
+\usepackage{enumitem}
+
+% 代码高亮（可选）
+\usepackage{listings}
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single
+}
+
+% 定理环境
+\theoremstyle{plain}
+\newtheorem{theorem}{定理}[section]
+\newtheorem{lemma}{引理}[section]
+\newtheorem{corollary}{推论}[section]
+
+\theoremstyle{definition}
+\newtheorem{definition}{定义}[section]
+\newtheorem{example}{例}[section]
+
+\theoremstyle{remark}
+\newtheorem{remark}{注}[section]
+
+% 页眉页脚
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\nouppercase{\leftmark}}
+\fancyhead[RE]{\nouppercase{\rightmark}}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ========== 文档信息 ==========
+\title{基于扩散模型的多视角相机镜头控制图像生成}
+\author{}
+\date{\today}
+
+% ========== 正文 ==========
+\begin{document}
+
+% 封面
+\include{chapters/cover}
+% 前言
+\include{chapters/preface}
+
+% 目录
+\newpage
+\tableofcontents
+\newpage
+
+
+% ========== 各章节 ==========
+\input{chapters/ch1_introduction}
+\input{chapters/ch2_related_work}
+\input{chapters/ch3_method}
+\input{chapters/ch4_dataset_pipeline}
+\input{chapters/ch5_implementation}
+\input{chapters/ch6_results_limitations}
+\input{chapters/ch7_conclusion}
+
+
+
+% 参考文献
+% \bibliographystyle{IEEEtran}
+\bibliographystyle{gbt7714-numerical}
+\bibliography{bib/references}
+% \include{bib/references}
+
+
+\end{document}

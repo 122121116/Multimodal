@@ -1,0 +1,257 @@
+% ========== 第三章：整体方法设计 ==========
+\chapter{整体方法设计}
+
+本章系统阐述所提出的多模态条件扩散方案。首先介绍总体架构与双分支设计，然后依次详述底模选择、条件注入机制（结构图条件与旋转向量条件）、LoRA 微调策略、训练时的相邻视角配对策略，以及推理时的多步迭代策略。
+
+\section{总体架构}
+
+系统的总体架构如图~\ref{fig:overall_architecture} 所示。整个流程分为训练与推理两个阶段：训练阶段以 Blender 合成数据集中的相邻视角对为样本，冻结 InstructPix2Pix 底模，仅训练 UNet 上的 LoRA 适配器与 RotationEncoder；推理阶段用户上传参考 RGB 图，系统自动提取深度图与轮廓图作为初始条件图，用户指定目标旋转角度后，模型通过多步迭代生成目标视角的结构图。
+
+\begin{figure}[H]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tikzpicture}[
+        block/.style={rectangle, draw=black, fill=#1, rounded corners=3pt,
+                      text width=2.2cm, align=center, minimum height=0.85cm, font=\scriptsize},
+        block/.default=blue!10,
+        arrow/.style={->, >=Stealth, thick},
+        darrow/.style={->, >=Stealth, thick, dashed, gray},
+        node distance=0.5cm and 0.4cm,
+    ]
+    % ========= 训练阶段（上半） =========
+    \node[font=\small\bfseries] (train-label) at (0, 0) {训练阶段};
+
+    \node[block=blue!10, below=0.6cm of train-label] (ref-rgb-t) {参考 RGB 图};
+    \node[block=blue!10, right=of ref-rgb-t] (extract-t) {Depth/Canny\\提取};
+    \node[block=blue!10, right=of extract-t] (ref-cond-t) {参考结构图\\$I_{\text{cond}}^{\text{ref}}$};
+    \node[block=blue!15, right=of ref-cond-t] (vae-t) {VAE 编码};
+    \node[block=blue!15, right=of vae-t] (z-cond-t) {$\mathbf{z}_c^{\text{ref}}$};
+
+    \node[block=yellow!20, below=1.2cm of ref-cond-t] (tgt-cond-t) {目标结构图\\$I_{\text{cond}}^{\text{tgt}}$};
+    \node[block=yellow!20, right=of tgt-cond-t] (vae-tgt-t) {VAE 编码};
+    \node[block=yellow!20, right=of vae-tgt-t] (noise) {加噪\\$\mathbf{z}_t$};
+
+    \node[block=green!15, below=1.2cm of tgt-cond-t] (rot-t) {相对旋转向量\\$\mathbf{r}$};
+    \node[block=green!15, right=of rot-t] (rot-enc-t) {RotationEncoder};
+
+    \node[block=red!15, right=4.0cm of rot-t] (unet-t) {UNet (LoRA)\\\textbf{训练}};
+    \node[block=red!15, right=0.8cm of unet-t] (loss) {MSE Loss\\$\mathcal{L}=\|\epsilon-\hat{\epsilon}\|^2$};
+
+    \draw[arrow] (ref-rgb-t) -- (extract-t);
+    \draw[arrow] (extract-t) -- (ref-cond-t);
+    \draw[arrow] (ref-cond-t) -- (vae-t);
+    \draw[arrow] (vae-t) -- (z-cond-t);
+    \draw[arrow] (tgt-cond-t) -- (vae-tgt-t);
+    \draw[arrow] (vae-tgt-t) -- (noise);
+    \draw[arrow] (z-cond-t.south) |- ++(0,-0.3) -| (unet-t.north);
+    \draw[arrow] (noise.north) |- ++(0,0.3) -| (unet-t.south west);
+    \draw[arrow] (rot-t) -- (rot-enc-t);
+    \draw[arrow] (rot-enc-t.east) -- ++(0.5,0) |- (unet-t.south);
+    \draw[arrow] (unet-t) -- (loss);
+
+    % ========= 推理阶段（下半） =========
+    \node[font=\small\bfseries, below=2.6cm of rot-t] (inf-label) {推理阶段};
+
+    \node[block=blue!10, below=0.6cm of inf-label] (ref-rgb-i) {参考 RGB 图};
+    \node[block=blue!10, right=of ref-rgb-i] (extract-i) {Depth/Canny\\提取};
+    \node[block=blue!10, right=of extract-i] (init-cond) {初始结构图\\$I_{\text{cond}}^{(0)}$};
+
+    \node[block=green!15, below=1.2cm of init-cond] (rot-i) {目标旋转向量\\$\mathbf{R}_{\text{total}}$};
+    \node[block=green!15, right=of rot-i] (decomp) {分解为 $N$ 步\\$\mathbf{r}^{(k)}$};
+
+    \node[block=red!15, right=3.0cm of rot-i] (unet-i) {UNet (LoRA)\\\textbf{推理}};
+
+    \node[block=blue!20, right=0.8cm of unet-i] (output) {目标结构图\\$I_{\text{cond}}^{(N)}$};
+
+    \draw[arrow] (ref-rgb-i) -- (extract-i);
+    \draw[arrow] (extract-i) -- (init-cond);
+    \draw[arrow] (init-cond.south) |- ++(0,-0.3) -| (unet-i.north);
+    \draw[arrow] (rot-i) -- (decomp);
+    \draw[arrow] (decomp.east) -- ++(0.5,0) |- (unet-i.south);
+    \draw[arrow] (unet-i) -- (output);
+
+    % 迭代反馈（上一步输出作为下一步条件图）
+    \draw[arrow, blue!50, thick, rounded corners=4pt]
+        (unet-i.south) -- ++(0,-0.6) -| (decomp.south);
+    \node[font=\scriptsize\itshape, blue!50, below=0.15cm of unet-i, xshift=0.6cm] {$k\to k+1$ 迭代};
+
+    \end{tikzpicture}%
+    }
+    \caption{系统总体架构图。上半部分为训练流程，下半部分为推理流程。推理阶段大角度旋转通过多步迭代实现，每步以上一步输出为新条件图。}
+    \label{fig:overall_architecture}
+\end{figure}
+
+\section{底模选择：InstructPix2Pix}
+
+在底模选择上，本文没有直接使用标准的 Stable Diffusion v1.5（其 UNet conv\_in 为 4 通道，仅接收带噪 latent），而是选用了 \textbf{InstructPix2Pix}~\cite{brooks2023instructpix2pix}。其核心优势在于：UNet 的输入卷积层（conv\_in）原生设计为 8 通道输入，前 4 通道对应带噪目标 latent $\mathbf{z}_t$，后 4 通道对应参考图像（条件图）的 VAE latent $\mathbf{z}_c$：
+
+\begin{equation}
+    \mathbf{z}_{\text{input}} = \text{concat}\bigl(\mathbf{z}_t,\; \mathbf{z}_c\bigr) \in \mathbb{R}^{B \times 8 \times H/8 \times W/8}
+\end{equation}
+
+这一设计使得模型不再需要从零学习一套条件注入权重——InstructPix2Pix 已在大规模图像编辑数据集上预训练收敛，后 4 通道已经学会了"如何根据参考 latent 调节生成过程"。本文只需在此基础上挂载 LoRA，微调模型使其适应"参考结构图 + 旋转向量 → 目标结构图"的新任务。训练过程中，底模的所有原始参数（UNet、VAE、CLIP 文本编码器）均保持冻结。
+
+\section{双分支设计}
+
+系统包含两个独立的分支：\textbf{depth 分支}和\textbf{canny 分支}。两个分支共享相同的模型架构（InstructPix2Pix + LoRA + RotationEncoder），但各自独立训练、权重互不共享。二者的区别在于：
+
+\begin{itemize}
+    \item \textbf{depth 分支}：使用 Depth Anything V2~\cite{yang2024depthanythingv2} 从参考 RGB 图提取的深度图作为条件图。深度图是 16bit 单通道图像，归一化后复制为 3 通道供 VAE 编码，携带空间远近与透视结构信息。
+    \item \textbf{canny 分支}：使用 Canny 边缘检测算法~\cite{canny1986edge} 从参考 RGB 图提取的轮廓图作为条件图。轮廓图是 8bit 单通道二值图像，同样复制为 3 通道，携带物体轮廓与边缘结构信息。
+\end{itemize}
+
+双分支独立训练/推理的设计，确保两类几何线索（深度与轮廓）各自得到充分学习，且两个分支的结果可在下游任务中互补使用。
+
+\section{条件注入机制}
+
+本系统的条件注入包含三条并行的路径，如图~\ref{fig:condition_injection} 所示。
+
+\begin{figure}[H]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tikzpicture}[
+        box/.style={rectangle, draw=black, fill=#1, rounded corners=2pt,
+                    text width=2.3cm, align=center, minimum height=0.9cm, font=\scriptsize},
+        box/.default=blue!10,
+        arrow/.style={->, >=Stealth, thick},
+        arrow2/.style={->, >=Stealth, thick, blue!60},
+        arrow3/.style={->, >=Stealth, thick, green!50!black},
+        arrow4/.style={->, >=Stealth, thick, red!60},
+        node distance=0.5cm and 0.4cm,
+    ]
+    % === 路径1: 结构图 ===
+    \node[box=blue!10] (cond-img) {条件图\\(深度/轮廓)};
+    \node[box=blue!10, right=of cond-img] (vae) {VAE 编码};
+    \node[box=blue!10, right=of vae] (zc) {$\mathbf{z}_c \in \mathbb{R}^{4\times64\times64}$};
+    \node[box=blue!15, right=of zc] (concat) {通道拼接\\$\mathbf{z}_t \oplus \mathbf{z}_c$\\8 通道};
+    \node[box=blue!20, right=of concat] (unet) {UNet\\conv\_in};
+
+    \draw[arrow2] (cond-img) -- (vae);
+    \draw[arrow2] (vae) -- (zc);
+    \draw[arrow2] (zc) -- (concat);
+    \draw[arrow2] (concat) -- (unet);
+
+    % === 标签 ===
+    \node[font=\scriptsize\bfseries, blue!60, above=0.1cm of cond-img] {路径1: 结构图条件};
+
+    % === 路径2: 旋转向量 (下方) ===
+    \node[box=green!10, below=1.8cm of cond-img] (rot) {$\mathbf{r}=[\Delta\text{az},\Delta\text{el},\Delta\text{roll}]$};
+    \node[box=green!10, right=of rot] (sincos) {sin/cos 编码\\$\mathbb{R}^{6}$};
+    \node[box=green!10, right=of sincos] (mlp) {MLP\\$\to\mathbb{R}^{768}$};
+    \node[box=green!10, right=of mlp] (token) {伪文本 token\\$\mathbb{R}^{1\times768}$};
+    \node[box=green!15, right=of token] (cat-text) {token 拼接\\$\mathbb{R}^{78\times768}$};
+    \node[box=green!20, right=of cat-text] (ca) {UNet\\cross-attn};
+
+    \draw[arrow3] (rot) -- (sincos);
+    \draw[arrow3] (sincos) -- (mlp);
+    \draw[arrow3] (mlp) -- (token);
+    \draw[arrow3] (token) -- (cat-text);
+    \draw[arrow3] (cat-text) -- (ca);
+
+    \node[font=\scriptsize\bfseries, green!50!black, above=0.1cm of rot] {路径2: 旋转向量条件};
+
+    % === 路径3: 文本 (下方) ===
+    \node[box=red!10, below=1.8cm of rot] (prompt) {物品名称\\"coffee table"};
+    \node[box=red!10, right=of prompt] (clip) {CLIP 编码};
+    \node[box=red!10, right=of clip] (text-emb) {文本嵌入\\$\mathbb{R}^{77\times768}$};
+
+    \draw[arrow4] (prompt) -- (clip);
+    \draw[arrow4] (clip) -- (text-emb);
+
+    \node[font=\scriptsize\bfseries, red!60, above=0.1cm of prompt] {路径3: 文本条件};
+
+    % 路径3连到路径2
+    \draw[arrow4, dashed] (text-emb.north) -- (cat-text.south);
+
+    \end{tikzpicture}%
+    }
+    \caption{条件注入机制示意图。三条路径分别将结构图、旋转向量和物品文本注入扩散模型。}
+    \label{fig:condition_injection}
+\end{figure}
+
+\subsection{结构图条件注入}
+
+参考结构图（深度图或轮廓图）首先经 VAE 编码器映射到 latent 空间，得到条件 latent $\mathbf{z}_c$：
+
+\begin{equation}
+    \mathbf{z}_c = \mathcal{E}_{\text{VAE}}(I_{\text{cond}}) \cdot s_{\text{VAE}}
+\end{equation}
+
+其中 $s_{\text{VAE}}$ 为 VAE 的缩放因子（scaling\_factor，通常为 0.18215）。在 UNet 的前向传播中，$\mathbf{z}_c$ 与当前时间步的带噪 latent $\mathbf{z}_t$ 在通道维度拼接，形成 8 通道输入送入 UNet。
+
+\subsection{旋转向量条件注入}
+
+三维旋转向量 $\mathbf{r} = [\Delta\theta_{\text{az}}, \Delta\theta_{\text{el}}, \Delta\theta_{\text{roll}}]^\top$（单位：度）需转换为扩散模型可理解的形式。本文采用"sin/cos 编码 + MLP 映射"的方案：
+
+\textbf{步骤一：周期编码。} 角度量本质上是周期性的（$0^\circ$ 与 $360^\circ$ 代表同一朝向），直接将原始角度值输入 MLP 会在边界处引入跳变伪影。因此，首先将角度转为弧度后对每个分量分别取正弦和余弦，将 3 维角度向量扩展为 6 维连续特征：
+
+\begin{equation}
+    \mathbf{f}_{\text{sincos}} = \bigl[\sin(\mathbf{r}'),\; \cos(\mathbf{r}')\bigr] \in \mathbb{R}^{6},\quad \mathbf{r}' = \mathbf{r} \cdot \frac{\pi}{180^\circ}
+\end{equation}
+
+\textbf{步骤二：MLP 升维。} 将 6 维特征送入一个两层 MLP（含 SiLU 激活），映射到与 CLIP 文本嵌入相同的维度（768 维），再 reshape 为长度 1 的"伪文本 token"：
+
+\begin{equation}
+    \mathbf{e}_{\text{rot}} = \text{MLP}(\mathbf{f}_{\text{sincos}}) \in \mathbb{R}^{1 \times 768}
+\end{equation}
+
+\textbf{步骤三：与文本嵌入拼接。} 将 $\mathbf{e}_{\text{rot}}$ 与 CLIP 文本编码器输出的 77 个文本 token 在序列维度拼接，形成 $(B, 78, 768)$ 的条件序列，作为 UNet cross-attention 的 key/value：
+
+\begin{equation}
+    \mathbf{E}_{\text{cond}} = \text{concat}\bigl(\text{CLIP}(T),\; \mathbf{e}_{\text{rot}}\bigr) \in \mathbb{R}^{B \times 78 \times 768}
+\end{equation}
+
+其中 $T$ 为从数据集 object\_source 字段解析出的物品名称文本 prompt（如 \texttt{"coffee table"}），而非固定空字符串，使得文本分支携带物体语义信息。
+
+\subsection{分类器无关引导（CFG）}
+
+推理时采用标准的分类器无关引导（Classifier-Free Guidance）。无条件分支使用空文本 $T_{\emptyset}$ 编码，但保留相同的 $\mathbf{e}_{\text{rot}}$（即无条件分支仅去掉文本语义、保留旋转条件）。设 $\epsilon_\theta$ 为 UNet 预测的噪声，CFG 的最终噪声估计为：
+
+\begin{equation}
+    \hat{\epsilon}_\theta(\mathbf{z}_t, \mathbf{z}_c, \mathbf{E}_{\text{cond}}) = \epsilon_\theta(\mathbf{z}_t, \mathbf{z}_c, \mathbf{E}_{\emptyset}) + w \cdot \bigl(\epsilon_\theta(\mathbf{z}_t, \mathbf{z}_c, \mathbf{E}_{\text{cond}}) - \epsilon_\theta(\mathbf{z}_t, \mathbf{z}_c, \mathbf{E}_{\emptyset})\bigr)
+\end{equation}
+
+其中 $w$ 为文本 guidance scale（默认 7.5），$\mathbf{E}_{\emptyset}$ 为将 CLIP 文本部分替换为空字符串编码、保留 $\mathbf{e}_{\text{rot}}$ 后的条件嵌入。
+
+\section{LoRA 微调策略}
+
+LoRA 仅挂载在 UNet 的注意力层上，目标模块为 \texttt{to\_q}、\texttt{to\_k}、\texttt{to\_v}、\texttt{to\_out.0}。LoRA 秩 $r = 4$，低秩分解矩阵以高斯分布初始化，$\alpha = r$。训练时 LoRA 参数与 RotationEncoder 参数共同优化，VAE、CLIP 文本编码器、UNet 原始权重全部冻结。
+
+训练目标为标准噪声预测损失（简化的 DDPM 目标）：
+
+\begin{equation}
+    \mathcal{L} = \mathbb{E}_{\mathbf{z}_t, \mathbf{z}_c, \mathbf{E}_{\text{cond}}, \boldsymbol{\epsilon}, t}\left[ \|\boldsymbol{\epsilon} - \epsilon_\theta(\mathbf{z}_t, \mathbf{z}_c, \mathbf{E}_{\text{cond}}, t)\|_2^2 \right]
+\end{equation}
+
+其中 $\boldsymbol{\epsilon} \sim \mathcal{N}(\mathbf{0}, \mathbf{I})$ 为真实噪声，$t \sim \text{Uniform}(1, T)$ 为随机采样的时间步。
+
+\section{训练策略：相邻视角配对}
+
+训练时并非任意两个视角的组合都作为样本，而是限定为\textbf{同一场景内、同一 elevation 行中 azimuth 相邻}的视角对。这一设计的动机在于：
+
+\begin{enumerate}[label=(\arabic*)]
+    \item \textbf{降低单步任务难度}：相邻视角间的旋转角度通常较小（$\approx 10^\circ \sim 30^\circ$），模型更容易学习小角度下的结构变化规律，loss 收敛更稳定。
+    \item \textbf{大角度由推理阶段解决}：任意大角度的视角变换在推理时通过多步迭代实现（见第~\ref{sec:multi_step} 节），训练阶段无需覆盖全范围旋转。
+    \item \textbf{双向训练消除方向偏置}：每个相邻对 $(a, b)$ 生成两个训练样本：$a \to b$ 和 $b \to a$，使模型同时学习正向与反向旋转。
+\end{enumerate}
+
+具体地，对于每个场景的所有非参考视角（参考视角固定为正对物体的方位角 $0^\circ$、俯仰角 $0^\circ$，不参与配对），先按 elevation 分组，组内按 azimuth 升序排列，取所有 $(i, i+1)$ 相邻对；若该行覆盖了接近完整的 $360^\circ$，则额外补充首尾循环相邻组合。
+
+\section{推理策略：多步迭代大角度变换}
+\label{sec:multi_step}
+
+由于训练阶段模型仅学习小角度旋转变换，对于用户指定的大角度旋转（如 $\Delta\text{azimuth} = 150^\circ$），直接单次推理会导致生成质量严重下降。本文采用\textbf{多步迭代推理}策略，将大角度旋转分解为若干小步长，串联执行。
+
+设用户指定的总旋转为 $\mathbf{R}_{\text{total}}$，单步步长上限为 $\delta_{\max}$（默认 $10^\circ$）。分解步数 $N$ 为：
+
+\begin{equation}
+    N = \left\lceil \frac{\max(|\Delta\text{az}|, |\Delta\text{el}|)}{\delta_{\max}} \right\rceil
+\end{equation}
+
+每步的旋转向量为 $\mathbf{r}^{(k)} = \mathbf{R}_{\text{total}} / N$。从初始条件图 $I_{\text{cond}}^{(0)}$（即参考图的深度图/轮廓图）出发，第 $k$ 步（$k = 1, 2, \dots, N$）执行：
+
+\begin{equation}
+    I_{\text{cond}}^{(k)} = \text{Infer}\bigl(I_{\text{cond}}^{(k-1)},\; \mathbf{r}^{(k)}\bigr)
+\end{equation}
+
+其中 $\text{Infer}(\cdot)$ 为单步扩散推理过程。最终输出 $I_{\text{cond}}^{(N)}$ 即为目标视角下的结构图。这一迭代策略使得模型只需具备小角度变换能力，即可通过串联覆盖任意旋转幅度。

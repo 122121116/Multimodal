@@ -1,0 +1,116 @@
+% ========== 第六章：实验结果与局限分析 ==========
+\chapter{实验结果与局限分析}
+
+本章从实验设置、定性结果、定量评估和局限性四个维度对系统进行分析讨论。
+
+\section{实验设置}
+
+\subsection{数据集}
+
+实验使用 Blender 合成数据集，包含 200 个场景，每场景 30 个视角（含 1 个参考视角），总计 6000 帧 $512 \times 512$ 的 RGB 图像及对应的深度图和轮廓图。场景中的物体包括内置几何体（Cube、Sphere、Cylinder、Cone、Torus、Monkey）与外部 3D 模型（Camera\_01、CoffeeTable\_01、Lantern\_01 等 CC0 资产）。数据集按场景以 9:1 比例拆分为训练集（180 个场景，约 5400 帧）和验证集（20 个场景，约 600 帧）。
+
+\subsection{训练配置}
+
+depth 分支与 canny 分支各自独立训练，均采用以下配置：
+
+\begin{itemize}
+    \item 底模：\texttt{timbrooks/instruct-pix2pix}（InstructPix2Pix）
+    \item LoRA 秩：$r = 4$，目标模块：\texttt{to\_q, to\_k, to\_v, to\_out.0}
+    \item 学习率：$1 \times 10^{-4}$，优化器：AdamW
+    \item 等效 batch size：4（batch\_size=1 + gradient\_accumulation\_steps=4）
+    \item 训练 epoch：10
+    \item 混合精度：fp16
+    \item 梯度检查点：开启
+\end{itemize}
+
+\subsection{硬件环境}
+
+\begin{itemize}
+    \item GPU：NVIDIA GeForce RTX 4060（16GB VRAM）
+    \item CPU：Intel Core i7-13700
+    \item 内存：32GB DDR5
+    \item 操作系统：Windows 11
+\end{itemize}
+
+\section{定性结果}
+
+图~\ref{fig:depth_results} 与图~\ref{fig:canny_results} 分别展示了 depth 分支与 canny 分支在不同旋转角度下的生成结果。每个示例从左至右依次为：参考 RGB 图、自动提取的初始条件图（深度图/轮廓图）、以及模型在不同目标旋转角度下生成的结构图。
+
+\begin{figure}[H]
+    \centering
+    % 此处插入 depth 分支定性结果图（多行：参考RGB图 | 参考深度图 | Δaz=30° | Δaz=60° | Δaz=90° | ...）
+    \caption{depth 分支：不同方位角旋转下的深度图生成结果。第一列为参考 RGB 图，第二列为参考深度图，后续各列为不同 $\Delta\text{azimuth}$ 下的生成深度图。}
+    \label{fig:depth_results}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    % 此处插入 canny 分支定性结果图
+    \caption{canny 分支：不同方位角旋转下的轮廓图生成结果。布局同上。}
+    \label{fig:canny_results}
+\end{figure}
+
+\subsection{小角度变换}
+
+当目标旋转角度较小（$\Delta\text{azimuth} \leq 30^\circ$）时，depth 分支和 canny 分支均能稳定生成与目标视角一致的结构图：深度图正确反映了旋转后的空间远近关系（近大远小），轮廓图保持了物体的主要边缘结构。
+
+\subsection{大角度多步迭代}
+
+图~\ref{fig:multi_step} 展示了多步迭代过程中间结果的可视化。以 $\Delta\text{azimuth} = 150^\circ$、单步步长 $10^\circ$ 为例，模型经过 15 步串联迭代从初始深度图逐步变换至目标视角。每步之间的变化是渐进且连贯的，验证了多步迭代策略的有效性。但由于每步的微小误差会随步数累积，步数较多时可能在物体细节（如纹理边界、细小结构）上出现逐步模糊或漂移。
+
+\begin{figure}[H]
+    \centering
+    % 此处插入多步迭代中间结果图（15 步的 gallery）
+    \caption{多步迭代推理中间结果（$\Delta\text{azimuth}=150^\circ$，步长$10^\circ$，共 15 步）。}
+    \label{fig:multi_step}
+\end{figure}
+
+\subsection{双分支对比}
+
+depth 分支生成的深度图在表达空间远近关系上更为准确（因为深度图本身就是空间距离的编码），但在物体轮廓细节上不如 canny 分支锐利。canny 分支生成的轮廓图边缘清晰、结构明确，但缺乏空间深度的层次感。二者在应用中互为补充：深度图适合需要空间感知的下游任务（如 3D 重建），轮廓图适合需要精确边缘约束的任务（如 ControlNet 结构控制）。
+
+\section{定量评估}
+
+\subsection{Loss 收敛曲线}
+
+图~\ref{fig:loss_curves} 展示了 depth 分支和 canny 分支在训练过程中的 loss 下降曲线。两个分支均呈现出明显的下降趋势——前段 loss 快速下降，中后段趋于平缓稳定。收敛验证脚本的输出确认两个分支均通过了趋势下降（下降幅度 $> 15\%$）与稳定性（末尾窗口波动比 $\leq 0.5$）两项判定。
+
+\begin{figure}[H]
+    \centering
+    % 此处插入 loss 收敛曲线图（以 step 为横轴的双曲线图）
+    \caption{depth 分支与 canny 分支的训练 loss 收敛曲线}
+    \label{fig:loss_curves}
+\end{figure}
+
+\subsection{结构相似性}
+
+为定量评估生成结构图与真实目标结构图之间的一致性，可在验证集上计算以下指标（作为拟定实验方案供后续实施）：
+
+\begin{itemize}
+    \item \textbf{SSIM（结构相似性指数）}：衡量生成图与真值图在亮度、对比度与结构上的相似程度。对于深度图，SSIM 可反映空间关系的保留程度；对于轮廓图，SSIM 可反映边缘结构的准确性。
+    \item \textbf{MSE / MAE}：像素级误差度量，评估深度值或边缘强度的数值偏差。
+    \item \textbf{LPIPS（Learned Perceptual Image Patch Similarity）}：基于深度特征的感知相似度，更贴合人眼感知。
+\end{itemize}
+
+由于 depth 分支和 canny 分支目前仅生成结构图（非 RGB 图像），传统的 FID（Fréchet Inception Distance）等面向 RGB 图像质量的指标不直接适用。建议在后续将结构图通过 ControlNet 引导生成 RGB 图后，再计算 FID 等图像质量指标。
+
+\section{局限性与讨论}
+\label{sec:limitations}
+
+尽管系统在结构图视角变换任务上展现出良好的能力，但仍存在以下局限，需要在未来工作中加以解决：
+
+\begin{enumerate}[label=(\arabic*)]
+    \item \textbf{非严格 6DoF 相机控制}：当前系统的旋转条件仅包含 azimuth、elevation 和 roll 三个欧拉角，未对相机位置（平移）、焦距、视场角等进行建模。相机始终固定在以物体为中心、半径 5.0 的球面上，尚未实现完整的六自由度控制。
+    
+    \item \textbf{结构图而非 RGB 图生成}：模型当前仅生成目标视角的深度图/轮廓图（结构图），而非完整的 RGB 图像。虽然结构图可作为 ControlNet 的输入进一步生成 RGB 图，但这一额外的步骤引入了信息损失与生成不确定性。
+    
+    \item \textbf{合成数据的 Domain Gap}：训练数据完全来自 Blender 渲染的合成场景（简单几何体 + 中性灰背景 + 固定光照），与真实世界图像存在显著的分布差异。模型在真实照片上的泛化能力有待验证。
+    
+    \item \textbf{多步迭代的误差累积}：大角度旋转需要多步迭代，每步的微小生成误差会在串联过程中逐步累积，导致步数较多时出现细节模糊、结构漂移等问题。如何引入闭环校正或跨步一致性约束是值得探索的方向。
+
+    \item \textbf{物体类别覆盖有限}：当前数据集中的物体类别较少（内置几何体 + 少量 CC0 模型），模型对复杂形状、纹理丰富或具有精细结构的物体可能泛化不足。
+
+    \item \textbf{roll 角标签缺失}：Blender 渲染数据集中相机仅绕 azimuth 和 elevation 旋转，未提供可靠的 roll 角变化标签。因此推理界面中 roll 角滑块被禁用（恒为 0），模型未学习 roll 方向的变换。
+    
+    \item \textbf{多视角一致性未显式约束}：当前 depth 和 canny 分支独立处理每个目标视角，未在多个目标视角之间施加一致性约束（如跨视角 attention 或几何一致性 loss）。连续多个视角的生成结果之间可能出现结构跳变或不一致。
+\end{enumerate}

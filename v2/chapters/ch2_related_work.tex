@@ -1,0 +1,28 @@
+% ========== 第二章：相关工作 ==========
+\chapter{相关工作}
+
+\section{扩散模型与文生图}
+
+扩散模型（Diffusion Models）通过逐步向数据添加高斯噪声、再学习逆向去噪过程来生成样本。Ho 等人提出的 DDPM~\cite{ho2020ddpm} 奠定了现代扩散模型的理论基础，Song 等人提出的 DDIM~\cite{song2021ddim} 进一步通过确定性采样加速了推理过程。Rombach 等人提出的潜在扩散模型（Latent Diffusion Models, LDM）~\cite{rombach2022latentdiffusion} 将扩散过程从像素空间迁移至预训练 VAE 的 latent 空间，大幅降低了计算开销，其开源实现 Stable Diffusion 成为当前最广泛使用的文生图基础模型之一。
+
+\section{扩散模型的条件控制}
+
+原始的文生图扩散模型仅以文本嵌入作为条件，对空间结构的控制能力有限。ControlNet~\cite{zhang2023controlnet} 提出了一种可插拔的条件控制架构：复制预训练 UNet 的编码器部分作为"可训练副本"，通过零初始化卷积层（zero-convolution）逐步将外部条件（如深度图、边缘图、姿态骨骼等）注入主 UNet，在保持原模型生成能力的同时赋予其结构约束。Canny 边缘检测算法~\cite{canny1986edge} 作为经典的图像边缘提取方法，与 ControlNet 结合后可以有效锁定生成图像的轮廓与构图。
+
+InstructPix2Pix~\cite{brooks2023instructpix2pix} 将图像编辑任务建模为条件扩散生成问题，其 UNet 的输入卷积层（conv\_in）原生支持 8 通道输入——前 4 通道对应带噪 latent，后 4 通道对应参考图像的 VAE latent。这一设计使得模型可直接在 latent 空间接收参考图的条件信号，为本文的方法设计提供了重要启发。SDEdit~\cite{meng2022sdedit} 则从 SDE 视角提供了另一种图像编辑的思路：向输入图像添加适量噪声后，在反向扩散过程中引入编辑引导。
+
+\section{参数高效微调：LoRA}
+
+LoRA（Low-Rank Adaptation）~\cite{hu2022lora} 是一种参数高效微调方法，其核心思想是将预训练权重的增量更新分解为两个低秩矩阵的乘积：$W' = W + \Delta W = W + BA$，其中 $B \in \mathbb{R}^{d \times r}$，$A \in \mathbb{R}^{r \times k}$，$r \ll \min(d, k)$。训练时仅更新 $A$ 和 $B$，冻结原始权重 $W$。在扩散模型领域，LoRA 被广泛用于注入特定风格、物体或控制能力，只需训练极少参数（通常不到总参数的 1\%），即可显著改变模型行为。本文在 InstructPix2Pix UNet 的注意力层上挂载 LoRA，使其学习"参考结构图 + 旋转向量 → 目标结构图"的映射关系。
+
+\section{单目深度估计}
+
+Depth Anything V2~\cite{yang2024depthanythingv2} 是一种基于大规模数据训练的单目深度估计模型，能够从单张 RGB 图像中预测高质量的相对深度图。该模型采用 DINOv2 作为视觉编码器，在多种场景下展现出优异的泛化能力。本文在数据管线中利用 Depth Anything V2 为渲染的 RGB 图像批量生成深度图，作为 depth 分支的条件输入。
+
+\section{新视角合成}
+
+新视角合成（Novel View Synthesis）旨在从一组已知视角的图像中生成新视角下的场景外观。NeRF~\cite{mildenhall2020nerf} 通过多层感知机隐式表示场景的辐射场与密度场，实现了照片级真实感的新视角渲染。3D Gaussian Splatting~\cite{kerbl3dgaussians} 则采用显式的三维高斯椭球体表示，在大幅提升渲染速度的同时保持了高质量。然而，这些方法通常需要数十至上百张标定图像作为输入，且对每场景需独立优化。本文的方法与之互补——扩散模型可从单张参考图直接泛化到新视角，输出结果可作为 NeRF/3DGS 的输入，用于后续的显式三维重建。
+
+\section{CLIP 与多模态对齐}
+
+CLIP（Contrastive Language-Image Pre-training）~\cite{radford2021clip} 通过对比学习将图像与文本映射到共享的嵌入空间，Stable Diffusion 使用其文本编码器将 prompt 转换为条件向量。本文在此基础上，将 RotationEncoder 产生的旋转嵌入作为额外的"伪文本 token"拼接到 CLIP 输出后，使 UNet 的 cross-attention 层能同时关注文本语义与相机位姿信息。

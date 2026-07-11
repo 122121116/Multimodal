@@ -1,0 +1,32 @@
+% ========== 封面 ==========
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+
+    {\zihao{1}\heiti\bfseries 基于扩散模型的多视角\\
+    相机镜头控制图像生成\par}
+
+    \vspace{1.5cm}
+
+    {\zihao{3}\kaishu 技术报告（Technical Report）\par}
+
+    \vspace{4cm}
+
+    {\zihao{-4}
+    \begin{tabular}{rl}
+        项目名称： & 多模态应用——相机镜头控制图像生成 \\
+        报告类型： & 技术报告 \\
+        运行硬件： & NVIDIA RTX 4060 16G \\
+        日\qquad 期： & \today
+    \end{tabular}\par}
+
+    \vfill
+
+    {\zihao{-5}\songti
+    本报告系统阐述面向 AI 图像生成镜头控制任务的多模态条件扩散方案：\\
+    以参考图结构图（深度图/轮廓图）与相机相对旋转向量为条件，\\
+    基于 InstructPix2Pix 底模进行 LoRA 微调，实现目标视角结构图的生成，\\
+    并经多步迭代扩展至任意大角度视角变换。\par}
+
+    \vspace{2cm}
+\end{titlepage}

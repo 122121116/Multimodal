@@ -1,0 +1,113 @@
+% ========== 第四章：多视角数据集构建管线 ==========
+\chapter{基于 Blender 的多视角数据集构建管线}
+
+训练第三章所述的条件扩散模型需要大量带有精确相机位姿标注的多视角图像数据。由于真实场景下获取这类标注的成本极高，本文设计并实现了一套基于 Blender 的自动化合成数据管线，覆盖场景搭建、相机轨迹采样、批量渲染、条件图后处理与数据集拆分全流程。管线架构如图~\ref{fig:pipeline_overview} 所示。
+
+\begin{figure}[H]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tikzpicture}[
+        block/.style={rectangle, draw=black, fill=blue!10, rounded corners=3pt,
+                      text width=2.5cm, align=center, minimum height=1.0cm,
+                      font=\footnotesize\linespread{0.9}\selectfont},
+        arrow/.style={->, >=Stealth, thick},
+        node distance=0.5cm and 0.5cm,
+    ]
+    \node[block] (model) {3D 模型\\(.obj/.fbx/.glb)};
+    \node[block, right=of model] (scene) {\texttt{scene\_builder}\\场景搭建};
+    \node[block, right=of scene] (cam) {\texttt{camera\_trajectory}\\相机轨迹};
+    \node[block, right=of cam] (render) {\texttt{render\_pipeline}\\批量渲染};
+    \node[block, right=of render] (cond) {\texttt{export\_conditions}\\条件图后处理};
+    \node[block, right=of cond] (split) {\texttt{split\_dataset}\\数据拆分};
+
+    \draw[arrow] (model) -- (scene);
+    \draw[arrow] (scene) -- (cam);
+    \draw[arrow] (cam) -- (render);
+    \draw[arrow] (render) -- (cond);
+    \draw[arrow] (cond) -- (split);
+
+    \node[font=\footnotesize, below=0.3cm of render] (out1) {RGB 图 + poses.json};
+    \node[font=\footnotesize, below=0.3cm of cond] (out2) {深度图 + 轮廓图};
+    \node[font=\footnotesize, below=0.3cm of split] (out3) {train/val manifest};
+
+    \draw[arrow, dashed, gray] (render) -- (out1);
+    \draw[arrow, dashed, gray] (cond) -- (out2);
+    \draw[arrow, dashed, gray] (split) -- (out3);
+    \end{tikzpicture}%
+    }
+    \caption{数据集构建管线总览}
+    \label{fig:pipeline_overview}
+\end{figure}
+
+\section{场景搭建}
+
+每个场景由 \texttt{scene\_builder.py} 负责搭建，遵循以下统一规范以确保跨场景光照与背景条件一致：
+
+\begin{itemize}
+    \item \textbf{场景清理}：清空 Blender 默认场景中的所有物体（Cube、Light、Camera）及孤立数据块。
+    \item \textbf{地面平面}：$20 \times 20$ Blender 单位的方形平面，材质为中性灰（RGB = (0.5, 0.5, 0.5)）、粗糙度 $1.0$（完全漫反射，不反光），避免高光干扰后续轮廓识别。
+    \item \textbf{三点光照}：采用 key / fill / back 三盏 Area Light，固定色温 6500K，光强分别为 1000W / 400W / 600W。三盏灯分别位于物体前方右侧 $45^\circ$、前方左侧 $45^\circ$ 和正后方，均朝向物体几何中心，保证光照条件在跨场景间严格可复现。
+    \item \textbf{世界背景}：纯色中性灰背景（RGB = (0.4, 0.4, 0.4)），简化后续抠图与对齐判断。
+    \item \textbf{物体归一化}：将加载的 3D 模型统一缩放到最大包围盒边长为 2.0 Blender 单位，并将几何中心平移至世界原点。这是确保相机绕物体旋转时所有视角下物体均完整可见的必要前提。
+\end{itemize}
+
+当外部 3D 模型资产不可用时，管线自动降级为内置几何体（Cube、Sphere、Cylinder、Cone、Torus、Monkey）轮换使用，以保证管线在任何情况下均可跑通验证。正式交付数据集建议替换为 CC0 或自有 \texttt{.obj/.fbx/.glb} 模型资产。
+
+\section{相机轨迹生成}
+
+相机位姿由 \texttt{camera\_trajectory.py} 按分层网格采样策略自动生成，以保证 azimuth 和 elevation 方向上的均匀分布。核心步骤：
+
+\begin{enumerate}[label=(\arabic*)]
+    \item \textbf{固定参考视角}：强制包含一个方位角 $0^\circ$、俯仰角 $0^\circ$ 的正对物体视角（view\_id = \texttt{"ref"}），作为训练三元组中的"参考视角"。
+    \item \textbf{分层网格采样}：将剩余视角数分解为 $n_{\text{elevation}}$ 行 $\times$ $n_{\text{azimuth}}$ 列的近似正方形网格。每行固定一个 elevation 值（在 $[-30^\circ, 60^\circ]$ 范围内均匀分布），行内 azimuth 在 $[0^\circ, 360^\circ)$ 上均匀分布，并加入小幅随机抖动（$\leq$ 半个网格间隔的 $30\%$）以避免机械感。
+    \item \textbf{球坐标转笛卡尔坐标}：相机位置计算为 $ (x, y, z) = (d \cos(\text{el}) \cos(\text{az}),\; d \cos(\text{el}) \sin(\text{az}),\; d \sin(\text{el}))$，其中 $d = 5.0$ Blender 单位为相机到物体中心的距离。
+    \item \textbf{Look-At 定向}：每台相机通过 to\_track\_quat（$-Z$ 轴朝目标，$Y$ 轴朝上）计算欧拉角，而非依赖 Track-To 约束，避免约束求值时机导致的朝向错误。
+\end{enumerate}
+
+每个场景默认生成 30 个视角（含 1 个参考视角 + 29 个网格采样视角），可通过 \texttt{--views\_per\_scene} 参数调整。所有位姿数据（包括 azimuth、elevation、欧拉角、世界坐标等）记录在每场景的 \texttt{poses.json} 中。
+
+\section{批量渲染}
+
+批量渲染由 \texttt{render\_pipeline.py} 作为命令行入口脚本在 Blender \texttt{--background} 无界面模式下运行。关键渲染配置如下：
+
+\begin{itemize}
+    \item \textbf{渲染引擎}：默认 EEVEE\_NEXT（GPU 光栅化，速度远快于 Cycles），可选 CYCLES 以获取更高画质的路径追踪结果。Cycles 模式下优先启用 OPTIX（NVIDIA RTX 系列）或 CUDA GPU 加速。
+    \item \textbf{输出分辨率}：统一 $512 \times 512$ 像素，PNG 格式，RGBA 色彩模式。
+    \item \textbf{色调映射}：显式切换为 Standard（线性映射），避免 Blender 5.0 默认的 AgX 色调映射导致的对比度压缩与整体发灰。
+    \item \textbf{性能优化}：采样数 32（降低单帧渲染时间）、启用降噪（补偿低采样的画质损失）、分块尺寸 256。
+    \item \textbf{异常处理}：单帧渲染失败不导致整个 pipeline 崩溃，记录错误信息并跳过继续渲染下一视角。
+\end{itemize}
+
+\section{条件图后处理}
+
+由于 Blender 5.0 对 Compositor 节点 API 进行了大幅重构，在 \texttt{--background} 模式下程序化导出深度图/轮廓图的技术路径已被判定不可行。因此，渲染阶段仅产出 RGB 图像，深度图与轮廓图由独立的 \texttt{export\_conditions.py} 在渲染完成后基于已落盘的 RGB 图进行后处理生成：
+
+\begin{itemize}
+    \item \textbf{深度图}：使用 Depth Anything V2（Large 模型）~\cite{yang2024depthanythingv2} 对每张 RGB 图进行批量推理，输出 16bit 单通道 PNG。深度值归一化至 $[0, 65535]$，与源 RGB 图分辨率严格一致、像素坐标对齐。
+    \item \textbf{轮廓图}：直接对同一张 RGB 原图使用 OpenCV 的 Canny 边缘检测（低阈值 100，高阈值 200），输出 8bit 单通道 PNG。对 RGB 原图而非深度图做边缘检测，确保轮廓反映的是物体在图像上的真实边缘。
+\end{itemize}
+
+每张 RGB 图的深度图路径（\texttt{depth\_path}）与轮廓图路径（\texttt{edge\_path}）在渲染阶段已预写入 \texttt{poses.json} 的对应条目中。
+
+\section{数据集拆分}
+
+数据集拆分由 \texttt{split\_dataset.py} 完成。为避免数据泄漏，默认采用\textbf{按场景整体划分}的策略：同一场景的所有视角（含参考视角）要么全在训练集，要么全在验证集，不会同时出现在两侧。拆分比例为 9:1（train:val），随机种子固定为 42 以保证可复现。拆分结果输出为 \texttt{train\_manifest.json} 与 \texttt{val\_manifest.json}，每个条目内联展开完整的位姿标注字段（image\_path、azimuth\_deg、elevation\_deg、euler\_xyz\_deg、camera\_position\_xyz、depth\_path、edge\_path 等），训练脚本无需再关联查询 \texttt{poses.json}。
+
+\section{数据集规模与标注格式}
+
+以 \texttt{render\_pipeline.py} 默认参数为例：200 个场景 × 30 视角/场景 = 6000 帧 RGB 图像，远超过 5000 样本的最低要求。每个场景的 \texttt{poses.json} 包含该场景所有视角的位姿标注，格式如下：
+
+\begin{verbatim}
+{
+  "view_id": 0,
+  "azimuth_deg": 15.3,
+  "elevation_deg": -20.0,
+  "distance": 5.0,
+  "euler_xyz_deg": [20.0, 0.0, 15.3],
+  "camera_position_xyz": [1.2, 0.3, -1.7],
+  "image_path": "scene_0000/view_0.png",
+  "depth_path": "scene_0000/depth_0.png",
+  "edge_path": "scene_0000/edge_0.png",
+  "is_reference": false
+}
+\end{verbatim}
