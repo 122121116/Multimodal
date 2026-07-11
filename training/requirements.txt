@@ -6,3 +6,4 @@ peft
 Pillow
 numpy
 opencv-python
+gradio

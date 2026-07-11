@@ -1,19 +1,24 @@
 # -*- coding: utf-8 -*-
 """
-同场景双视角配对数据集。
+同场景相邻视角配对数据集。
 
-设计说明（泛化能力增强版本）：
-- 每个训练样本不再固定"参考视角(ref)-> 目标视角"的搭配。为兼顾"覆盖所有视角"
-  与"配对距离分布均衡"两个目标，不采用完全随机采样，而是在数据集构建时为
-  每个场景预生成固定数量（默认 1000）的 (view_a, view_b) 组合列表：
-    1) 覆盖阶段：保证场景内每个视角至少出现在一个组合中，不遗漏任何样本；
-    2) 分层补齐阶段：按两视角间的球面角距离（基于 azimuth/elevation 现算，
-       与旋转向量的度量口径一致）分桶（近/中近/中远/远，默认4档），
-       将剩余组合数尽量均匀分配到各距离档位，使得训练组合里"距离近的"
-       （如相邻视角）与"距离远的"（如接近正对面的视角）比例相近，让模型
-       同时学到细粒度微调和大幅度旋转的映射关系。
-  训练时按预生成组合列表顺序索引取样（仍配合 DataLoader 的 shuffle=True
-  打乱组合顺序），不再是每次 __getitem__ 都临时随机挑两张图。
+设计说明（相邻帧训练版本）：
+- 训练目标从"任意两视角间的旋转变换"收窄为"相邻视角间的小角度旋转变换"，
+  以降低单步训练任务难度、提升 loss 收敛稳定性。任意大角度的视角变换，
+  改由推理阶段将目标旋转分解为多个小步长、迭代调用模型多步生成来实现
+  （参见 inference_app.py 的多步迭代推理逻辑），不再要求单次前向直接
+  学会覆盖 [0°, 180°] 的全部旋转幅度。
+- "相邻"的定义：仅同一 elevation 行内、azimuth 相邻的视角对（不跨行）。
+  这与 camera_trajectory.generate_camera_poses 的采样方式对应：视角以
+  "行(elevation) x 列(azimuth)"网格方式生成，同一行内的 view_id 在
+  azimuth 上是连续递增的，因此同一行内 azimuth 相邻的两个视角在空间角度
+  上也是相邻的（小角度旋转）。参考视角 "ref"（固定正对物体，不属于任何
+  网格行）不参与相邻配对。
+  每一行按 azimuth 升序排列后，取所有相邻的 (i, i+1) 组合；若该行视角
+  覆盖了完整 360°（首尾 azimuth 间隔与行内平均间隔接近），额外补上首尾
+  循环相邻的组合（最后一个视角 -> 第一个视角）。
+- 每个 (view_a, view_b) 相邻对会生成两个方向的训练样本（a->b 和 b->a），
+  使模型同时学到正向与反向的小角度旋转，不引入方向偏置。
 - 深度图 / 轮廓图不再于训练阶段实时计算（原 cv2.Canny / DepthAnything V2
   在线推理开销很大），而是直接读取渲染完成后由 export_conditions.py 独立
   后处理生成的：
@@ -31,9 +36,7 @@
   CLIP 文本编码，让文本条件携带物品语义信息。
 """
 import json
-import math
 import os
-import random
 import re
 
 import numpy as np
@@ -104,107 +107,68 @@ def _object_source_to_prompt(object_source: str) -> str:
     return stem if stem else "object"
 
 
-def _angular_distance_deg(view_a, view_b):
-    """计算两个视角之间的球面角距离（度），仅基于 azimuth/elevation
-    （不含 roll，roll 只由相机 look-at 约束决定，不反映视角在球面上的
-    远近关系），用球面余弦公式计算大圆角距离，范围 [0, 180]。
-    """
-    az_a, el_a = math.radians(view_a["azimuth_deg"]), math.radians(view_a["elevation_deg"])
-    az_b, el_b = math.radians(view_b["azimuth_deg"]), math.radians(view_b["elevation_deg"])
-    cos_d = (
-        math.sin(el_a) * math.sin(el_b)
-        + math.cos(el_a) * math.cos(el_b) * math.cos(az_a - az_b)
-    )
-    cos_d = max(-1.0, min(1.0, cos_d))
-    return math.degrees(math.acos(cos_d))
-
-
-def _build_stratified_pairs(views, num_pairs, rng, num_distance_bins=4):
-    """为单个场景预生成固定数量的 (view_a, view_b) 组合，兼顾覆盖性与距离分布均衡。
+def _build_adjacent_pairs(views):
+    """为单个场景构建"同行(elevation)相邻"的 (view_a, view_b) 组合列表。
 
     步骤：
-        1) 覆盖阶段：将全部视角随机打乱后两两相邻配对（首尾循环相接），
-           保证每个视角至少出现在一个组合中。
-        2) 分层补齐阶段：计算所有可能组合的球面角距离，按距离切分为
-           num_distance_bins 个桶（近->远），在剩余额度内尽量均匀地从
-           各个桶中补充采样，使最终组合集里"距离近"与"距离远"的配对
-           比例相近，而不是被完全随机采样主导（完全随机采样会因为球面上
-           中等距离的点对数量远多于远距离点对，导致远距离配对被稀释）。
+        1) 剔除参考视角 "ref"（固定正对物体，不属于网格行，不参与相邻配对）。
+        2) 按 elevation_deg 分组（同一采样行 elevation 理论上完全相同，
+           因为 camera_trajectory 生成同一行时使用同一个 elevation 值）。
+        3) 组内按 azimuth_deg 升序排序，取所有相邻 (i, i+1) 对；
+           若该行整体覆盖接近完整 360°（首尾 azimuth 间隔与行内平均间隔
+           量级相近），额外补上首尾循环相邻的组合。
+        4) 每个相邻对生成 (view_a, view_b) 与 (view_b, view_a) 两个方向。
 
-    返回：长度为 num_pairs 的 (view_a_record, view_b_record) 列表。
+    返回：list[(view_a_record, view_b_record)]。
     """
-    n = len(views)
+    grid_views = [v for v in views if v["view_id"] != "ref"]
+    if len(grid_views) < 2:
+        return []
+
+    # 按 elevation 分组（同一行内 elevation 理论上相同，用四舍五入做容差分组）
+    rows = {}
+    for v in grid_views:
+        key = round(v["elevation_deg"], 3)
+        rows.setdefault(key, []).append(v)
+
     pairs = []
-    seen_pairs = set()
+    for row_views in rows.values():
+        if len(row_views) < 2:
+            continue
+        row_views = sorted(row_views, key=lambda v: v["azimuth_deg"])
+        n = len(row_views)
 
-    def _add_pair(i, j):
-        key = (i, j) if i < j else (j, i)
-        if key in seen_pairs:
-            return False
-        seen_pairs.add(key)
-        pairs.append((views[i], views[j]))
-        return True
+        # 行内相邻 azimuth 间隔的平均值，用于判断首尾是否也应视为相邻
+        gaps = [
+            (row_views[(i + 1) % n]["azimuth_deg"] - row_views[i]["azimuth_deg"]) % 360.0
+            for i in range(n)
+        ]
+        avg_gap = sum(gaps[:-1]) / (n - 1) if n > 1 else 0.0
 
-    # ---- 阶段1：覆盖阶段，保证每个视角至少出现一次 ----
-    order = list(range(n))
-    rng.shuffle(order)
-    for k in range(n):
-        i, j = order[k], order[(k + 1) % n]
-        if i != j:
-            _add_pair(i, j)
+        for i in range(n - 1):
+            pairs.append((row_views[i], row_views[i + 1]))
 
-    # ---- 阶段2：按球面角距离分桶，均匀补齐到 num_pairs ----
-    if len(pairs) < num_pairs:
-        # 候选组合池：全部未使用过的 (i, j) 组合及其角距离
-        candidates_by_bin = [[] for _ in range(num_distance_bins)]
-        max_dist = 180.0
-        bin_width = max_dist / num_distance_bins
-        for i in range(n):
-            for j in range(i + 1, n):
-                key = (i, j)
-                if key in seen_pairs:
-                    continue
-                dist = _angular_distance_deg(views[i], views[j])
-                bin_idx = min(int(dist / bin_width), num_distance_bins - 1)
-                candidates_by_bin[bin_idx].append((i, j))
-        for bucket in candidates_by_bin:
-            rng.shuffle(bucket)
+        # 首尾循环相邻：仅当首尾间隔与行内平均间隔量级相近（即该行采样覆盖了
+        # 完整一圈），才补上循环相邻对，避免把跨越大半圈的首尾误判为相邻。
+        wrap_gap = gaps[-1]
+        if n > 2 and wrap_gap <= avg_gap * 1.5:
+            pairs.append((row_views[-1], row_views[0]))
 
-        remaining = num_pairs - len(pairs)
-        # 轮询各桶，每轮从每个非空桶取一个，直到补满或所有桶耗尽
-        bucket_cursors = [0] * num_distance_bins
-        while remaining > 0:
-            progressed = False
-            for b in range(num_distance_bins):
-                if remaining <= 0:
-                    break
-                cursor = bucket_cursors[b]
-                bucket = candidates_by_bin[b]
-                if cursor >= len(bucket):
-                    continue
-                i, j = bucket[cursor]
-                bucket_cursors[b] += 1
-                if _add_pair(i, j):
-                    remaining -= 1
-                    progressed = True
-            if not progressed:
-                # 所有桶的候选组合都已用尽（场景视角数过少，不放回组合已耗尽），
-                # 允许重复采样已有组合以补满数量，保证 __len__ 恒等于 num_pairs。
-                i, j = rng.sample(range(n), 2)
-                pairs.append((views[i], views[j]))
-                remaining -= 1
-
-    # 若视角数很多、覆盖阶段已经超过 num_pairs，做截断（罕见，仅当 n > num_pairs 时可能发生）
-    if len(pairs) > num_pairs:
-        rng.shuffle(pairs)
-        pairs = pairs[:num_pairs]
-
-    return pairs
+    # 每个相邻对生成正反两个方向的样本
+    bidirectional_pairs = []
+    for view_a, view_b in pairs:
+        bidirectional_pairs.append((view_a, view_b))
+        bidirectional_pairs.append((view_b, view_a))
+    return bidirectional_pairs
 
 
-class RotationPairDataset(Dataset):
+class AdjacentPairDataset(Dataset):
+    """相邻视角配对数据集：每个样本是同一场景内、同一 elevation 行中
+    azimuth 相邻的两个视角，用于训练小角度旋转变换（详见模块顶部说明）。
+    """
+
     def __init__(self, dataset_root, manifest_path=None, condition_type="canny",
-                 resolution=512, seed=42, pairs_per_scene=1000, num_distance_bins=4):
+                 resolution=512, seed=42):
         assert condition_type in ("canny", "depth"), \
             f"condition_type 必须是 'canny' 或 'depth'，实际收到：{condition_type}"
         self.dataset_root = os.path.abspath(dataset_root)
@@ -212,9 +176,6 @@ class RotationPairDataset(Dataset):
         self.resolution = resolution
         # canny -> edge_path（轮廓图），depth -> depth_path（16bit深度图）
         self._condition_field = "edge_path" if condition_type == "canny" else "depth_path"
-        self._rng = random.Random(seed)
-        self.pairs_per_scene = pairs_per_scene
-        self.num_distance_bins = num_distance_bins
 
         # self.scenes: list[dict]，每个元素为一个场景的信息：
         #   {"views": [record, ...], "object_prompt": str}
@@ -223,8 +184,13 @@ class RotationPairDataset(Dataset):
             raise RuntimeError(f"未能在 {self.dataset_root} 下找到任何场景，请检查数据集路径。")
         self._validate_condition_field()
 
-        # 预生成每个场景的固定组合列表，并展开为全局可索引的 (scene_idx, view_a, view_b) 列表
+        # 为每个场景构建相邻视角组合，并展开为全局可索引的 (scene, view_a, view_b) 列表
         self._all_pairs = self._build_all_pairs()
+        if len(self._all_pairs) == 0:
+            raise RuntimeError(
+                "未能构建出任何相邻视角组合，请检查各场景的视角数量是否 >= 2 "
+                "且 elevation_deg 分组是否正常。"
+            )
 
     # ------------------------------------------------------------------
     # 样本清单构建：按场景聚合所有视角（含 ref），而不是按目标图展开
@@ -238,12 +204,12 @@ class RotationPairDataset(Dataset):
                 scene_records.setdefault(scene_id, []).append(r)
 
         if manifest_path is not None and os.path.isfile(manifest_path):
-            print(f"[RotationPairDataset] 使用 manifest 文件：{manifest_path}")
+            print(f"[AdjacentPairDataset] 使用 manifest 文件：{manifest_path}")
             with open(manifest_path, "r", encoding="utf-8") as f:
                 records = json.load(f)
             _add_records(records)
         else:
-            print(f"[RotationPairDataset] 未提供有效 manifest_path，"
+            print(f"[AdjacentPairDataset] 未提供有效 manifest_path，"
                   f"尝试通过 dataset_manifest.json / 目录扫描汇总所有场景样本 ...")
 
             dataset_manifest_path = os.path.join(self.dataset_root, "dataset_manifest.json")
@@ -276,7 +242,7 @@ class RotationPairDataset(Dataset):
         for scene_id in sorted(scene_records.keys()):
             views = scene_records[scene_id]
             if len(views) < 2:
-                # 单视角场景无法组成"任意两张图"的配对，跳过
+                # 单视角场景无法组成配对，跳过
                 continue
             object_source = views[0].get("object_source", "builtin:cube")
             scenes.append({
@@ -286,25 +252,21 @@ class RotationPairDataset(Dataset):
             })
             total_views += len(views)
 
-        print(f"[RotationPairDataset] 共汇总 {len(scenes)} 个可用场景，{total_views} 个视角。")
+        print(f"[AdjacentPairDataset] 共汇总 {len(scenes)} 个可用场景，{total_views} 个视角。")
         return scenes
 
     def _build_all_pairs(self):
-        """为每个场景预生成 pairs_per_scene 个 (view_a, view_b) 组合，
+        """为每个场景构建"同行相邻"视角组合（含正反两个方向），
         并展开为全局列表，供 __getitem__ 按索引直接取用。
         """
         all_pairs = []
         for scene in self.scenes:
-            scene_pairs = _build_stratified_pairs(
-                scene["views"], self.pairs_per_scene, self._rng,
-                num_distance_bins=self.num_distance_bins,
-            )
+            scene_pairs = _build_adjacent_pairs(scene["views"])
             for view_a, view_b in scene_pairs:
                 all_pairs.append((scene, view_a, view_b))
 
-        print(f"[RotationPairDataset] 已为每个场景预生成 {self.pairs_per_scene} 个双视角组合"
-              f"（覆盖全部视角 + 按球面角距离分 {self.num_distance_bins} 档均衡采样），"
-              f"共 {len(all_pairs)} 个训练样本。")
+        print(f"[AdjacentPairDataset] 已为每个场景构建同行(elevation)相邻视角组合"
+              f"（含正反两个方向），共 {len(all_pairs)} 个训练样本。")
         return all_pairs
 
     def _validate_condition_field(self):
@@ -339,16 +301,21 @@ class RotationPairDataset(Dataset):
 
     @staticmethod
     def _compute_relative_rotation_vector(pose, ref_pose):
-        """计算 pose 相对 ref_pose 的三维旋转向量（度），公式与
-        render_pipeline._compute_relative_rotation_vector 保持一致，
-        但这里可以对任意两个视角调用，不局限于必须以 view_id="ref" 为基准。
+        """计算 pose 相对 ref_pose 的旋转向量 [delta_azimuth, delta_elevation, delta_roll]（度）。
+
+        delta_roll 固定为 0：当前渲染管线的相机采用纯 look-at 约束
+        （camera_trajectory._look_at_euler 用 direction.to_track_quat("-Z", "Y")
+        计算朝向），相机没有独立可控的 roll 自由度，poses.json 中记录的
+        euler_xyz_deg[2] 只是该朝向下四元数转欧拉角的一个数值解，在某些
+        朝向（尤其接近上方向奇异点）附近会出现跳变（万向锁），并非真实的
+        相机滚转量。若直接用其差值作为训练标签，会引入与实际旋转无关的
+        噪声，因此这里不使用 euler_xyz_deg 计算 delta_roll，训练与推理均
+        只使用 delta_azimuth / delta_elevation 两个自由度。
         """
         delta_azimuth = pose["azimuth_deg"] - ref_pose["azimuth_deg"]
         delta_azimuth = (delta_azimuth + 180.0) % 360.0 - 180.0
         delta_elevation = pose["elevation_deg"] - ref_pose["elevation_deg"]
-        delta_roll = pose["euler_xyz_deg"][2] - ref_pose["euler_xyz_deg"][2]
-        delta_roll = (delta_roll + 180.0) % 360.0 - 180.0
-        return [delta_azimuth, delta_elevation, delta_roll]
+        return [delta_azimuth, delta_elevation, 0.0]
 
     def __getitem__(self, idx):
         scene, view_a, view_b = self._all_pairs[idx]
@@ -368,4 +335,3 @@ class RotationPairDataset(Dataset):
             "rotation_vector": rotation_vector,
             "object_prompt": scene["object_prompt"],
         }
-
