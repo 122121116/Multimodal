@@ -32,7 +32,7 @@ echo.
 echo Starting training ...
 echo.
 
-python train_lora.py --condition_type depth --dataset_root ..\dataset_output --num_epochs 8 --learning_rate 2e-5 --lora_rank 8 --gradient_accumulation_steps 8 --save_steps 200
+python train_lora.py --condition_type depth --dataset_root ..\dataset_output --num_epochs 10 --learning_rate 1e-4 --lora_rank 4 --save_steps 200
 
 echo.
 echo Training finished.
