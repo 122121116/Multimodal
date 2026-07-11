@@ -1,42 +1,37 @@
 # -*- coding: utf-8 -*-
 import os
-# 设置 HuggingFace 缓存到 E 盘（避免 C 盘空间不足）
-os.environ.setdefault("HF_HOME", "E:/Multimodal/hf_cache")
-os.environ.setdefault("TRANSFORMERS_CACHE", "E:/Multimodal/hf_cache/transformers")
+# 设置 HuggingFace 缓存到 E 盘（避免 C 盘空间不足），路径需与
+# checkpoint_utils.py 中的设置保持一致，避免同一份缓存被下载到两个不同目录。
+os.environ.setdefault("HF_HUB_DISABLE_SYMLINKS", "1")
+os.environ.setdefault("HF_HOME", "e:/Multimodal/.hf_cache")
 os.environ.setdefault("HF_ENDPOINT", "https://hf-mirror.com")
+# Gradio 默认会在 launch() 时联网上报 analytics 并检测新版本，国内网络下
+# 该请求经常长时间无响应，导致 launch() 卡住且没有任何报错输出。这里彻底
+# 关闭该行为（必须在 import gradio 之前设置才生效）。
+os.environ.setdefault("GRADIO_ANALYTICS_ENABLED", "False")
 
 """
 带 UI 的推理调用示例脚本：加载参考图 + 目标相对旋转向量，生成目标视角的
-结构图（轮廓图/深度图），用于快速验证 train_lora.py 训练出的 LoRA 效果。
+结构图（轮廓图/深度图），用于快速验证 train_lora.py 训练出的 LoRA 效果；
+LoRA 未训练完成时，自动退化为 InstructPix2Pix 原生图生图（图像编辑）能力，
+保证 App 在任何时候都能"读图 -> 出图"，不会因为 LoRA 缺失而输出无意义结果。
 
-设计说明：
-- 模型构建逻辑（UNet conv_in 4->8 通道扩展、LoRA 挂载点、RotationEncoder
-  条件编码方式）与 train_lora.py 完全一致，直接复用同样的初始化步骤，
-  确保推理时的模型结构与训练时严格对应，参见 train_lora.py 顶部注释与
-  expand_unet_conv_in 函数、rotation_encoder.py。
-- 条件注入方式参考 camera_control.json（ComfyUI 工作流）的整体思路：
-  参考图 -> VAE 编码 -> 与 noisy latent 拼接 -> UNet 去噪 -> VAE 解码，
-  但本脚本不依赖 ComfyUI，而是用 diffusers 原生 API 直接在 Python 内实现
-  同样的推理流程，方便本地快速调试。
-- 双分支工作流：train_lora.py 训练出的 canny / depth 两个 LoRA 是完全独立
-  训练的两套权重，分别对应轮廓图与深度图两种条件图输入。本 UI 不再要求
-  用户手动上传已经是条件图的图像，而是只上传一张原始 RGB 参考图，一旦
-  上传（或调整 Canny 阈值），立即自动提取出深度图与轮廓图并展示（无需
-  等待点击生成按钮）；点击"生成"后，再分别喂给各自独立的 InferencePipeline
-  （depth_pipeline / canny_pipeline）做多步迭代推理，两分支的中间结果与
-  最终输出互不影响，各自独立产出一张预测图，只共享同一组旋转角度/物品
-  prompt/seed/采样参数。
-- 多步迭代推理：train_lora.py 现在只训练"相邻视角小角度旋转"这一更简单、
-  更容易收敛的子任务（参见 dataset.py 的 AdjacentPairDataset），因此模型
-  单次前向只擅长小角度旋转变换。要生成任意大角度的目标视角，需要将目标
-  旋转向量 [Δaz, Δel, Δroll] 拆分为 N 个小步长，每步用上一步的生成结果
-  作为下一步的条件图，串联调用模型 N 次（类似自回归式相机轨迹游走）。
-  单步角度步长建议不超过训练数据中相邻视角的典型间隔（可在 UI 中调节）。
-- LoRA 权重当前尚未训练完成，因此 LoRA 路径在 UI 中留空即可运行（此时仅
-  使用底模 + 扩展后的 conv_in，不具备"结构图视角变换"能力，仅用于验证
-  UI/推理链路本身是否跑通）；训练完成后，在 UI 中填入类似
-  e:/Multimodal/training/output/lora_depth/final 的 checkpoint 目录，
-  即可加载真正训练好的 LoRA/conv_in/RotationEncoder 权重进行测试。
+工作流程：
+1. 用户上传一张原始 RGB 参考图后，立即自动提取出该图的深度图与轮廓图并
+   展示（不必等点击生成按钮），分别对应 depth 分支与 canny 分支的初始条件图。
+2. 点击"生成"后，depth 分支与 canny 分支各自独立运行、互不影响：
+   - 若该分支填写了有效的 LoRA checkpoint 目录：
+       走"结构图视角变换"任务：以对应条件图（深度图/轮廓图）作为参考结构图，
+       [Δazimuth, Δelevation, Δroll] 旋转向量作为条件，用训练时同款的
+       VAE-latent 拼接 + RotationEncoder 方案预测目标视角的结构图。因为
+       LoRA 只训练了"相邻视角小角度旋转"，大角度旋转会自动拆分成多个小步长、
+       串联迭代生成（每步用上一步输出作为下一步条件图）。
+   - 若该分支未填写 LoRA 目录（默认状态，LoRA 尚未训练完成）：
+       不走上述结构图预测逻辑（此时 RotationEncoder 是随机初始化、未训练的，
+       结构图预测管线本身没有意义），而是改用 InstructPix2Pix 原生的
+       StableDiffusionInstructPix2PixPipeline，对原始 RGB 参考图 + 文本编辑
+       指令做标准的图生图（图像编辑），这是底模本身已经在大规模数据上预训练
+       收敛好的能力，保证"没有 LoRA 时也能读取图片输出有意义结果"。
 
 依赖（需预先安装，另见 requirements.txt）：
     torch, diffusers, transformers, accelerate, peft, Pillow, numpy, opencv-python, gradio
@@ -45,58 +40,31 @@ os.environ.setdefault("HF_ENDPOINT", "https://hf-mirror.com")
     python inference_app.py
 默认会在本地启动一个 Gradio 网页界面（http://127.0.0.1:7860）。
 """
-import os
-
-# 必须在 import transformers/huggingface_hub 之前设置，才能让 hf_hub 的下载请求
-# 走镜像端点。若用户已在外部环境变量中手动设置 HF_ENDPOINT，则不覆盖。
-os.environ.setdefault("HF_ENDPOINT", "https://hf-mirror.com")
-
+print("[inference_app] [1/4] 开始导入依赖库（torch/diffusers/transformers），可能需要几秒到几十秒 ...", flush=True)
 import numpy as np
 import torch
-from diffusers import AutoencoderKL, DDIMScheduler, UNet2DConditionModel
+from diffusers import (
+    AutoencoderKL,
+    DDIMScheduler,
+    StableDiffusionInstructPix2PixPipeline,
+    UNet2DConditionModel,
+)
 from PIL import Image
 from transformers import CLIPTextModel, CLIPTokenizer
 
-from checkpoint_utils import ensure_checkpoint
+from checkpoint_utils import ensure_checkpoint, ensure_depth_model
+print(f"[inference_app] [1/4] 依赖库导入完成。torch.cuda.is_available()={torch.cuda.is_available()}", flush=True)
 from rotation_encoder import RotationEncoder
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 DTYPE = torch.float16 if DEVICE == "cuda" else torch.float32
 RESOLUTION = 512
 
-# 训练完成后，可将默认路径改为对应 checkpoint 目录，
-# 或直接在 UI 的 "LoRA checkpoint 目录" 输入框中填写，无需改代码。
-DEFAULT_LORA_DIR_DEPTH = "e:/Multimodal/training/output/lora_depth/final"
-DEFAULT_LORA_DIR_CANNY = "e:/Multimodal/training/output/lora_canny/final"
-
-# DepthAnything V2 模型标识符，与 export_conditions.py 保持一致。
-DEPTH_MODEL_ID = "depth-anything/Depth-Anything-V2-Large-hf"
-
-
-def expand_unet_conv_in(unet: UNet2DConditionModel) -> UNet2DConditionModel:
-    """与 train_lora.py 中同名函数逻辑完全一致：conv_in 从 4 通道扩展为 8 通道，
-    前 4 通道保留预训练权重，后 4 通道置零初始化（推理时若加载了 LoRA
-    checkpoint 中的 conv_in.pt，后 4 通道会被训练好的权重覆盖）。
-    """
-    old_conv_in = unet.conv_in
-    in_channels = old_conv_in.in_channels
-    if in_channels == 8:
-        return unet
-    assert in_channels == 4, f"预期 conv_in 输入通道为4，实际为{in_channels}"
-
-    new_conv_in = torch.nn.Conv2d(
-        in_channels=8,
-        out_channels=old_conv_in.out_channels,
-        kernel_size=old_conv_in.kernel_size,
-        stride=old_conv_in.stride,
-        padding=old_conv_in.padding,
-    )
-    new_conv_in.weight.data.zero_()
-    new_conv_in.weight.data[:, :4, :, :] = old_conv_in.weight.data
-    new_conv_in.bias.data = old_conv_in.bias.data.clone()
-    unet.conv_in = new_conv_in
-    unet.config.in_channels = 8
-    return unet
+# LoRA 尚未训练完成时默认留空，确保 App 默认即可在"无 LoRA、仅用底模原生
+# 图生图能力"的状态下跑通链路；训练完成后可在 UI 的输入框中手动填入对应
+# 目录，例如 e:/Multimodal/training/output/lora_depth/final，无需改代码。
+DEFAULT_LORA_DIR_DEPTH = ""
+DEFAULT_LORA_DIR_CANNY = ""
 
 
 # ----------------------------------------------------------------------------
@@ -115,11 +83,14 @@ class _DepthModelCache:
         if cls.model is None:
             from transformers import AutoImageProcessor, AutoModelForDepthEstimation
 
-            print(f"[inference_app] 首次使用，加载深度估计模型 {DEPTH_MODEL_ID} ...")
-            cls.processor = AutoImageProcessor.from_pretrained(DEPTH_MODEL_ID)
-            cls.model = AutoModelForDepthEstimation.from_pretrained(DEPTH_MODEL_ID)
+            print("[inference_app] 首次使用，正在检查/下载 DepthAnything V2 深度模型 ...", flush=True)
+            depth_model_path = ensure_depth_model()
+            print(f"[inference_app] 从 {depth_model_path} 加载深度估计模型 ...", flush=True)
+            cls.processor = AutoImageProcessor.from_pretrained(depth_model_path)
+            cls.model = AutoModelForDepthEstimation.from_pretrained(depth_model_path)
             cls.model.to(DEVICE)
             cls.model.eval()
+            print("[inference_app] 深度估计模型加载完成，已就绪。", flush=True)
         return cls.processor, cls.model
 
 
@@ -179,16 +150,37 @@ def _extract_edge_condition_image(
     return Image.fromarray(edges_3ch, mode="RGB")
 
 
+def _pil_to_normalized_tensor(img: Image.Image, resolution: int) -> torch.Tensor:
+    img = img.convert("RGB")
+    if img.size != (resolution, resolution):
+        img = img.resize((resolution, resolution), Image.BICUBIC)
+    arr = np.array(img).astype(np.float32)
+    tensor = torch.from_numpy(arr) / 127.5 - 1.0
+    return tensor.permute(2, 0, 1).contiguous()
+
+
+def _tensor_to_pil(tensor: torch.Tensor) -> Image.Image:
+    tensor = (tensor.float().clamp(-1, 1) + 1.0) / 2.0
+    arr = (tensor.permute(1, 2, 0).cpu().numpy() * 255.0).round().astype(np.uint8)
+    return Image.fromarray(arr)
+
+
 class InferencePipeline:
     """封装底模加载 + 可选 LoRA 加载 + 单步推理，供 Gradio 回调复用。
 
-    通过 lora_dir 是否变化来判断是否需要重新加载/切换 LoRA 权重，
-    避免每次点击"生成"都重新加载一遍底模（底模加载耗时最长）。
+    两种互斥的推理模式，由 lora_dir 是否为空自动切换：
+    - lora_dir 非空：结构图视角变换模式（走 RotationEncoder + condition
+      latent 拼接，与 train_lora.py 训练任务完全一致），需要加载对应的
+      LoRA adapter + RotationEncoder 权重。
+    - lora_dir 为空（默认，LoRA 尚未训练完成）：InstructPix2Pix 原生
+      图生图模式，直接调用 diffusers 官方 StableDiffusionInstructPix2PixPipeline，
+      用文本编辑指令对原始 RGB 图做图像编辑，不涉及 RotationEncoder /
+      condition latent 拼接这套自定义逻辑。
 
     condition_type 仅用于区分该实例属于 depth 分支还是 canny 分支
-    （影响提示文本/日志），两个分支的模型结构本身完全一致，各自独立
-    持有一整套底模 + LoRA + RotationEncoder，互不共享，避免引入
-    共享状态带来的额外复杂度。
+    （影响提示文本/日志/结构图预测模式下使用哪种条件图），两个分支的模型
+    结构本身完全一致，各自独立持有一整套底模 + LoRA + RotationEncoder，
+    互不共享，避免引入共享状态带来的额外复杂度。
     """
 
     def __init__(self, condition_type: str):
@@ -199,28 +191,41 @@ class InferencePipeline:
         self.tokenizer = None
         self.text_encoder = None
         self.vae = None
-        self.unet_base = None  # 未挂载 LoRA 的基础 UNet（含扩展后的 conv_in）
+        self.unet_base = None  # 未挂载 LoRA 的基础 UNet（InstructPix2Pix 原生 8 通道 conv_in）
         self.scheduler = None
         self.rotation_encoder = None
 
-        self.unet = None  # 当前实际用于推理的 UNet（可能是 unet_base 或挂载了 LoRA 的版本）
+        self.unet = None  # 结构图预测模式下实际用于推理的 UNet（可能挂载了 LoRA）
         self.loaded_lora_dir = None  # 记录当前已加载的 LoRA 目录，避免重复加载
 
+        # InstructPix2Pix 原生图生图 pipeline（无 LoRA 时使用），懒加载。
+        self.raw_pipe = None
+
+    # ------------------------------------------------------------------
+    # 底模 / LoRA 加载
+    # ------------------------------------------------------------------
     def ensure_base_model_loaded(self):
         if self.unet_base is not None:
             return
+        print(f"[inference_app][{self.condition_type}] 正在检查/下载 InstructPix2Pix 底模 ...", flush=True)
         self.pretrained_model_path = ensure_checkpoint()
-        print(f"[inference_app][{self.condition_type}] 从 {self.pretrained_model_path} 加载 SD1.5 各子模块 ...")
+        print(f"[inference_app][{self.condition_type}] 从 {self.pretrained_model_path} 加载 InstructPix2Pix 各子模块 ...", flush=True)
         self.tokenizer = CLIPTokenizer.from_pretrained(self.pretrained_model_path, subfolder="tokenizer")
+        print(f"[inference_app][{self.condition_type}]   - tokenizer 加载完成", flush=True)
         self.text_encoder = CLIPTextModel.from_pretrained(
             self.pretrained_model_path, subfolder="text_encoder"
         ).to(DEVICE, dtype=DTYPE)
+        print(f"[inference_app][{self.condition_type}]   - text_encoder 加载完成", flush=True)
         self.vae = AutoencoderKL.from_pretrained(
             self.pretrained_model_path, subfolder="vae"
         ).to(DEVICE, dtype=DTYPE)
+        print(f"[inference_app][{self.condition_type}]   - vae 加载完成", flush=True)
         unet = UNet2DConditionModel.from_pretrained(self.pretrained_model_path, subfolder="unet")
-        unet = expand_unet_conv_in(unet)
+        assert unet.conv_in.in_channels == 8, (
+            f"预期 InstructPix2Pix UNet conv_in 输入通道为8，实际为{unet.conv_in.in_channels}。"
+        )
         self.unet_base = unet
+        print(f"[inference_app][{self.condition_type}]   - unet 加载完成（conv_in.in_channels={unet.conv_in.in_channels}）", flush=True)
 
         self.scheduler = DDIMScheduler.from_pretrained(self.pretrained_model_path, subfolder="scheduler")
 
@@ -234,38 +239,31 @@ class InferencePipeline:
         self.rotation_encoder.eval()
 
         self.unet = self.unet_base.to(DEVICE, dtype=DTYPE)
+        print(f"[inference_app][{self.condition_type}] 结构图预测模式底模加载完成。", flush=True)
 
     def ensure_lora_loaded(self, lora_dir: str):
-        """按需加载/切换 LoRA + conv_in + RotationEncoder 权重。
-        lora_dir 为空字符串时表示不使用 LoRA，仅用扩展后的底模做推理
-        （LoRA 尚未训练完成时，用于验证 UI/推理链路是否跑通）。
+        """按需加载/切换 LoRA + RotationEncoder 权重（base model 全程冻结，
+        不含单独的 conv_in 权重文件）。仅在结构图预测模式（lora_dir 非空）
+        下调用。
         """
         lora_dir = (lora_dir or "").strip()
+        assert lora_dir != "", "ensure_lora_loaded 只应在 lora_dir 非空时调用。"
 
         if lora_dir == self.loaded_lora_dir:
             return  # 已是当前状态，无需重复加载
 
-        if lora_dir == "":
-            self.unet = self.unet_base.to(DEVICE, dtype=DTYPE)
-            self.loaded_lora_dir = ""
-            print(f"[inference_app][{self.condition_type}] 未指定 LoRA 目录，使用未挂载 LoRA 的底模（含扩展 conv_in）进行推理。")
-            return
-
-        conv_in_path = os.path.join(lora_dir, "conv_in.pt")
         unet_lora_path = os.path.join(lora_dir, "unet_lora")
         rotation_encoder_path = os.path.join(lora_dir, "rotation_encoder.pt")
-        for p in (conv_in_path, unet_lora_path, rotation_encoder_path):
+        for p in (unet_lora_path, rotation_encoder_path):
             if not os.path.exists(p):
                 raise FileNotFoundError(
                     f"LoRA checkpoint 目录不完整，缺少 {p}。"
-                    f"请确认路径下同时包含 conv_in.pt / unet_lora/ / rotation_encoder.pt"
-                    f"（训练完成后由 train_lora.py 的 save_checkpoint 一并生成）。"
+                    f"请确认路径下同时包含 unet_lora/ / rotation_encoder.pt"
+                    f"（训练完成后由 train_lora.py 的 save_checkpoint 一并生成），"
+                    f"或将该输入框留空以使用底模原生图生图能力。"
                 )
 
         from peft import PeftModel
-
-        print(f"[inference_app][{self.condition_type}] 从 {lora_dir} 加载 conv_in 权重 ...")
-        self.unet_base.conv_in.load_state_dict(torch.load(conv_in_path, map_location="cpu"))
 
         print(f"[inference_app][{self.condition_type}] 从 {unet_lora_path} 加载 LoRA adapter 权重 ...")
         unet_with_lora = PeftModel.from_pretrained(self.unet_base, unet_lora_path, is_trainable=False)
@@ -280,62 +278,67 @@ class InferencePipeline:
         self.loaded_lora_dir = lora_dir
         print(f"[inference_app][{self.condition_type}] LoRA checkpoint 加载完成：{lora_dir}")
 
-    @torch.no_grad()
-    def generate(
-        self,
-        condition_image: Image.Image,
-        object_prompt: str,
-        delta_azimuth: float,
-        delta_elevation: float,
-        delta_roll: float,
-        num_inference_steps: int,
-        guidance_scale: float,
-        seed: int,
-        lora_dir: str,
-    ) -> Image.Image:
-        """单步推理：仅适合小角度旋转（与训练时的相邻视角间隔量级相当）。
-        大角度旋转请使用 generate_multi_step。
+    def ensure_raw_pipe_loaded(self):
+        """懒加载 InstructPix2Pix 官方图生图 pipeline，无 LoRA 时使用。
+        与结构图预测模式共享同一份底模文件（本地磁盘路径相同），但走
+        diffusers 官方封装好的标准推理流程，不涉及本项目自定义的
+        RotationEncoder / condition latent 拼接逻辑。
         """
-        self.ensure_base_model_loaded()
-        self.ensure_lora_loaded(lora_dir)
-        return self._generate_single_step(
-            condition_image=condition_image,
-            object_prompt=object_prompt,
-            delta_azimuth=delta_azimuth,
-            delta_elevation=delta_elevation,
-            delta_roll=delta_roll,
-            num_inference_steps=num_inference_steps,
-            guidance_scale=guidance_scale,
-            seed=seed,
-        )
+        if self.raw_pipe is not None:
+            return
+        print(f"[inference_app][{self.condition_type}] 正在检查/下载 InstructPix2Pix 底模 ...", flush=True)
+        pretrained_model_path = ensure_checkpoint()
+        print(f"[inference_app][{self.condition_type}] 从 {pretrained_model_path} 加载 InstructPix2Pix 原生图生图 pipeline ...", flush=True)
+        self.raw_pipe = StableDiffusionInstructPix2PixPipeline.from_pretrained(
+            pretrained_model_path, torch_dtype=DTYPE, safety_checker=None,
+        ).to(DEVICE)
+        self.raw_pipe.set_progress_bar_config(disable=True)
+        print(f"[inference_app][{self.condition_type}] 原生图生图 pipeline 加载完成，已就绪。", flush=True)
 
+    # ------------------------------------------------------------------
+    # 生成入口：根据 lora_dir 是否为空，自动选择"结构图视角变换"或
+    # "InstructPix2Pix 原生图生图"两种互斥模式。
+    # ------------------------------------------------------------------
     @torch.no_grad()
     def generate_multi_step(
         self,
+        rgb_image: Image.Image,
         condition_image: Image.Image,
         object_prompt: str,
+        edit_instruction: str,
         delta_azimuth: float,
         delta_elevation: float,
         delta_roll: float,
         step_degree: float,
         num_inference_steps: int,
         guidance_scale: float,
+        image_guidance_scale: float,
         seed: int,
         lora_dir: str,
     ):
-        """多步迭代推理：将总旋转量 [delta_azimuth, delta_elevation, delta_roll]
-        按 step_degree（单步最大角度步长，度）拆分为 N 个小步长，每步用上一步
-        的生成结果作为下一步的条件图，串联调用模型 N 次，逐步逼近目标视角。
-
-        拆分方式：以三个分量中绝对值最大的一个确定步数 N =
-        ceil(max(|Δaz|, |Δel|, |Δroll|) / step_degree)，其余分量按相同步数
-        均分，保证每一步的三个分量都同步、线性地趋近目标值。
+        """统一的多步生成入口。
 
         返回：(final_image, intermediate_images)
             final_image: 最后一步的生成结果（PIL.Image）
             intermediate_images: 每一步生成结果组成的列表（含最后一步），
-                供 UI 展示多步生成过程。
+                供 UI 展示多步生成过程；无 LoRA 模式下固定只有 1 步。
         """
+        lora_dir = (lora_dir or "").strip()
+
+        if lora_dir == "":
+            # 无 LoRA：退化为 InstructPix2Pix 原生图生图（图像编辑），
+            # 直接对原始 RGB 图操作，不使用条件图/旋转向量。
+            final_image = self._generate_raw_edit(
+                rgb_image=rgb_image,
+                edit_instruction=edit_instruction,
+                num_inference_steps=num_inference_steps,
+                guidance_scale=guidance_scale,
+                image_guidance_scale=image_guidance_scale,
+                seed=seed,
+            )
+            return final_image, [final_image]
+
+        # 有 LoRA：结构图视角变换模式，大角度旋转拆分为多步小步长迭代。
         self.ensure_base_model_loaded()
         self.ensure_lora_loaded(lora_dir)
 
@@ -366,6 +369,33 @@ class InferencePipeline:
         return current_image, intermediate_images
 
     @torch.no_grad()
+    def _generate_raw_edit(
+        self,
+        rgb_image: Image.Image,
+        edit_instruction: str,
+        num_inference_steps: int,
+        guidance_scale: float,
+        image_guidance_scale: float,
+        seed: int,
+    ) -> Image.Image:
+        """InstructPix2Pix 原生图生图（图像编辑）：无 LoRA 时的默认路径。"""
+        self.ensure_raw_pipe_loaded()
+        rgb_image = rgb_image.convert("RGB")
+        if rgb_image.size != (RESOLUTION, RESOLUTION):
+            rgb_image = rgb_image.resize((RESOLUTION, RESOLUTION), Image.BICUBIC)
+
+        generator = torch.Generator(device=DEVICE).manual_seed(int(seed))
+        result = self.raw_pipe(
+            prompt=edit_instruction,
+            image=rgb_image,
+            num_inference_steps=int(num_inference_steps),
+            guidance_scale=float(guidance_scale),
+            image_guidance_scale=float(image_guidance_scale),
+            generator=generator,
+        )
+        return result.images[0]
+
+    @torch.no_grad()
     def _generate_single_step(
         self,
         condition_image: Image.Image,
@@ -377,8 +407,9 @@ class InferencePipeline:
         guidance_scale: float,
         seed: int,
     ) -> Image.Image:
-        """单次前向 UNet 去噪循环，是 generate / generate_multi_step 的公共实现。
-        调用前需确保 ensure_base_model_loaded / ensure_lora_loaded 已执行。
+        """单次前向 UNet 去噪循环（结构图视角变换模式），是
+        generate_multi_step 在"有 LoRA"分支下的公共实现。调用前需确保
+        ensure_base_model_loaded / ensure_lora_loaded 已执行。
         """
         condition_tensor = _pil_to_normalized_tensor(condition_image, RESOLUTION).unsqueeze(0)
         condition_tensor = condition_tensor.to(DEVICE, dtype=DTYPE)
@@ -436,21 +467,6 @@ class InferencePipeline:
         return _tensor_to_pil(image[0])
 
 
-def _pil_to_normalized_tensor(img: Image.Image, resolution: int) -> torch.Tensor:
-    img = img.convert("RGB")
-    if img.size != (resolution, resolution):
-        img = img.resize((resolution, resolution), Image.BICUBIC)
-    arr = np.array(img).astype(np.float32)
-    tensor = torch.from_numpy(arr) / 127.5 - 1.0
-    return tensor.permute(2, 0, 1).contiguous()
-
-
-def _tensor_to_pil(tensor: torch.Tensor) -> Image.Image:
-    tensor = (tensor.float().clamp(-1, 1) + 1.0) / 2.0
-    arr = (tensor.permute(1, 2, 0).cpu().numpy() * 255.0).round().astype(np.uint8)
-    return Image.fromarray(arr)
-
-
 def build_ui():
     import gradio as gr
 
@@ -468,38 +484,46 @@ def build_ui():
         return depth_condition_image, edge_condition_image
 
     def on_generate(rgb_image, depth_condition_image, edge_condition_image,
-                     object_prompt, depth_lora_dir, canny_lora_dir,
+                     object_prompt, edit_instruction, depth_lora_dir, canny_lora_dir,
                      delta_azimuth, delta_elevation, delta_roll,
-                     step_degree, num_inference_steps, guidance_scale, seed):
+                     step_degree, num_inference_steps, guidance_scale,
+                     image_guidance_scale, seed):
         if rgb_image is None:
             raise gr.Error("请先上传一张原始 RGB 参考图。")
         if depth_condition_image is None or edge_condition_image is None:
             raise gr.Error("深度图/轮廓图尚未提取完成，请稍候或重新上传图片。")
 
         try:
-            # 2) depth 分支与 canny 分支完全独立地做多步迭代推理，
-            #    彼此只用各自上一步的输出作为下一步条件图，互不影响。
+            # depth 分支与 canny 分支完全独立地生成，各自根据自己的 LoRA
+            # 目录是否为空，自动选择"结构图视角变换"或"原生图生图"模式，
+            # 彼此互不影响。
             depth_final_image, depth_intermediate_images = depth_pipeline.generate_multi_step(
+                rgb_image=rgb_image,
                 condition_image=depth_condition_image,
                 object_prompt=object_prompt,
+                edit_instruction=edit_instruction,
                 delta_azimuth=delta_azimuth,
                 delta_elevation=delta_elevation,
                 delta_roll=delta_roll,
                 step_degree=float(step_degree),
                 num_inference_steps=int(num_inference_steps),
                 guidance_scale=float(guidance_scale),
+                image_guidance_scale=float(image_guidance_scale),
                 seed=int(seed),
                 lora_dir=depth_lora_dir,
             )
             canny_final_image, canny_intermediate_images = canny_pipeline.generate_multi_step(
+                rgb_image=rgb_image,
                 condition_image=edge_condition_image,
                 object_prompt=object_prompt,
+                edit_instruction=edit_instruction,
                 delta_azimuth=delta_azimuth,
                 delta_elevation=delta_elevation,
                 delta_roll=delta_roll,
                 step_degree=float(step_degree),
                 num_inference_steps=int(num_inference_steps),
                 guidance_scale=float(guidance_scale),
+                image_guidance_scale=float(image_guidance_scale),
                 seed=int(seed),
                 lora_dir=canny_lora_dir,
             )
@@ -514,36 +538,39 @@ def build_ui():
     with gr.Blocks(title="多视角相机控制 LoRA 推理调试") as demo:
         gr.Markdown(
             "## 多视角相机控制 LoRA 推理调试\n"
-            "上传一张**原始 RGB 参考图**，自动提取出深度图与轮廓图两种条件图，"
-            "设置目标视角相对参考视角的旋转角度后，depth 分支与 canny 分支会各自"
-            "独立加载对应的 LoRA 并生成目标视角的结构图（互不影响）。\n\n"
-            "**模型只训练了相邻视角的小角度旋转**，因此大角度旋转会自动拆分为多步"
-            "小角度迭代生成（每步用上一步的输出作为下一步的输入），可通过「单步角度"
-            "步长」控制拆分粒度，下方会分别展示两个分支每一步的中间结果。\n\n"
-            "**LoRA 尚未训练完成时**，将下方对应「LoRA checkpoint 目录」留空即可运行"
-            "（仅用底模验证链路是否跑通，不具备视角变换能力）；训练完成后填入类似 "
-            "`e:/Multimodal/training/output/lora_depth/final` / "
-            "`e:/Multimodal/training/output/lora_canny/final` 的目录即可测试真实效果。"
+            "上传一张**原始 RGB 参考图**，自动提取出深度图与轮廓图两种条件图。\n\n"
+            "**depth 分支 / canny 分支各自独立**：若填写了对应的 LoRA checkpoint "
+            "目录，则加载该 LoRA 做「结构图视角变换」（按设置的旋转角度生成目标"
+            "视角的结构图，大角度会自动拆分为多步小角度迭代）；**若该输入框留空"
+            "（默认状态，LoRA 尚未训练完成），则改用 InstructPix2Pix 底模原生的"
+            "图生图（图像编辑）能力**，对原始 RGB 图按下方「图像编辑指令」直接编辑，"
+            "保证在没有 LoRA 时也能正常读图出图。"
         )
 
         with gr.Row():
             with gr.Column():
                 rgb_image = gr.Image(label="原始 RGB 参考图", type="pil")
-                object_prompt = gr.Textbox(label="物品名称 prompt", value="coffee table")
+                object_prompt = gr.Textbox(
+                    label="物品名称 prompt（结构图视角变换模式使用）", value="coffee table"
+                )
+                edit_instruction = gr.Textbox(
+                    label="图像编辑指令（无 LoRA 时，InstructPix2Pix 原生图生图使用）",
+                    value="turn it into a pencil sketch",
+                )
                 with gr.Row():
                     depth_lora_dir = gr.Textbox(
-                        label="depth 分支 LoRA checkpoint 目录（留空 = 不使用 LoRA）",
+                        label="depth 分支 LoRA checkpoint 目录（留空 = 不使用 LoRA，走原生图生图）",
                         value=DEFAULT_LORA_DIR_DEPTH,
                         placeholder="e:/Multimodal/training/output/lora_depth/final",
                     )
                     canny_lora_dir = gr.Textbox(
-                        label="canny 分支 LoRA checkpoint 目录（留空 = 不使用 LoRA）",
+                        label="canny 分支 LoRA checkpoint 目录（留空 = 不使用 LoRA，走原生图生图）",
                         value=DEFAULT_LORA_DIR_CANNY,
                         placeholder="e:/Multimodal/training/output/lora_canny/final",
                     )
                 with gr.Row():
-                    delta_azimuth = gr.Slider(-180, 180, value=0, step=1, label="Δ方位角 azimuth（度，总量）")
-                    delta_elevation = gr.Slider(-90, 90, value=0, step=1, label="Δ俯仰角 elevation（度，总量）")
+                    delta_azimuth = gr.Slider(-180, 180, value=0, step=1, label="Δ方位角 azimuth（度，总量，结构图视角变换模式使用）")
+                    delta_elevation = gr.Slider(-90, 90, value=0, step=1, label="Δ俯仰角 elevation（度，总量，结构图视角变换模式使用）")
                     delta_roll = gr.Slider(
                         -180, 180, value=0, step=1,
                         label="Δ滚转角 roll（训练数据未提供可靠标签，已禁用，恒为0）",
@@ -554,13 +581,14 @@ def build_ui():
                     canny_threshold2 = gr.Slider(0, 255, value=200, step=1, label="Canny 高阈值 threshold2")
                 step_degree = gr.Slider(
                     1, 45, value=10, step=1,
-                    label="单步角度步长（度，与训练数据中相邻视角间隔量级相当，越小越稳但步数越多）",
+                    label="单步角度步长（度，结构图视角变换模式下角度较大时自动分步，越小越稳但步数越多）",
                 )
                 with gr.Row():
                     num_inference_steps = gr.Slider(10, 50, value=20, step=1, label="每步采样步数")
-                    guidance_scale = gr.Slider(1.0, 15.0, value=7.5, step=0.5, label="CFG guidance scale")
+                    guidance_scale = gr.Slider(1.0, 15.0, value=7.5, step=0.5, label="文本 guidance scale")
+                    image_guidance_scale = gr.Slider(1.0, 5.0, value=1.5, step=0.1, label="图像 guidance scale（仅原生图生图模式使用）")
                     seed = gr.Number(value=42, precision=0, label="随机种子")
-                generate_btn = gr.Button("生成目标视角结构图", variant="primary")
+                generate_btn = gr.Button("生成", variant="primary")
 
             with gr.Column():
                 with gr.Row():
@@ -568,10 +596,10 @@ def build_ui():
                     edge_condition_preview = gr.Image(label="自动提取的轮廓图（canny 分支初始条件图）", type="pil")
                 gr.Markdown("### depth 分支生成结果")
                 depth_output_image = gr.Image(label="depth 分支最终生成结果")
-                depth_intermediate_gallery = gr.Gallery(label="depth 分支多步迭代中间结果", columns=4)
+                depth_intermediate_gallery = gr.Gallery(label="depth 分支多步迭代中间结果（无 LoRA 时仅 1 张）", columns=4)
                 gr.Markdown("### canny 分支生成结果")
                 canny_output_image = gr.Image(label="canny 分支最终生成结果")
-                canny_intermediate_gallery = gr.Gallery(label="canny 分支多步迭代中间结果", columns=4)
+                canny_intermediate_gallery = gr.Gallery(label="canny 分支多步迭代中间结果（无 LoRA 时仅 1 张）", columns=4)
 
         # 图片一上传/更换、或 Canny 阈值调整，立即重新提取深度图/轮廓图并展示，
         # 不必等点击「生成」按钮。
@@ -590,9 +618,10 @@ def build_ui():
         generate_btn.click(
             fn=on_generate,
             inputs=[rgb_image, depth_condition_preview, edge_condition_preview,
-                    object_prompt, depth_lora_dir, canny_lora_dir,
+                    object_prompt, edit_instruction, depth_lora_dir, canny_lora_dir,
                     delta_azimuth, delta_elevation, delta_roll,
-                    step_degree, num_inference_steps, guidance_scale, seed],
+                    step_degree, num_inference_steps, guidance_scale,
+                    image_guidance_scale, seed],
             outputs=[depth_output_image, depth_intermediate_gallery,
                      canny_output_image, canny_intermediate_gallery],
         )
@@ -601,5 +630,20 @@ def build_ui():
 
 
 if __name__ == "__main__":
+    print("[inference_app] [2/4] 正在构建 Gradio UI ...", flush=True)
     app = build_ui()
-    app.launch()
+    print("[inference_app] [3/4] UI 构建完成。", flush=True)
+    print("[inference_app] [4/4] 正在启动本地 Web 服务（首次生成时才会按需加载模型，"
+          "不会在这里卡住）...", flush=True)
+    # Gradio 默认 launch() 会尝试联网做版本/更新检测（analytics），国内网络
+    # 环境下容易卡在这一步且没有任何报错输出，看起来像"卡死"。这里显式关闭
+    # analytics，并指定 server_name/server_port，避免额外的网络探测。
+    app.launch(
+        server_name="127.0.0.1",
+        server_port=7860,
+        share=False,
+        inbrowser=False,
+        show_error=True,
+        quiet=False,
+    )
+    print("[inference_app] Web 服务已退出。", flush=True)

@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-import os
-os.environ.setdefault("HF_HOME", "E:/Multimodal/hf_cache")
-os.environ.setdefault("TRANSFORMERS_CACHE", "E:/Multimodal/hf_cache/transformers")
-os.environ.setdefault("HF_ENDPOINT", "https://hf-mirror.com")
-
 """
 LoRA 训练脚本：训练 canny 或 depth 分支的 LoRA 模块。
 
@@ -15,18 +10,27 @@ LoRA 训练脚本：训练 canny 或 depth 分支的 LoRA 模块。
 命令行示例：
     python train_lora.py --condition_type canny
     python train_lora.py --condition_type depth --num_epochs 20 --lora_rank 8
-    # 断点续训（从中断前保存的 checkpoint 继续，恢复 LoRA/conv_in/RotationEncoder/
+    # 断点续训（从中断前保存的 checkpoint 继续，恢复 LoRA/RotationEncoder/
     # 优化器状态与训练进度）：
     python train_lora.py --condition_type canny --resume_from e:/Multimodal/training/output/lora_canny/step_500
 
 核心技术方案：
-1) condition_image 注入方式（参考 diffusers 官方 train_instruct_pix2pix.py 的做法）：
-   UNet 原生 conv_in 只接受 4 通道（纯噪声 latent）。这里把 condition_image 也
-   编码到 VAE latent 空间，与 noisy target latent 在 channel 维度拼接成 8 通道，
-   因此需要把 conv_in 的输入通道从 4 扩展到 8：新 conv_in 前 4 个通道复制原始
-   预训练权重（保留SD对"从噪声预测干净图像"的先验知识），新增的 4 个通道权重
-   初始化为 0（保证扩展初期，新增通道对输出没有扰动，训练从等价于原始SD行为
-   的状态开始，这是 InstructPix2Pix 论文里验证过的稳定初始化方式）。
+1) 底模选择与 condition_image 注入方式：
+   底模改用 timbrooks/instruct-pix2pix（而非纯文生图的 stable-diffusion-v1-5）。
+   InstructPix2Pix 的 UNet 原生 conv_in 就是 8 通道输入（前4通道对应 noisy
+   latent，后4通道对应参考图的 VAE latent，训练时在 channel 维度拼接），
+   且已经在大规模图像编辑数据上预训练收敛，可以直接复用这套已经学好的
+   "参考图条件注入"能力。本项目的 condition_image（深度图/轮廓图）同样以
+   VAE latent 形式与 noisy target latent 拼接，通道布局与 InstructPix2Pix
+   完全一致，因此不需要像基于 SD1.5 训练时那样手动把 conv_in 从4通道扩展
+   到8通道（那种做法后4个通道只能零初始化，等于要在小数据集上从零学习
+   一套全新的条件注入权重，训练开销大、收敛慢），只需要在此基础上挂载
+   LoRA 微调"参考结构图+旋转向量 -> 目标结构图"这一新任务即可。
+   base model（含 conv_in、原 UNet 权重、VAE、文本编码器）全程冻结，严格
+   遵循 LoRA "冻结原模型、只训练低秩适配器"的原则，不额外解冻/微调任何
+   base model 参数；条件图输入分布（深度图/轮廓图）与 InstructPix2Pix
+   原始训练用的 RGB 图不同这一问题，交由 LoRA 本身在 attention 层的低秩
+   适配来吸收，不通过放开 conv_in 梯度来"走捷径"。
    condition_image 直接读取渲染完成后由 export_conditions.py 独立后处理生成的
    深度图/轮廓图文件（不再于训练阶段实时计算 Canny/DepthAnything V2 推理，
    详见 dataset.py）。
@@ -49,9 +53,9 @@ LoRA 训练脚本：训练 canny 或 depth 分支的 LoRA 模块。
    - batch_size=1 + gradient_accumulation_steps=4，用梯度累积模拟等效 batch=4
 
 排障说明：
-   每次关键阶段（模型加载/conv_in扩展/LoRA挂载/数据集构建/accelerator.prepare/
-   首个训练 step）都会打印带 flush=True 的日志，且训练循环用 try/except 包裹
-   并在异常时打印完整 traceback，避免进程崩溃时因 stdout 缓冲区未刷新而看起来
+   每次关键阶段（模型加载/LoRA挂载/数据集构建/accelerator.prepare/首个训练
+   step）都会打印带 flush=True 的日志，且训练循环用 try/except 包裹并在
+   异常时打印完整 traceback，避免进程崩溃时因 stdout 缓冲区未刷新而看起来
    像是"卡死在上一条日志"，方便定位真实出错位置。
 """
 import argparse
@@ -112,64 +116,26 @@ def parse_args():
     return args
 
 
-def expand_unet_conv_in(unet: UNet2DConditionModel) -> UNet2DConditionModel:
-    """
-    将 UNet 的 conv_in 从 4 通道输入扩展为 8 通道输入（参考 InstructPix2Pix 做法）。
-    前 4 个通道保留原始预训练权重（对应 noisy target latent），
-    新增的 4 个通道初始化为 0（对应 condition latent，初始时不影响输出）。
-    """
-    old_conv_in = unet.conv_in
-    in_channels = old_conv_in.in_channels
-    if in_channels == 8:
-        _log("[train_lora] UNet conv_in 已经是 8 通道输入，跳过扩展。")
-        return unet
-
-    assert in_channels == 4, f"预期 conv_in 输入通道为4，实际为{in_channels}，无法按标准流程扩展。"
-
-    out_channels = old_conv_in.out_channels
-    kernel_size = old_conv_in.kernel_size
-    stride = old_conv_in.stride
-    padding = old_conv_in.padding
-
-    new_conv_in = torch.nn.Conv2d(
-        in_channels=8,
-        out_channels=out_channels,
-        kernel_size=kernel_size,
-        stride=stride,
-        padding=padding,
-    )
-    new_conv_in.weight.data.zero_()
-    new_conv_in.weight.data[:, :4, :, :] = old_conv_in.weight.data
-    new_conv_in.bias.data = old_conv_in.bias.data.clone()
-
-    unet.conv_in = new_conv_in
-    # 让 UNet 配置也同步记录新的输入通道数，避免后续 save_pretrained/from_pretrained 时通道数不一致
-    unet.config.in_channels = 8
-    _log("[train_lora] 已将 UNet conv_in 从 4 通道扩展为 8 通道（前4通道保留预训练权重，后4通道置零初始化）。")
-    return unet
-
-
 def build_models(args, accelerator):
-    """加载底模、扩展 conv_in、挂载 LoRA、构建 RotationEncoder。返回训练所需的各个模块。"""
+    """加载底模（InstructPix2Pix，原生8通道UNet）、挂载 LoRA、构建 RotationEncoder。"""
     pretrained_model_path = args.pretrained_model or ensure_checkpoint()
 
-    _log(f"[train_lora] 从 {pretrained_model_path} 加载 SD1.5 各子模块 ...")
+    _log(f"[train_lora] 从 {pretrained_model_path} 加载 InstructPix2Pix 各子模块 ...")
     tokenizer = CLIPTokenizer.from_pretrained(pretrained_model_path, subfolder="tokenizer")
     text_encoder = CLIPTextModel.from_pretrained(pretrained_model_path, subfolder="text_encoder")
     vae = AutoencoderKL.from_pretrained(pretrained_model_path, subfolder="vae")
     unet = UNet2DConditionModel.from_pretrained(pretrained_model_path, subfolder="unet")
     noise_scheduler = DDPMScheduler.from_pretrained(pretrained_model_path, subfolder="scheduler")
-    _log("[train_lora] SD1.5 各子模块加载完成。")
+    _log("[train_lora] InstructPix2Pix 各子模块加载完成。")
+
+    assert unet.conv_in.in_channels == 8, (
+        f"预期 InstructPix2Pix UNet conv_in 输入通道为8，实际为{unet.conv_in.in_channels}，"
+        f"请检查 --pretrained_model 是否指向了正确的 InstructPix2Pix 权重目录。"
+    )
 
     vae.requires_grad_(False)
     text_encoder.requires_grad_(False)
-
-    unet = expand_unet_conv_in(unet)
-
-    if args.resume_from is not None:
-        conv_in_path = os.path.join(args.resume_from, "conv_in.pt")
-        unet.conv_in.load_state_dict(torch.load(conv_in_path, map_location="cpu"))
-        _log(f"[train_lora] 断点续训：已从 {conv_in_path} 恢复 conv_in 权重。")
+    unet.requires_grad_(False)
 
     if args.resume_from is not None:
         from peft import PeftModel
@@ -185,14 +151,9 @@ def build_models(args, accelerator):
         unet = get_peft_model(unet, lora_config)
     unet.print_trainable_parameters()
 
-    # get_peft_model 默认冻结所有非-LoRA参数，但 conv_in 是本任务新扩展的、
-    # 承载 condition_image 信息的关键层，必须显式设为可训练，否则新增的4个
-    # 通道会永远停留在零初始化状态，模型学不到如何利用 condition 图像。
-    unet.get_base_model().conv_in.requires_grad_(True)
-
     if args.mixed_precision != "no":
         unet.enable_gradient_checkpointing()
-    _log("[train_lora] conv_in 扩展 + LoRA 挂载完成。")
+    _log("[train_lora] LoRA 挂载完成。")
 
     rotation_encoder = RotationEncoder(cross_attention_dim=text_encoder.config.hidden_size)
     if args.resume_from is not None:
@@ -232,7 +193,7 @@ def main():
     _log(f"[train_lora] 数据集就绪，共 {len(train_dataset)} 个训练样本。")
 
     # ------------------------------------------------------------------
-    # 优化器：只优化 LoRA 参数 + RotationEncoder 参数
+    # 优化器：只优化 LoRA 参数 + RotationEncoder 参数（base model 全程冻结）
     # ------------------------------------------------------------------
     trainable_params = [p for p in unet.parameters() if p.requires_grad] + list(rotation_encoder.parameters())
     optimizer = torch.optim.AdamW(trainable_params, lr=args.learning_rate)
@@ -360,14 +321,10 @@ def save_checkpoint(accelerator, unet, rotation_encoder, optimizer, output_dir, 
     os.makedirs(save_dir, exist_ok=True)
 
     unwrapped_unet = accelerator.unwrap_model(unet)
-    # peft 的 save_pretrained 只保存 LoRA adapter 权重（几MB），
-    # 但 conv_in 被 expand_unet_conv_in 手动扩展为8通道后，其权重属于 base model
-    # 的一部分（不在 LoRA adapter 范围内），且新增的4个通道会随训练更新，
-    # 因此必须单独保存 conv_in 权重，否则推理时重新扩展 conv_in 只能拿到
-    # 零初始化的后4通道，丢失训练成果。
+    # peft 的 save_pretrained 只保存 LoRA adapter 权重（几MB）。base model
+    # （含 conv_in）全程冻结未被更新，无需单独保存，推理时直接从
+    # timbrooks/instruct-pix2pix 加载原始权重即可与训练时保持一致。
     unwrapped_unet.save_pretrained(os.path.join(save_dir, "unet_lora"))
-    conv_in_state = unwrapped_unet.get_base_model().conv_in.state_dict()
-    torch.save(conv_in_state, os.path.join(save_dir, "conv_in.pt"))
 
     unwrapped_rotation_encoder = accelerator.unwrap_model(rotation_encoder)
     unwrapped_rotation_encoder.save_pretrained(os.path.join(save_dir, "rotation_encoder.pt"))
@@ -379,7 +336,7 @@ def save_checkpoint(accelerator, unet, rotation_encoder, optimizer, output_dir, 
     with open(os.path.join(save_dir, "training_state.json"), "w", encoding="utf-8") as f:
         json.dump({"epoch": epoch, "global_step": step}, f, ensure_ascii=False, indent=2)
 
-    _log(f"[train_lora] 已保存 checkpoint 到：{save_dir}（含 LoRA adapter + 扩展后的 conv_in 权重 + RotationEncoder）")
+    _log(f"[train_lora] 已保存 checkpoint 到：{save_dir}（含 LoRA adapter + RotationEncoder）")
 
 
 if __name__ == "__main__":
