@@ -1,4 +1,10 @@
 # -*- coding: utf-8 -*-
+import os
+# 设置 HuggingFace 缓存到 E 盘（避免 C 盘空间不足）
+os.environ.setdefault("HF_HOME", "E:/Multimodal/hf_cache")
+os.environ.setdefault("TRANSFORMERS_CACHE", "E:/Multimodal/hf_cache/transformers")
+os.environ.setdefault("HF_ENDPOINT", "https://hf-mirror.com")
+
 """
 带 UI 的推理调用示例脚本：加载参考图 + 目标相对旋转向量，生成目标视角的
 结构图（轮廓图/深度图），用于快速验证 train_lora.py 训练出的 LoRA 效果。

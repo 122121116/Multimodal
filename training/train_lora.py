@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+import os
+os.environ.setdefault("HF_HOME", "E:/Multimodal/hf_cache")
+os.environ.setdefault("TRANSFORMERS_CACHE", "E:/Multimodal/hf_cache/transformers")
+os.environ.setdefault("HF_ENDPOINT", "https://hf-mirror.com")
+
 """
 LoRA 训练脚本：训练 canny 或 depth 分支的 LoRA 模块。
 
