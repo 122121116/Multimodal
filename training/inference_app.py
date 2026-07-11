@@ -14,10 +14,11 @@
   同样的推理流程，方便本地快速调试。
 - 双分支工作流：train_lora.py 训练出的 canny / depth 两个 LoRA 是完全独立
   训练的两套权重，分别对应轮廓图与深度图两种条件图输入。本 UI 不再要求
-  用户手动上传已经是条件图的图像，而是只上传一张原始 RGB 参考图，自动
-  用与 export_conditions.py 完全一致的逻辑分别提取出深度图与轮廓图，
-  再分别喂给各自独立的 InferencePipeline（depth_pipeline / canny_pipeline）
-  做多步迭代推理，两分支的中间结果互不影响，只共享同一组旋转角度/物品
+  用户手动上传已经是条件图的图像，而是只上传一张原始 RGB 参考图，一旦
+  上传（或调整 Canny 阈值），立即自动提取出深度图与轮廓图并展示（无需
+  等待点击生成按钮）；点击"生成"后，再分别喂给各自独立的 InferencePipeline
+  （depth_pipeline / canny_pipeline）做多步迭代推理，两分支的中间结果与
+  最终输出互不影响，各自独立产出一张预测图，只共享同一组旋转角度/物品
   prompt/seed/采样参数。
 - 多步迭代推理：train_lora.py 现在只训练"相邻视角小角度旋转"这一更简单、
   更容易收敛的子任务（参见 dataset.py 的 AdjacentPairDataset），因此模型
@@ -39,6 +40,10 @@
 默认会在本地启动一个 Gradio 网页界面（http://127.0.0.1:7860）。
 """
 import os
+
+# 必须在 import transformers/huggingface_hub 之前设置，才能让 hf_hub 的下载请求
+# 走镜像端点。若用户已在外部环境变量中手动设置 HF_ENDPOINT，则不覆盖。
+os.environ.setdefault("HF_ENDPOINT", "https://hf-mirror.com")
 
 import numpy as np
 import torch
@@ -446,18 +451,24 @@ def build_ui():
     depth_pipeline = InferencePipeline(condition_type="depth")
     canny_pipeline = InferencePipeline(condition_type="canny")
 
-    def on_generate(rgb_image, object_prompt, depth_lora_dir, canny_lora_dir,
-                     delta_azimuth, delta_elevation, delta_roll,
-                     canny_threshold1, canny_threshold2,
-                     step_degree, num_inference_steps, guidance_scale, seed):
+    def on_image_uploaded(rgb_image, canny_threshold1, canny_threshold2):
+        """图片一上传/更换就立即提取深度图与轮廓图并展示，不必等点击生成按钮。"""
         if rgb_image is None:
-            raise gr.Error("请先上传一张原始 RGB 参考图。")
-
-        # 1) 从原始 RGB 图自动提取深度图 / 轮廓图，分别作为两个分支的初始条件图
+            return None, None
         depth_condition_image = _extract_depth_condition_image(rgb_image)
         edge_condition_image = _extract_edge_condition_image(
             rgb_image, float(canny_threshold1), float(canny_threshold2)
         )
+        return depth_condition_image, edge_condition_image
+
+    def on_generate(rgb_image, depth_condition_image, edge_condition_image,
+                     object_prompt, depth_lora_dir, canny_lora_dir,
+                     delta_azimuth, delta_elevation, delta_roll,
+                     step_degree, num_inference_steps, guidance_scale, seed):
+        if rgb_image is None:
+            raise gr.Error("请先上传一张原始 RGB 参考图。")
+        if depth_condition_image is None or edge_condition_image is None:
+            raise gr.Error("深度图/轮廓图尚未提取完成，请稍候或重新上传图片。")
 
         try:
             # 2) depth 分支与 canny 分支完全独立地做多步迭代推理，
@@ -490,7 +501,6 @@ def build_ui():
             raise gr.Error(str(e))
 
         return (
-            depth_condition_image, edge_condition_image,
             depth_final_image, depth_intermediate_images,
             canny_final_image, canny_intermediate_images,
         )
@@ -548,8 +558,8 @@ def build_ui():
 
             with gr.Column():
                 with gr.Row():
-                    depth_condition_preview = gr.Image(label="自动提取的深度图（depth 分支初始条件图）")
-                    edge_condition_preview = gr.Image(label="自动提取的轮廓图（canny 分支初始条件图）")
+                    depth_condition_preview = gr.Image(label="自动提取的深度图（depth 分支初始条件图）", type="pil")
+                    edge_condition_preview = gr.Image(label="自动提取的轮廓图（canny 分支初始条件图）", type="pil")
                 gr.Markdown("### depth 分支生成结果")
                 depth_output_image = gr.Image(label="depth 分支最终生成结果")
                 depth_intermediate_gallery = gr.Gallery(label="depth 分支多步迭代中间结果", columns=4)
@@ -557,14 +567,27 @@ def build_ui():
                 canny_output_image = gr.Image(label="canny 分支最终生成结果")
                 canny_intermediate_gallery = gr.Gallery(label="canny 分支多步迭代中间结果", columns=4)
 
+        # 图片一上传/更换、或 Canny 阈值调整，立即重新提取深度图/轮廓图并展示，
+        # 不必等点击「生成」按钮。
+        rgb_image.upload(
+            fn=on_image_uploaded,
+            inputs=[rgb_image, canny_threshold1, canny_threshold2],
+            outputs=[depth_condition_preview, edge_condition_preview],
+        )
+        for threshold_slider in (canny_threshold1, canny_threshold2):
+            threshold_slider.release(
+                fn=on_image_uploaded,
+                inputs=[rgb_image, canny_threshold1, canny_threshold2],
+                outputs=[depth_condition_preview, edge_condition_preview],
+            )
+
         generate_btn.click(
             fn=on_generate,
-            inputs=[rgb_image, object_prompt, depth_lora_dir, canny_lora_dir,
+            inputs=[rgb_image, depth_condition_preview, edge_condition_preview,
+                    object_prompt, depth_lora_dir, canny_lora_dir,
                     delta_azimuth, delta_elevation, delta_roll,
-                    canny_threshold1, canny_threshold2,
                     step_degree, num_inference_steps, guidance_scale, seed],
-            outputs=[depth_condition_preview, edge_condition_preview,
-                     depth_output_image, depth_intermediate_gallery,
+            outputs=[depth_output_image, depth_intermediate_gallery,
                      canny_output_image, canny_intermediate_gallery],
         )
 
